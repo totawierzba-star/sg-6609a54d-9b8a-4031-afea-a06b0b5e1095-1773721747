@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <>
       <SEO 
-        title="BizneLot.info – Prawa pasażerów w podróżach służbowych"
+        title="bizneslot.info – Prawa pasażerów w podróżach służbowych"
         description="Kompleksowy portal edukacyjny o prawach pracowników w delegacjach lotniczych. Dowiedz się, co Ci przysługuje, gdy lot służbowy zostanie opóźniony lub anulowany."
       />
       
@@ -19,7 +19,7 @@ export default function Home() {
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <Briefcase className="h-6 w-6 text-slate-700" />
-                <span className="text-xl font-bold text-slate-900">BizneLot.info</span>
+                <span className="text-xl font-bold text-slate-900">bizneslot.info</span>
               </div>
               <nav className="hidden md:flex gap-6">
                 <Link href="/odszkodowanie-lot-sluzbowy" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
@@ -236,7 +236,7 @@ export default function Home() {
               <div>
                 <div className="flex items-center gap-2 mb-4">
                   <Briefcase className="h-5 w-5 text-slate-700" />
-                  <span className="font-bold text-slate-900">BizneLot.info</span>
+                  <span className="font-bold text-slate-900">bizneslot.info</span>
                 </div>
                 <p className="text-sm text-slate-600">
                   Portal edukacyjny o prawach pasażerów w podróżach służbowych.
@@ -294,7 +294,7 @@ export default function Home() {
             </div>
             
             <div className="border-t mt-8 pt-8 text-center text-sm text-slate-600">
-              <p>© 2026 BizneLot.info. Portal edukacyjny o prawach pasażerów w podróżach służbowych.</p>
+              <p>© 2026 bizneslot.info. Portal edukacyjny o prawach pasażerów w podróżach służbowych.</p>
             </div>
           </div>
         </footer>

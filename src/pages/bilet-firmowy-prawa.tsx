@@ -9,8 +9,8 @@ export default function BiletFirmowyPrawa() {
   return (
     <>
       <SEO 
-        title="Bilet firmowy a prawa pasażera – Kto ma prawo do odszkodowania?"
-        description="Czy bilet firmowy zmienia prawa pasażera? Kto dostaje odszkodowanie, gdy lot opłaca pracodawca? Kompleksowe wyjaśnienie zagadnień prawnych dotyczących podróży służbowych."
+        title="Bilet firmowy a prawa pasażera – Kompletny przewodnik"
+        description="Czy bilet opłacony przez firmę zmienia Twoje prawa jako pasażera? Kompleksowy przewodnik o prawach pracowników w podróżach służbowych."
       />
       
       <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
@@ -20,7 +20,7 @@ export default function BiletFirmowyPrawa() {
             <div className="flex items-center justify-between">
               <Link href="/" className="flex items-center gap-2">
                 <Briefcase className="h-6 w-6 text-slate-700" />
-                <span className="text-xl font-bold text-slate-900">BizneLot.info</span>
+                <span className="text-xl font-bold text-slate-900">bizneslot.info</span>
               </Link>
               <nav className="hidden md:flex gap-6">
                 <Link href="/odszkodowanie-lot-sluzbowy" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
@@ -44,9 +44,9 @@ export default function BiletFirmowyPrawa() {
         <section className="py-16 px-4 bg-slate-900 text-white">
           <div className="container mx-auto max-w-4xl">
             <div className="flex items-center gap-2 text-slate-300 text-sm mb-4">
-              <Link href="/" className="hover:text-white transition-colors">BizneLot.info</Link>
+              <Link href="/" className="hover:text-white transition-colors">bizneslot.info</Link>
               <span>/</span>
-              <span>Bilet firmowy a Twoje prawa</span>
+              <span>Bilet firmowy a prawa pasażera</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
               Bilet firmowy a prawa pasażera – Co się zmienia?
@@ -558,7 +558,7 @@ export default function BiletFirmowyPrawa() {
               <div>
                 <Link href="/" className="flex items-center gap-2 mb-4">
                   <Briefcase className="h-5 w-5 text-slate-700" />
-                  <span className="font-bold text-slate-900">BizneLot.info</span>
+                  <span className="font-bold text-slate-900">bizneslot.info</span>
                 </Link>
                 <p className="text-sm text-slate-600">
                   Portal edukacyjny o prawach pasażerów w podróżach służbowych.
@@ -616,7 +616,7 @@ export default function BiletFirmowyPrawa() {
             </div>
             
             <div className="border-t mt-8 pt-8 text-center text-sm text-slate-600">
-              <p>© 2026 BizneLot.info. Portal edukacyjny o prawach pasażerów w podróżach służbowych.</p>
+              <p>© 2026 bizneslot.info. Portal edukacyjny o prawach pasażerów w podróżach służbowych.</p>
             </div>
           </div>
         </footer>

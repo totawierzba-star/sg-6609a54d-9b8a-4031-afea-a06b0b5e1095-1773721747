@@ -20,7 +20,7 @@ export default function OpoznionyLotDelegacja() {
             <div className="flex items-center justify-between">
               <Link href="/" className="flex items-center gap-2">
                 <Briefcase className="h-6 w-6 text-slate-700" />
-                <span className="text-xl font-bold text-slate-900">BizneLot.info</span>
+                <span className="text-xl font-bold text-slate-900">bizneslot.info</span>
               </Link>
               <nav className="hidden md:flex gap-6">
                 <Link href="/odszkodowanie-lot-sluzbowy" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
@@ -44,7 +44,7 @@ export default function OpoznionyLotDelegacja() {
         <section className="py-16 px-4 bg-slate-900 text-white">
           <div className="container mx-auto max-w-4xl">
             <div className="flex items-center gap-2 text-slate-300 text-sm mb-4">
-              <Link href="/" className="hover:text-white transition-colors">BizneLot.info</Link>
+              <Link href="/" className="hover:text-white transition-colors">bizneslot.info</Link>
               <span>/</span>
               <span>Opóźniony lot w delegacji</span>
             </div>
@@ -608,7 +608,7 @@ export default function OpoznionyLotDelegacja() {
               <div>
                 <Link href="/" className="flex items-center gap-2 mb-4">
                   <Briefcase className="h-5 w-5 text-slate-700" />
-                  <span className="font-bold text-slate-900">BizneLot.info</span>
+                  <span className="font-bold text-slate-900">bizneslot.info</span>
                 </Link>
                 <p className="text-sm text-slate-600">
                   Portal edukacyjny o prawach pasażerów w podróżach służbowych.
@@ -666,7 +666,7 @@ export default function OpoznionyLotDelegacja() {
             </div>
             
             <div className="border-t mt-8 pt-8 text-center text-sm text-slate-600">
-              <p>© 2026 BizneLot.info. Portal edukacyjny o prawach pasażerów w podróżach służbowych.</p>
+              <p>© 2026 bizneslot.info. Portal edukacyjny o prawach pasażerów w podróżach służbowych.</p>
             </div>
           </div>
         </footer>
