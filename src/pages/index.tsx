@@ -1,12 +1,304 @@
-import React from 'react'
+import { SEO } from "@/components/SEO";
+import Link from "next/link";
+import { Briefcase, Shield, FileText, Scale, ArrowRight, CheckCircle2 } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-background flex items-center justify-center">
-      <div className="text-center space-y-4">
-        <h1 className="text-4xl font-bold text-foreground">Hello World</h1>
-        <p className="text-lg text-muted-foreground">This is going to be your softgen app, start by describing your project.</p>
+    <>
+      <SEO 
+        title="BizneLot.info – Prawa pasażerów w podróżach służbowych"
+        description="Kompleksowy portal edukacyjny o prawach pracowników w delegacjach lotniczych. Dowiedz się, co Ci przysługuje, gdy lot służbowy zostanie opóźniony lub anulowany."
+      />
+      
+      <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+        {/* Header */}
+        <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
+          <div className="container mx-auto px-4 py-4">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2">
+                <Briefcase className="h-6 w-6 text-slate-700" />
+                <span className="text-xl font-bold text-slate-900">BizneLot.info</span>
+              </div>
+              <nav className="hidden md:flex gap-6">
+                <Link href="/odszkodowanie-lot-sluzbowy" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
+                  Odszkodowanie
+                </Link>
+                <Link href="/anulowany-lot-delegacja" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
+                  Anulowany lot
+                </Link>
+                <Link href="/opozniony-lot-delegacja" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
+                  Opóźniony lot
+                </Link>
+                <Link href="/bilet-firmowy-prawa" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
+                  Bilet firmowy
+                </Link>
+              </nav>
+            </div>
+          </div>
+        </header>
+
+        {/* Hero Section */}
+        <section className="py-20 px-4">
+          <div className="container mx-auto max-w-6xl">
+            <div className="text-center max-w-3xl mx-auto">
+              <div className="inline-flex items-center gap-2 bg-slate-100 px-4 py-2 rounded-full text-sm text-slate-700 mb-6">
+                <Shield className="h-4 w-4" />
+                Portal ekspercki dla podróżujących służbowo
+              </div>
+              <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+                Twoje prawa w podróżach służbowych
+              </h1>
+              <p className="text-xl text-slate-600 mb-8 leading-relaxed">
+                Kompleksowy przewodnik po prawach pasażera w delegacjach. Dowiedz się, co Ci przysługuje, 
+                gdy lot służbowy zostanie opóźniony lub anulowany – i kto ma prawo do odszkodowania.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button asChild size="lg" className="text-lg">
+                  <Link href="/odszkodowanie-lot-sluzbowy">
+                    Poznaj swoje prawa
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Link>
+                </Button>
+                <Button asChild variant="outline" size="lg" className="text-lg">
+                  <Link href="/anulowany-lot-delegacja">
+                    Anulowany lot w delegacji
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Key Benefits */}
+        <section className="py-16 px-4 bg-slate-50">
+          <div className="container mx-auto max-w-6xl">
+            <div className="grid md:grid-cols-3 gap-8">
+              <Card className="border-slate-200">
+                <CardHeader>
+                  <CheckCircle2 className="h-10 w-10 text-slate-700 mb-4" />
+                  <CardTitle className="text-xl">Odszkodowanie należy do Ciebie</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-slate-600">
+                    Nawet jeśli firma kupuje bilet, odszkodowanie przysługuje pasażerowi – czyli Tobie. 
+                    To Twoje prawo zapisane w rozporządzeniu UE 261/2004.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-slate-200">
+                <CardHeader>
+                  <Scale className="h-10 w-10 text-slate-700 mb-4" />
+                  <CardTitle className="text-xl">Jasne zasady prawne</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-slate-600">
+                    Wyjaśniamy, co mówi prawo europejskie o odszkodowaniach w przypadku opóźnień 
+                    i anulacji lotów w delegacjach służbowych.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="border-slate-200">
+                <CardHeader>
+                  <FileText className="h-10 w-10 text-slate-700 mb-4" />
+                  <CardTitle className="text-xl">Praktyczne porady</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-slate-600">
+                    Jak postępować w delegacji, jak dokumentować zdarzenie i jak rozliczyć 
+                    nieplanowane koszty z działem HR lub księgowością.
+                  </p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
+        {/* Main Topics */}
+        <section className="py-20 px-4">
+          <div className="container mx-auto max-w-6xl">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold text-slate-900 mb-4">
+                Najważniejsze tematy
+              </h2>
+              <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+                Kompleksowe informacje o prawach pasażera w kontekście podróży służbowych
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-6">
+              <Link href="/odszkodowanie-lot-sluzbowy" className="group">
+                <Card className="border-slate-200 hover:border-slate-400 transition-all hover:shadow-lg h-full">
+                  <CardHeader>
+                    <CardTitle className="text-2xl group-hover:text-slate-700 transition-colors flex items-start justify-between">
+                      Odszkodowanie za lot służbowy
+                      <ArrowRight className="h-5 w-5 text-slate-400 group-hover:text-slate-700 group-hover:translate-x-1 transition-all" />
+                    </CardTitle>
+                    <CardDescription className="text-base">
+                      Czy pracownik ma prawo do odszkodowania za lot? Komu przysługują pieniądze, 
+                      jeśli bilet kupuje firma? Wszystko, co musisz wiedzieć o odszkodowaniach w delegacjach.
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+              </Link>
+
+              <Link href="/anulowany-lot-delegacja" className="group">
+                <Card className="border-slate-200 hover:border-slate-400 transition-all hover:shadow-lg h-full">
+                  <CardHeader>
+                    <CardTitle className="text-2xl group-hover:text-slate-700 transition-colors flex items-start justify-between">
+                      Anulowany lot w delegacji
+                      <ArrowRight className="h-5 w-5 text-slate-400 group-hover:text-slate-700 group-hover:translate-x-1 transition-all" />
+                    </CardTitle>
+                    <CardDescription className="text-base">
+                      Co robić, gdy lot służbowy zostanie odwołany? Jakie masz prawa, jak dokumentować 
+                      sytuację i jak odzyskać dodatkowe koszty poniesione w delegacji?
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+              </Link>
+
+              <Link href="/opozniony-lot-delegacja" className="group">
+                <Card className="border-slate-200 hover:border-slate-400 transition-all hover:shadow-lg h-full">
+                  <CardHeader>
+                    <CardTitle className="text-2xl group-hover:text-slate-700 transition-colors flex items-start justify-between">
+                      Opóźniony lot w delegacji
+                      <ArrowRight className="h-5 w-5 text-slate-400 group-hover:text-slate-700 group-hover:translate-x-1 transition-all" />
+                    </CardTitle>
+                    <CardDescription className="text-base">
+                      Kiedy opóźnienie daje prawo do odszkodowania? Jak rozliczyć przedłużoną delegację 
+                      z pracodawcą i co zrobić z niewykorzystanym noclegiem?
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+              </Link>
+
+              <Link href="/bilet-firmowy-prawa" className="group">
+                <Card className="border-slate-200 hover:border-slate-400 transition-all hover:shadow-lg h-full">
+                  <CardHeader>
+                    <CardTitle className="text-2xl group-hover:text-slate-700 transition-colors flex items-start justify-between">
+                      Bilet firmowy a Twoje prawa
+                      <ArrowRight className="h-5 w-5 text-slate-400 group-hover:text-slate-700 group-hover:translate-x-1 transition-all" />
+                    </CardTitle>
+                    <CardDescription className="text-base">
+                      Czy fakt, że bilet opłaca firma, zmienia Twoje prawa? Kto jest pasażerem w świetle 
+                      prawa i co to oznacza dla odszkodowania za lot służbowy?
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+              </Link>
+
+              <Link href="/pracodawca-a-odszkodowanie" className="group">
+                <Card className="border-slate-200 hover:border-slate-400 transition-all hover:shadow-lg h-full">
+                  <CardHeader>
+                    <CardTitle className="text-2xl group-hover:text-slate-700 transition-colors flex items-start justify-between">
+                      Pracodawca a odszkodowanie lotnicze
+                      <ArrowRight className="h-5 w-5 text-slate-400 group-hover:text-slate-700 group-hover:translate-x-1 transition-all" />
+                    </CardTitle>
+                    <CardDescription className="text-base">
+                      Czy musisz oddać odszkodowanie firmie? Co mówią przepisy, a co polityka wewnętrzna? 
+                      Relacje między pracownikiem a pracodawcą w kontekście rekompensaty lotniczej.
+                    </CardDescription>
+                  </CardHeader>
+                </Card>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section */}
+        <section className="py-20 px-4 bg-slate-900 text-white">
+          <div className="container mx-auto max-w-4xl text-center">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              Miałeś problem z lotem w delegacji?
+            </h2>
+            <p className="text-xl text-slate-300 mb-8 max-w-2xl mx-auto">
+              Jeśli Twój lot służbowy był opóźniony o ponad 3 godziny lub został odwołany, 
+              możesz być uprawniony do odszkodowania. Sprawdź swoje prawa.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button asChild size="lg" variant="secondary" className="text-lg">
+                <a href="https://claimwinger.com/pl/odwolany-lot" target="_blank" rel="noopener noreferrer">
+                  Sprawdź swoją rekompensatę
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </a>
+              </Button>
+            </div>
+          </div>
+        </section>
+
+        {/* Footer */}
+        <footer className="bg-slate-50 border-t py-12 px-4">
+          <div className="container mx-auto max-w-6xl">
+            <div className="grid md:grid-cols-4 gap-8">
+              <div>
+                <div className="flex items-center gap-2 mb-4">
+                  <Briefcase className="h-5 w-5 text-slate-700" />
+                  <span className="font-bold text-slate-900">BizneLot.info</span>
+                </div>
+                <p className="text-sm text-slate-600">
+                  Portal edukacyjny o prawach pasażerów w podróżach służbowych.
+                </p>
+              </div>
+              
+              <div>
+                <h3 className="font-semibold text-slate-900 mb-4">Tematy</h3>
+                <ul className="space-y-2">
+                  <li>
+                    <Link href="/odszkodowanie-lot-sluzbowy" className="text-sm text-slate-600 hover:text-slate-900">
+                      Odszkodowanie za lot służbowy
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/anulowany-lot-delegacja" className="text-sm text-slate-600 hover:text-slate-900">
+                      Anulowany lot
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/opozniony-lot-delegacja" className="text-sm text-slate-600 hover:text-slate-900">
+                      Opóźniony lot
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              
+              <div>
+                <h3 className="font-semibold text-slate-900 mb-4">Więcej</h3>
+                <ul className="space-y-2">
+                  <li>
+                    <Link href="/bilet-firmowy-prawa" className="text-sm text-slate-600 hover:text-slate-900">
+                      Bilet firmowy
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/pracodawca-a-odszkodowanie" className="text-sm text-slate-600 hover:text-slate-900">
+                      Pracodawca a odszkodowanie
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              
+              <div>
+                <h3 className="font-semibold text-slate-900 mb-4">Sprawdź odszkodowanie</h3>
+                <p className="text-sm text-slate-600 mb-3">
+                  Korzystamy z usług ClaimWinger do weryfikacji uprawnień.
+                </p>
+                <Button asChild variant="outline" size="sm">
+                  <a href="https://claimwinger.com/pl" target="_blank" rel="noopener noreferrer">
+                    ClaimWinger.com
+                  </a>
+                </Button>
+              </div>
+            </div>
+            
+            <div className="border-t mt-8 pt-8 text-center text-sm text-slate-600">
+              <p>© 2026 BizneLot.info. Portal edukacyjny o prawach pasażerów w podróżach służbowych.</p>
+            </div>
+          </div>
+        </footer>
       </div>
-    </main>
-  )
+    </>
+  );
 }
