@@ -6,11 +6,99 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 export default function OdskodowanieLotSluzbowy() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "Odszkodowanie za lot służbowy – Kto ma prawo i komu przysługują pieniądze?",
+        "description": "Czy pracownik ma prawo do odszkodowania za lot służbowy? Kto dostaje pieniądze, gdy bilet kupuje firma? Kompleksowy przewodnik po prawach pasażera w delegacjach.",
+        "author": {
+          "@type": "Organization",
+          "name": "bizneslot.info"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "bizneslot.info",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://bizneslot.info/og-image.png"
+          }
+        },
+        "datePublished": "2026-01-07",
+        "dateModified": "2026-01-08",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://bizneslot.info/odszkodowanie-lot-sluzbowy"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Czy pracownik ma prawo do odszkodowania za lot służbowy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tak. Pracownik podróżujący służbowo ma pełne prawo do odszkodowania za lot, jeśli lot został opóźniony o co najmniej 3 godziny lub został anulowany. Europejskie rozporządzenie UE 261/2004 jasno określa, że uprawnionym do rekompensaty jest pasażer – osoba, która faktycznie odbyła podróż. Nie ma znaczenia, kto zapłacił za bilet."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kto dostaje pieniądze za odwołany lot firmowy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pieniądze należą się pasażerowi – czyli pracownikowi, który odbywał podróż. Pracownik ma prawo złożyć reklamację we własnym imieniu, otrzymać odszkodowanie na swoje konto i zatrzymać pieniądze dla siebie. Firma nie ma prawa zażądać zwrotu odszkodowania."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy muszę poinformować firmę o złożeniu reklamacji?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Prawnie nie musisz. Odszkodowanie to Twoja sprawa osobista. W praktyce warto jednak być transparentnym, aby uniknąć nieporozumień z działem HR."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Jakie kwoty odszkodowania przysługują w delegacjach?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Wysokość odszkodowania zależy od dystansu lotu: 250 € dla lotów do 1500 km, 400 € dla lotów 1500-3500 km, i 600 € dla lotów powyżej 3500 km. Nie ma znaczenia, czy podróż była służbowa czy prywatna."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "bizneslot.info",
+            "item": "https://bizneslot.info/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Odszkodowanie za lot służbowy",
+            "item": "https://bizneslot.info/odszkodowanie-lot-sluzbowy"
+          }
+        ]
+      }
+    ]
+  };
+
   return (
     <>
       <SEO 
         title="Odszkodowanie za lot służbowy – Kto ma prawo i komu przysługują pieniądze?"
         description="Czy pracownik ma prawo do odszkodowania za lot służbowy? Kto dostaje pieniądze, gdy bilet kupuje firma? Kompleksowy przewodnik po prawach pasażera w delegacjach."
+        url="https://bizneslot.info/odszkodowanie-lot-sluzbowy"
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       
       <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">

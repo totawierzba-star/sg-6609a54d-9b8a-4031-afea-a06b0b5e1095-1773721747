@@ -6,11 +6,99 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 export default function AnulowanyLotDelegacja() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "Anulowany lot w delegacji – Procedura krok po kroku",
+        "description": "Kompleksowy przewodnik dla pracowników: co robić, gdy lot służbowy zostanie odwołany, jak zabezpieczyć swoje prawa i jak rozliczyć dodatkowe koszty z pracodawcą.",
+        "author": {
+          "@type": "Organization",
+          "name": "bizneslot.info"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "bizneslot.info",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://bizneslot.info/og-image.png"
+          }
+        },
+        "datePublished": "2026-01-07",
+        "dateModified": "2026-01-08",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://bizneslot.info/anulowany-lot-delegacja"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Co robić w pierwszej kolejności gdy lot w delegacji zostanie anulowany?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "W pierwszej godzinie: (1) Ustal przyczynę anulacji u linii lotniczej, (2) Zabezpiecz lot zastępczy, (3) Poinformuj pracodawcę emailem i telefonem, (4) Rozpocznij dokumentację - rób zdjęcia tablicy odlotów, zachowaj wszystkie potwierdzenia."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Jakie koszty pokrywa linia lotnicza przy anulowanym locie w delegacji?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Linia lotnicza ma obowiązek zapewnić: posiłki i napoje, nocleg w hotelu (jeśli lot zastępczy jest następnego dnia), transport z lotniska do hotelu i z powrotem, oraz dostęp do środków komunikacji."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy pracownik ma prawo do odszkodowania za anulowany lot służbowy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tak, odszkodowanie od 250 do 600 € przysługuje pasażerowi (pracownikowi), nie firmie. Warunki: lot anulowany z winy linii, powiadomienie krócej niż 14 dni przed odlotem, brak okoliczności nadzwyczajnych."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Jak rozliczyć dodatkowe koszty delegacji z pracodawcą po anulowanym locie?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Uporządkuj pełną dokumentację (faktury, rachunki, potwierdzenia), wypełnij standardowy formularz rozliczenia delegacji zaznaczając dodatkowe dni, dołącz notatkę wyjaśniającą sytuację i wskaż które koszty pokryła linia, a które Ty."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Strona główna",
+            "item": "https://bizneslot.info"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Anulowany lot w delegacji",
+            "item": "https://bizneslot.info/anulowany-lot-delegacja"
+          }
+        ]
+      }
+    ]
+  };
+
   return (
     <>
       <SEO 
         title="Anulowany lot w delegacji – Co robić krok po kroku?"
         description="Twój lot służbowy został odwołany? Kompleksowy przewodnik: co robić w pierwszej kolejności, jak dokumentować sytuację i jak rozliczyć dodatkowe koszty z pracodawcą."
+        url="https://bizneslot.info/anulowany-lot-delegacja"
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       
       <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">

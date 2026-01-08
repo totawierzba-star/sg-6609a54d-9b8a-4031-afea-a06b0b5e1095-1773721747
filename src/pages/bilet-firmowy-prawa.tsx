@@ -6,11 +6,100 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 export default function BiletFirmowyPrawa() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "Bilet firmowy a prawa pasażera – Kompletny przewodnik",
+        "description": "Czy bilet opłacony przez firmę zmienia Twoje prawa jako pasażera? Kompleksowy przewodnik o prawach pracowników w podróżach służbowych.",
+        "author": {
+          "@type": "Organization",
+          "name": "bizneslot.info"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "bizneslot.info",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://bizneslot.info/og-image.png"
+          }
+        },
+        "datePublished": "2026-01-07",
+        "dateModified": "2026-01-08",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://bizneslot.info/bilet-firmowy-prawa"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Czy firma ma prawo do odszkodowania za bilet służbowy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nie. Odszkodowanie przysługuje pasażerowi – osobie, która faktycznie odbyła podróż i poniosła niedogodności. Rozporządzenie UE 261/2004 nie rozróżnia biletów prywatnych i służbowych. Sposób finansowania biletu nie ma znaczenia prawnego."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy pracownik musi mieć zgodę firmy na złożenie reklamacji?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nie. Reklamacja to osobiste prawo pracownika wynikające z umowy przewozu. Jako pasażer masz autonomiczne prawo do złożenia reklamacji u linii lotniczej bez zgody pracodawcy, HR ani księgowości."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy zapis w umowie o pracę może odebrać prawo do odszkodowania?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nie. Rozporządzenie UE ma nadrzędny charakter wobec krajowych regulacji i umów prywatnych. Pracodawca nie może w regulaminie wewnętrznym czy umowie o pracę odebrać pracownikowi praw wynikających z prawa europejskiego."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy bilet firmowy to inne zasady niż bilet prywatny?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nie. Prawo lotnicze nie rozróżnia biletów według celu podróży. Dla linii lotniczych i prawa europejskiego nie ma znaczenia, czy lecisz na wakacje czy na służbową konferencję. Jesteś pasażerem i masz te same prawa."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "bizneslot.info",
+            "item": "https://bizneslot.info"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Bilet firmowy a prawa pasażera",
+            "item": "https://bizneslot.info/bilet-firmowy-prawa"
+          }
+        ]
+      }
+    ]
+  };
+
   return (
     <>
       <SEO 
         title="Bilet firmowy a prawa pasażera – Kompletny przewodnik"
         description="Czy bilet opłacony przez firmę zmienia Twoje prawa jako pasażera? Kompleksowy przewodnik o prawach pracowników w podróżach służbowych."
+        url="https://bizneslot.info/bilet-firmowy-prawa"
+      />
+      
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       
       <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">

@@ -6,11 +6,100 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 export default function OpoznionyLotDelegacja() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "Opóźniony lot w delegacji – Twoje prawa i rozliczenia",
+        "description": "Kompleksowy przewodnik dla pracowników podróżujących służbowo: kiedy opóźnienie daje prawo do odszkodowania, jak rozliczyć przedłużoną delegację i co zrobić z kosztami dodatkowych godzin.",
+        "author": {
+          "@type": "Organization",
+          "name": "bizneslot.info"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "bizneslot.info",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://bizneslot.info/og-image.png"
+          }
+        },
+        "datePublished": "2026-01-07",
+        "dateModified": "2026-01-08",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://bizneslot.info/opozniony-lot-delegacja"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Czy muszę oddać odszkodowanie pracodawcy?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nie. Odszkodowanie od linii lotniczej przysługuje pasażerowi – Tobie. To Twoje osobiste prawo wynikające z rozporządzenia UE 261/2004, niezależnie od faktu, kto kupił bilet. Rozliczenie delegacji z pracodawcą to osobna kwestia."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Co jeśli pracodawca wymaga zwrotu rekompensaty?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Regulamin firmowy wymagający zwrotu odszkodowania może być niezgodny z prawem europejskim. Rozporządzenie UE ma pierwszeństwo przed wewnętrznymi politykami firm."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Jak długo mam czas na złożenie reklamacji?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "W Polsce termin przedawnienia wynosi 3 lata od daty lotu. W praktyce im szybciej złożysz reklamację, tym łatwiej będzie udokumentować okoliczności opóźnienia."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy przedłużona delegacja wpływa na diety i ryczałty?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tak. Jeśli delegacja przedłuża się o pełny dzień (lub część wymagającą noclegu), przysługuje Ci dodatkowa dieta. Rozlicz to standardową procedurą, zaznaczając w formularzu przyczynę przedłużenia."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Strona główna",
+            "item": "https://bizneslot.info"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Opóźniony lot w delegacji",
+            "item": "https://bizneslot.info/opozniony-lot-delegacja"
+          }
+        ]
+      }
+    ]
+  };
+
   return (
     <>
       <SEO 
         title="Opóźniony lot w delegacji – Kiedy przysługuje odszkodowanie?"
         description="Opóźniony lot w podróży służbowej – Kiedy masz prawo do odszkodowania? Jak rozliczyć przedłużoną delegację z pracodawcą? Praktyczny przewodnik dla pracowników."
+        url="https://bizneslot.info/opozniony-lot-delegacja"
+      />
+      
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       
       <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">

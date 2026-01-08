@@ -6,11 +6,108 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 export default function PracodawcaAOdszkodowanie() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "Pracodawca a odszkodowanie lotnicze – Czy firma może żądać zwrotu?",
+        "description": "Czy pracodawca ma prawo żądać zwrotu odszkodowania za lot służbowy? Analiza prawna relacji pracownik-pracodawca w kontekście rozporządzenia UE 261/2004.",
+        "author": {
+          "@type": "Organization",
+          "name": "bizneslot.info"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "bizneslot.info",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://bizneslot.info/og-image.png"
+          }
+        },
+        "datePublished": "2026-01-07",
+        "dateModified": "2026-01-07",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://bizneslot.info/pracodawca-a-odszkodowanie"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Czy pracodawca może żądać zwrotu odszkodowania lotniczego?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nie. Rozporządzenie UE 261/2004 ma bezpośrednie zastosowanie i nadrzędny charakter wobec regulaminów wewnętrznych firm oraz umów o pracę. Pracodawca nie może skutecznie odebrać pracownikowi praw wynikających z prawa europejskiego. Odszkodowanie należy się pasażerowi, nie firmie."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Co jeśli firma potrąciła mi odszkodowanie z wynagrodzenia?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "To bezprawne potrącenie. Możesz żądać zwrotu tej kwoty w trybie natychmiastowym. Jeśli firma odmawia, skontaktuj się z prawnikiem i rozważ zgłoszenie do Państwowej Inspekcji Pracy oraz sądu pracy."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy regulamin firmowy żądający zwrotu odszkodowania jest ważny?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nie. Taki zapis jest sprzeczny z nadrzędnym prawem UE i jako taki nie wywołuje skutków prawnych. Jest nieważny z mocy samego prawa. Nawet jeśli podpisałeś regulamin z takim zapisem, nie jesteś prawnie zobowiązany do zwrotu."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Czy muszę informować firmę o złożonej reklamacji lotniczej?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Prawnie nie. To Twoja osobista sprawa między Tobą a linią lotniczą. W praktyce transparentność może zapobiec późniejszym nieporozumieniom. Możesz poinformować HR o fakcie złożenia reklamacji bez podawania szczegółów."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Co może, a czego nie może pracodawca w kwestii odszkodowań?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pracodawca MOŻE: prosić o informację o reklamacji, zapytać o okoliczności opóźnienia, rozliczyć dodatkowe koszty delegacji. Pracodawca NIE MOŻE: zażądać zwrotu odszkodowania, zabronić składania reklamacji, potrącić kwoty z wynagrodzenia, zastosować sankcji służbowych za niezwrócenie pieniędzy."
+            }
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "bizneslot.info",
+            "item": "https://bizneslot.info"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Pracodawca a odszkodowanie",
+            "item": "https://bizneslot.info/pracodawca-a-odszkodowanie"
+          }
+        ]
+      }
+    ]
+  };
+
   return (
     <>
       <SEO 
         title="Pracodawca a odszkodowanie lotnicze – Czy firma może żądać zwrotu?"
         description="Czy pracodawca ma prawo żądać zwrotu odszkodowania za lot służbowy? Analiza prawna relacji pracownik-pracodawca w kontekście rozporządzenia UE 261/2004."
+        url="https://bizneslot.info/pracodawca-a-odszkodowanie"
+      />
+      
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       
       <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">

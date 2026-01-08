@@ -5,11 +5,59 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function Home() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://bizneslot.info/#organization",
+        "name": "bizneslot.info",
+        "url": "https://bizneslot.info",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://bizneslot.info/og-image.png"
+        },
+        "description": "Portal edukacyjny o prawach pasażerów w podróżach służbowych",
+        "sameAs": []
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://bizneslot.info/#website",
+        "url": "https://bizneslot.info",
+        "name": "bizneslot.info",
+        "description": "Prawa pasażerów w podróżach służbowych",
+        "publisher": {
+          "@id": "https://bizneslot.info/#organization"
+        },
+        "inLanguage": "pl-PL"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://bizneslot.info/#webpage",
+        "url": "https://bizneslot.info",
+        "name": "bizneslot.info – Prawa pasażerów w podróżach służbowych",
+        "isPartOf": {
+          "@id": "https://bizneslot.info/#website"
+        },
+        "about": {
+          "@id": "https://bizneslot.info/#organization"
+        },
+        "description": "Kompleksowy portal edukacyjny o prawach pracowników w delegacjach lotniczych. Dowiedz się, co Ci przysługuje, gdy lot służbowy zostanie opóźniony lub anulowany.",
+        "inLanguage": "pl-PL"
+      }
+    ]
+  };
+
   return (
     <>
       <SEO 
         title="bizneslot.info – Prawa pasażerów w podróżach służbowych"
         description="Kompleksowy portal edukacyjny o prawach pracowników w delegacjach lotniczych. Dowiedz się, co Ci przysługuje, gdy lot służbowy zostanie opóźniony lub anulowany."
+        url="https://bizneslot.info"
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       
       <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
