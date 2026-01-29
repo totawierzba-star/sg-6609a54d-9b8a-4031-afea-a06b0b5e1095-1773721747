@@ -1,6 +1,6 @@
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
-import { Briefcase, ArrowLeft, Calendar, Clock, Users, Plane, Heart, Shield, TrendingUp, FileText, AlertCircle, CheckCircle2, XCircle, DollarSign, Building2, Globe } from "lucide-react";
+import { Briefcase, ArrowLeft, Calendar, Clock, Users, Plane, Heart, Shield, TrendingUp, FileText, AlertCircle, CheckCircle2, XCircle, DollarSign, Building2, Globe, Scale } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
@@ -51,7 +51,7 @@ export default function BleisurePolitykaPodrozySluzowych() {
             "name": "Jak rozliczyć podatkowo podróż Bleisure?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Część służbowa delegacji (dni robocze + zwykły koszt powrotu) = koszty uzyskania przychodu dla firmy. Dodatkowe dni urlopowe = koszt osobisty pracownika (hotel, wyżywienie nie podlegają zwrotowi). Bilet lotniczy: jeśli różnica między biletem z wcześniejszym a późniejszym powrotem jest minimalna lub ujemna, można ją wliczyć w koszty delegacji. Kluczowe: jasne rozdzielenie kosztów w dokumentacji."
+              "text": "Część służbowych delegacji (dni robocze + zwykły koszt powrotu) = koszty uzyskania przychodu dla firmy. Dodatkowe dni urlopowe = koszt osobisty pracownika (hotel, wyżywienie nie podlegają zwrotowi). Bilet lotniczy: jeśli różnica między biletem z wcześniejszym a późniejszym powrotem jest minimalna lub ujemna, można ją wliczyć w koszty delegacji. Kluczowe: jasne rozdzielenie kosztów w dokumentacji."
             }
           },
           {
@@ -392,7 +392,7 @@ export default function BleisurePolitykaPodrozySluzowych() {
                     </CardHeader>
                     <CardContent>
                       <p className="text-slate-700">
-                        Badanie Harvard Business Review (2023): pracownicy podróżujący służbowo 10+ razy rocznie mają <strong>2,5x wyższe ryzyko wypalenia</strong>. Bleisure zmniejsza to ryzyko o 34%, transformując stresującą delegację w pozytywne doświadczenie.
+                        Badanie Harvard Business Review (2023): pracownicy podróżujący służbowo 10+ razy rocznie mają <strong>2,5x wyższe ryzyko wypalenia</strong>. Bleisure zmniejsza to ryzyko o 34%, transformując streszącą delegację w pozytywne doświadczenie.
                       </p>
                     </CardContent>
                   </Card>
@@ -606,7 +606,7 @@ export default function BleisurePolitykaPodrozySluzowych() {
                         <strong>Jak działa:</strong> Firma dopłaca 50% do ubezpieczenia turystycznego pracownika lub oferuje zniżkę u partnera ubezpieczeniowego.
                       </p>
                       <p className="text-sm text-slate-600">
-                        ✅ <strong>Zaleta:</strong> Balans między atrakcyjnością a kosztami<br/>
+                        ✅ <strong>Zaleta:</strong> Balans między atrakcyjnością i kosztami<br/>
                         ❌ <strong>Wada:</strong> Wymaga obsługi administracyjnej (zwrot 50% kosztu polisy)
                       </p>
                     </CardContent>
@@ -848,7 +848,7 @@ export default function BleisurePolitykaPodrozySluzowych() {
                     </CardHeader>
                     <CardContent>
                       <p className="text-slate-700">
-                        Część służbowa delegacji (dni robocze + zwykły koszt powrotu) = koszty uzyskania przychodu dla firmy. Dodatkowe dni urlopowe = koszt osobisty pracownika (hotel, wyżywienie nie podlegają zwrotowi). Bilet lotniczy: jeśli różnica między biletem z wcześniejszym a późniejszym powrotem jest minimalna lub ujemna, można ją wliczyć w koszty delegacji. Kluczowe: jasne rozdzielenie kosztów w dokumentacji.
+                        Część służbowych delegacji (dni robocze + standardowy koszt powrotu) = koszty uzyskania przychodu dla firmy. Dodatkowe dni urlopowe = koszt osobisty pracownika (hotel, wyżywienie nie podlegają zwrotowi). Bilet lotniczy: jeśli różnica między biletem z wcześniejszym a późniejszym powrotem jest minimalna lub ujemna, można ją wliczyć w koszty delegacji. Kluczowe: jasne rozdzielenie kosztów w dokumentacji.
                       </p>
                     </CardContent>
                   </Card>

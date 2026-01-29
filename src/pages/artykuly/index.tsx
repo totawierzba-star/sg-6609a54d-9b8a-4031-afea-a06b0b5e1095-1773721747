@@ -1,6 +1,6 @@
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
-import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, FileText, Users, BarChart3 } from "lucide-react";
+import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, FileText, Users, BarChart3, Plane } from "lucide-react";
 
 export default function Artykuly() {
   const articles = [
@@ -21,6 +21,24 @@ export default function Artykuly() {
       category: "O nas",
       icon: Users,
       readTime: "5 min"
+    },
+    {
+      slug: "bleisure-polityka-podrozy-sluzbowych",
+      title: "Bleisure 2.0: Jak nowoczesne firmy łączą pracę z wypoczynkiem?",
+      excerpt: "Przewodnik dla HR: jak stworzyć Travel Policy uwzględniającą bleisure jako benefit, unikając problemów podatkowych.",
+      date: "2026-01-29",
+      category: "Travel Management",
+      icon: Briefcase,
+      readTime: "12 min"
+    },
+    {
+      slug: "private-jet-vs-business-class",
+      title: "Private Jet vs. Business Class: Kiedy czarter staje się alternatywą?",
+      excerpt: "Analiza kosztów dla grup managerów. Kiedy prywatny odrzutowiec jest tańszy i bardziej efektywny niż linie rejsowe?",
+      date: "2026-01-29",
+      category: "Logistyka",
+      icon: Plane,
+      readTime: "10 min"
     }
   ];
 

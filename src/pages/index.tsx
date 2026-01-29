@@ -281,68 +281,60 @@ export default function Home() {
         <section className="py-16 bg-slate-50">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
-                  Najnowsze artykuły
-                </h2>
-                <p className="text-lg text-slate-600">
-                  Eksperckie analizy i praktyczne porady dla podróżujących służbowo
-                </p>
+              <div className="flex items-center justify-between mb-8">
+                <h2 className="text-3xl font-bold text-slate-900">Najnowsze artykuły</h2>
+                <Link href="/artykuly" className="text-slate-700 hover:text-slate-900 font-medium">
+                  Zobacz wszystkie →
+                </Link>
               </div>
-
-              <div className="grid md:grid-cols-2 gap-6 mb-8">
+              
+              <div className="grid md:grid-cols-2 gap-8">
                 <Link
-                  href="/artykuly/business-class-vs-premium-economy"
-                  className="bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all group"
+                  href="/artykuly/bleisure-polityka-podrozy-sluzbowych"
+                  className="bg-white rounded-xl p-8 border border-slate-200 hover:shadow-lg transition-all group"
                 >
-                  <div className="flex items-center gap-2 text-sm text-slate-600 mb-3">
-                    <span className="px-2 py-1 bg-slate-100 rounded text-xs font-medium">
+                  <div className="flex items-center gap-3 mb-4 text-sm text-slate-600">
+                    <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-medium">
                       Travel Management
                     </span>
-                    <span>• 29 stycznia 2026</span>
+                    <span>29 stycznia 2026</span>
+                    <span>•</span>
+                    <span>12 min</span>
                   </div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-slate-700 transition-colors">
-                    Business Class vs Premium Economy – Gdzie kończy się luksus, a zaczyna efektywność?
+                  <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-slate-700">
+                    Bleisure 2.0: Jak nowoczesne firmy łączą pracę z wypoczynkiem?
                   </h3>
                   <p className="text-slate-600 mb-4">
-                    Kompleksowe porównanie dla Travel Managerów: analiza kosztów, komfortu i ROI. Kiedy dopłata do Business Class ma sens biznesowy?
+                    Kompleksowy przewodnik po Bleisure Travel dla HR i Travel Managerów: jak stworzyć Travel Policy, uniknąć problemów podatkowych i wykorzystać bleisure jako narzędzie Employer Branding.
                   </p>
-                  <div className="flex items-center gap-2 text-slate-700 font-semibold group-hover:text-slate-900">
+                  <span className="text-slate-700 font-medium group-hover:gap-2 inline-flex items-center gap-1 transition-all">
                     Czytaj więcej
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </div>
+                  </span>
                 </Link>
 
                 <Link
-                  href="/artykuly/dlaczego-stworzylem-claimwinger"
-                  className="bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all group"
+                  href="/artykuly/private-jet-vs-business-class"
+                  className="bg-white rounded-xl p-8 border border-slate-200 hover:shadow-lg transition-all group"
                 >
-                  <div className="flex items-center gap-2 text-sm text-slate-600 mb-3">
-                    <span className="px-2 py-1 bg-slate-100 rounded text-xs font-medium">
-                      O nas
+                  <div className="flex items-center gap-3 mb-4 text-sm text-slate-600">
+                    <span className="px-3 py-1 bg-slate-900 text-white rounded-full text-xs font-medium">
+                      Logistyka Biznesowa
                     </span>
-                    <span>• 29 stycznia 2026</span>
+                    <span>29 stycznia 2026</span>
+                    <span>•</span>
+                    <span>10 min</span>
                   </div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-slate-700 transition-colors">
-                    Dlaczego stworzyłem ClaimWinger? – kilka słów od założyciela
+                  <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-slate-700">
+                    Private Jet vs. Business Class: Kiedy czarter się opłaca?
                   </h3>
                   <p className="text-slate-600 mb-4">
-                    Historia powstania platformy pomagającej pasażerom odzyskiwać odszkodowania za problemy z lotami.
+                    Analiza kosztów dla Travel Managerów: kiedy wynajem prywatnego odrzutowca jest tańszy niż Business Class? Kalkulacja dla grup 6-10 osób, oszczędność czasu i ROI.
                   </p>
-                  <div className="flex items-center gap-2 text-slate-700 font-semibold group-hover:text-slate-900">
+                  <span className="text-slate-700 font-medium group-hover:gap-2 inline-flex items-center gap-1 transition-all">
                     Czytaj więcej
                     <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </div>
-                </Link>
-              </div>
-
-              <div className="text-center">
-                <Link
-                  href="/artykuly"
-                  className="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition-colors font-semibold"
-                >
-                  Zobacz wszystkie artykuły
-                  <ArrowRight className="w-5 h-5" />
+                  </span>
                 </Link>
               </div>
             </div>
