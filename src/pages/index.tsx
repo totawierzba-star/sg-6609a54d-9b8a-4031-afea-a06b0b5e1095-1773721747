@@ -1,6 +1,6 @@
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
-import { Briefcase, Shield, FileText, Scale, ArrowRight, CheckCircle2 } from "lucide-react";
+import { Briefcase, Shield, FileText, Scale, ArrowRight, CheckCircle2, BookOpen, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -70,17 +70,17 @@ export default function Home() {
                 <span className="text-xl font-bold text-slate-900">bizneslot.info</span>
               </div>
               <nav className="hidden md:flex gap-6">
-                <Link href="/odszkodowanie-lot-sluzbowy" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
-                  Odszkodowanie
+                <Link href="/odszkodowanie-lot-sluzbowy" className="text-slate-700 hover:text-slate-900 transition-colors">
+                  Odszkodowania
                 </Link>
-                <Link href="/anulowany-lot-delegacja" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
-                  Anulowany lot
+                <Link href="/pracodawca-a-odszkodowanie" className="text-slate-700 hover:text-slate-900 transition-colors">
+                  Pracodawca
                 </Link>
-                <Link href="/opozniony-lot-delegacja" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
-                  Opóźniony lot
+                <Link href="/artykuly" className="text-slate-700 hover:text-slate-900 transition-colors">
+                  Artykuły
                 </Link>
-                <Link href="/bilet-firmowy-prawa" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
-                  Bilet firmowy
+                <Link href="/o-autorze" className="text-slate-700 hover:text-slate-900 transition-colors">
+                  O autorze
                 </Link>
               </nav>
             </div>
@@ -277,6 +277,78 @@ export default function Home() {
           </div>
         </section>
 
+        {/* Najnowsze artykuły */}
+        <section className="py-16 bg-slate-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-12">
+                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">
+                  Najnowsze artykuły
+                </h2>
+                <p className="text-lg text-slate-600">
+                  Eksperckie analizy i praktyczne porady dla podróżujących służbowo
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-2 gap-6 mb-8">
+                <Link
+                  href="/artykuly/business-class-vs-premium-economy"
+                  className="bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all group"
+                >
+                  <div className="flex items-center gap-2 text-sm text-slate-600 mb-3">
+                    <span className="px-2 py-1 bg-slate-100 rounded text-xs font-medium">
+                      Travel Management
+                    </span>
+                    <span>• 29 stycznia 2026</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-slate-700 transition-colors">
+                    Business Class vs Premium Economy – Gdzie kończy się luksus, a zaczyna efektywność?
+                  </h3>
+                  <p className="text-slate-600 mb-4">
+                    Kompleksowe porównanie dla Travel Managerów: analiza kosztów, komfortu i ROI. Kiedy dopłata do Business Class ma sens biznesowy?
+                  </p>
+                  <div className="flex items-center gap-2 text-slate-700 font-semibold group-hover:text-slate-900">
+                    Czytaj więcej
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </Link>
+
+                <Link
+                  href="/artykuly/dlaczego-stworzylem-claimwinger"
+                  className="bg-white rounded-xl p-6 border border-slate-200 hover:shadow-lg transition-all group"
+                >
+                  <div className="flex items-center gap-2 text-sm text-slate-600 mb-3">
+                    <span className="px-2 py-1 bg-slate-100 rounded text-xs font-medium">
+                      O nas
+                    </span>
+                    <span>• 29 stycznia 2026</span>
+                  </div>
+                  <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-slate-700 transition-colors">
+                    Dlaczego stworzyłem ClaimWinger? – kilka słów od założyciela
+                  </h3>
+                  <p className="text-slate-600 mb-4">
+                    Historia powstania platformy pomagającej pasażerom odzyskiwać odszkodowania za problemy z lotami.
+                  </p>
+                  <div className="flex items-center gap-2 text-slate-700 font-semibold group-hover:text-slate-900">
+                    Czytaj więcej
+                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+                  </div>
+                </Link>
+              </div>
+
+              <div className="text-center">
+                <Link
+                  href="/artykuly"
+                  className="inline-flex items-center gap-2 px-6 py-3 bg-slate-900 text-white rounded-lg hover:bg-slate-800 transition-colors font-semibold"
+                >
+                  Zobacz wszystkie artykuły
+                  <ArrowRight className="w-5 h-5" />
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Footer */}
         <footer className="bg-slate-50 border-t py-12 px-4">
           <div className="container mx-auto max-w-6xl">
@@ -323,6 +395,11 @@ export default function Home() {
                   <li>
                     <Link href="/pracodawca-a-odszkodowanie" className="text-sm text-slate-600 hover:text-slate-900">
                       Pracodawca a odszkodowanie
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/o-autorze" className="text-sm text-slate-600 hover:text-slate-900">
+                      O autorze
                     </Link>
                   </li>
                 </ul>

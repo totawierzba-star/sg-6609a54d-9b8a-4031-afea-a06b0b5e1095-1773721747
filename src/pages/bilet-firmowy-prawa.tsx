@@ -124,6 +124,12 @@ export default function BiletFirmowyPrawa() {
                 <Link href="/bilet-firmowy-prawa" className="text-sm text-slate-900 font-medium">
                   Bilet firmowy
                 </Link>
+                <Link href="/artykuly" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
+                  Artykuły
+                </Link>
+                <Link href="/o-autorze" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
+                  O autorze
+                </Link>
               </nav>
             </div>
           </div>
@@ -686,6 +692,11 @@ export default function BiletFirmowyPrawa() {
                   <li>
                     <Link href="/pracodawca-a-odszkodowanie" className="text-sm text-slate-600 hover:text-slate-900">
                       Pracodawca a odszkodowanie
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/o-autorze" className="text-sm text-slate-600 hover:text-slate-900">
+                      O autorze
                     </Link>
                   </li>
                 </ul>

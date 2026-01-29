@@ -132,6 +132,12 @@ export default function PracodawcaAOdszkodowanie() {
                 <Link href="/bilet-firmowy-prawa" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
                   Bilet firmowy
                 </Link>
+                <Link href="/artykuly" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
+                  Artykuły
+                </Link>
+                <Link href="/o-autorze" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
+                  O autorze
+                </Link>
               </nav>
             </div>
           </div>
@@ -231,7 +237,7 @@ export default function PracodawcaAOdszkodowanie() {
                 <CheckCircle2 className="h-5 w-5 text-blue-700" />
                 <AlertDescription className="text-blue-900">
                   <strong>Kluczowy wniosek:</strong> Rozporządzenie UE 261/2004 stoi wyżej w hierarchii 
-                  niż umowa o pracę i regulamin firmy. Oznacza to, że postanowienia firmowe sprzeczne 
+                  niż umowa o pracę i regulamin firmy. Postanowienia firmowe sprzeczne 
                   z prawem UE są <strong>nieważne i niewykonalne</strong>.
                 </AlertDescription>
               </Alert>
@@ -471,7 +477,7 @@ export default function PracodawcaAOdszkodowanie() {
                   </CardHeader>
                   <CardContent className="space-y-3">
                     <p className="text-slate-700">
-                      <strong>Sytuacja:</strong> Przed delegacją musisz podpisać oświadczenie, że zobowiązujesz 
+                      <strong>Sytuacja:</strong> Przed delegacją musisz podpisać oświadczenie, że zobowiąujesz 
                       się zwrócić ewentualne odszkodowania firmie.
                     </p>
                     <div className="bg-blue-50 border border-blue-200 rounded-lg p-4">
@@ -806,8 +812,18 @@ export default function PracodawcaAOdszkodowanie() {
                     </Link>
                   </li>
                   <li>
-                    <Link href="/pracodawca-a-odszkodowanie" className="text-sm text-slate-900 font-medium">
+                    <Link href="/pracodawca-a-odszkodowanie" className="hover:text-white transition-colors">
                       Pracodawca a odszkodowanie
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/artykuly" className="hover:text-white transition-colors">
+                      Artykuły
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/o-autorze" className="hover:text-white transition-colors">
+                      O autorze
                     </Link>
                   </li>
                 </ul>

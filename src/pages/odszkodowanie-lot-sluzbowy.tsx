@@ -123,6 +123,12 @@ export default function OdskodowanieLotSluzbowy() {
                 <Link href="/bilet-firmowy-prawa" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
                   Bilet firmowy
                 </Link>
+                <Link href="/artykuly" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
+                  Artykuły
+                </Link>
+                <Link href="/o-autorze" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
+                  O autorze
+                </Link>
               </nav>
             </div>
           </div>
@@ -580,15 +586,15 @@ export default function OdskodowanieLotSluzbowy() {
                   </Card>
                 </Link>
 
-                <Link href="/bilet-firmowy-prawa" className="group">
+                <Link href="/artykuly/dlaczego-stworzylem-claimwinger" className="group">
                   <Card className="border-slate-200 hover:border-slate-400 transition-all h-full">
                     <CardHeader>
                       <CardTitle className="group-hover:text-slate-700 transition-colors flex items-start justify-between">
-                        Bilet firmowy a Twoje prawa
+                        Dlaczego stworzyłem ClaimWinger?
                         <ArrowRight className="h-5 w-5 text-slate-400 group-hover:text-slate-700 group-hover:translate-x-1 transition-all flex-shrink-0" />
                       </CardTitle>
                       <CardDescription>
-                        Czy fakt, że bilet opłaca firma, zmienia Twoje prawa? Wyjaśniamy szczegółowo.
+                        Historia powstania platformy pomagającej pasażerom odzyskiwać odszkodowania.
                       </CardDescription>
                     </CardHeader>
                   </Card>
@@ -614,21 +620,31 @@ export default function OdskodowanieLotSluzbowy() {
               </div>
               
               <div>
-                <h3 className="font-semibold text-slate-900 mb-4">Tematy</h3>
-                <ul className="space-y-2">
+                <h4 className="text-white font-semibold mb-4">Główne tematy</h4>
+                <ul className="space-y-2 text-sm">
                   <li>
-                    <Link href="/odszkodowanie-lot-sluzbowy" className="text-sm text-slate-900 font-medium">
+                    <Link href="/odszkodowanie-lot-sluzbowy" className="hover:text-white transition-colors">
                       Odszkodowanie za lot służbowy
                     </Link>
                   </li>
                   <li>
-                    <Link href="/anulowany-lot-delegacja" className="text-sm text-slate-600 hover:text-slate-900">
-                      Anulowany lot
+                    <Link href="/anulowany-lot-delegacja" className="hover:text-white transition-colors">
+                      Anulowany lot w delegacji
                     </Link>
                   </li>
                   <li>
-                    <Link href="/opozniony-lot-delegacja" className="text-sm text-slate-600 hover:text-slate-900">
-                      Opóźniony lot
+                    <Link href="/pracodawca-a-odszkodowanie" className="hover:text-white transition-colors">
+                      Pracodawca a odszkodowanie
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/artykuly" className="hover:text-white transition-colors">
+                      Artykuły
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/o-autorze" className="hover:text-white transition-colors">
+                      O autorze
                     </Link>
                   </li>
                 </ul>
@@ -645,6 +661,11 @@ export default function OdskodowanieLotSluzbowy() {
                   <li>
                     <Link href="/pracodawca-a-odszkodowanie" className="text-sm text-slate-600 hover:text-slate-900">
                       Pracodawca a odszkodowanie
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/o-autorze" className="text-sm text-slate-600 hover:text-slate-900">
+                      O autorze
                     </Link>
                   </li>
                 </ul>
