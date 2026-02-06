@@ -67,8 +67,8 @@ export default function Home() {
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between">
               <Link href="/" className="text-2xl font-bold flex items-center gap-2">
-                <Briefcase className="h-6 w-6" />
-                BizneLot.info
+                <img src="/bizneslotlogotyp.png" alt="BiznesLot.info" className="h-10 w-auto" />
+                BiznesLot.info
               </Link>
               <nav className="hidden md:flex gap-6">
                 <Link href="/odszkodowanie-lot-sluzbowy" className="hover:text-slate-300 transition-colors">
@@ -344,17 +344,14 @@ export default function Home() {
         </section>
 
         {/* Footer */}
-        <footer className="bg-slate-50 border-t py-12 px-4">
-          <div className="container mx-auto max-w-6xl">
-            <div className="grid md:grid-cols-4 gap-8">
+        <footer className="bg-slate-900 text-white py-12 mt-16">
+          <div className="container mx-auto px-4">
+            <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div>
-                <div className="flex items-center gap-2 mb-4">
-                  <Briefcase className="h-5 w-5 text-slate-700" />
-                  <span className="font-bold text-slate-900">bizneslot.info</span>
-                </div>
-                <p className="text-sm text-slate-600">
-                  Portal edukacyjny o prawach pasażerów w podróżach służbowych.
-                </p>
+                <h3 className="font-bold text-lg mb-4 flex items-center gap-2">
+                  <img src="/bizneslotlogotyp.png" alt="BiznesLot.info" className="h-8 w-auto" />
+                  BiznesLot.info
+                </h3>
               </div>
               
               <div>

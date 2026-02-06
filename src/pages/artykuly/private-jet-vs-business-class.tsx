@@ -92,10 +92,11 @@ export default function PrivateJetVsBusinessClass() {
 
   return (
     <>
-      <SEO
-        title="Private Jet vs. Business Class: Kiedy czarter się opłaca? [2026]"
-        description="Analiza kosztów dla Travel Managerów: kiedy wynajem prywatnego odrzutowca jest tańszy niż Business Class? Kalkulacja dla grup 6-10 osób, oszczędność czasu i ROI."
+      <SEO 
+        title="Private Jet vs Business Class: Co się bardziej opłaca firmie? [Kalkulacja]"
+        description="Analiza kosztów dla CEO/CFO: kiedy wynajem prywatnego odrzutowca jest tańszy niż Business Class? Porównanie czasu, elastyczności i Total Cost of Mission."
         url="https://bizneslot.info/artykuly/private-jet-vs-business-class"
+        image="https://bizneslot.info/og-image.png"
       />
       <script
         type="application/ld+json"
@@ -104,15 +105,12 @@ export default function PrivateJetVsBusinessClass() {
 
       <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-50">
         {/* Header */}
-        <header className="bg-white/80 backdrop-blur-sm border-b border-slate-200 sticky top-0 z-50">
-          <div className="container mx-auto px-4 py-4">
+        <header className="bg-slate-900 text-white py-4 sticky top-0 z-50 shadow-lg">
+          <div className="container mx-auto px-4">
             <div className="flex items-center justify-between">
-              <Link href="/" className="flex items-center gap-2 group">
-                <Briefcase className="w-8 h-8 text-slate-700 group-hover:text-slate-900 transition-colors" />
-                <div>
-                  <h1 className="text-xl font-bold text-slate-900">BizneLot.info</h1>
-                  <p className="text-xs text-slate-600">Prawa pasażerów w podróżach służbowych</p>
-                </div>
+              <Link href="/" className="text-2xl font-bold flex items-center gap-2">
+                <img src="/bizneslotlogotyp.png" alt="BizneLot.info" className="h-8 w-auto" />
+                BizneLot.info
               </Link>
 
               <nav className="hidden md:flex gap-6">
@@ -379,50 +377,91 @@ export default function PrivateJetVsBusinessClass() {
                   </div>
                 </div>
 
-                <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6">
-                  FAQ – Pytania Travel Managerów
-                </h2>
-
-                <div className="space-y-4 mb-12">
-                  <Card className="border-slate-200">
-                    <CardHeader>
-                      <CardTitle className="text-lg">
-                        Ile kosztuje wynajem prywatnego odrzutowca (Private Jet)?
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-slate-700">
-                        Koszt czarteru lekkiego odrzutowca (Light Jet, 6-7 miejsc) to około 2500-3500 EUR za godzinę lotu. Dla lotu Warszawa-Londyn (2h) koszt całkowity to ok. 12 000 - 15 000 EUR w dwie strony. Przy pełnym obłożeniu (6 osób), koszt na osobę wynosi ok. 2000-2500 EUR, co jest porównywalne z Business Class last-minute.
+                {/* FAQ */}
+                <section className="mb-12 bg-slate-50 p-8 rounded-lg">
+                  <h2 className="text-3xl font-bold text-slate-900 mb-6">FAQ – Najczęściej zadawane pytania o Private Jets</h2>
+                  
+                  <div className="space-y-6">
+                    <div>
+                      <h3 className="text-xl font-bold text-slate-900 mb-2">
+                        1. Ile kosztuje wynajem prywatnego odrzutowca (np. z Warszawy)?
+                      </h3>
+                      <p className="text-slate-700 leading-relaxed">
+                        Cena zależy od typu samolotu i trasy. <strong>Przykładowe ceny (one-way):</strong><br/>
+                        • Light Jet (4-6 osób, np. Cessna Mustang): <strong>5 000 - 8 000 EUR</strong> (np. WAW-Berlin, WAW-Wiedeń)<br/>
+                        • Midsize Jet (7-8 osób, np. Cessna Citation): <strong>10 000 - 18 000 EUR</strong> (np. WAW-Londyn, WAW-Paryż)<br/>
+                        • Heavy Jet (10-14 osób, np. Bombardier Challenger): <strong>25 000 - 40 000 EUR</strong> (np. WAW-Dubaj)<br/><br/>
+                        <strong>Empty Legs:</strong> Możesz znaleźć loty nawet 50-70% taniej, jeśli dopasujesz się do trasy powrotnej samolotu "na pusto".
                       </p>
-                    </CardContent>
-                  </Card>
+                    </div>
 
-                  <Card className="border-slate-200">
-                    <CardHeader>
-                      <CardTitle className="text-lg">
-                        Kiedy Private Jet jest tańszy od Business Class?
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-slate-700">
-                        Private Jet staje się konkurencyjny cenowo, gdy podróżuje grupa 6-10 managerów, szczególnie na trasach ze słabym połączeniem rejsowym (wymagającym przesiadek). Oszczędność czasu (brak check-in, lądowanie bliżej celu) i brak konieczności noclegów często przeważa szalę na korzyść czarteru w całkowitym rachunku (TCO).
+                    <div>
+                      <h3 className="text-xl font-bold text-slate-900 mb-2">
+                        2. Ile czasu naprawdę oszczędza się latając prywatnie?
+                      </h3>
+                      <p className="text-slate-700 leading-relaxed">
+                        <strong>Ogromnie dużo – średnio 3-5h na podróż (one-way).</strong><br/>
+                        <strong>Lotnisko:</strong> Przyjeżdżasz 15 min przed wylotem (vs 2h na Okęciu).<br/>
+                        <strong>Security:</strong> Prywatny terminal (GAT), brak kolejek, kontrola trwa 2 minuty.<br/>
+                        <strong>Lot:</strong> Bezpośrednio do celu (nawet małe lotniska bliżej miasta/fabryki), brak przesiadek.<br/>
+                        <strong>Po przylocie:</strong> Samochód czeka przy samolocie, brak czekania na bagaż.<br/>
+                        Dla 4-osobowego zarządu to oszczędność łącznie 12-20 roboczogodzin w jedną stronę.
                       </p>
-                    </CardContent>
-                  </Card>
+                    </div>
 
-                  <Card className="border-slate-200">
-                    <CardHeader>
-                      <CardTitle className="text-lg">
-                        Ile czasu oszczędza się latając prywatnym samolotem?
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-slate-700">
-                        Średnia oszczędność to 3-5 godzin na jeden odcinek podróży. Odprawa zajmuje 15 minut (vs 2h na lotnisku), start jest dostosowany do spotkania, a lądowanie możliwe na mniejszych lotniskach bliżej celu (np. Londyn City lub Biggin Hill zamiast Heathrow). Dla grupy 8 osób to łącznie 40 godzin roboczych oszczędności.
+                    <div>
+                      <h3 className="text-xl font-bold text-slate-900 mb-2">
+                        3. Czy Private Jet jest bezpieczniejszy niż linie rejsowe?
+                      </h3>
+                      <p className="text-slate-700 leading-relaxed">
+                        <strong>Statystycznie porównywalny, ale operacyjnie bardziej elastyczny.</strong> Operatorzy czarterowi 
+                        w Europie podlegają tym samym rygorystycznym regulacjom EASA co Lufthansa czy LOT. Samoloty są nowsze, 
+                        serwisowane częściej. <strong>Bezpieczeństwo zdrowotne:</strong> Mniejszy kontakt z tłumem (prywatny terminal, 
+                        tylko Twoja grupa na pokładzie) – kluczowe w post-pandemic world. <strong>Bezpieczeństwo biznesowe:</strong> 
+                        Pełna dyskrecja, nikt nie podsłucha rozmowy o fuzji czy strategii.
                       </p>
-                    </CardContent>
-                  </Card>
-                </div>
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-bold text-slate-900 mb-2">
+                        4. Co to jest "Empty Leg" i jak to upolować?
+                      </h3>
+                      <p className="text-slate-700 leading-relaxed">
+                        <strong>Empty Leg</strong> to lot "na pusto", gdy samolot wraca do bazy po dowiezieniu pasażera lub leci 
+                        odebrać klienta w innym mieście. Operatorzy sprzedają te loty za ułamek ceny (nawet -70%), żeby pokryć 
+                        koszty paliwa. <strong>Wada:</strong> Data i trasa są sztywne (zero elastyczności), a jeśli pierwotny 
+                        lot klienta zostanie odwołany, Twój Empty Leg też znika. Dobre dla flexible travelers, ryzykowne dla 
+                        sztywnych spotkań biznesowych.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-bold text-slate-900 mb-2">
+                        5. Czy na pokładzie prywatnego samolotu jest Wi-Fi?
+                      </h3>
+                      <p className="text-slate-700 leading-relaxed">
+                        <strong>Zależy od samolotu.</strong><br/>
+                        • Light Jets (krótkie trasy): Często brak Wi-Fi lub wolne.<br/>
+                        • Midsize/Heavy Jets: Standardowo szybkie Wi-Fi (często satelitarne Ka-band), umożliwiające wideokonferencje.<br/>
+                        <strong>Zawsze pytaj brokera przed rezerwacją:</strong> "Czy ten konkretny samolot ma Wi-Fi i czy jest w cenie?". 
+                        Czasem doliczają opłatę za zużycie danych.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-bold text-slate-900 mb-2">
+                        6. Czy można odliczyć VAT od wynajmu samolotu?
+                      </h3>
+                      <p className="text-slate-700 leading-relaxed">
+                        <strong>TAK – dla firm to koszt uzyskania przychodu (100%).</strong><br/>
+                        • Loty krajowe: 8% VAT<br/>
+                        • Loty międzynarodowe (UE i poza UE): <strong>0% VAT</strong> (stawka 0% dla transportu lotniczego).<br/>
+                        To duża przewaga nad Business Class (gdzie vat jest skomplikowany/nieodliczalny przy trasach zagranicznych 
+                        w niektórych interpretacjach, choć generalnie 0%). Faktura za czarter jest prosta: "Usługa transportu lotniczego".
+                      </p>
+                    </div>
+                  </div>
+                </section>
 
                 {/* Summary */}
                 <div className="bg-gradient-to-r from-slate-100 to-slate-50 rounded-xl p-8 mt-12 border border-slate-200">
@@ -461,11 +500,14 @@ export default function PrivateJetVsBusinessClass() {
         </article>
 
         {/* Footer */}
-        <footer className="bg-slate-900 text-slate-300 py-12">
+        <footer className="bg-slate-900 text-white py-12 mt-16">
           <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div>
-                <h3 className="text-white font-bold mb-4">BizneLot.info</h3>
+                <h3 className="font-bold text-lg mb-4 flex items-center gap-2">
+                  <img src="/bizneslotlogotyp.png" alt="BizneLot.info" className="h-6 w-auto" />
+                  BizneLot.info
+                </h3>
                 <p className="text-sm">
                   Portal ekspercki o prawach pasażerów w podróżach służbowych i delegacjach.
                 </p>
@@ -529,6 +571,115 @@ export default function PrivateJetVsBusinessClass() {
           </div>
         </footer>
       </div>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Private Jet vs Business Class: Co się bardziej opłaca firmie?",
+          "description": "Analiza kosztów dla CEO/CFO: kiedy wynajem prywatnego odrzutowca jest tańszy niż Business Class? Porównanie czasu, elastyczności i Total Cost of Mission.",
+          "image": "https://bizneslot.info/og-image.png",
+          "author": {
+            "@type": "Person",
+            "name": "Piotr Wierzba",
+            "url": "https://www.linkedin.com/in/piotr-wierzba/"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "BizneLot.info",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://bizneslot.info/og-image.png"
+            }
+          },
+          "datePublished": "2026-01-29",
+          "dateModified": "2026-01-29"
+        })}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Ile kosztuje wynajem prywatnego odrzutowca (np. z Warszawy)?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cena zależy od typu samolotu. Light Jet (4-6 osób): 5 000 - 8 000 EUR (np. WAW-Berlin). Midsize Jet (7-8 osób): 10 000 - 18 000 EUR (np. WAW-Londyn). Heavy Jet (10-14 osób): 25 000 - 40 000 EUR (np. WAW-Dubaj). Empty Legs mogą być 50-70% tańsze."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Ile czasu naprawdę oszczędza się latając prywatnie?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ogromnie dużo – średnio 3-5h na podróż (one-way). Lotnisko: przyjazd 15 min przed wylotem. Security: prywatny terminal (GAT), brak kolejek (2 min). Lot: bezpośrednio do celu (bez przesiadek). Dla 4-osobowego zarządu to oszczędność łącznie 12-20 roboczogodzin w jedną stronę."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Czy Private Jet jest bezpieczniejszy niż linie rejsowe?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Statystycznie porównywalny (te same regulacje EASA), ale operacyjnie bezpieczniejszy zdrowotnie (brak tłumów, prywatny terminal) i biznesowo (pełna dyskrecja rozmów)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Co to jest Empty Leg i jak to upolować?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Empty Leg to lot 'na pusto', gdy samolot wraca do bazy. Operatorzy sprzedają je za ułamek ceny (-70%). Wada: sztywna data i trasa, ryzyko anulowania jeśli główny lot klienta zostanie odwołany."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Czy na pokładzie prywatnego samolotu jest Wi-Fi?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Zależy od samolotu. Light Jets: często brak. Midsize/Heavy Jets: standardowo szybkie Wi-Fi (umożliwia wideokonferencje). Zawsze pytaj brokera przed rezerwacją."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Czy można odliczyć VAT od wynajmu samolotu?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "TAK – dla firm to koszt uzyskania przychodu (100%). Loty międzynarodowe (UE i poza UE) mają stawkę 0% VAT. Loty krajowe 8% VAT."
+              }
+            }
+          ]
+        })}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bizneslot.info"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Artykuły",
+              "item": "https://bizneslot.info/artykuly"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Private Jet vs Business Class",
+              "item": "https://bizneslot.info/artykuly/private-jet-vs-business-class"
+            }
+          ]
+        })}
+      </script>
     </>
   );
 }

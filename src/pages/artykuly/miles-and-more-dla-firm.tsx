@@ -8,8 +8,8 @@ export default function MilesAndMoreDlaFirm() {
   return (
     <>
       <SEO 
-        title="Miles & More dla firm: Kompletny przewodnik po największym programie w Polsce [2026]"
-        description="Wszystko o Miles & More dla firm: jak działa, ile mil zbierasz, statusy (Senator, HON Circle), corporate deals i integracja z LOT. Przewodnik dla Travel Managerów z konkretnymi przykładami i ROI."
+        title="Miles & More dla firm 2026: Kompletny przewodnik po programie | Zasady, Statusy, ROI"
+        description="Jak działa Miles & More dla firm? Zasady zbierania mil, status Senator/HON Circle, corporate deals i integracja z LOT. Przewodnik dla Travel Managerów z kalkulacją ROI."
         url="https://bizneslot.info/artykuly/miles-and-more-dla-firm"
         image="https://bizneslot.info/og-image.png"
       />
@@ -19,7 +19,7 @@ export default function MilesAndMoreDlaFirm() {
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between">
               <Link href="/" className="text-2xl font-bold flex items-center gap-2">
-                <Briefcase className="h-6 w-6" />
+                <img src="/bizneslotlogotyp.png" alt="BizneLot.info" className="h-8 w-auto" />
                 BizneLot.info
               </Link>
               <nav className="hidden md:flex gap-6">
@@ -69,10 +69,7 @@ export default function MilesAndMoreDlaFirm() {
               Miles & More dla firm: Kompletny przewodnik po największym programie lojalnościowym w Polsce [2026]
             </h1>
             <p className="text-xl text-slate-600 leading-relaxed">
-              Wszystko, co musisz wiedzieć o Miles & More dla podróży służbowych: jak zbierać mile na lotach firmowych, 
-              jakie statusy można osiągnąć (Frequent Traveller, Senator, HON Circle), jak negocjować corporate deals 
-              z Lufthansa Group i jaki realny ROI daje program dla firm. Przewodnik z konkretnymi przykładami, 
-              tabelami mil i gotowymi szablonami.
+              Wszystko, co musisz wiedzieć o Miles & More dla podróży służbowych: jak zbierać mile, status Senator/HON Circle, corporate deals i integracja z LOT. Przewodnik z konkretnymi przykładami, tabelami mil i gotowymi szablonami.
             </p>
           </div>
 
@@ -574,7 +571,7 @@ export default function MilesAndMoreDlaFirm() {
                   <p className="text-sm text-slate-700 mb-3">
                     LOT oferuje alternatywny program <strong>Miles+Bonus</strong>, który ma niższe progi statusowe 
                     (Gold już przy 50k mil vs 100k w Miles & More Senator). Pracownik może wybrać, w którym programie 
-                    chce zbierać mile.
+                    chce zbierać mil.
                   </p>
                   <div className="bg-blue-50 p-3 rounded">
                     <p className="text-xs text-slate-700 mb-0">
@@ -791,7 +788,7 @@ export default function MilesAndMoreDlaFirm() {
                 <li className="flex items-start gap-2">
                   <CheckCircle2 className="h-4 w-4 text-green-600 flex-shrink-0 mt-1" />
                   <span><strong>Produktywność:</strong> Lounge = 2-3h produktywnej pracy przed lotem długodystansowym 
-                  (vs marnowanie czasu przy gate). SAP Concur: +38% produktywność w dniu po locie dla osób ze statusem Gold.</span>
+                  (vs marnowanie czasu przy gate). SAP Concur: +38% produktywności w dniu po locie dla osób ze statusem Gold.</span>
                 </li>
               </ul>
             </div>
@@ -804,105 +801,86 @@ export default function MilesAndMoreDlaFirm() {
             <div className="space-y-6">
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">
-                  1. Czy mile zbierane na lotach firmowych należą do pracownika czy do firmy?
+                  1. Czy można przenieść mile z konta firmowego na prywatne?
                 </h3>
                 <p className="text-slate-700 leading-relaxed">
-                  <strong>Do pracownika.</strong> Miles & More przypisuje mile do konta osobistego pasażera, nie do firmy. 
-                  Pracownik może je wykorzystać prywatnie (bilety nagroda, upgrade, produkty). Firma nie może ich „odebrać" 
-                  ani wymagać rozliczenia. To employer benefit analogiczny do prywatnego użycia telefonu służbowego. 
-                  Potwierdza to wyrok NSA z 2018 oraz praktyka rynkowa – żadna duża firma w Polsce nie wymaga zwrotu mil.
+                  <strong>TAK, ale zależy to od konfiguracji konta (PartnerPlusBenefit).</strong> W standardowym programie 
+                  indywidualnym mile trafiają bezpośrednio na konto pasażera. W programie korporacyjnym PartnerPlusBenefit 
+                  (dla MŚP) firma zbiera punkty BenefitPoints, które może wymieniać na nagrody, a pracownik równolegle 
+                  zbiera mile statusowe i premiowe na prywatne konto Miles & More. <strong>Podwójne korzyści:</strong> 
+                  Firma zyskuje punkty na darmowe loty, pracownik buduje status.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">
-                  2. Czy mogę zbierać mile Miles & More na lotach LOT?
+                  2. Ile mil otrzymuje się za lot Business Class?
                 </h3>
                 <p className="text-slate-700 leading-relaxed">
-                  <strong>TAK.</strong> LOT Polish Airlines jest partnerem Star Alliance i pełnym partnerem Miles & More. 
-                  Możesz zbierać mile M&M na wszystkich lotach LOT (krajowych i międzynarodowych). Przy rezerwacji biletu 
-                  podaj numer konta Miles & More zamiast Miles+Bonus (LOT pozwala wybierać program). <br/><br/>
-                  <strong>Uwaga:</strong> Na jednym locie możesz zbierać mile tylko w JEDNYM programie (albo M&M albo Miles+Bonus, nie w obu).
+                  Liczba mil zależy od klasy rezerwacyjnej i ceny biletu (system revenue-based wprowadzony w 2018).<br/>
+                  <strong>System oparty na cenie:</strong> 4 do 6 mil za każde wydane Euro (zależy od statusu).<br/>
+                  <strong>Przykład:</strong> Bilet Business Class za 1000 EUR = 4000-6000 mil premiowych.<br/>
+                  <strong>Mile statusowe:</strong> Nadal zależą od dystansu i klasy. Lot WAW-FRA (Business) = stała stawka 
+                  lub mnożnik. Loty transatlantyckie w Business dają zwykle 200% mil dystansowych.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">
-                  3. Ile lotów rocznie potrzeba, żeby osiągnąć Senator (Gold status)?
+                  3. Czym różni się status Frequent Traveller od Senatora?
                 </h3>
                 <p className="text-slate-700 leading-relaxed">
-                  <strong>Depends on routes:</strong><br/>
-                  • <strong>Loty krótkie (WAW-FRA round trip):</strong> ~40-50 lotów rocznie w Economy<br/>
-                  • <strong>Loty średnie (WAW-ZRH, WAW-VIE):</strong> ~30-40 lotów rocznie w Economy<br/>
-                  • <strong>Loty transatlantyckie Business Class (WAW-JFK):</strong> ~8-10 lotów rocznie<br/>
-                  • <strong>Mix (30 lotów EU + 4 USA BC):</strong> Wystarczy ~34 loty rocznie<br/><br/>
-                  <strong>Próg:</strong> 100 000 mil statusowych w ciągu roku kalendarzowego (nie odnawia się – musisz zbierać każdy rok).
+                  <strong>Frequent Traveller (Silver):</strong> Wymaga 35k mil. Daje wstęp do lounge (tylko Business Lounge LH Group), 
+                  więcej bagażu i check-in przy stanowisku Business.<br/><br/>
+                  <strong>Senator (Gold):</strong> Wymaga 100k mil. Daje wstęp do Senator Lounge (lepszy standard) oraz 
+                  <strong>wszystkich lounge Star Alliance Gold na świecie</strong>, priorytet bagażu, 2 vouchery na upgrade, 
+                  gwarancję rezerwacji do 48h przed lotem i dodatkowe 50% mil premiowych (Executive Bonus).
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">
-                  4. Co się stanie z moimi milami, jeśli zmienię pracę?
+                  4. Czy mile w Miles & More wygasają?
                 </h3>
                 <p className="text-slate-700 leading-relaxed">
-                  <strong>Mile pozostają Twoje.</strong> Miles & More to konto osobiste przypisane do Twojego nazwiska i daty urodzenia, 
-                  nie do firmy. Jeśli zmienisz pracę, Twoje mile i status pozostają bez zmian. Możesz je wykorzystać prywatnie lub 
-                  kontynuować zbieranie w nowej firmie (jeśli nowa firma też używa Lufthansa Group/LOT).<br/><br/>
-                  <strong>Uwaga:</strong> Jeśli nowa firma preferuje inny alians (np. OneWorld = British Airways), rozważ status match 
-                  do nowego programu (instant Gold na trial period).
+                  <strong>TAK – po 36 miesiącach</strong> od daty lotu, na koniec kwartału. <strong>Wyjątek:</strong> 
+                  Mile NIE wygasają, jeśli posiadasz status Frequent Traveller, Senator lub HON Circle, LUB posiadasz 
+                  kartę kredytową Miles & More i wykonujesz nią min. jedną transakcję miesięcznie. Dla firm regularnie 
+                  latających utrzymanie statusu chroni mile przed przepadnięciem.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">
-                  5. Czy status Senator działa na lotach innych linii niż Lufthansa?
+                  5. Jak działa Company Account w Miles & More?
                 </h3>
                 <p className="text-slate-700 leading-relaxed">
-                  <strong>TAK – na wszystkich liniach Star Alliance.</strong> Status Senator Miles & More daje Ci Gold status 
-                  w Star Alliance, co oznacza benefity (lounge, bagaż, boarding priority) na lotach:<br/>
-                  LOT, United, Air Canada, Swiss, Austrian, Brussels Airlines, Turkish Airlines, Singapore Airlines, Thai Airways, 
-                  ANA (Japan), Lufthansa, Scandinavian (SAS), TAP Portugal, Aegean, Ethiopian Airlines, Air India i 20+ innych.<br/><br/>
-                  <strong>Ale:</strong> Status NIE działa poza Star Alliance (nie dostajesz benefitów na British Airways, Air France, Emirates).
+                  Company Account to rozwiązanie dla dużych korporacji, pozwalające na centralne zbieranie mil z podróży 
+                  wszystkich pracowników. Wymaga to jednak indywidualnej umowy z linią (Lufthansa/LOT) i zazwyczaj 
+                  wiąże się z rezygnacją z części zniżek upfront na rzecz mil. Dla MŚP lepszym rozwiązaniem jest 
+                  program <strong>PartnerPlusBenefit</strong>, który działa równolegle do indywidualnych kont M&M pracowników.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">
-                  6. Czy firma może negocjować lepsze warunki Miles & More?
+                  6. Czy bilety nagrody (za mile) można zwrócić?
                 </h3>
                 <p className="text-slate-700 leading-relaxed">
-                  <strong>TAK – jeśli wydajecie 150 000+ PLN rocznie</strong> na loty Lufthansa Group. Możesz negocjować:<br/>
-                  • Status match dla top travelers (CEO, CFO = instant Senator)<br/>
-                  • Bonus miles (+10-25% na wszystkie bilety firmowe)<br/>
-                  • Lounge vouchers (50-100 one-day pass rocznie)<br/>
-                  • Zniżki na bilety (5-15% rabatu na flex tickets)<br/>
-                  • Dedicated account manager<br/><br/>
-                  Kontakt: <strong>corporatesales.poland@dlh.de</strong> (Lufthansa) lub <strong>corporate@lot.pl</strong> (LOT). 
-                  Przygotuj dane: annual spend, top routes, liczba frequent flyers w firmie.
+                  <strong>TAK, są bardzo elastyczne.</strong> Za opłatą 50 EUR można zmienić datę lub anulować bilet, 
+                  odzyskując mile i podatki. To ogromna zaleta dla firm w porównaniu do tanich biletów Economy Light, 
+                  które są bezzwrotne. Bilety za mile działają jak bilety w pełnej taryfie Flex.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">
-                  7. Czy mogę przenieść mile Miles & More na inną osobę?
+                  7. Czy status Senator daje wstęp do lounge na lotach Economy?
                 </h3>
                 <p className="text-slate-700 leading-relaxed">
-                  <strong>TAK, ale za opłatą.</strong> Miles & More pozwala transferować mile między kontami za opłatą <strong>5 EUR za 1000 mil</strong> 
-                  (minimum 2000 mil, maximum 80 000 mil rocznie). Możesz przenieść mile np. swojej rodzinie, żeby wspólnie wymienić 
-                  bilety nagroda.<br/><br/>
-                  <strong>Uwaga:</strong> Mile statusowe NIE mogą być transferowane (są przypisane do Twojego konta i liczą się tylko do Twojego statusu).
-                </p>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold text-slate-900 mb-2">
-                  8. Co zrobić, jeśli mile nie zarejestrowały się po locie?
-                </h3>
-                <p className="text-slate-700 leading-relaxed">
-                  <strong>Claim missing miles w ciągu 6 miesięcy.</strong> Wejdź na konto Miles & More → „Service" → „Claim missing miles" 
-                  → Wypełnij formularz (numer lotu, data, trasa, numer biletu). Potrzebujesz boarding pass jako dowód. 
-                  Miles & More weryfikuje request w 4-6 tygodni i dodaje mile do konta.<br/><br/>
-                  <strong>Tip:</strong> Zrób zdjęcie boarding pass po każdym locie (backup na wypadek zgubienia).
+                  <strong>TAK.</strong> To jedna z największych zalet statusu. Posiadając kartę Senator (Gold), możesz 
+                  wejść do saloniku (Senator Lounge lub Star Alliance Gold) nawet mając najtańszy bilet Economy Light. 
+                  Możesz również zabrać ze sobą jednego gościa, który leci tym samym lotem.
                 </p>
               </div>
             </div>
@@ -1026,7 +1004,7 @@ export default function MilesAndMoreDlaFirm() {
             <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div>
                 <h3 className="font-bold text-lg mb-4 flex items-center gap-2">
-                  <Briefcase className="h-5 w-5" />
+                  <img src="/bizneslotlogotyp.png" alt="BizneLot.info" className="h-6 w-auto" />
                   BizneLot.info
                 </h3>
                 <p className="text-slate-400 text-sm">
@@ -1095,8 +1073,8 @@ export default function MilesAndMoreDlaFirm() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Article",
-          "headline": "Miles & More dla firm: Kompletny przewodnik po największym programie w Polsce [2026]",
-          "description": "Wszystko o Miles & More dla firm: jak działa, ile mil zbierasz, statusy (Senator, HON Circle), corporate deals i integracja z LOT. Przewodnik dla Travel Managerów z konkretnymi przykładami i ROI.",
+          "headline": "Miles & More dla firm 2026: Kompletny przewodnik po programie",
+          "description": "Jak działa Miles & More dla firm? Zasady zbierania mil, status Senator/HON Circle, corporate deals i integracja z LOT. Przewodnik dla Travel Managerów.",
           "image": "https://bizneslot.info/og-image.png",
           "author": {
             "@type": "Person",
@@ -1123,51 +1101,78 @@ export default function MilesAndMoreDlaFirm() {
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "Czy mile zbierane na lotach firmowych należą do pracownika czy do firmy?",
+              "name": "Czy można przenieść mile z konta firmowego na prywatne?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Do pracownika. Miles & More przypisuje mile do konta osobistego pasażera, nie do firmy. Pracownik może je wykorzystać prywatnie. To employer benefit analogiczny do prywatnego użycia telefonu służbowego (wyrok NSA 2018)."
+                "text": "TAK, ale zależy to od konfiguracji konta (PartnerPlusBenefit). W standardowym programie indywidualnym mile trafiają bezpośrednio na konto pasażera. W programie korporacyjnym PartnerPlusBenefit (dla MŚP) firma zbiera punkty BenefitPoints, które może wymieniać na nagrody, a pracownik równolegle zbiera mile statusowe i premiowe na prywatne konto Miles & More."
               }
             },
             {
               "@type": "Question",
-              "name": "Czy mogę zbierać mile Miles & More na lotach LOT?",
+              "name": "Ile mil otrzymuje się za lot Business Class?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "TAK. LOT Polish Airlines jest partnerem Star Alliance i pełnym partnerem Miles & More. Możesz zbierać mile M&M na wszystkich lotach LOT. Na jednym locie możesz zbierać mile tylko w JEDNYM programie (M&M lub Miles+Bonus)."
+                "text": "Liczba mil zależy od klasy rezerwacyjnej i ceny biletu (system revenue-based). System oparty na cenie: 4 do 6 mil za każde wydane Euro. Przykład: Bilet Business Class za 1000 EUR = 4000-6000 mil premiowych. Mile statusowe nadal zależą od dystansu i klasy (np. 200% mil za loty transatlantyckie w Business)."
               }
             },
             {
               "@type": "Question",
-              "name": "Ile lotów rocznie potrzeba, żeby osiągnąć Senator (Gold status)?",
+              "name": "Czym różni się status Frequent Traveller od Senatora?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Próg: 100 000 mil statusowych rocznie. Równowartość: ~40-50 lotów Economy WAW-FRA round trip, LUB 8-10 lotów Business Class transatlantyckich, LUB mix (30 lotów EU + 4 USA BC)."
+                "text": "Frequent Traveller (Silver): Wymaga 35k mil. Daje wstęp do lounge (tylko Business Lounge LH Group), więcej bagażu i check-in przy stanowisku Business.<br/><br/>Senator (Gold): Wymaga 100k mil. Daje wstęp do Senator Lounge (lepszy standard) oraz <strong>wszystkich lounge Star Alliance Gold na świecie</strong>, priorytet bagażu, 2 vouchery na upgrade, gwarancję rezerwacji do 48h przed lotem i dodatkowe 50% mil premiowych (Executive Bonus)."
               }
             },
             {
               "@type": "Question",
-              "name": "Co się stanie z moimi milami, jeśli zmienię pracę?",
+              "name": "Czy mile w Miles & More wygasają?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Mile pozostają Twoje. Miles & More to konto osobiste przypisane do Twojego nazwiska. Jeśli zmienisz pracę, mile i status pozostają bez zmian. Możesz je wykorzystać prywatnie lub kontynuować zbieranie w nowej firmie."
+                "text": "TAK – po 36 miesiącach od daty lotu. Wyjątek: Mile NIE wygasają, jeśli posiadasz status Frequent Traveller, Senator lub HON Circle, LUB posiadasz kartę kredytową Miles & More z min. jedną transakcją miesięcznie."
               }
             },
             {
               "@type": "Question",
-              "name": "Czy status Senator działa na lotach innych linii niż Lufthansa?",
+              "name": "Czy bilety nagrody (za mile) można zwrócić?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "TAK – na wszystkich liniach Star Alliance (LOT, United, Air Canada, Swiss, Austrian, Turkish, Singapore, Thai, ANA i 20+ innych). Status NIE działa poza Star Alliance."
+                "text": "TAK, są bardzo elastyczne. Za opłatą 50 EUR można zmienić datę lub anulować bilet, odzyskując mile i podatki. Działają jak bilety w pełnej taryfie Flex."
               }
             },
             {
               "@type": "Question",
-              "name": "Czy firma może negocjować lepsze warunki Miles & More?",
+              "name": "Czy status Senator daje wstęp do lounge na lotach Economy?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "TAK – jeśli wydajecie 150k+ PLN rocznie. Możesz negocjować: status match dla top travelers, bonus miles (+10-25%), lounge vouchers, zniżki na bilety (5-15%), dedicated account manager. Kontakt: corporatesales.poland@dlh.de"
+                "text": "TAK. Posiadając kartę Senator (Gold), możesz wejść do saloniku (Senator Lounge lub Star Alliance Gold) nawet mając najtańszy bilet Economy Light. Możesz również zabrać ze sobą jednego gościa."
               }
+            }
+          ]
+        })}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bizneslot.info"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Artykuły",
+              "item": "https://bizneslot.info/artykuly"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Miles & More dla firm",
+              "item": "https://bizneslot.info/artykuly/miles-and-more-dla-firm"
             }
           ]
         })}

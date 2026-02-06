@@ -1,7 +1,7 @@
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
 import { MobileNav } from "@/components/MobileNav";
-import { Briefcase, Heart, Users, TrendingUp, Calendar, Clock, ArrowRight, CheckCircle2, ArrowLeft, Globe, Linkedin } from "lucide-react";
+import { Heart, Users, TrendingUp, Calendar, Clock, ArrowRight, CheckCircle2, ArrowLeft, Globe, Linkedin } from "lucide-react";
 
 export default function DlaczegoStworzylemClaimWinger() {
   const structuredData = {
@@ -57,10 +57,11 @@ export default function DlaczegoStworzylemClaimWinger() {
 
   return (
     <>
-      <SEO
-        title="Dlaczego stworzyłem ClaimWinger? – Piotr Wierzba | BizneLot.info"
-        description="Historia założyciela ClaimWinger - jak osobiste doświadczenie z odwołanym lotem zainspirowało do stworzenia platformy pomagającej pasażerom odzyskiwać odszkodowania."
+      <SEO 
+        title="Dlaczego stworzyłem ClaimWinger? | Historia startupu LegalTech"
+        description="Historia powstania ClaimWinger – automatyzacji odszkodowań lotniczych. Jak AI pomaga pasażerom walczyć z liniami lotniczymi? Kulisy budowania startupu."
         url="https://bizneslot.info/artykuly/dlaczego-stworzylem-claimwinger"
+        image="https://bizneslot.info/og-image.png"
       />
       <script
         type="application/ld+json"
@@ -69,15 +70,12 @@ export default function DlaczegoStworzylemClaimWinger() {
 
       <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-50">
         {/* Header */}
-        <header className="bg-white/80 backdrop-blur-sm border-b border-slate-200 sticky top-0 z-50">
-          <div className="container mx-auto px-4 py-4">
+        <header className="bg-slate-900 text-white py-4 sticky top-0 z-50 shadow-lg">
+          <div className="container mx-auto px-4">
             <div className="flex items-center justify-between">
-              <Link href="/" className="flex items-center gap-2 group">
-                <Briefcase className="w-8 h-8 text-slate-700 group-hover:text-slate-900 transition-colors" />
-                <div>
-                  <h1 className="text-xl font-bold text-slate-900">BizneLot.info</h1>
-                  <p className="text-xs text-slate-600">Prawa pasażerów w podróżach służbowych</p>
-                </div>
+              <Link href="/" className="text-2xl font-bold flex items-center gap-2">
+                <img src="/bizneslotlogotyp.png" alt="BizneLot.info" className="h-8 w-auto" />
+                BizneLot.info
               </Link>
 
               <nav className="hidden md:flex gap-6">
@@ -367,15 +365,57 @@ export default function DlaczegoStworzylemClaimWinger() {
           </div>
         </section>
 
+        {/* FAQ */}
+        <section className="mb-12 bg-slate-50 p-8 rounded-lg">
+          <h2 className="text-3xl font-bold text-slate-900 mb-6">FAQ – O ClaimWinger i misji</h2>
+          
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">
+                1. Czym dokładnie jest ClaimWinger?
+              </h3>
+              <p className="text-slate-700 leading-relaxed">
+                ClaimWinger to firma typu LegalTech (technologia w prawie), która pomaga pasażerom uzyskać odszkodowanie 
+                za opóźniony lub odwołany lot. Działamy w modelu "No Win, No Fee" – pobieramy prowizję tylko wtedy, 
+                gdy skutecznie wywalczymy pieniądze od linii lotniczej. Używamy AI do analizy wniosków i pogody, 
+                co zwiększa szansę na sukces do 98%.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">
+                2. Dlaczego warto skorzystać z pośrednika, a nie pisać samemu do linii?
+              </h3>
+              <p className="text-slate-700 leading-relaxed">
+                Linie lotnicze odrzucają około 60-70% samodzielnych wniosków pasażerów, podając fałszywe powody 
+                (np. "zła pogoda", gdy inne samoloty latały). ClaimWinger ma dostęp do baz danych pogodowych i lotniczych, 
+                dzięki czemu możemy udowodnić winę przewoźnika. Piszemy też pisma przedsądowe i pozywamy linie w imieniu klienta. 
+                Oszczędzasz czas i nerwy, a ryzyko finansowe jest po naszej stronie.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-xl font-bold text-slate-900 mb-2">
+                3. Czy ClaimWinger obsługuje też loty służbowe?
+              </h3>
+              <p className="text-slate-700 leading-relaxed">
+                <strong>TAK, to nasza specjalizacja.</strong> Wiele firm nie wie, że odszkodowanie za lot służbowy 
+                należy się pasażerowi (pracownikowi), a nie firmie płacącej za bilet. Pomagamy pracownikom uzyskać 
+                należne im pieniądze (250-600 EUR), zachowując pełną dyskrecję i zgodność z RODO.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* Footer */}
-        <footer className="bg-slate-900 text-slate-300 py-12">
+        <footer className="bg-slate-900 text-white py-12 mt-16">
           <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div>
-                <h3 className="text-white font-bold mb-4">BizneLot.info</h3>
-                <p className="text-sm">
-                  Portal ekspercki o prawach pasażerów w podróżach służbowych i delegacjach.
-                </p>
+                <h3 className="font-bold text-lg mb-4 flex items-center gap-2">
+                  <img src="/bizneslotlogotyp.png" alt="BizneLot.info" className="h-6 w-auto" />
+                  BizneLot.info
+                </h3>
               </div>
 
               <div>
@@ -436,6 +476,91 @@ export default function DlaczegoStworzylemClaimWinger() {
           </div>
         </footer>
       </div>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Dlaczego stworzyłem ClaimWinger? Historia startupu LegalTech",
+          "description": "Historia powstania ClaimWinger – automatyzacji odszkodowań lotniczych. Jak AI pomaga pasażerom walczyć z liniami lotniczymi?",
+          "image": "https://bizneslot.info/og-image.png",
+          "author": {
+            "@type": "Person",
+            "name": "Piotr Wierzba",
+            "url": "https://www.linkedin.com/in/piotr-wierzba/"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "BizneLot.info",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://bizneslot.info/og-image.png"
+            }
+          },
+          "datePublished": "2026-01-29",
+          "dateModified": "2026-01-29"
+        })}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Czym dokładnie jest ClaimWinger?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "ClaimWinger to firma typu LegalTech, która pomaga pasażerom uzyskać odszkodowanie za opóźniony lub odwołany lot w modelu 'No Win, No Fee'. Używamy AI do analizy wniosków."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Dlaczego warto skorzystać z pośrednika, a nie pisać samemu do linii?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Linie lotnicze odrzucają ok. 60-70% samodzielnych wniosków. ClaimWinger ma dane pogodowe i prawników, co zwiększa skuteczność. Ryzyko finansowe jest po naszej stronie."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Czy ClaimWinger obsługuje też loty służbowe?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "TAK. Odszkodowanie za lot służbowy należy się pasażerowi (pracownikowi). Pomagamy uzyskać te środki (250-600 EUR)."
+              }
+            }
+          ]
+        })}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bizneslot.info"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Artykuły",
+              "item": "https://bizneslot.info/artykuly"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Dlaczego stworzyłem ClaimWinger",
+              "item": "https://bizneslot.info/artykuly/dlaczego-stworzylem-claimwinger"
+            }
+          ]
+        })}
+      </script>
     </>
   );
 }

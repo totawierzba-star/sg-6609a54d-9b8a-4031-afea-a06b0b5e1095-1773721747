@@ -8,8 +8,8 @@ export default function RankingLiniiLotniczychBusinessClass() {
   return (
     <>
       <SEO 
-        title="Ranking linii lotniczych - Business Class 2026 | Porównanie standardów"
-        description="Kompleksowy ranking Business Class: Lufthansa, LOT, Emirates, Qatar Airways. Porównanie foteli lie-flat, cateringu, lounge'y i programów lojalnościowych. Dla Travel Managerów."
+        title="Ranking linii lotniczych Business Class 2026 | Porównanie standardów BC"
+        description="Kompleksowy ranking najlepszych linii lotniczych w klasie biznes. Porównanie produktów, lie-flat seats, catering i obsługi. Które linie warto wybrać dla podróży służbowych?"
         url="https://bizneslot.info/artykuly/ranking-linii-lotniczych-business-class"
         image="https://bizneslot.info/og-image.png"
       />
@@ -19,7 +19,7 @@ export default function RankingLiniiLotniczychBusinessClass() {
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between">
               <Link href="/" className="text-2xl font-bold flex items-center gap-2">
-                <Briefcase className="h-6 w-6" />
+                <img src="/bizneslotlogotyp.png" alt="BizneLot.info" className="h-8 w-auto" />
                 BizneLot.info
               </Link>
               <nav className="hidden md:flex gap-6">
@@ -408,7 +408,7 @@ export default function RankingLiniiLotniczychBusinessClass() {
                   <div>
                     <ul className="space-y-1 text-slate-700">
                       <li>✓ <strong>Fotel:</strong> 70" lie-flat (A350), 20" szerokość, 2-2-2 config</li>
-                      <li>✓ <strong>Wi-Fi:</strong> FlyNet (płatny, ~17 EUR cały lot)</li>
+                      <li>✓ <strong>Wi-Fi:</strong> FlyNet (płatny, ~17 EUR za cały lot)</li>
                       <li>✓ <strong>Catering:</strong> Do's & Co menu (wysoka jakość)</li>
                       <li>✓ <strong>Lounge:</strong> Senator Lounge (MUC, FRA) – solidny standard</li>
                       <li>✓ <strong>Program:</strong> Miles & More – najlepszy dla polskich firm</li>
@@ -727,85 +727,108 @@ export default function RankingLiniiLotniczychBusinessClass() {
             </div>
           </section>
 
-          {/* FAQ Section */}
+          {/* FAQ */}
           <section className="mb-12 bg-slate-50 p-8 rounded-lg">
-            <h2 className="text-3xl font-bold text-slate-900 mb-6 flex items-center gap-2">
-              <BookOpen className="h-7 w-7 text-slate-700" />
-              FAQ – Najczęściej zadawane pytania
-            </h2>
+            <h2 className="text-3xl font-bold text-slate-900 mb-6">FAQ – Najczęściej zadawane pytania</h2>
             
             <div className="space-y-6">
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">
-                  1. Która linia lotnicza ma najlepszą Business Class na świecie w 2026?
+                  1. Która linia lotnicza ma najlepszy Business Class w 2026?
                 </h3>
                 <p className="text-slate-700 leading-relaxed">
-                  Według Skytrax World Airline Awards 2025, <strong>Qatar Airways z QSuite</strong> zajmuje 1. miejsce 
-                  jako Best Business Class. QSuite oferuje pełną prywatność (door), 79" lie-flat seat, darmowy Wi-Fi 
-                  i dostęp do Al Mourjan Lounge w Doha – najlepszego salonu biznesowego świata. Drugie miejsce: 
-                  Singapore Airlines, trzecie: ANA.
+                  <strong>Qatar Airways z produktem Qsuite</strong> zajmuje pierwsze miejsce (9.8/10). Qsuite oferuje 
+                  zamykane drzwi (true privacy), możliwość łączenia foteli w grupę 4-osobową (dla zespołów), lie-flat 
+                  bed z memory foam, oraz najlepszy catering wśród wszystkich linii (5-star dining z sommelier). 
+                  Al Mourjan Lounge w Doha to najlepszy lounge na świecie. <strong>Dla polskich firm:</strong> Qatar 
+                  lata z WAW codziennie, więc jest realną opcją.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">
-                  2. Która linia lotnicza jest najlepsza z Warszawy w Business Class?
+                  2. Czy Business Class w Lufthansa/LOT jest warte swojej ceny?
                 </h3>
                 <p className="text-slate-700 leading-relaxed">
-                  Dla polskich firm <strong>Lufthansa</strong> jest najbardziej praktycznym wyborem: 8-12 lotów dziennie 
-                  WAW-FRA/MUC, doskonała dostępność, Miles & More (best program dla firm w Polsce), stabilna jakość. 
-                  Dla bezpośrednich lotów długodystansowych: <strong>LOT Polish Airlines</strong> (WAW-JFK, WAW-ORD, 
-                  WAW-NRT bez przesiadek). Dla premium experience: <strong>Qatar Airways via Doha</strong>.
+                  <strong>Zależy od długości trasy:</strong><br/><br/>
+                  <strong>Short-haul (Europejskie loty 1-3h):</strong> NIE – Lufthansa/LOT BC w Europie = Economy 
+                  seat + middle seat blocked + lepszy catering. Nie lie-flat, brak prawdziwego BC experience. Lepiej 
+                  lecieć Economy i zaoszczędzić 800-1200 PLN.<br/><br/>
+                  <strong>Long-haul (Transatlantyk, Azja):</strong> TAK – Lufthansa Allegris (nowe fotele 2024+) 
+                  oferuje lie-flat, direct aisle access, decent catering i Senator Lounge. LOT Dreamliner BC = solid 
+                  product (herringbone layout, lie-flat). Za 4000-6000 PLN (vs 1500 PLN Economy) różnica jest warta 
+                  komfortu na 8-12h locie.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">
-                  3. Czy warto dopłacać do Business Class na trasach europejskich?
+                  3. Co to znaczy "lie-flat" i dlaczego to ważne?
                 </h3>
                 <p className="text-slate-700 leading-relaxed">
-                  <strong>Zazwyczaj nie.</strong> Na trasach do 3h (np. WAW-LON, WAW-PAR) Business Class w Europie to 
-                  często tylko blokowany środkowy fotel + lepszy catering. Różnica w cenie: 500-1200 PLN, ale komfort 
-                  marginalny. <strong>Wyjątek:</strong> loty 3-5h (WAW-LIS, WAW-ATH) dla pracowników z meetingiem 
-                  zaraz po lądowaniu – wtedy BC może się opłacić (lounge access + work space).
+                  <strong>Lie-flat = fotel rozkładany do płaskiej pozycji (180°)</strong>, umożliwiający spanie w 
+                  pozycji horyzontalnej jak w łóżku. <strong>Dlaczego ważne:</strong> Na lotach 6h+ spanie w pozycji 
+                  siedzącej (nawet recline 160°) powoduje: ból kręgosłupa, obrzęki nóg, jet lag, fatigue po przylot. 
+                  Lie-flat pozwala spać jak w łóżku = regeneracja, produktywność po przylocie. <strong>Standard w BC:</strong> 
+                  95% long-haul BC ma lie-flat. Jeśli linia oferuje BC bez lie-flat na trasie 8h+ = red flag.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">
-                  4. Jaka jest różnica między lie-flat seat a angle-flat?
+                  4. Czy warto dopłacać do Business Class za własne pieniądze?
                 </h3>
                 <p className="text-slate-700 leading-relaxed">
-                  <strong>Lie-flat (180°):</strong> Fotel rozkłada się całkowicie płasko, jak łóżko. Standard na 
-                  długich trasach (8h+). Pozwala na pełny sen. <strong>Angle-flat (~170°):</strong> Fotel nachyla się 
-                  pod kątem, ale nie jest płaski – stopniowo "zsuwasz się" w dół podczas snu. Występuje w starszych 
-                  samolotach lub liniach budget business class. <strong>Verdict:</strong> Na trasach 10h+ (transatlantyk, 
-                  Azja) wymuszaj lie-flat w Travel Policy – różnica w regeneracji po locie to 12-24h.
+                  <strong>Zależy od długości lotu i Twojej sytuacji:</strong><br/><br/>
+                  <strong>Short-haul (do 3h):</strong> NIE – różnica w komfortie minimalna, koszt 2-4× wyższy<br/>
+                  <strong>Medium-haul (3-6h):</strong> MAYBE – jeśli masz ważne spotkanie zaraz po przylocie i 
+                  potrzebujesz regeneracji<br/>
+                  <strong>Long-haul (6h+):</strong> TAK – jeśli zarabiasz 150+ PLN/h i wartość Twojego zdrowia/czasu 
+                  &gt; dopłata. Przykład: WAW-JFK, dopłata 2500 PLN = 8h snu + brak jet lag = produktywność przez 2 dni 
+                  = value 5000+ PLN.<br/><br/>
+                  <strong>Hack:</strong> Kup Economy, użyj mil do upgrade lub kup BC last-minute (często 30-50% taniej 
+                  na 48h przed lotem).
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">
-                  5. Czy Wi-Fi w Business Class jest zawsze darmowy?
+                  5. Jakie są różnice między "Business Class" a "First Class"?
                 </h3>
                 <p className="text-slate-700 leading-relaxed">
-                  <strong>Nie.</strong> Tylko niektóre linie oferują darmowy Wi-Fi w BC: Qatar Airways, Singapore Airlines, 
-                  ANA, Turkish Airlines, Emirates (20 MB free, potem płatny). Lufthansa, LOT, British Airways, Air France – 
-                  Wi-Fi płatny (10-20 EUR za lot). <strong>Dla firm:</strong> Negocjuj z linią lotniczą Wi-Fi vouchers 
-                  w ramach corporate deal – często możliwe 50-100 voucherów rocznie gratis przy większych kontraktach.
+                  <strong>Business Class:</strong> Lie-flat seats (6-7 feet long), shared cabin (20-60 pasażerów), 
+                  premium catering, lounge access. Cena: 3000-8000 PLN long-haul.<br/><br/>
+                  <strong>First Class:</strong> Enclosed suites z drzwiami (8+ feet), private cabin (6-12 pasażerów), 
+                  Michelin-star dining, shower spa (A380), personal butler, First Class lounge (champagne bar, spa). 
+                  Cena: 15 000-35 000 PLN long-haul.<br/><br/>
+                  <strong>Verdict:</strong> First Class = 3-5× droższe niż BC, ale tylko 20-30% lepsze experience. 
+                  <strong>Dla firm:</strong> BC = 3-5× droższe niż Economy, ale 20-30% lepsze experience. First = 
+                  tylko dla C-level/very important deals. <strong>Fun fact:</strong> Wiele linii już nie oferuje First 
+                  (United, Air France zlikwidowały), bo BC stało się tak dobre, że First przestało mieć sens.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">
-                  6. Jak sprawdzić, czy dany samolot ma lie-flat seats przed zakupem biletu?
+                  6. Co jeśli lot Business Class zostanie opóźniony/anulowany?
                 </h3>
                 <p className="text-slate-700 leading-relaxed">
-                  Użyj narzędzi: <strong>SeatGuru.com</strong> (wpisz numer lotu + datę → pokazuje mapę foteli + specs) 
-                  lub <strong>ExpertFlyer.com</strong> (płatne, ale najbardziej aktualne). Sprawdź typ samolotu 
-                  (np. A350-900, 787-9) i wyszukaj "aircraft seat map". <strong>Red flag:</strong> Jeśli linia nie podaje 
-                  typu samolotu lub pisze "subject to change" – to często stare konfiguracje bez lie-flat. 
-                  <strong>Safe bet:</strong> Lufthansa A350/747-8, LOT 787 Dreamliner, Qatar A350/777.
+                  <strong>Masz te same prawa jak Economy:</strong> Rozporządzenie UE 261/2004 nie rozróżnia klas. 
+                  Odszkodowanie zależy od długości trasy i czasu opóźnienia:<br/>
+                  • Do 1500 km + 3h opóźnienia = 250 EUR<br/>
+                  • 1500-3500 km + 3h = 400 EUR<br/>
+                  • 3500+ km + 4h = 600 EUR<br/><br/>
+                  <strong>Dodatkowe benefity BC:</strong> Priority rebooking (wcześniej znajdziesz alternatywny lot), 
+                  lounge access podczas czekania, lepszy catering compensation. <strong>Jeśli lot służbowy był 
+                  anulowany/opóźniony,</strong> możesz{" "}
+                  <a 
+                    href="https://claimwinger.com/pl/odwolany-lot" 
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:text-blue-800 underline font-semibold"
+                  >
+                    sprawdzić swoje prawa w ClaimWinger
+                  </a>.
                 </p>
               </div>
             </div>
@@ -936,7 +959,7 @@ export default function RankingLiniiLotniczychBusinessClass() {
             <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div>
                 <h3 className="font-bold text-lg mb-4 flex items-center gap-2">
-                  <Briefcase className="h-5 w-5" />
+                  <img src="/bizneslotlogotyp.png" alt="BizneLot.info" className="h-6 w-auto" />
                   BizneLot.info
                 </h3>
                 <p className="text-slate-400 text-sm">
@@ -1005,8 +1028,8 @@ export default function RankingLiniiLotniczychBusinessClass() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Article",
-          "headline": "Ranking linii lotniczych – Business Class 2026: Porównanie standardów dla firm",
-          "description": "Kompleksowy ranking Business Class: Lufthansa, LOT, Emirates, Qatar Airways. Porównanie foteli lie-flat, cateringu, lounge'y i programów lojalnościowych dla Travel Managerów.",
+          "headline": "Ranking linii lotniczych Business Class 2026: TOP 10 według Travel Managerów",
+          "description": "Kompleksowy ranking najlepszych linii lotniczych w klasie biznes. Porównanie produktów, lie-flat seats, catering i obsługi. Które linie warto wybrać dla podróży służbowych?",
           "image": "https://bizneslot.info/og-image.png",
           "author": {
             "@type": "Person",
@@ -1033,51 +1056,78 @@ export default function RankingLiniiLotniczychBusinessClass() {
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "Która linia lotnicza ma najlepszą Business Class na świecie w 2026?",
+              "name": "Która linia lotnicza ma najlepszy Business Class w 2026?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Według Skytrax World Airline Awards 2025, Qatar Airways z QSuite zajmuje 1. miejsce jako Best Business Class. QSuite oferuje pełną prywatność (door), 79 lie-flat seat, darmowy Wi-Fi i dostęp do Al Mourjan Lounge w Doha – najlepszego salonu biznesowego świata."
+                "text": "Qatar Airways z produktem Qsuite zajmuje pierwsze miejsce (9.8/10). Qsuite oferuje zamykane drzwi (true privacy), możliwość łączenia foteli w grupę 4-osobową (dla zespołów), lie-flat bed z memory foam, oraz najlepszy catering wśród wszystkich linii (5-star dining z sommelier). Al Mourjan Lounge w Doha to najlepszy lounge na świecie. Dla polskich firm: Qatar lata z WAW codziennie, więc jest realną opcją."
               }
             },
             {
               "@type": "Question",
-              "name": "Która linia lotnicza jest najlepsza z Warszawy w Business Class?",
+              "name": "Czy Business Class w Lufthansa/LOT jest warte swojej ceny?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Dla polskich firm Lufthansa jest najbardziej praktycznym wyborem: 8-12 lotów dziennie WAW-FRA/MUC, doskonała dostępność, Miles & More, stabilna jakość. Dla bezpośrednich lotów długodystansowych: LOT Polish Airlines."
+                "text": "Zależy od długości trasy. Short-haul (Europejskie loty 1-3h): NIE – Lufthansa/LOT BC w Europie = Economy seat + middle seat blocked + lepszy catering. Nie lie-flat, brak prawdziwego BC experience. Long-haul (Transatlantyk, Azja): TAK – Lufthansa Allegris (nowe fotele 2024+) oferuje lie-flat, direct aisle access, decent catering i Senator Lounge. LOT Dreamliner BC = solid product (herringbone layout, lie-flat). Za 4000-6000 PLN (vs 1500 PLN Economy) różnica jest warta komfortu na 8-12h locie."
               }
             },
             {
               "@type": "Question",
-              "name": "Czy warto dopłacać do Business Class na trasach europejskich?",
+              "name": "Co to znaczy lie-flat i dlaczego to ważne?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Zazwyczaj nie. Na trasach do 3h Business Class w Europie to często tylko blokowany środkowy fotel + lepszy catering. Wyjątek: loty 3-5h dla pracowników z meetingiem zaraz po lądowaniu."
+                "text": "Lie-flat = fotel rozkładany do płaskiej pozycji (180°), umożliwiający spanie w pozycji horyzontalnej jak w łóżku. Na lotach 6h+ spanie w pozycji siedzącej (nawet recline 160°) powoduje: ból kręgosłupa, obrzęki nóg, jet lag, fatigue po przylot. Lie-flat pozwala spać jak w łóżku = regeneracja, produktywność po przylocie. Standard w BC: 95% long-haul BC ma lie-flat."
               }
             },
             {
               "@type": "Question",
-              "name": "Jaka jest różnica między lie-flat seat a angle-flat?",
+              "name": "Czy warto dopłacać do Business Class za własne pieniądze?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Lie-flat (180°): Fotel rozkłada się całkowicie płasko, jak łóżko. Standard na długich trasach (8h+). Angle-flat (~170°): Fotel nachyla się pod kątem, ale nie jest płaski. Na trasach 10h+ wymuszaj lie-flat w Travel Policy."
+                "text": "Zależy od długości lotu. Short-haul (do 3h): NIE – różnica w komfortie minimalna, koszt 2-4× wyższy. Medium-haul (3-6h): MAYBE – jeśli masz ważne spotkanie zaraz po przylocie. Long-haul (6h+): TAK – jeśli zarabiasz 150+ PLN/h i wartość Twojego zdrowia/czasu &gt; dopłata. Przykład: WAW-JFK, dopłata 2500 PLN = 8h snu + brak jet lag = produktywność przez 2 dni = value 5000+ PLN."
               }
             },
             {
               "@type": "Question",
-              "name": "Czy Wi-Fi w Business Class jest zawsze darmowy?",
+              "name": "Jakie są różnice między Business Class a First Class?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Nie. Tylko niektóre linie oferują darmowy Wi-Fi w BC: Qatar Airways, Singapore Airlines, ANA, Turkish Airlines. Lufthansa, LOT, British Airways, Air France – Wi-Fi płatny (10-20 EUR za lot)."
+                "text": "Business Class: Lie-flat seats (6-7 feet long), shared cabin (20-60 pasażerów), premium catering, lounge access. Cena: 3000-8000 PLN long-haul. First Class: Enclosed suites z drzwiami (8+ feet), private cabin (6-12 pasażerów), Michelin-star dining, shower spa (A380), personal butler, First Class lounge. Cena: 15 000-35 000 PLN long-haul. First Class = 3-5× droższe niż BC, ale tylko 20-30% lepsze experience. Dla firm: BC = sweet spot (cost vs value)."
               }
             },
             {
               "@type": "Question",
-              "name": "Jak sprawdzić, czy dany samolot ma lie-flat seats przed zakupem biletu?",
+              "name": "Co jeśli lot Business Class zostanie opóźniony lub anulowany?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Użyj SeatGuru.com (wpisz numer lotu + datę) lub ExpertFlyer.com. Sprawdź typ samolotu i wyszukaj aircraft seat map. Safe bet: Lufthansa A350/747-8, LOT 787 Dreamliner, Qatar A350/777."
+                "text": "Masz te same prawa jak Economy: Rozporządzenie UE 261/2004 nie rozróżnia klas. Odszkodowanie zależy od długości trasy i czasu opóźnienia: Do 1500 km + 3h opóźnienia = 250 EUR, 1500-3500 km + 3h = 400 EUR, 3500+ km + 4h = 600 EUR. Dodatkowe benefity BC: Priority rebooking (wcześniej znajdziesz alternatywny lot), lounge access podczas czekania, lepszy catering compensation."
               }
+            }
+          ]
+        })}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bizneslot.info"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Artykuły",
+              "item": "https://bizneslot.info/artykuly"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Ranking linii lotniczych Business Class",
+              "item": "https://bizneslot.info/artykuly/ranking-linii-lotniczych-business-class"
             }
           ]
         })}

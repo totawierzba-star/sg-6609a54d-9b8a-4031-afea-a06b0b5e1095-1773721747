@@ -114,15 +114,12 @@ export default function Artykuly() {
 
       <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-50">
         {/* Header */}
-        <header className="bg-white/80 backdrop-blur-sm border-b border-slate-200 sticky top-0 z-50">
-          <div className="container mx-auto px-4 py-4">
+        <header className="bg-slate-900 text-white py-4 sticky top-0 z-50 shadow-lg">
+          <div className="container mx-auto px-4">
             <div className="flex items-center justify-between">
-              <Link href="/" className="flex items-center gap-2 group">
-                <Briefcase className="w-8 h-8 text-slate-700 group-hover:text-slate-900 transition-colors" />
-                <div>
-                  <h1 className="text-xl font-bold text-slate-900">BizneLot.info</h1>
-                  <p className="text-xs text-slate-600">Prawa pasażerów w podróżach służbowych</p>
-                </div>
+              <Link href="/" className="text-2xl font-bold flex items-center gap-2">
+                <img src="/bizneslotlogotyp.png" alt="BizneLot.info" className="h-8 w-auto" />
+                BizneLot.info
               </Link>
 
               <nav className="hidden md:flex gap-6">
@@ -259,11 +256,14 @@ export default function Artykuly() {
         </section>
 
         {/* Footer */}
-        <footer className="bg-slate-900 text-slate-300 py-12">
+        <footer className="bg-slate-900 text-white py-12 mt-16">
           <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div>
-                <h3 className="text-white font-bold mb-4">BizneLot.info</h3>
+                <h3 className="font-bold text-lg mb-4 flex items-center gap-2">
+                  <img src="/bizneslotlogotyp.png" alt="BizneLot.info" className="h-6 w-auto" />
+                  BizneLot.info
+                </h3>
                 <p className="text-sm">
                   Portal ekspercki o prawach pasażerów w podróżach służbowych i delegacjach.
                 </p>

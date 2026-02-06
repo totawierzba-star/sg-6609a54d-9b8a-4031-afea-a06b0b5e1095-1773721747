@@ -8,8 +8,8 @@ export default function KartaStatusowaLounge() {
   return (
     <>
       <SEO 
-        title="Karta statusowa linii lotniczych: Wstęp do lounge i benefity 2026"
-        description="Kompleksowy przewodnik po kartach statusowych: Silver, Gold, Platinum. Dostęp do lounge, priorytety, bagaż dodatkowy. Jak zdobyć status i ile jest wart dla firm?"
+        title="Karta statusowa Gold/Silver 2026: Ile warta? Jak zdobyć? Kompletny przewodnik"
+        description="Wszystko o kartach statusowych linii lotniczych: benefity (lounge, bagaż, priority), progi do osiągnięcia, ROI dla firm i strategie status match. Dowiedz się ile naprawdę warte są karty Gold/Silver."
         url="https://bizneslot.info/artykuly/karta-statusowa-lounge"
         image="https://bizneslot.info/og-image.png"
       />
@@ -19,7 +19,7 @@ export default function KartaStatusowaLounge() {
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between">
               <Link href="/" className="text-2xl font-bold flex items-center gap-2">
-                <Briefcase className="h-6 w-6" />
+                <img src="/bizneslotlogotyp.png" alt="BizneLot.info" className="h-8 w-auto" />
                 BizneLot.info
               </Link>
               <nav className="hidden md:flex gap-6">
@@ -586,87 +586,105 @@ export default function KartaStatusowaLounge() {
             <div className="space-y-6">
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">
-                  1. Czy mogę wejść do lounge, jeśli lecę Economy, ale mam kartę Gold?
+                  1. Ile trzeba latać, żeby dostać kartę Gold (Senator)?
                 </h3>
                 <p className="text-slate-700 leading-relaxed">
-                  <strong>TAK – to jest główny benefit statusu Gold/Senator.</strong> Nie ma znaczenia, jaką klasą lecisz – 
-                  jeśli masz Gold w programie lojalnościowym (np. Miles & More Senator), masz dostęp do lounge przed każdym lotem 
-                  na liniach swojego aliansu (Star Alliance, SkyTeam, OneWorld). Dotyczy to również lotów Economy za 300 PLN WAW-FRA.
-                  <br/><br/>
-                  <strong>Uwaga:</strong> Lounge access działa tylko na lotach międzynarodowych lub długodystansowych krajowych. 
-                  Loty krajowe krótkie (WAW-KRK) często nie mają dostępu do lounge nawet dla Gold.
+                  <strong>Miles & More (Lufthansa):</strong> 100 000 mil lub 130 segmentów rocznie. <strong>W praktyce:</strong> 
+                  ~50-60 lotów rocznie (np. 1 lot tygodniowo) lub 15-20 long-haul round-trips (np. WAW-JFK-WAW). 
+                  <strong>Przykład:</strong> Pracownik latający co tydzień WAW-FRA-WAW (52 round-trips = 104 segmenty + ~57k mil) 
+                  + 4 loty transatlantyckie (8 segmentów + 33k mil) = 112 segmentów + 90k mil = <strong>Gold status achieved</strong>. 
+                  Alternatywa: corporate status match – jeśli Twoja firma wydaje 300k+ PLN rocznie, Lufthansa może dać instant 
+                  Gold dla 3-5 top travelers.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">
-                  2. Ile lotów rocznie potrzeba, żeby utrzymać status Gold?
+                  2. Czy wstęp do lounge jest naprawdę wart swojej wartości?
                 </h3>
                 <p className="text-slate-700 leading-relaxed">
-                  <strong>Depends on program:</strong><br/>
-                  • <strong>Miles & More Senator:</strong> 100 000 mil rocznie (lub 100 lotów) = ~8 lotów BC transatlantyckich lub 40-50 lotów Economy w Europie<br/>
-                  • <strong>Miles+Bonus Gold (LOT):</strong> 50 000 mil (lub 50 lotów) = ~4 loty BC transatlantyckie lub 25 lotów Economy<br/>
-                  • <strong>Flying Blue Gold:</strong> 100 000 XP = podobnie jak M&M<br/>
-                  • <strong>Executive Club Gold (BA):</strong> 1500 Tier Points = ~6-8 lotów BC transatlantyckich<br/><br/>
-                  <strong>Fakt:</strong> Status odnawia się co 12 miesięcy. Jeśli w danym roku nie osiągniesz progu, spadasz do Silver lub tracisz status.
+                  <strong>Zależy od Twojego use case:</strong><br/><br/>
+                  <strong>Jeśli latasz 20+ razy rocznie:</strong> TAK – wartość 20 wizyt × 80 EUR = 6400 PLN rocznie. 
+                  Lounge = produktywność (2-3h pracy przed lotem), lepsze jedzenie (oszczędzasz na food court), shower 
+                  access po long-haul (regeneracja), relaks (mniej stresu = lepsza wydajność).<br/><br/>
+                  <strong>Jeśli latasz 5-10 razy rocznie:</strong> MAYBE – możesz kupić Priority Pass (300 EUR/rok = 
+                  unlimited visits), zamiast gonić za statusem.<br/><br/>
+                  <strong>Jeśli latasz 1-4 razy rocznie:</strong> NIE – płać per-visit (30-50 EUR) gdy potrzebujesz, 
+                  nie ma sensu gonić za statusem.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">
-                  3. Czy status z jednego programu działa w innych liniach?
+                  3. Co to jest "status match" i jak to działa?
                 </h3>
                 <p className="text-slate-700 leading-relaxed">
-                  <strong>TAK – w ramach aliansu.</strong> Jeśli masz Senator w Miles & More (Lufthansa), Twój status działa na wszystkich 
-                  liniach Star Alliance: LOT, Swiss, Austrian, United, Air Canada, Thai Airways, Singapore Airlines i 20+ innych. 
-                  Dostajesz: lounge access, priority boarding, bagaż dodatkowy na WSZYSTKICH tych liniach.<br/><br/>
-                  <strong>Ale:</strong> Status NIE działa poza aliansem. Miles & More Senator (Star Alliance) nie da Ci dostępu do 
-                  Air France Lounge (SkyTeam) ani BA Lounge (OneWorld). Dlatego ważne, żeby wybrać jeden alians i trzymać się go.
+                  <strong>Status match = przeniesienie statusu z jednego programu do drugiego.</strong> Przykład: Masz 
+                  Gold w Miles & More, chcesz latać Emirates. Emirates może dać Ci instant Gold w Skywards (bez zbierania 
+                  mil od zera). <strong>Jak to zrobić:</strong> (1) Wykup bilet Emirates, (2) Napisz do customer service: 
+                  "I have Star Alliance Gold, can you match my status?", (3) Prześlij proof (screenshot karty M&M Gold), 
+                  (4) Emirates daje Ci 3-12 miesięcy trial Gold. Które linie robią status match: Emirates, Turkish Airlines, Qatar Airways (czasem), Virgin Atlantic.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">
-                  4. Co się stanie, jeśli zmienię pracę i nowa firma używa innego aliansu?
+                  4. Czy mogę używać karty statusowej na lotach innych linii?
                 </h3>
                 <p className="text-slate-700 leading-relaxed">
-                  Masz 3 opcje:<br/><br/>
-                  <strong>Opcja A: Status match</strong> – Poproś nowy program o status match (instant Gold na 3-6 miesięcy trial). 
-                  Musisz wykwalifikować się w trial period (50-70% progu).<br/><br/>
-                  <strong>Opcja B: Utrzymuj oba statusy</strong> – Jeśli latasz wystarczająco dużo (80+ lotów rocznie), możesz 
-                  utrzymywać statusy w dwóch programach jednocześnie. Nie jest to optymalne (rozproszenie mil), ale możliwe.<br/><br/>
-                  <strong>Opcja C: Zrezygnuj ze starego</strong> – Zacznij od zera w nowym programie. Jeśli latasz 40+ razy rocznie, 
-                  osiągniesz Gold w ciągu roku.
+                  <strong>TAK – w ramach tego samego aliansu.</strong> Jeśli masz Miles & More Gold (Star Alliance), 
+                  Twój status działa na: Lufthansa, LOT, Swiss, Austrian, United, ANA, Singapore Airlines, Thai Airways 
+                  i innych 23 liniach Star Alliance. <strong>Co dostaniesz:</strong> lounge access (np. United Club w USA, 
+                  ANA Lounge w Tokio), priority boarding, +1 bagaż, priority rebooking. Generalnie: Gold = lounge access 
+                  wszędzie w aliansie, Silver = tylko na własnej linii + selected partners.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">
-                  5. Czy karta kredytowa premium (np. American Express Platinum) daje dostęp do lounge?
+                  5. Co się dzieje ze statusem, jeśli zmienię pracę?
                 </h3>
                 <p className="text-slate-700 leading-relaxed">
-                  <strong>TAK, ale to inny system.</strong> Karty premium (AmEx Platinum, Priority Pass) dają dostęp do <strong>niezależnych 
-                  lounge'y</strong> (np. SkyTeam Lounge, Star Alliance Lounge jako guest, Executive Lounge). <strong>Ale:</strong> nie dostajesz 
-                  dostępu do <strong>flagowych lounge'y linii</strong> (Lufthansa Senator Lounge, BA First Class Lounge, Swiss First Lounge).<br/><br/>
-                  <strong>Porównanie:</strong><br/>
-                  • <strong>Karta kredytowa:</strong> Wstęp do 1000+ lounge'y globalnie, ale często zatłoczonych i standardowych<br/>
-                  • <strong>Status Gold:</strong> Wstęp do premium lounge'y linii (Senator, Elite, First) – mniejsze, cichsze, lepszy catering<br/><br/>
-                  <strong>Best strategy:</strong> Status Gold + karta premium = maksymalna elastyczność (lounge na każdym lotnisku).
+                  <strong>Status jest Twój (osobisty), nie firmowy.</strong> Jeśli zdobyłeś Gold latając służbowo, 
+                  status pozostaje przy Tobie nawet po zmianie pracy. <strong>Utrzymanie statusu:</strong> Większość 
+                  programów wymaga re-qualify co roku (zebraj ponownie 100k mil / 130 segmentów). Jeśli w nowej pracy 
+                  latasz mniej, status wygaśnie po roku. Wyjątek – HON Circle (Miles & More): 600k mil lifetime = status 
+                  na zawsze (nawet jak przestaniesz latać). <strong>British Airways Gold Guest List:</strong> Jeśli utrzymasz 
+                  Gold przez 4 kolejne lata, dostajesz lifetime Silver.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-xl font-bold text-slate-900 mb-2">
-                  6. Czy status pomaga w przypadku opóźnień i odwołań lotów?
+                  6. Czy firma może kupić mi kartę statusową?
                 </h3>
                 <p className="text-slate-700 leading-relaxed">
-                  <strong>TAK – to ukryty benefit Gold/Senator.</strong> W przypadku odwołania lotu, osoby ze statusem Gold mają 
-                  <strong>priorytet w rebookingu</strong>. Oznacza to:<br/>
-                  • Dostaniesz alternatywny lot szybciej niż pasażerowie bez statusu<br/>
-                  • Możesz zadzwonić na dedykowaną linię (Senator Hotline) i być przebukowany w 5-10 min (zamiast czekać 2h w kolejce)<br/>
-                  • W przypadku overbookingu – ostatnia osoba do „wyrzucenia" z lotu to Gold/Senator<br/><br/>
-                  <strong>Real case:</strong> Lot LOT WAW-JFK odwołany. Pasażer ze statusem Gold dostał rebooking na Lufthansa WAW-FRA-JFK 
-                  za 15 minut. Pasażerowie bez statusu czekali 3-4h w kolejce i dostali loty następnego dnia. <strong>Wartość: 24h czasu</strong>.
+                  <strong>NIE bezpośrednio – statusu nie da się kupić.</strong> Musisz go zdobyć latając (mile + segmenty). 
+                  <strong>ALE:</strong> Firma może pomóc na 3 sposoby:<br/><br/>
+                  <strong>1. Corporate status match:</strong> Przy dużym budżecie (300k+ PLN/rok) linia może dać instant 
+                  Gold dla 3-5 top travelers (bez zbierania mil).<br/><br/>
+                  <strong>2. Lounge membership:</strong> Firma może kupić Priority Pass (300-400 EUR/rok) = unlimited 
+                  lounge visits bez statusu.<br/><br/>
+                  <strong>3. Status challenge:</strong> Niektóre linie oferują fast track do Gold – np. Qatar Airways: 
+                  zrób 4 long-haul loty w 90 dni = instant Gold na rok.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">
+                  7. Jakie są najlepsze lounge na świecie warte wizyty?
+                </h3>
+                <p className="text-slate-700 leading-relaxed">
+                  <strong>TOP 5 lounge absolutnie must-visit:</strong><br/><br/>
+                  <strong>1. Al Mourjan Business Lounge (Doha, Qatar Airways):</strong> 10 000 m², spa, fine dining, 
+                  champagne bar, kids zone, prayer room. Najlepszy lounge świata.<br/><br/>
+                  <strong>2. Lufthansa First Class Terminal (Frankfurt):</strong> Tylko dla First Class / HON Circle. 
+                  Private terminal z limousine service, Michelin-star restaurant, cigar lounge, shower suites.<br/><br/>
+                  <strong>3. Qantas First Lounge (Sydney):</strong> Neil Perry restaurant (celebrity chef), spa treatments, 
+                  premium wines.<br/><br/>
+                  <strong>4. Turkish Airlines CIP Lounge (Istanbul):</strong> 2000 m², live cooking stations, Turkish 
+                  bath, cinema, library.<br/><br/>
+                  <strong>5. Cathay Pacific The Pier (Hong Kong):</strong> Noodle bar, cocktails, harbor views, cabanas.
                 </p>
               </div>
             </div>
@@ -790,7 +808,7 @@ export default function KartaStatusowaLounge() {
             <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div>
                 <h3 className="font-bold text-lg mb-4 flex items-center gap-2">
-                  <Briefcase className="h-5 w-5" />
+                  <img src="/bizneslotlogotyp.png" alt="BizneLot.info" className="h-6 w-auto" />
                   BizneLot.info
                 </h3>
                 <p className="text-slate-400 text-sm">
@@ -859,8 +877,8 @@ export default function KartaStatusowaLounge() {
         {JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Article",
-          "headline": "Karta statusowa linii lotniczych: Wstęp do lounge i wszystkie benefity [Przewodnik 2026]",
-          "description": "Kompleksowy przewodnik po kartach statusowych: Silver, Gold, Platinum. Dostęp do lounge, priorytety, bagaż dodatkowy. Jak zdobyć status i ile jest wart dla firm?",
+          "headline": "Karta statusowa Gold/Silver 2026: Ile warta? Jak zdobyć? Kompletny przewodnik",
+          "description": "Wszystko o kartach statusowych linii lotniczych: benefity (lounge, bagaż, priority), progi do osiągnięcia, ROI dla firm i strategie status match. Dowiedz się ile naprawdę warte są karty Gold/Silver.",
           "image": "https://bizneslot.info/og-image.png",
           "author": {
             "@type": "Person",
@@ -887,51 +905,86 @@ export default function KartaStatusowaLounge() {
           "mainEntity": [
             {
               "@type": "Question",
-              "name": "Czy mogę wejść do lounge, jeśli lecę Economy, ale mam kartę Gold?",
+              "name": "Ile trzeba latać, żeby dostać kartę Gold (Senator)?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "TAK – to jest główny benefit statusu Gold/Senator. Nie ma znaczenia, jaką klasą lecisz – jeśli masz Gold, masz dostęp do lounge przed każdym lotem na liniach swojego aliansu (Star Alliance, SkyTeam, OneWorld)."
+                "text": "Miles & More (Lufthansa): 100 000 mil lub 130 segmentów rocznie. W praktyce: ~50-60 lotów rocznie (np. 1 lot tygodniowo) lub 15-20 long-haul round-trips (np. WAW-JFK-WAW). Przykład: Pracownik latający co tydzień WAW-FRA-WAW (52 round-trips = 104 segmenty + ~57k mil) + 4 loty transatlantyckie (8 segmentów + 33k mil) = 112 segmentów + 90k mil = Gold status achieved. Alternatywa: corporate status match – jeśli Twoja firma wydaje 300k+ PLN rocznie, Lufthansa może dać instant Gold dla 3-5 top travelers."
               }
             },
             {
               "@type": "Question",
-              "name": "Ile lotów rocznie potrzeba, żeby utrzymać status Gold?",
+              "name": "Czy wstęp do lounge jest naprawdę wart swojej wartości?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Miles & More Senator: 100 000 mil rocznie (~8 lotów BC transatlantyckich lub 40-50 lotów Economy). Miles+Bonus Gold (LOT): 50 000 mil (~4 loty BC transatlantyckie lub 25 lotów Economy). Status odnawia się co 12 miesięcy."
+                "text": "Zależy od Twojego use case. Jeśli latasz 20+ razy rocznie: TAK – wartość 20 wizyt × 80 EUR = 6400 PLN rocznie. Lounge = produktywność (2-3h pracy przed lotem), lepsze jedzenie (oszczędzasz na food court), shower access po long-haul (regeneracja), relaks (mniej stresu = lepsza wydajność). Jeśli latasz 5-10 razy rocznie: MAYBE – możesz kupić Priority Pass (300 EUR/rok = unlimited visits). Jeśli latasz 1-4 razy rocznie: NIE – płać per-visit (30-50 EUR) gdy potrzebujesz."
               }
             },
             {
               "@type": "Question",
-              "name": "Czy status z jednego programu działa w innych liniach?",
+              "name": "Co to jest status match i jak to działa?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "TAK – w ramach aliansu. Miles & More Senator działa na wszystkich liniach Star Alliance (LOT, Swiss, United, Air Canada i 20+ innych). Status NIE działa poza aliansem."
+                "text": "Status match = przeniesienie statusu z jednego programu do drugiego. Przykład: Masz Gold w Miles & More, chcesz latać Emirates. Emirates może dać Ci instant Gold w Skywards (bez zbierania mil od zera). Jak to zrobić: (1) Wykup bilet Emirates, (2) Napisz do customer service: 'I have Star Alliance Gold, can you match my status?', (3) Prześlij proof (screenshot karty M&M Gold), (4) Emirates daje Ci 3-12 miesięcy trial Gold. Które linie robią status match: Emirates, Turkish Airlines, Qatar Airways (czasem), Virgin Atlantic."
               }
             },
             {
               "@type": "Question",
-              "name": "Co się stanie, jeśli zmienię pracę i nowa firma używa innego aliansu?",
+              "name": "Czy mogę używać karty statusowej na lotach innych linii?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Masz 3 opcje: (1) Status match – instant Gold na trial period, (2) Utrzymuj oba statusy jeśli latasz 80+ razy rocznie, (3) Zacznij od zera w nowym programie."
+                "text": "TAK – w ramach tego samego aliansu. Jeśli masz Miles & More Gold (Star Alliance), Twój status działa na: Lufthansa, LOT, Swiss, Austrian, United, ANA, Singapore Airlines, Thai Airways i innych 23 liniach Star Alliance. Co dostaniesz: lounge access (np. United Club w USA, ANA Lounge w Tokio), priority boarding, +2 bagaż, priority rebooking. Generalnie: Gold = lounge access wszędzie w aliansie, Silver = tylko na własnej linii + selected partners."
               }
             },
             {
               "@type": "Question",
-              "name": "Czy karta kredytowa premium daje dostęp do lounge?",
+              "name": "Co się dzieje ze statusem, jeśli zmienię pracę?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "TAK, ale do innych lounge'y. Karty premium (AmEx Platinum, Priority Pass) dają dostęp do niezależnych lounge'y, ale nie do flagowych lounge'y linii (Senator, First). Best strategy: Status Gold + karta premium."
+                "text": "Status jest Twój (osobisty), nie firmowy. Jeśli zdobyłeś Gold latając służbowo, status pozostaje przy Tobie nawet po zmianie pracy. <strong>Utrzymanie statusu:</strong> Większość programów wymaga re-qualify co roku (zebraj ponownie 100k mil / 130 segmentów). Jeśli w nowej pracy latasz mniej, status wygaśnie po roku. Wyjątek – HON Circle (Miles & More): 600k mil lifetime = status na zawsze. British Airways Gold Guest List: Jeśli utrzymasz Gold przez 4 kolejne lata, dostajesz lifetime Silver."
               }
             },
             {
               "@type": "Question",
-              "name": "Czy status pomaga w przypadku opóźnień i odwołań lotów?",
+              "name": "Czy firma może kupić mi kartę statusową?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "TAK – to ukryty benefit Gold/Senator. Priorytet w rebookingu, dedykowana hotline (Senator), ostatnia osoba do wyrzucenia przy overbookingu. Wartość: oszczędność 2-24h w przypadku kryzysu."
+                "text": "NIE bezpośrednio – statusu nie da się kupić. Musisz go zdobyć latając (mile + segmenty). <strong>ALE:</strong> Firma może pomóc na 3 sposoby: (1) Corporate status match: Przy dużym budżecie (300k+ PLN/rok) linia może dać instant Gold dla 3-5 top travelers. (2) Lounge membership: Firma może kupić Priority Pass (300-400 EUR/rok) = unlimited lounge visits bez statusu. (3) Status challenge: Niektóre linie oferują fast track do Gold – np. Qatar Airways: zrób 4 long-haul loty w 90 dni = instant Gold na rok."
               }
+            },
+            {
+              "@type": "Question",
+              "name": "Jakie są najlepsze lounge na świecie warte wizyty?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "TOP 5 lounge absolutnie must-visit: (1) Al Mourjan Business Lounge (Doha, Qatar Airways): 10 000 m², spa, fine dining, champagne bar. Najlepszy lounge świata. (2) Lufthansa First Class Terminal (Frankfurt): Tylko dla First Class / HON Circle. Private terminal z limousine service, Michelin-star restaurant. (3) Qantas First Lounge (Sydney): Neil Perry restaurant, spa treatments, premium wines. (4) Turkish Airlines CIP Lounge (Istanbul): 2000 m², live cooking stations, Turkish bath, cinema. (5) Cathay Pacific The Pier (Hong Kong): Noodle bar, cocktails, harbor views, cabanas."
+              }
+            }
+          ]
+        })}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bizneslot.info"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Artykuły",
+              "item": "https://bizneslot.info/artykuly"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Karta statusowa i lounge",
+              "item": "https://bizneslot.info/artykuly/karta-statusowa-lounge"
             }
           ]
         })}

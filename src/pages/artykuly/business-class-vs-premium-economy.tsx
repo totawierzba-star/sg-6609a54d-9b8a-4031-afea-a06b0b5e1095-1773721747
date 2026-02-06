@@ -128,10 +128,11 @@ export default function BusinessClassVsPremiumEconomy() {
 
   return (
     <>
-      <SEO
-        title="Business Class vs Premium Economy – Analiza kosztów i efektywności [2026]"
-        description="Kompleksowe porównanie dla Travel Managerów: Business Class vs Premium Economy. Twarde dane, tabele ROI, analiza kosztów. Kiedy warto dopłacić? ✈️ Przewodnik 2026"
+      <SEO 
+        title="Business Class vs Premium Economy: Czy warto dopłacać? [Kalkulacja]"
+        description="Kompleksowe porównanie dla Travel Managerów: Business Class vs Premium Economy. Twarde dane, tabele ROI, analiza kosztów. Kiedy warto dopłać? ✈️ Przewodnik 2026"
         url="https://bizneslot.info/artykuly/business-class-vs-premium-economy"
+        image="https://bizneslot.info/og-image.png"
       />
       <script
         type="application/ld+json"
@@ -140,28 +141,25 @@ export default function BusinessClassVsPremiumEconomy() {
 
       <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-50">
         {/* Header */}
-        <header className="bg-white/80 backdrop-blur-sm border-b border-slate-200 sticky top-0 z-50">
-          <div className="container mx-auto px-4 py-4">
+        <header className="bg-slate-900 text-white py-4 sticky top-0 z-50 shadow-lg">
+          <div className="container mx-auto px-4">
             <div className="flex items-center justify-between">
-              <Link href="/" className="flex items-center gap-2 group">
-                <Briefcase className="w-8 h-8 text-slate-700 group-hover:text-slate-900 transition-colors" />
-                <div>
-                  <h1 className="text-xl font-bold text-slate-900">BizneLot.info</h1>
-                  <p className="text-xs text-slate-600">Prawa pasażerów w podróżach służbowych</p>
-                </div>
+              <Link href="/" className="text-2xl font-bold flex items-center gap-2">
+                <img src="/bizneslotlogotyp.png" alt="BizneLot.info" className="h-8 w-auto" />
+                BizneLot.info
               </Link>
 
               <nav className="hidden md:flex gap-6">
-                <Link href="/odszkodowanie-lot-sluzbowy" className="text-slate-700 hover:text-slate-900 transition-colors">
+                <Link href="/odszkodowanie-lot-sluzbowy" className="text-slate-600 hover:text-slate-900 transition-colors">
                   Odszkodowania
                 </Link>
-                <Link href="/pracodawca-a-odszkodowanie" className="text-slate-700 hover:text-slate-900 transition-colors">
+                <Link href="/pracodawca-a-odszkodowanie" className="text-slate-600 hover:text-slate-900 transition-colors">
                   Pracodawca
                 </Link>
                 <Link href="/artykuly" className="text-slate-900 font-semibold">
                   Artykuły
                 </Link>
-                <Link href="/o-autorze" className="text-slate-700 hover:text-slate-900 transition-colors">
+                <Link href="/o-autorze" className="text-slate-600 hover:text-slate-900 transition-colors">
                   O autorze
                 </Link>
               </nav>
@@ -750,117 +748,135 @@ export default function BusinessClassVsPremiumEconomy() {
                   </div>
                 </div>
 
-                <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6">
-                  FAQ: Najczęstsze pytania Travel Managerów
-                </h2>
+                {/* FAQ */}
+                <section className="mb-12 bg-slate-50 p-8 rounded-lg">
+                  <h2 className="text-3xl font-bold text-slate-900 mb-6">FAQ – Najczęściej zadawane pytania</h2>
+                  
+                  <div className="space-y-6">
+                    <div>
+                      <h3 className="text-xl font-bold text-slate-900 mb-2">
+                        1. Czy Premium Economy to to samo co Business Class?
+                      </h3>
+                      <p className="text-slate-700 leading-relaxed">
+                        <strong>NIE.</strong> Premium Economy to klasa pośrednia między Economy a Business Class. 
+                        Główne różnice: <strong>Premium Economy</strong> ma szersze fotele (18-19"), więcej miejsca na nogi 
+                        (+5-7 cm), lepsze jedzenie i priority boarding, ale <strong>NIE MA lie-flat seats</strong> (fotel 
+                        nie rozkłada się na płasko). <strong>Business Class</strong> ma lie-flat beds (180° flat), prywatność 
+                        (doors/dividers), lounge access, premium catering i personal service. Na lotach 8h+ różnica w regeneracji 
+                        jest ogromna – w Premium Economy nadal śpisz siedząc (recline max 8"), w Business Class śpisz jak w łóżku.
+                      </p>
+                    </div>
 
-                <div className="space-y-6 mb-12">
-                  <Card className="border-slate-200">
-                    <CardHeader>
-                      <CardTitle className="text-lg">
-                        Jaka jest różnica w cenie między Business Class a Premium Economy?
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-slate-700">
-                        Premium Economy kosztuje średnio 2-3x więcej niż Economy, podczas gdy Business Class to 4-8x koszt Economy. Na trasie Warszawa-Nowy Jork: Economy ~3000 PLN, Premium Economy ~7000 PLN, Business Class ~18000 PLN. <strong>Oszczędność wynosi około 11000 PLN na jednym bilecie</strong>.
+                    <div>
+                      <h3 className="text-xl font-bold text-slate-900 mb-2">
+                        2. Ile kosztuje dopłata z Economy do Premium Economy?
+                      </h3>
+                      <p className="text-slate-700 leading-relaxed">
+                        Dopłata zależy od trasy i linii lotniczej:<br/>
+                        <strong>Krótkie trasy europejskie (WAW-LON):</strong> +200-400 PLN (nie warto – za mała różnica)<br/>
+                        <strong>Średnie trasy (WAW-DXB):</strong> +800-1500 PLN (może być worth it jeśli masz ważne spotkanie)<br/>
+                        <strong>Long-haul (WAW-JFK, WAW-SIN):</strong> +1500-3000 PLN (worth it jeśli pracujesz w locie lub 
+                        potrzebujesz lepszej regeneracji).<br/><br/>
+                        <strong>Zasada:</strong> Jeśli dopłata przekracza 30% ceny biletu Economy, lepiej rozważyć upgrade do 
+                        Business Class (za mile lub last-minute deals).
                       </p>
-                    </CardContent>
-                  </Card>
+                    </div>
 
-                  <Card className="border-slate-200">
-                    <CardHeader>
-                      <CardTitle className="text-lg">
-                        Czy Premium Economy wystarczy na trasach transatlantyckich?
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-slate-700">
-                        Premium Economy może być wystarczająca dla lotów do 8-9 godzin, jeśli pracownik nie ma spotkania bezpośrednio po przylocie. Dla tras powyżej 10 godzin (transatlantyckie, Azja) Business Class z lie-flat seats znacząco poprawia regenerację i gotowość do pracy po locie. <strong>Kluczowe pytanie: czy po locie jest dzień buforowy na odpoczynek?</strong>
+                    <div>
+                      <h3 className="text-xl font-bold text-slate-900 mb-2">
+                        3. Czy w Premium Economy jest dostęp do lounge?
+                      </h3>
+                      <p className="text-slate-700 leading-relaxed">
+                        <strong>Generalnie NIE.</strong> Premium Economy nie daje automatycznego dostępu do lounge. 
+                        <strong>Wyjątki:</strong> (1) Masz status Gold/Platinum w programie lojalnościowym (wtedy lounge 
+                        access niezależnie od klasy biletu), (2) Lecisz British Airways Club World (niektóre konfiguracje 
+                        PE dają lounge), (3) Kupujesz lounge pass osobno (~80-120 PLN za wizytę). Dla firm: jeśli pracownik 
+                        ma status Senator/Gold w Miles & More, dostanie lounge access nawet lecąc Premium Economy.
                       </p>
-                    </CardContent>
-                  </Card>
+                    </div>
 
-                  <Card className="border-slate-200">
-                    <CardHeader>
-                      <CardTitle className="text-lg">
-                        Kiedy Business Class jest konieczna w podróżach służbowych?
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-slate-700">
-                        Business Class jest uzasadniona gdy:
+                    <div>
+                      <h3 className="text-xl font-bold text-slate-900 mb-2">
+                        4. Na jakich trasach Premium Economy ma sens?
+                      </h3>
+                      <p className="text-slate-700 leading-relaxed">
+                        Premium Economy ma sens na lotach <strong>6-10h</strong>, gdzie:<br/>
+                        • Jest za krótko na Business Class (zbyt drogo vs korzyść)<br/>
+                        • Jest za długo na Economy (unbearable discomfort)<br/>
+                        • Masz ważne spotkanie zaraz po przylocie (potrzebujesz partial recovery)<br/><br/>
+                        <strong>Sweet spot:</strong> WAW-DXB (6h), WAW-JFK (9h), WAW-BKK (10h). <strong>NIE ma sensu:</strong> 
+                        Loty europejskie 2-3h (za mała różnica), ultra long-haul 12h+ (Business Class staje się koniecznością).
                       </p>
-                      <ul className="list-disc ml-6 mt-2 space-y-1 text-slate-700">
-                        <li>Lot trwa ponad 10 godzin</li>
-                        <li>Pracownik ma spotkanie w ciągu 6-8 godzin po lądowaniu</li>
-                        <li>Podróż dotyczy zarządu lub kluczowych negocjacji</li>
-                        <li>Częstotliwość podróży przekracza 4-6 lotów długodystansowych rocznie</li>
-                      </ul>
-                    </CardContent>
-                  </Card>
+                    </div>
 
-                  <Card className="border-slate-200">
-                    <CardHeader>
-                      <CardTitle className="text-lg">
-                        Jakie są kluczowe różnice w komfortu między tymi klasami?
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-slate-700 mb-3">
-                        <strong>Business Class:</strong> fotele lie-flat (180°), szerokość 50-58 cm, direct aisle access, prywatność, duże biurko.
+                    <div>
+                      <h3 className="text-xl font-bold text-slate-900 mb-2">
+                        5. Czy można zrobić upgrade z Economy do Business Class?
+                      </h3>
+                      <p className="text-slate-700 leading-relaxed">
+                        <strong>TAK, na 3 sposoby:</strong><br/>
+                        <strong>1. Za mile/punkty:</strong> Jeśli masz status lub mile w programie lojalnościowym, możesz 
+                        zrobić paid upgrade lub bid for upgrade (aukcja). Koszt: 15 000-40 000 mil (zależy od trasy).<br/>
+                        <strong>2. Płatny upgrade przy check-in:</strong> 24-48h przed lotem dostaniesz oferta upgrade za 
+                        ~50-70% ceny różnicy BC-Economy (jeśli są wolne miejsca).<br/>
+                        <strong>3. Complimentary upgrade:</strong> Jeśli masz status Gold+ i lot jest overbookowany w Economy, 
+                        możesz dostać darmowy upgrade (priorytet według statusu).<br/><br/>
+                        <strong>Pro tip:</strong> Kup Economy Flex (flexible fare) – ma najwyższy priorytet do upgrade.
                       </p>
-                      <p className="text-slate-700">
-                        <strong>Premium Economy:</strong> recline 38-40°, szerokość 46-50 cm, brak pełnego rozłożenia, współdzielony dostęp do przejścia.
-                      </p>
-                      <p className="text-slate-700 font-medium mt-3">
-                        Różnica w możliwości pełnego wypoczynku jest krytyczna na lotach 10h+.
-                      </p>
-                    </CardContent>
-                  </Card>
+                    </div>
 
-                  <Card className="border-slate-200">
-                    <CardHeader>
-                      <CardTitle className="text-lg">
-                        Jak obliczyć ROI wyboru klasy podróży dla firmy?
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-slate-700 mb-3">
-                        Wzór ROI: <strong>(Produktywność po locie × Stawka godzinowa × Różnica w godzinach produktywnych) - (Różnica w cenie biletu)</strong>
+                    <div>
+                      <h3 className="text-xl font-bold text-slate-900 mb-2">
+                        6. Jaka jest różnica między Business Class na krótkich i długich trasach?
+                      </h3>
+                      <p className="text-slate-700 leading-relaxed">
+                        <strong>Short-haul Business Class (Europejskie loty 1-3h):</strong> To de facto Economy seat z 
+                        zablokowanym środkowym miejscem + lepszy catering. NIE MA lie-flat, NIE MA prawdziwego BC experience. 
+                        Lufthansa/LOT BC w Europie = 17-18" szerokość, recline 7-8", priority boarding. Wartość: ~300-500 PLN 
+                        (za mało vs koszt).<br/><br/>
+                        <strong>Long-haul Business Class (6h+):</strong> Lie-flat beds (180°), direct aisle access (1-2-1 config), 
+                        premium catering (Dine on Demand), lounge access, Wi-Fi, personal service, amenity kits. Wartość: 
+                        3000-8000 PLN vs Economy. Na lotach 8h+ różnica jest game-changer dla produktywności i zdrowia.
                       </p>
-                      <p className="text-slate-700">
-                        Przykład: Manager IT (300 PLN/h) po Business Class jest produktywny 6h, po Premium Economy 3h. Zysk: (6-3) × 300 = 900 PLN vs. dodatkowy koszt 11000 PLN. <strong>ROI ujemny dla jednorazowych lotów, pozytywny dla częstych podróży</strong>.
-                      </p>
-                    </CardContent>
-                  </Card>
+                    </div>
 
-                  <Card className="border-slate-200">
-                    <CardHeader>
-                      <CardTitle className="text-lg">
-                        Czy można mieszać klasy w obrębie jednej podróży?
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-slate-700">
-                        Tak! Wielu Travel Managerów stosuje strategię: <strong>Business Class w jedną stronę (przed kluczowym spotkaniem), Premium Economy w powrotną</strong>. Oszczędność ~50% vs. Business Class w obie strony, przy zachowaniu efektywności tam, gdzie jest najbardziej potrzebna.
+                    <div>
+                      <h3 className="text-xl font-bold text-slate-900 mb-2">
+                        7. Czy firma może zabronić pracownikom latania Business Class?
+                      </h3>
+                      <p className="text-slate-700 leading-relaxed">
+                        <strong>TAK.</strong> Firma ustala Travel Policy i może ograniczyć Business Class do:<br/>
+                        • Lotów długodystansowych 8h+ (standard w korporacjach)<br/>
+                        • Senior management (C-level, Directors)<br/>
+                        • Mission-critical trips (ważne negocjacje, pitch do klienta)<br/><br/>
+                        <strong>Jednak:</strong> Jeśli pracownik sam dopłaci różnicę Economy→Business z własnych pieniędzy, 
+                        firma nie może tego zabronić (lot nadal służbowy, mile należą do pracownika). Firma rozlicza koszty 
+                        Economy, pracownik pokrywa dopłatę. <strong>Gray area:</strong> Musi to być jasno zapisane w Travel Policy.
                       </p>
-                    </CardContent>
-                  </Card>
+                    </div>
 
-                  <Card className="border-slate-200">
-                    <CardHeader>
-                      <CardTitle className="text-lg">
-                        Co z prawami pasażera w przypadku problemów z lotem?
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-slate-700">
-                        Niezależnie od klasy podróży, <strong>pracownik ma prawo do odszkodowania za opóźniony lub anulowany lot</strong>. Odszkodowanie przysługuje pasażerowi (nie firmie), nawet jeśli bilet opłaciła firma. Więcej na ten temat: <Link href="/odszkodowanie-lot-sluzbowy" className="text-slate-900 underline hover:text-slate-700">Odszkodowanie za lot służbowy</Link>.
+                    <div>
+                      <h3 className="text-xl font-bold text-slate-900 mb-2">
+                        8. Co jeśli lot Premium Economy/Business Class zostanie opóźniony?
+                      </h3>
+                      <p className="text-slate-700 leading-relaxed">
+                        <strong>Masz te same prawa jak Economy</strong> – Rozporządzenie UE 261/2004 nie rozróżnia klas. 
+                        Odszkodowanie zależy od długości trasy i czasu opóźnienia (250-600 EUR). <strong>Dodatkowe benefity 
+                        w wyższych klasach:</strong> Priority rebooking (wcześniej znajdziesz alternatywny lot), lounge access 
+                        podczas czekania (jeśli masz status), lepszy catering compensation. Jeśli Twój lot służbowy został 
+                        opóźniony/anulowany, możesz{" "}
+                        <a 
+                          href="https://claimwinger.com/pl/opozniony-lot" 
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-blue-600 hover:text-blue-800 underline font-semibold"
+                        >
+                          sprawdzić swoje prawa w ClaimWinger
+                        </a>.
                       </p>
-                    </CardContent>
-                  </Card>
-                </div>
+                    </div>
+                  </div>
+                </section>
 
                 {/* CTA Box */}
                 <div className="bg-slate-900 text-white rounded-xl p-8 mt-12">
@@ -951,11 +967,14 @@ export default function BusinessClassVsPremiumEconomy() {
         </section>
 
         {/* Footer */}
-        <footer className="bg-slate-900 text-slate-300 py-12">
+        <footer className="bg-slate-900 text-white py-12 mt-16">
           <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div>
-                <h3 className="text-white font-bold mb-4">BizneLot.info</h3>
+                <h3 className="font-bold text-lg mb-4 flex items-center gap-2">
+                  <img src="/bizneslotlogotyp.png" alt="BizneLot.info" className="h-6 w-auto" />
+                  BizneLot.info
+                </h3>
                 <p className="text-sm">
                   Portal ekspercki o prawach pasażerów w podróżach służbowych i delegacjach.
                 </p>
@@ -1019,6 +1038,131 @@ export default function BusinessClassVsPremiumEconomy() {
           </div>
         </footer>
       </div>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": "Business Class vs. Premium Economy: Kompleksowe porównanie dla Travel Managerów",
+          "description": "Szczegółowe porównanie Business Class i Premium Economy: różnice w komfortie, cenie, cateringu i produktywności. Kiedy warto dopłacać? Kalkulator TCM i decyzja tree dla firm.",
+          "image": "https://bizneslot.info/og-image.png",
+          "author": {
+            "@type": "Person",
+            "name": "Piotr Wierzba",
+            "url": "https://www.linkedin.com/in/piotr-wierzba/"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "BizneLot.info",
+            "logo": {
+              "@type": "ImageObject",
+              "url": "https://bizneslot.info/og-image.png"
+            }
+          },
+          "datePublished": "2026-01-29",
+          "dateModified": "2026-01-29"
+        })}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "Czy Premium Economy to to samo co Business Class?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "NIE. Premium Economy to klasa pośrednia między Economy a Business Class. Premium Economy ma szersze fotele (18-19\"), więcej miejsca na nogi (+5-7 cm), lepsze jedzenie i priority boarding, ale NIE MA lie-flat seats. Business Class ma lie-flat beds (180° flat), prywatność, lounge access, premium catering i personal service."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Ile kosztuje dopłata z Economy do Premium Economy?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Dopłata zależy od trasy: Krótkie trasy europejskie (WAW-LON): +200-400 PLN, Średnie trasy (WAW-DXB): +800-1500 PLN, Long-haul (WAW-JFK): +1500-3000 PLN. Zasada: Jeśli dopłata przekracza 30% ceny biletu Economy, lepiej rozważyć upgrade do Business Class."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Czy w Premium Economy jest dostęp do lounge?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Generalnie NIE. Premium Economy nie daje automatycznego dostępu do lounge. Wyjątki: (1) Masz status Gold/Platinum w programie lojalnościowym, (2) Lecisz British Airways Club World, (3) Kupujesz lounge pass osobno (~80-120 PLN)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Na jakich trasach Premium Economy ma sens?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Premium Economy ma sens na lotach 6-10h, gdzie jest za krótko na Business Class (zbyt drogo) i za długo na Economy (unbearable discomfort). Sweet spot: WAW-DXB (6h), WAW-JFK (9h), WAW-BKK (10h). NIE ma sensu: Loty europejskie 2-3h (za mała różnica), ultra long-haul 12h+ (Business Class konieczność)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Czy można zrobić upgrade z Economy do Business Class?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "TAK, na 3 sposoby: (1) Za mile/punkty (15 000-40 000 mil), (2) Płatny upgrade przy check-in (24-48h przed lotem, ~50-70% różnicy), (3) Complimentary upgrade (jeśli masz status Gold+ i lot overbookowany). Pro tip: Kup Economy Flex – ma najwyższy priorytet do upgrade."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Jaka jest różnica między Business Class na krótkich i długich trasach?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Short-haul BC (1-3h): De facto Economy seat z zablokowanym środkowym miejscem, NIE MA lie-flat. Long-haul BC (6h+): Lie-flat beds (180°), direct aisle access, premium catering, lounge access, Wi-Fi. Na lotach 8h+ różnica jest game-changer."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Czy firma może zabronić pracownikom latania Business Class?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "TAK. Firma ustala Travel Policy i może ograniczyć BC do: lotów 8h+, senior management, mission-critical trips. Jednak: jeśli pracownik dopłaci różnicę z własnych pieniędzy, firma nie może zabronić (mile należą do pracownika)."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Co jeśli lot Premium Economy/Business Class zostanie opóźniony?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Masz te same prawa jak Economy – Rozporządzenie UE 261/2004 nie rozróżnia klas. Odszkodowanie: 250-600 EUR (zależy od trasy i opóźnienia). Dodatkowe benefity: Priority rebooking, lounge access podczas czekania, lepszy catering compensation."
+              }
+            }
+          ]
+        })}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bizneslot.info"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Artykuły",
+              "item": "https://bizneslot.info/artykuly"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Business Class vs Premium Economy",
+              "item": "https://bizneslot.info/artykuly/business-class-vs-premium-economy"
+            }
+          ]
+        })}
+      </script>
     </>
   );
 }

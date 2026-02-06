@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { Menu, X, Briefcase } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 interface MobileNavProps {
@@ -51,11 +51,13 @@ export function MobileNav({ currentPath = "/" }: MobileNavProps) {
       >
         <div className="flex flex-col h-full">
           {/* Header */}
-          <div className="flex items-center justify-between p-4 border-b border-slate-800">
-            <Link href="/" onClick={closeMenu} className="flex items-center gap-2 text-white font-bold">
-              <Briefcase className="h-5 w-5" />
-              BizneLot.info
-            </Link>
+          <div className="flex items-center justify-between p-6 border-b border-slate-200">
+            <div className="flex items-center gap-3">
+              <img src="/bizneslotlogotyp.png" alt="BiznesLot.info" className="h-10 w-auto" />
+              <div>
+                <h2 className="font-bold text-xl text-slate-900">BiznesLot.info</h2>
+              </div>
+            </div>
             <Button
               variant="ghost"
               size="icon"

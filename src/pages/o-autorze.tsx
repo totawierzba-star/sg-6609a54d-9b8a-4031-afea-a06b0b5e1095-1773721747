@@ -82,12 +82,12 @@ export default function OAutorze() {
 
       <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
         {/* Header */}
-        <header className="border-b border-slate-200 dark:border-slate-800 bg-white/80 dark:bg-slate-900/80 backdrop-blur-sm sticky top-0 z-50">
-          <div className="container mx-auto px-4 py-4">
+        <header className="bg-slate-900 text-white py-4 sticky top-0 z-50 shadow-lg">
+          <div className="container mx-auto px-4">
             <div className="flex items-center justify-between">
-              <Link href="/" className="flex items-center gap-2 text-slate-900 dark:text-slate-100 hover:text-slate-700 dark:hover:text-slate-300 transition-colors">
-                <Briefcase className="h-6 w-6" />
-                <span className="font-semibold text-lg">bizneslot.info</span>
+              <Link href="/" className="text-2xl font-bold flex items-center gap-2">
+                <img src="/bizneslotlogotyp.png" alt="BizneLot.info" className="h-8 w-auto" />
+                BizneLot.info
               </Link>
               <nav className="hidden md:flex gap-6">
                 <Link href="/odszkodowanie-lot-sluzbowy" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
@@ -415,14 +415,14 @@ export default function OAutorze() {
         </main>
 
         {/* Footer */}
-        <footer className="border-t border-slate-200 dark:border-slate-800 mt-20">
-          <div className="container mx-auto px-4 py-12">
-            <div className="grid md:grid-cols-3 gap-8 mb-8">
+        <footer className="bg-slate-900 text-white py-12 mt-16">
+          <div className="container mx-auto px-4">
+            <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div>
-                <div className="flex items-center gap-2 mb-4">
-                  <Briefcase className="h-5 w-5 text-slate-600 dark:text-slate-400" />
-                  <span className="font-semibold text-slate-900 dark:text-slate-100">bizneslot.info</span>
-                </div>
+                <h3 className="font-bold text-lg mb-4 flex items-center gap-2">
+                  <img src="/bizneslotlogotyp.png" alt="BizneLot.info" className="h-6 w-auto" />
+                  BizneLot.info
+                </h3>
                 <p className="text-slate-600 dark:text-slate-400 text-sm">
                   Portal edukacyjny o prawach pasażerów w podróżach służbowych.
                 </p>

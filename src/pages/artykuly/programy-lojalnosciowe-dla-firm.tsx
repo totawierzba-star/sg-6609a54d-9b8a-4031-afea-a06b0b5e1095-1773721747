@@ -19,7 +19,7 @@ export default function ProgramyLojalnoscioweDlaFirm() {
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between">
               <Link href="/" className="text-2xl font-bold flex items-center gap-2">
-                <Briefcase className="h-6 w-6" />
+                <img src="/bizneslotlogotyp.png" alt="BizneLot.info" className="h-8 w-auto" />
                 BizneLot.info
               </Link>
               <nav className="hidden md:flex gap-6">
@@ -629,7 +629,7 @@ export default function ProgramyLojalnoscioweDlaFirm() {
                   <strong>Miles & More (Lufthansa Group)</strong> jest najlepszym wyborem dla większości polskich firm. 
                   Powody: (1) Najlepsza dostępność z Warszawy (8-12 lotów dziennie do FRA/MUC), (2) LOT Polish Airlines 
                   jako partner Star Alliance pozwala zbierać mile M&M na lotach LOT, (3) Company Account umożliwia 
-                  centralizację mil, (4) Corporate deals od 100k EUR budżetu rocznie. Alternatywa: Miles+Bonus (LOT) 
+                  centralizację mil, (4) Corporate deals od 100k PLN budżetu rocznie. Alternatywa: Miles+Bonus (LOT) 
                   dla firm z bezpośrednimi lotami długodystansowymi.
                 </p>
               </div>
@@ -863,7 +863,7 @@ export default function ProgramyLojalnoscioweDlaFirm() {
             <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div>
                 <h3 className="font-bold text-lg mb-4 flex items-center gap-2">
-                  <Briefcase className="h-5 w-5" />
+                  <img src="/bizneslotlogotyp.png" alt="BizneLot.info" className="h-6 w-auto" />
                   BizneLot.info
                 </h3>
                 <p className="text-slate-400 text-sm">

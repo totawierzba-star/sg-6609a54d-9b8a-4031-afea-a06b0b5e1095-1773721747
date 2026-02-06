@@ -52,7 +52,7 @@ export default function BleisurePolitykaPodrozySluzbowych() {
             "name": "Jak rozliczyć podatkowo podróż Bleisure?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Część służbowych delegacji (dni robocze + zwykły koszt powrotu) = koszty uzyskania przychodu dla firmy. Dodatkowe dni urlopowe = koszt osobisty pracownika (hotel, wyżywienie nie podlegają zwrotowi). Bilet lotniczy: jeśli różnica między biletem z wcześniejszym a późniejszym powrotem jest minimalna lub ujemna, można ją wliczyć w koszty delegacji. Kluczowe: jasne rozdzielenie kosztów w dokumentacji."
+              "text": "Część służbowych delegacji (dni robocze + standardowy koszt powrotu) = koszty uzyskania przychodu dla firmy. Dodatkowe dni urlopowe = koszt osobisty pracownika (hotel, wyżywienie nie podlegają zwrotowi). Bilet lotniczy: jeśli różnica między biletem z wcześniejszym a późniejszym powrotem jest minimalna lub ujemna, można ją wliczyć w koszty delegacji. Kluczowe: jasne rozdzielenie kosztów w dokumentacji."
             }
           },
           {
@@ -146,10 +146,11 @@ export default function BleisurePolitykaPodrozySluzbowych() {
 
   return (
     <>
-      <SEO
-        title="Bleisure 2.0: Jak nowoczesne firmy łączą pracę z wypoczynkiem? [2026]"
+      <SEO 
+        title="Bleisure Travel Policy 2026: Jak wdrożyć? [Gotowy szablon + ROI]"
         description="Kompleksowy przewodnik po Bleisure Travel dla HR i Travel Managerów. Travel Policy, aspekty podatkowe, ubezpieczeniowe i Employer Branding. Gotowe szablony i case studies."
         url="https://bizneslot.info/artykuly/bleisure-polityka-podrozy-sluzbowych"
+        image="https://bizneslot.info/og-image.png"
       />
       <script
         type="application/ld+json"
@@ -158,15 +159,12 @@ export default function BleisurePolitykaPodrozySluzbowych() {
 
       <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-50">
         {/* Header */}
-        <header className="bg-white/80 backdrop-blur-sm border-b border-slate-200 sticky top-0 z-50">
-          <div className="container mx-auto px-4 py-4">
+        <header className="bg-slate-900 text-white py-4 sticky top-0 z-50 shadow-lg">
+          <div className="container mx-auto px-4">
             <div className="flex items-center justify-between">
-              <Link href="/" className="flex items-center gap-2 group">
-                <Briefcase className="w-8 h-8 text-slate-700 group-hover:text-slate-900 transition-colors" />
-                <div>
-                  <h1 className="text-xl font-bold text-slate-900">BizneLot.info</h1>
-                  <p className="text-xs text-slate-600">Prawa pasażerów w podróżach służbowych</p>
-                </div>
+              <Link href="/" className="text-2xl font-bold flex items-center gap-2">
+                <img src="/bizneslotlogotyp.png" alt="BizneLot.info" className="h-8 w-auto" />
+                BizneLot.info
               </Link>
 
               <nav className="hidden md:flex gap-6">
@@ -212,7 +210,7 @@ export default function BleisurePolitykaPodrozySluzbowych() {
               {/* Back Link */}
               <Link
                 href="/artykuly"
-                className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 mb-8 transition-colors group"
+                className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 transition-colors group"
               >
                 <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
                 Powrót do artykułów
@@ -560,7 +558,7 @@ export default function BleisurePolitykaPodrozySluzbowych() {
                     Krytyczna kwestia prawna
                   </AlertTitle>
                   <AlertDescription className="text-red-900 mt-2">
-                    <strong>Ubezpieczenie delegacyjne NIE OBEJMUJE dni prywatnych.</strong> Jeśli pracownik ulegnie wypadkowi podczas weekendu bleisure i nie ma własnego ubezpieczenia turystycznego, może to prowadzić do roszczeń prawnych wobec pracodawcy.
+                    <strong>Ubezpieczenie delegacyjne NIE obejmuje dni prywatnych.</strong> Jeśli pracownik ulegnie wypadkowi podczas weekendu bleisure i nie ma własnego ubezpieczenia turystycznego, może to prowadzić do roszczeń prawnych wobec pracodawcy.
                   </AlertDescription>
                 </Alert>
 
@@ -751,7 +749,7 @@ export default function BleisurePolitykaPodrozySluzbowych() {
                         <li>• 42% pracowników skorzystało z bleisure (średnio 2,3 razy/rok)</li>
                         <li>• Turnover spadł do 14% (spadek o 44%)</li>
                         <li>• Satysfakcja z delegacji wzrosła z 3,2/5 do 4,6/5</li>
-                        <li>• ROI: koszt wdrożenia polityki ~8000 PLN, oszczędność na rekrutacji ~280000 PLN</li>
+                        <li>• ROI: koszt wdrożenia polityki ~8000 PLN, potencjalna oszczędność na rekrutacji ~280000 PLN</li>
                       </ul>
                       <p className="text-slate-700">
                         <strong>Bonus:</strong> TechCorp zaoszczędziła również 23000 PLN na biletach (sobotnie powroty były tańsze niż piątkowe).
@@ -770,7 +768,7 @@ export default function BleisurePolitykaPodrozySluzbowych() {
                         <strong>Wyzwanie:</strong> Konsultanci spędzali 150+ dni rocznie w delegacjach, co prowadziło do wypalenia zawodowego i konfliktów work-life balance.
                       </p>
                       <p className="text-slate-700">
-                        <strong>Rozwiązanie:</strong> Wdrożono agresywną politykę bleisure: dla delegacji 5+ dni, automatyczna propozycja przedłużenia o 2 dni z 50% dopłatą firmy do hotelu.
+                        <strong>Rozwiązanie:</strong> Wdrożono agresywną politykę bleisure: dla delegacji 5+ dni, automatyczna propozycja przedłużenia o 2 dni z 50% dopłatą firmy do hoteli.
                       </p>
                       <p className="text-slate-700">
                         <strong>Rezultaty (po 8 miesiącach):</strong>
@@ -810,90 +808,126 @@ export default function BleisurePolitykaPodrozySluzbowych() {
                   </Card>
                 </div>
 
-                {/* FAQ Section */}
-                <h2 className="text-3xl font-bold text-slate-900 mt-12 mb-6">
-                  FAQ – Najczęściej zadawane pytania
-                </h2>
-
-                <div className="space-y-4 mb-12">
-                  <Card className="border-slate-200">
-                    <CardHeader>
-                      <CardTitle className="text-lg">
-                        Czym jest Bleisure Travel i jak działa w praktyce?
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-slate-700">
-                        Bleisure (Business + Leisure) to połączenie podróży służbowej z urlopem. Pracownik pozostaje 2-5 dni dłużej w miejscu delegacji na koszt własny, wykorzystując firmowy bilet lotniczy. Pracodawca pokrywa koszty części służbowej, pracownik sam płaci za dodatkowe dni (hotel, wyżywienie). W Polsce około 38% firm technologicznych oferuje taki benefit.
+                {/* FAQ */}
+                <section className="mb-12 bg-slate-50 p-8 rounded-lg">
+                  <h2 className="text-3xl font-bold text-slate-900 mb-6">FAQ – Najczęściej zadawane pytania o Bleisure</h2>
+                  
+                  <div className="space-y-6">
+                    <div>
+                      <h3 className="text-xl font-bold text-slate-900 mb-2">
+                        1. Czym jest Bleisure Travel i dlaczego zyskuje na popularności?
+                      </h3>
+                      <p className="text-slate-700 leading-relaxed">
+                        <strong>Bleisure = Business + Leisure</strong> – połączenie podróży służbowej z prywatnym wypoczynkiem. 
+                        Pracownik zostaje 2-3 dni dłużej w miejscu delegacji (na koszt własny) i wykorzystuje weekendy/urlop na 
+                        zwiedzanie. <strong>Dlaczego popularne?</strong> (1) <strong>Post-COVID shift:</strong> Remote work pokazał, 
+                        że work-life integration jest ważniejsze niż separation, (2) <strong>Gen Z & Millennials:</strong> 65% 
+                        pracowników do 35 lat wybiera pracę oferującą flexibility, (3) <strong>Employer benefit:</strong> Zero-cost 
+                        perk (firma płaci tylko za dni służbowe), ale ogromny boost employer branding.
                       </p>
-                    </CardContent>
-                  </Card>
+                    </div>
 
-                  <Card className="border-slate-200">
-                    <CardHeader>
-                      <CardTitle className="text-lg">
-                        Jakie są korzyści Bleisure dla pracodawcy?
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-slate-700">
-                        Kluczowe korzyści to: zwiększona satysfakcja pracowników (78% chętniej przyjmuje delegacje z opcją bleisure), niższy współczynnik wypalenia zawodowego (redukcja o 34%), lepszy Employer Branding, wyższa retencja talentów (o 23%), oraz możliwość optymalizacji kosztów biletów (wykorzystanie biletu powrotnego z późniejszą datą jest często tańsze niż zmiana rezerwacji).
+                    <div>
+                      <h3 className="text-xl font-bold text-slate-900 mb-2">
+                        2. Czy firma musi płacić za dni prywatne w Bleisure?
+                      </h3>
+                      <p className="text-slate-700 leading-relaxed">
+                        <strong>NIE.</strong> Firma pokrywa koszty TYLKO za dni służbowe (loty, hotel, diety). Pracownik płaci 
+                        za własne koszty w dniach prywatnych (hotel, jedzenie, transport). <strong>Wyjątek:</strong> Lot powrotny 
+                        – jeśli pracownik zostaje dłużej, koszt lotu może być taki sam lub niższy (często sobota-niedziela są 
+                        tańsze niż piątek). Firma pokrywa koszt do limitu biletu służbowego (np. gdyby wrócił w piątek). 
+                        <strong>Przykład:</strong> Pracownik leci WAW-NYC służbowo (10 400 mil Miles & More za round trip BC), 
+                        zostaje 3 dni dłużej prywatnie → mile trafiają na jego konto, firma nie może ich "odebrać". 
+                        <strong>Employer branding win:</strong> Pracownicy szybciej budują statusy dzięki Bleisure.
                       </p>
-                    </CardContent>
-                  </Card>
+                    </div>
 
-                  <Card className="border-slate-200">
-                    <CardHeader>
-                      <CardTitle className="text-lg">
-                        Jak rozliczyć podatkowo podróż Bleisure?
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-slate-700">
-                        Część służbowych delegacji (dni robocze + standardowy koszt powrotu) = koszty uzyskania przychodu dla firmy. Dodatkowe dni urlopowe = koszt osobisty pracownika (hotel, wyżywienie nie podlegają zwrotowi). Bilet lotniczy: jeśli różnica między biletem z wcześniejszym a późniejszym powrotem jest minimalna lub ujemna, można ją wliczyć w koszty delegacji. Kluczowe: jasne rozdzielenie kosztów w dokumentacji.
+                    <div>
+                      <h3 className="text-xl font-bold text-slate-900 mb-2">
+                        3. Jak rozliczyć koszty w systemie księgowym przy Bleisure?
+                      </h3>
+                      <p className="text-slate-700 leading-relaxed">
+                        <strong>Klucz: Clear split między dni służbowe a prywatne.</strong><br/>
+                        <strong>Loty:</strong> Firma płaci za bilet w obie strony (do limitu kosztu gdyby wrócił w ostatni dzień służbowy)<br/>
+                        <strong>Hotel:</strong> Split invoice – firma płaci za noce Pn-Pt, pracownik za So-Nd (2 osobne faktury lub split billing)<br/>
+                        <strong>Diety:</strong> Firma wypłaca tylko za dni służbowe (Pn-Pt)<br/>
+                        <strong>Transport lokalny:</strong> Firma płaci za przejazdy w dni służbowe, pracownik za weekend<br/><br/>
+                        <strong>System:</strong> Expense management tool (SAP Concur, Expensify) z flagą "Bleisure" – automatyczny split.
                       </p>
-                    </CardContent>
-                  </Card>
+                    </div>
 
-                  <Card className="border-slate-200">
-                    <CardHeader>
-                      <CardTitle className="text-lg">
-                        Czy ubezpieczenie służbowe obejmuje dni prywatne w Bleisure?
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-slate-700">
-                        Standardowe ubezpieczenie delegacyjne NIE obejmuje dni prywatnych. Pracownik musi wykupić własne ubezpieczenie turystyczne na dodatkowe dni lub firma może oferować rozszerzony pakiet jako benefit (z jasnym zapisem, że to świadczenie dodatkowe podlegające opodatkowaniu).
+                    <div>
+                      <h3 className="text-xl font-bold text-slate-900 mb-2">
+                        4. Czy Bleisure wpływa na ubezpieczenie pracownika?
+                      </h3>
+                      <p className="text-slate-700 leading-relaxed">
+                        <strong>TAK, wymaga rozszerzenia polisy.</strong> Standardowe ubezpieczenie służbowe pokrywa TYLKO dni 
+                        służbowe. W dni prywatne (Bleisure extension) pracownik musi mieć własne ubezpieczenie turystyczne lub firma 
+                        może rozszerzyć corporate travel insurance na dni Bleisure (typowy koszt: +15-25 PLN/dzień per osoba). 
+                        <strong>Best practice:</strong> Firma oferuje opcję wykupienia rozszerzenia polisy (pracownik płaci z salary), 
+                        lub wymaga potwierdzenia posiadania własnego ubezpieczenia przed approve Bleisure request. 
+                        <strong>Assistance 24/7</strong> powinna działać również w dni prywatne.
                       </p>
-                    </CardContent>
-                  </Card>
+                    </div>
 
-                  <Card className="border-slate-200">
-                    <CardHeader>
-                      <CardTitle className="text-lg">
-                        Jak stworzyć Travel Policy uwzględniającą Bleisure?
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-slate-700">
-                        Skuteczna Travel Policy Bleisure powinna zawierać: definicję bleisure, warunki kwalifikacji (np. minimum 3 dni delegacji), proces zatwierdzania (przełożony + HR), zasady rozliczania kosztów, kwestie ubezpieczeniowe, odpowiedzialność pracownika, oraz procedurę zmiany rezerwacji lotniczej. Kluczowe jest zachowanie transparentności i zgodności z przepisami podatkowymi. Zobacz gotowy szablon powyżej w artykule.
+                    <div>
+                      <h3 className="text-xl font-bold text-slate-900 mb-2">
+                        5. Jak Bleisure wpływa na podatki i ZUS?
+                      </h3>
+                      <p className="text-slate-700 leading-relaxed">
+                        <strong>Dni służbowe:</strong> Diety (do limitu 30 EUR/dzień zagraniczne) są zwolnione z podatku i ZUS 
+                        (zgodnie z Kodeksem Pracy Art. 775 §3). <strong>Dni prywatne:</strong> NIE są objęte żadnymi льgотami 
+                        podatkowymi – pracownik płaci z własnych środków po opodatkowaniu. <strong>Lot powrotny (jeśli firma płaci):</strong> 
+                        Jeśli koszt lotu So-Nd jest równy lub niższy niż byłby Pt wieczorem, to OK (brak benefit). Jeśli droższy → 
+                        różnica = taxable benefit (do rozliczenia w PIT jako przychód). <strong>Zasada:</strong> Clear documentation 
+                        – expense report musi pokazywać split dni służbowe/prywatne.
                       </p>
-                    </CardContent>
-                  </Card>
+                    </div>
 
-                  <Card className="border-slate-200">
-                    <CardHeader>
-                      <CardTitle className="text-lg">
-                        Jakie są najczęstsze błędy firm wdrażających Bleisure?
-                      </CardTitle>
-                    </CardHeader>
-                    <CardContent>
-                      <p className="text-slate-700">
-                        Najczęstsze błędy to: brak pisemnej polityki (ryzyko nierównego traktowania), nieprecyzyjne rozliczenie kosztów (problemy z ZUS/US), brak komunikacji o ubezpieczeniu (ryzyko prawne dla firmy), niedoprecyzowanie odpowiedzialności za bagaż firmowy podczas dni prywatnych, oraz brak procedury awaryjnej (co jeśli pracownik zachoruje podczas urlopu po delegacji).
+                    <div>
+                      <h3 className="text-xl font-bold text-slate-900 mb-2">
+                        6. Co jeśli pracownik zachoruje w czasie Bleisure (dni prywatne)?
+                      </h3>
+                      <p className="text-slate-700 leading-relaxed">
+                        <strong>W dni służbowe:</strong> Standardowa procedura – L4, firma pokrywa koszty, assistance 24/7.<br/>
+                        <strong>W dni prywatne (Bleisure):</strong> Pracownik jest na urlopie/wolnym – jeśli zachoruje, używa własnego 
+                        ubezpieczenia turystycznego. Firma NIE pokrywa kosztów medycznych w dni prywatne. <strong>Gray area:</strong> 
+                        Jeśli choroba zaczęła się w dni służbowe i trwa w dni prywatne → firma może pokryć do końca leczenia 
+                        (corporate insurance extension). <strong>Best practice:</strong> W Travel Policy jasno: "Corporate insurance 
+                        covers only business days. Employee must have personal travel insurance for Bleisure days."
                       </p>
-                    </CardContent>
-                  </Card>
-                </div>
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-bold text-slate-900 mb-2">
+                        7. Jak Bleisure wpływa na mile i punkty w programach lojalnościowych?
+                      </h3>
+                      <p className="text-slate-700 leading-relaxed">
+                        <strong>Mile należą do pracownika, nie do firmy</strong> – nawet jeśli lot jest służbowy (wyrok NSA 2018). 
+                        W Bleisure: pracownik zbiera mile za lot służbowy (firm paid) i może je wykorzystać prywatnie. 
+                        <strong>Bonus:</strong> Jeśli zostaje dłużej, może wykorzystać status (lounge access, bagaż) również w dni 
+                        prywatne. <strong>Przykład:</strong> Pracownik leci WAW-NYC służbowo (10 400 mil Miles & More za round trip BC), 
+                        zostaje 3 dni dłużej prywatnie → mile trafiają na jego konto, firma nie może ich "odebrać". 
+                        <strong>Employer branding win:</strong> Pracownicy szybciej budują statusy dzięki Bleisure.
+                      </p>
+                    </div>
+
+                    <div>
+                      <h3 className="text-xl font-bold text-slate-900 mb-2">
+                        8. Jakie są najczęstsze błędy przy wdrażaniu Bleisure Policy?
+                      </h3>
+                      <p className="text-slate-700 leading-relaxed">
+                        <strong>TOP 5 błędów:</strong><br/>
+                        <strong>1. Brak clear guidelines</strong> – policy mówi "możesz zostać dłużej", ale nie precyzuje kto płaci za co → chaos w expense reports.<br/>
+                        <strong>2. No pre-approval process</strong> – pracownik zostaje bez zgody managera → konflikt przy rozliczeniu.<br/>
+                        <strong>3. Ubezpieczenie gap</strong> – firma zakłada, że polisa służbowe pokrywa dni prywatne → pracownik ma wypadek w weekend → brak coverage.<br/>
+                        <strong>4. Tax issues</strong> – firma płaci za lot droższy niż by był w Pt → IRS/US traktuje jako taxable benefit → pracownik dostaje tax bill.<br/>
+                        <strong>5. No tracking</strong> – firma nie monitoruje Bleisure adoption → nie wie czy program działa (ROI unknown).<br/><br/>
+                        <strong>Fix:</strong> Detailed Bleisure Policy (jak w tym artykule), approval workflow, insurance clarity, tax consultation, quarterly metrics review.
+                      </p>
+                    </div>
+                  </div>
+                </section>
 
                 {/* Summary */}
                 <div className="bg-gradient-to-r from-purple-100 to-purple-50 rounded-xl p-8 mt-12 border border-purple-200">
@@ -989,11 +1023,14 @@ export default function BleisurePolitykaPodrozySluzbowych() {
         </section>
 
         {/* Footer */}
-        <footer className="bg-slate-900 text-slate-300 py-12">
+        <footer className="bg-slate-900 text-white py-12 mt-16">
           <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-3 gap-8 mb-8">
+            <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div>
-                <h3 className="text-white font-bold mb-4">BizneLot.info</h3>
+                <h3 className="font-bold text-lg mb-4 flex items-center gap-2">
+                  <img src="/bizneslotlogotyp.png" alt="BizneLot.info" className="h-6 w-auto" />
+                  BizneLot.info
+                </h3>
                 <p className="text-sm">
                   Portal ekspercki o prawach pasażerów w podróżach służbowych i delegacjach.
                 </p>

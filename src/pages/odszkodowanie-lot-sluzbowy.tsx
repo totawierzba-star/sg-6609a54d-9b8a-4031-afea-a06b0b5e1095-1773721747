@@ -104,12 +104,12 @@ export default function OdskodowanieLotSluzbowy() {
       
       <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
         {/* Header */}
-        <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
-          <div className="container mx-auto px-4 py-4">
+        <header className="bg-slate-900 text-white py-4 sticky top-0 z-50 shadow-lg">
+          <div className="container mx-auto px-4">
             <div className="flex items-center justify-between">
-              <Link href="/" className="flex items-center gap-2">
-                <Briefcase className="h-6 w-6 text-slate-700" />
-                <span className="text-xl font-bold text-slate-900">bizneslot.info</span>
+              <Link href="/" className="text-2xl font-bold flex items-center gap-2">
+                <img src="/bizneslotlogotyp.png" alt="BizneLot.info" className="h-8 w-auto" />
+                BizneLot.info
               </Link>
               <nav className="hidden md:flex gap-6">
                 <Link href="/odszkodowanie-lot-sluzbowy" className="text-sm text-slate-900 font-medium">
@@ -608,14 +608,14 @@ export default function OdskodowanieLotSluzbowy() {
         </article>
 
         {/* Footer */}
-        <footer className="bg-slate-50 border-t py-12 px-4 mt-16">
-          <div className="container mx-auto max-w-6xl">
-            <div className="grid md:grid-cols-4 gap-8">
+        <footer className="bg-slate-900 text-white py-12 mt-16">
+          <div className="container mx-auto px-4">
+            <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div>
-                <Link href="/" className="flex items-center gap-2 mb-4">
-                  <Briefcase className="h-5 w-5 text-slate-700" />
-                  <span className="font-bold text-slate-900">bizneslot.info</span>
-                </Link>
+                <h3 className="font-bold text-lg mb-4 flex items-center gap-2">
+                  <img src="/bizneslotlogotyp.png" alt="BizneLot.info" className="h-6 w-auto" />
+                  BizneLot.info
+                </h3>
                 <p className="text-sm text-slate-600">
                   Portal edukacyjny o prawach pasażerów w podróżach służbowych.
                 </p>
