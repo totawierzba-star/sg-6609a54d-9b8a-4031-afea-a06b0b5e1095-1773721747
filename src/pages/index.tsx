@@ -5,6 +5,8 @@ import { Briefcase, Scale, FileText, Users, CheckCircle2, ArrowRight, Star, Plan
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useState, useEffect } from "react";
+import { Menu, Heart } from "lucide-react";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
@@ -116,7 +118,18 @@ export default function Home() {
                   O autorze
                 </Link>
               </nav>
-              <MobileNav currentPath="/" />
+              {/* Mobile Menu Button */}
+              <div className="flex md:hidden items-center gap-2">
+                <LanguageSwitcher />
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  onClick={() => setMobileMenuOpen(true)}
+                  className="text-white hover:bg-slate-800"
+                >
+                  <Menu className="h-6 w-6" />
+                </Button>
+              </div>
             </div>
           </div>
         </header>
