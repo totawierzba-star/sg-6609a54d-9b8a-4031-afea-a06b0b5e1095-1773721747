@@ -5,7 +5,7 @@ export function middleware(request: NextRequest) {
   
   // Check if pathname already has a locale
   const pathnameHasLocale = ["/pl", "/en"].some(
-    (locale) => pathname.startsWith(locale) || pathname === locale.slice(1)
+    (locale) => pathname.startsWith(`${locale}/`) || pathname === locale
   );
 
   if (pathnameHasLocale) {
@@ -16,12 +16,12 @@ export function middleware(request: NextRequest) {
   const acceptLanguage = request.headers.get("accept-language") || "";
   const browserLang = acceptLanguage.split(",")[0].split("-")[0].toLowerCase();
 
-  // Determine locale: use Polish only if browser language is Polish, otherwise English
+  // Determine locale: use Polish if browser language is Polish, otherwise English
   const locale = browserLang === "pl" ? "pl" : "en";
 
   // Redirect to the locale-specific path
   const url = request.nextUrl.clone();
-  url.pathname = `/${locale}${pathname}`;
+  url.pathname = `/${locale}${pathname === "/" ? "" : pathname}`;
   
   return NextResponse.redirect(url);
 }
