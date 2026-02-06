@@ -12,11 +12,11 @@ export function middleware(request: NextRequest) {
     return NextResponse.next();
   }
 
-  // Get browser language
+  // Get browser language from Accept-Language header
   const acceptLanguage = request.headers.get("accept-language") || "";
   const browserLang = acceptLanguage.split(",")[0].split("-")[0].toLowerCase();
 
-  // Determine locale: prefer browser language if Polish, otherwise default to English
+  // Determine locale: use Polish only if browser language is Polish, otherwise English
   const locale = browserLang === "pl" ? "pl" : "en";
 
   // Redirect to the locale-specific path
