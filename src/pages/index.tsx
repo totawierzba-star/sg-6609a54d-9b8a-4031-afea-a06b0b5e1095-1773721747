@@ -140,13 +140,13 @@ export default function Home() {
                 gdy lot służbowy zostanie opóźniony lub anulowany – i kto ma prawo do odszkodowania.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-400">
-                <Button asChild size="lg" className="text-lg">
+                <Button asChild size="lg" className="text-lg bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300">
                   <Link href="/odszkodowanie-lot-sluzbowy">
                     Poznaj swoje prawa
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Link>
                 </Button>
-                <Button asChild variant="outline" size="lg" className="text-lg">
+                <Button asChild variant="outline" size="lg" className="text-lg border-2 border-slate-300 hover:border-slate-900 hover:bg-slate-50 shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300">
                   <Link href="/anulowany-lot-delegacja">
                     Anulowany lot w delegacji
                   </Link>
