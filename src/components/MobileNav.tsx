@@ -51,11 +51,11 @@ export function MobileNav({ currentPath = "/" }: MobileNavProps) {
       >
         <div className="flex flex-col h-full">
           {/* Header */}
-          <div className="flex items-center justify-between p-6 border-b border-slate-200">
+          <div className="flex items-center justify-between p-6 border-b border-slate-700">
             <div className="flex items-center gap-3">
               <img src="/bizneslotlogotyp.png" alt="BiznesLot.info" className="h-10 w-auto" />
               <div>
-                <h2 className="font-bold text-xl text-slate-900">BiznesLot.info</h2>
+                <h2 className="font-bold text-xl text-white">BiznesLot.info</h2>
               </div>
             </div>
             <Button
@@ -88,7 +88,7 @@ export function MobileNav({ currentPath = "/" }: MobileNavProps) {
           </nav>
 
           {/* Footer */}
-          <div className="p-4 border-t border-slate-800">
+          <div className="p-4 border-t border-slate-700">
             <p className="text-xs text-slate-400 text-center">
               Portal edukacyjny o prawach pasażerów
             </p>
