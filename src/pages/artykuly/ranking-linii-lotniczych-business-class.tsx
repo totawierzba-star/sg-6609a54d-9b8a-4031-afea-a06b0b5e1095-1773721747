@@ -1,5 +1,6 @@
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
+import { MobileNav } from "@/components/MobileNav";
 import { Briefcase, Plane, Star, Award, TrendingUp, CheckCircle2, AlertCircle, Users, DollarSign, Clock, Wifi, Coffee, BookOpen } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -22,19 +23,20 @@ export default function RankingLiniiLotniczychBusinessClass() {
                 BizneLot.info
               </Link>
               <nav className="hidden md:flex gap-6">
-                <Link href="/odszkodowanie-lot-sluzbowy" className="hover:text-slate-300 transition-colors">
+                <Link href="/odszkodowanie-lot-sluzbowy" className="text-slate-700 hover:text-slate-900 transition-colors">
                   Odszkodowania
                 </Link>
-                <Link href="/bilet-firmowy-prawa" className="hover:text-slate-300 transition-colors">
-                  Bilety firmowe
+                <Link href="/pracodawca-a-odszkodowanie" className="text-slate-700 hover:text-slate-900 transition-colors">
+                  Pracodawca
                 </Link>
-                <Link href="/artykuly" className="hover:text-slate-300 transition-colors font-semibold">
+                <Link href="/artykuly" className="text-slate-900 font-semibold">
                   Artykuły
                 </Link>
-                <Link href="/o-autorze" className="hover:text-slate-300 transition-colors">
+                <Link href="/o-autorze" className="text-slate-700 hover:text-slate-900 transition-colors">
                   O autorze
                 </Link>
               </nav>
+              <MobileNav currentPath="/artykuly/ranking-linii-lotniczych-business-class" />
             </div>
           </div>
         </header>
@@ -339,7 +341,7 @@ export default function RankingLiniiLotniczychBusinessClass() {
                   <div>
                     <p className="text-slate-600 text-sm">
                       <strong>Z Polski:</strong> Via Frankfurt/Munich (Star Alliance). Idealny na trasy do Japonii. 
-                      Cena WAW-FRA-TYO: ~14-18k PLN BC round trip.
+                      Cena WAW-FRA-TYO: ~14-18k PLN BC.
                     </p>
                   </div>
                 </div>

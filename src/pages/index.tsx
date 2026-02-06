@@ -1,6 +1,7 @@
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
-import { Briefcase, Shield, FileText, Scale, ArrowRight, CheckCircle2, BookOpen, Users } from "lucide-react";
+import { MobileNav } from "@/components/MobileNav";
+import { Briefcase, Scale, FileText, Users, CheckCircle2, ArrowRight, Star, Plane, Award, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -62,27 +63,28 @@ export default function Home() {
       
       <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
         {/* Header */}
-        <header className="border-b bg-white/80 backdrop-blur-sm sticky top-0 z-50">
-          <div className="container mx-auto px-4 py-4">
+        <header className="bg-slate-900 text-white py-4 sticky top-0 z-50 shadow-lg">
+          <div className="container mx-auto px-4">
             <div className="flex items-center justify-between">
-              <div className="flex items-center gap-2">
-                <Briefcase className="h-6 w-6 text-slate-700" />
-                <span className="text-xl font-bold text-slate-900">bizneslot.info</span>
-              </div>
+              <Link href="/" className="text-2xl font-bold flex items-center gap-2">
+                <Briefcase className="h-6 w-6" />
+                BizneLot.info
+              </Link>
               <nav className="hidden md:flex gap-6">
-                <Link href="/odszkodowanie-lot-sluzbowy" className="text-slate-700 hover:text-slate-900 transition-colors">
+                <Link href="/odszkodowanie-lot-sluzbowy" className="hover:text-slate-300 transition-colors">
                   Odszkodowania
                 </Link>
-                <Link href="/pracodawca-a-odszkodowanie" className="text-slate-700 hover:text-slate-900 transition-colors">
-                  Pracodawca
+                <Link href="/bilet-firmowy-prawa" className="hover:text-slate-300 transition-colors">
+                  Bilety firmowe
                 </Link>
-                <Link href="/artykuly" className="text-slate-700 hover:text-slate-900 transition-colors">
+                <Link href="/artykuly" className="hover:text-slate-300 transition-colors">
                   Artykuły
                 </Link>
-                <Link href="/o-autorze" className="text-slate-700 hover:text-slate-900 transition-colors">
+                <Link href="/o-autorze" className="hover:text-slate-300 transition-colors">
                   O autorze
                 </Link>
               </nav>
+              <MobileNav currentPath="/" />
             </div>
           </div>
         </header>
@@ -280,63 +282,63 @@ export default function Home() {
         {/* Najnowsze artykuły */}
         <section className="py-16 bg-slate-50">
           <div className="container mx-auto px-4">
-            <div className="max-w-6xl mx-auto">
-              <div className="flex items-center justify-between mb-8">
-                <h2 className="text-3xl font-bold text-slate-900">Najnowsze artykuły</h2>
-                <Link href="/artykuly" className="text-slate-700 hover:text-slate-900 font-medium">
-                  Zobacz wszystkie →
-                </Link>
-              </div>
-              
-              <div className="grid md:grid-cols-2 gap-8">
-                <Link
-                  href="/artykuly/bleisure-polityka-podrozy-sluzbowych"
-                  className="bg-white rounded-xl p-8 border border-slate-200 hover:shadow-lg transition-all group"
-                >
-                  <div className="flex items-center gap-3 mb-4 text-sm text-slate-600">
-                    <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-medium">
-                      Travel Management
-                    </span>
-                    <span>29 stycznia 2026</span>
-                    <span>•</span>
-                    <span>12 min</span>
+            <h2 className="text-3xl font-bold text-slate-900 mb-2">Najnowsze artykuły</h2>
+            <p className="text-slate-600 mb-8">Praktyczne porady dla profesjonalistów podróżujących służbowo</p>
+            
+            <div className="grid md:grid-cols-3 gap-8">
+              <Link href="/artykuly/ranking-linii-lotniczych-business-class" className="group">
+                <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow h-full">
+                  <div className="p-6">
+                    <div className="flex items-center gap-2 text-sm text-slate-600 mb-3">
+                      <Award className="h-4 w-4" />
+                      <span>Travel Management</span>
+                      <span className="ml-auto">12 min</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
+                      Ranking linii lotniczych Business Class 2026
+                    </h3>
+                    <p className="text-slate-600 text-sm">
+                      TOP 10 najlepszych linii lotniczych w klasie biznes. Porównanie produktów, lie-flat seats, catering. Które wybierać dla podróży służbowych?
+                    </p>
                   </div>
-                  <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-slate-700">
-                    Bleisure 2.0: Jak nowoczesne firmy łączą pracę z wypoczynkiem?
-                  </h3>
-                  <p className="text-slate-600 mb-4">
-                    Kompleksowy przewodnik po Bleisure Travel dla HR i Travel Managerów: jak stworzyć Travel Policy, uniknąć problemów podatkowych i wykorzystać bleisure jako narzędzie Employer Branding.
-                  </p>
-                  <span className="text-slate-700 font-medium group-hover:gap-2 inline-flex items-center gap-1 transition-all">
-                    Czytaj więcej
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </span>
-                </Link>
+                </div>
+              </Link>
 
-                <Link
-                  href="/artykuly/private-jet-vs-business-class"
-                  className="bg-white rounded-xl p-8 border border-slate-200 hover:shadow-lg transition-all group"
-                >
-                  <div className="flex items-center gap-3 mb-4 text-sm text-slate-600">
-                    <span className="px-3 py-1 bg-slate-900 text-white rounded-full text-xs font-medium">
-                      Logistyka Biznesowa
-                    </span>
-                    <span>29 stycznia 2026</span>
-                    <span>•</span>
-                    <span>10 min</span>
+              <Link href="/artykuly/programy-lojalnosciowe-dla-firm" className="group">
+                <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow h-full">
+                  <div className="p-6">
+                    <div className="flex items-center gap-2 text-sm text-slate-600 mb-3">
+                      <Award className="h-4 w-4" />
+                      <span>Travel Management</span>
+                      <span className="ml-auto">14 min</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
+                      TOP 5 programów lojalnościowych dla firm
+                    </h3>
+                    <p className="text-slate-600 text-sm">
+                      Miles & More vs Flying Blue vs Executive Club. Który program wybrać? Analiza ROI i corporate deals dla Travel Managerów.
+                    </p>
                   </div>
-                  <h3 className="text-2xl font-bold text-slate-900 mb-4 group-hover:text-slate-700">
-                    Private Jet vs. Business Class: Kiedy czarter się opłaca?
-                  </h3>
-                  <p className="text-slate-600 mb-4">
-                    Analiza kosztów dla Travel Managerów: kiedy wynajem prywatnego odrzutowca jest tańszy niż Business Class? Kalkulacja dla grup 6-10 osób, oszczędność czasu i ROI.
-                  </p>
-                  <span className="text-slate-700 font-medium group-hover:gap-2 inline-flex items-center gap-1 transition-all">
-                    Czytaj więcej
-                    <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                  </span>
-                </Link>
-              </div>
+                </div>
+              </Link>
+
+              <Link href="/artykuly/karta-statusowa-lounge" className="group">
+                <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow h-full">
+                  <div className="p-6">
+                    <div className="flex items-center gap-2 text-sm text-slate-600 mb-3">
+                      <Star className="h-4 w-4" />
+                      <span>Travel Benefits</span>
+                      <span className="ml-auto">11 min</span>
+                    </div>
+                    <h3 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-blue-600 transition-colors">
+                      Karta statusowa a wstęp do lounge
+                    </h3>
+                    <p className="text-slate-600 text-sm">
+                      Wszystko o statusach Silver, Gold, Platinum. Dostęp do lounge, bagaż, priority boarding. Ile warte? Jak zdobyć?
+                    </p>
+                  </div>
+                </div>
+              </Link>
             </div>
           </div>
         </section>

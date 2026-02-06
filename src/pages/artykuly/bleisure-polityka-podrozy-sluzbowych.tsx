@@ -1,10 +1,11 @@
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
+import { MobileNav } from "@/components/MobileNav";
 import { Briefcase, ArrowLeft, Calendar, Clock, Users, Plane, Heart, Shield, TrendingUp, FileText, AlertCircle, CheckCircle2, XCircle, DollarSign, Building2, Globe, Scale } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
-export default function BleisurePolitykaPodrozySluzowych() {
+export default function BleisurePolitykaPodrozySluzbowych() {
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
@@ -182,6 +183,7 @@ export default function BleisurePolitykaPodrozySluzowych() {
                   O autorze
                 </Link>
               </nav>
+              <MobileNav currentPath="/artykuly/bleisure-polityka-podrozy-sluzbowych" />
             </div>
           </div>
         </header>
@@ -793,7 +795,7 @@ export default function BleisurePolitykaPodrozySluzowych() {
                         <strong>Wyzwanie:</strong> Trudności w rekrutacji Travel Managerów i regionalnych menedżerów gotowych do częstych podróży.
                       </p>
                       <p className="text-slate-700">
-                        <strong>Rozwiązanie:</strong> Bleisure jako główny element Employer Value Proposition w ogłoszeniach rekrutacyjnych. Hasło: "Zwiedzaj świat, pracując z nami".
+                        <strong>Rozwiązanie:</strong> Bleisure jako główny element Employer Value Proposition w ogłoszenach rekrutacyjnych. Hasło: "Zwiedzaj świat, pracując z nami".
                       </p>
                       <p className="text-slate-700">
                         <strong>Rezultaty (po 6 miesiącach):</strong>
@@ -874,7 +876,7 @@ export default function BleisurePolitykaPodrozySluzowych() {
                     </CardHeader>
                     <CardContent>
                       <p className="text-slate-700">
-                        Skuteczna Travel Policy Bleisure powinna zawierać: definicję bleisure, warunki kwalifikacji (np. minimum 3 dni delegacji), proces zatwierdzania (przełożony + HR), zasady rozliczania kosztów, kwestie ubezpieczeniowe, odpowiedzialność pracownika, oraz procedurę zmiany rezerwacji lotniczej. Kluczowe jest zachowanie transparentności i zgodności z prawem podatkowym. Zobacz gotowy szablon powyżej w artykule.
+                        Skuteczna Travel Policy Bleisure powinna zawierać: definicję bleisure, warunki kwalifikacji (np. minimum 3 dni delegacji), proces zatwierdzania (przełożony + HR), zasady rozliczania kosztów, kwestie ubezpieczeniowe, odpowiedzialność pracownika, oraz procedurę zmiany rezerwacji lotniczej. Kluczowe jest zachowanie transparentności i zgodności z przepisami podatkowymi. Zobacz gotowy szablon powyżej w artykule.
                       </p>
                     </CardContent>
                   </Card>

@@ -1,6 +1,7 @@
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
-import { Briefcase, Scale, ArrowRight, CheckCircle2, AlertCircle, Shield, FileText } from "lucide-react";
+import { MobileNav } from "@/components/MobileNav";
+import { Briefcase, Building2, ArrowRight, CheckCircle2, AlertCircle, FileText, Scale, Users, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
@@ -139,6 +140,7 @@ export default function PracodawcaAOdszkodowanie() {
                   O autorze
                 </Link>
               </nav>
+              <MobileNav currentPath="/pracodawca-a-odszkodowanie" />
             </div>
           </div>
         </header>
@@ -375,7 +377,7 @@ export default function PracodawcaAOdszkodowanie() {
                     <ul className="space-y-3 text-green-900">
                       <li className="flex items-start gap-2">
                         <CheckCircle2 className="h-5 w-5 flex-shrink-0 mt-0.5" />
-                        <span>Prosić o informację o złożonej reklamacji (dla dokumentacji wewnętrznej)</span>
+                        <span>Prosić o informację o reklamacji (dla dokumentacji wewnętrznej)</span>
                       </li>
                       <li className="flex items-start gap-2">
                         <CheckCircle2 className="h-5 w-5 flex-shrink-0 mt-0.5" />
@@ -614,7 +616,7 @@ export default function PracodawcaAOdszkodowanie() {
                   <ul className="space-y-2 ml-6 text-slate-700">
                     <li>• Prawo UE ma pierwszeństwo przed krajowym prawem pracy</li>
                     <li>• Regulaminy wewnętrzne nie mogą ograniczać praw wynikających z UE</li>
-                    <li>• Pracownik jest stroną uprawnioną do rekompensaty lotniczej</li>
+                    <li>• Pracownik jest stroną uprawnioną do odszkodowania lotniczego</li>
                     <li>• Potrącenie odszkodowania z wynagrodzenia jest bezprawne</li>
                   </ul>
                 </CardContent>

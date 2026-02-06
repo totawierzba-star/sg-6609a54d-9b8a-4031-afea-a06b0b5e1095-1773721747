@@ -1,6 +1,7 @@
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
-import { Briefcase, ArrowLeft, Plane, TrendingUp, DollarSign, Calendar, Clock, CheckCircle2, XCircle, AlertCircle, BarChart3, Wifi, Coffee } from "lucide-react";
+import { MobileNav } from "@/components/MobileNav";
+import { Briefcase, BarChart3, DollarSign, TrendingUp, Calendar, ArrowRight, CheckCircle2, Plane, XCircle, Coffee, Wifi, Clock, AlertCircle, ArrowLeft } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 
@@ -56,7 +57,7 @@ export default function BusinessClassVsPremiumEconomy() {
           },
           {
             "@type": "Question",
-            "name": "Jakie są kluczowe różnice w komforcie między tymi klasami?",
+            "name": "Jakie są kluczowe różnice w komfortu między tymi klasami?",
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Business Class: fotele lie-flat (180°), szerokość 50-58 cm, direct aisle access, prywatność, duże biurko. Premium Economy: recline 38-40°, szerokość 46-50 cm, brak pełnego rozłożenia, współdzielony dostęp do przejścia. Różnica w możliwości pełnego wypoczynku jest krytyczna na lotach 10h+."
@@ -164,6 +165,7 @@ export default function BusinessClassVsPremiumEconomy() {
                   O autorze
                 </Link>
               </nav>
+              <MobileNav currentPath="/artykuly/business-class-vs-premium-economy" />
             </div>
           </div>
         </header>
@@ -228,7 +230,7 @@ export default function BusinessClassVsPremiumEconomy() {
                 <Alert className="bg-blue-50 border-blue-200 mb-8">
                   <BarChart3 className="h-5 w-5 text-blue-700" />
                   <AlertDescription className="text-blue-900">
-                    <strong>TL;DR dla Travel Managerów:</strong> Premium Economy oszczędza ~11 000 PLN na bilecie (vs. Business Class) i wystarcza na loty do 8-9h. Business Class jest uzasadniona dla tras 10h+ z bezpośrednim spotkaniem po przylocie lub dla częstych podróżników (6+ lotów rocznie).
+                    <strong>TL;DR dla Travel Managerów:</strong> Premium Economy oszczędza ~11 000 PLN na bilecie (vs. Business Class) i wystarcza na loty do 8-9h. Business Class jest uzasadniona dla tras 10h+ z bezpośrednim spotkaniem po przylocie lub dla częstych podróży (6+ lotów rocznie).
                   </AlertDescription>
                 </Alert>
 
@@ -801,7 +803,7 @@ export default function BusinessClassVsPremiumEconomy() {
                   <Card className="border-slate-200">
                     <CardHeader>
                       <CardTitle className="text-lg">
-                        Jakie są kluczowe różnice w komforcie między tymi klasami?
+                        Jakie są kluczowe różnice w komfortu między tymi klasami?
                       </CardTitle>
                     </CardHeader>
                     <CardContent>

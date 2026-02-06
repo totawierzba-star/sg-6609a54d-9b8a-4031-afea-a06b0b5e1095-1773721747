@@ -1,6 +1,7 @@
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
-import { Briefcase, Plane, Award, TrendingUp, CheckCircle2, AlertCircle, DollarSign, Users, Star, Gift, Shield, Calculator } from "lucide-react";
+import { MobileNav } from "@/components/MobileNav";
+import { Briefcase, Award, TrendingUp, Users, DollarSign, Calendar, ArrowRight, CheckCircle2, BarChart3, Star, Calculator, Shield, Plane } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function ProgramyLojalnoscioweDlaFirm() {
@@ -22,19 +23,20 @@ export default function ProgramyLojalnoscioweDlaFirm() {
                 BizneLot.info
               </Link>
               <nav className="hidden md:flex gap-6">
-                <Link href="/odszkodowanie-lot-sluzbowy" className="hover:text-slate-300 transition-colors">
+                <Link href="/odszkodowanie-lot-sluzbowy" className="text-slate-700 hover:text-slate-900 transition-colors">
                   Odszkodowania
                 </Link>
-                <Link href="/bilet-firmowy-prawa" className="hover:text-slate-300 transition-colors">
-                  Bilety firmowe
+                <Link href="/pracodawca-a-odszkodowanie" className="text-slate-700 hover:text-slate-900 transition-colors">
+                  Pracodawca
                 </Link>
-                <Link href="/artykuly" className="hover:text-slate-300 transition-colors font-semibold">
+                <Link href="/artykuly" className="text-slate-900 font-semibold">
                   Artykuły
                 </Link>
-                <Link href="/o-autorze" className="hover:text-slate-300 transition-colors">
+                <Link href="/o-autorze" className="text-slate-700 hover:text-slate-900 transition-colors">
                   O autorze
                 </Link>
               </nav>
+              <MobileNav currentPath="/artykuly/programy-lojalnosciowe-dla-firm" />
             </div>
           </div>
         </header>
@@ -645,7 +647,7 @@ export default function ProgramyLojalnoscioweDlaFirm() {
                   ich w osiągnięciu statusu (Senator/Gold). <strong>Employer branding wyższy</strong> – pracownicy czują się 
                   docenieni, lojalność rośnie, turnover spada. Wartość: status benefits (lounge, priority) = 10-15k PLN/rok na osobę.
                   <br/><br/>
-                  <strong>Polecam: Strategia B dla firm IT/consulting (talent retention), Strategia A dla firm produkcyjnych/logistycznych.</strong>
+                  <strong>Polecam: Strategia B dla firm IT/consulting (talent retention), strategia A dla firm produkcyjnych/logistycznych.</strong>
                 </p>
               </div>
 
@@ -706,6 +708,31 @@ export default function ProgramyLojalnoscioweDlaFirm() {
                   a ROI 15-30%.
                 </p>
               </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">
+                  7. Czy mile firmowe można przenieść na prywatne konto?
+                </h3>
+                <p className="text-slate-700 leading-relaxed">
+                  <strong>Depends on program:</strong> Miles & More umożliwia transfer mil z Company Account do Employee Accounts 
+                  (czasem z opłatą 0.01-0.02 EUR per mile). Mile zebrane na lotach służbowych należą do firmy (firma kupuje bilet). 
+                  Jeśli pracownik zbiera je na prywatne konto bez zgody pracodawcy, może to być konflikt. <strong>Best practice:</strong> 
+                  Jasna Travel Policy – określ kto jest właścicielem mil i jak można ich używać.
+                </p>
+              </div>
+
+              <div>
+                <h3 className="text-xl font-bold text-slate-900 mb-2">
+                  8. Jakie podatki/składki od mil zebranych na lotach służbowych?
+                </h3>
+                <p className="text-slate-700 leading-relaxed">
+                  <strong>W Polsce: grey area.</strong> Teoretycznie mile zebrane na lotach służbowych = benefit pracowniczy 
+                  (jeśli firma pozwala pracownikowi je zatrzymać) i mogą podlegać opodatkowaniu jako przychód niepieniężny. 
+                  <strong>W praktyce:</strong> Większość firm i pracowników tego nie rozlicza, bo wartość jest trudna do wyceny 
+                  i enforcement praktycznie nie istnieje. <strong>Safe approach:</strong> Firma zbiera mile centralnie (Company Account) 
+                  i wykorzystuje firmowo – wtedy zero podatków dla pracownika. Jeśli chcesz być 100% compliant, skonsultuj z księgowością/prawnikiem podatkowym.
+                </p>
+              </div>
             </div>
           </section>
 
@@ -715,7 +742,7 @@ export default function ProgramyLojalnoscioweDlaFirm() {
             <div className="space-y-4 text-slate-200">
               <p className="text-lg leading-relaxed">
                 <strong>Dla 90% polskich firm odpowiedź jest prosta: Miles & More.</strong> Kombinacja Lufthansa + LOT 
-                daje najlepszą dostępność z Warszawy, a corporate deals od 100k EUR pozwalają negocjować bonus miles, 
+                daje najlepszą dostępność z Warszawy, a corporate deals od 100k PLN budżetu pozwalają negocjować bonus miles, 
                 status matches i priority services.
               </p>
               <p className="leading-relaxed">
@@ -978,6 +1005,49 @@ export default function ProgramyLojalnoscioweDlaFirm() {
                 "@type": "Answer",
                 "text": "Programy lojalnościowe są FREE. Jedyne koszty: czas administratora (~2-4h/miesiąc), opportunity cost (czasami najtańszy bilet to inna linia), kompleksowość (5 programów = chaos). Przy dobrze skonfigurowanej Travel Policy koszty są ZERO, ROI 15-30%."
               }
+            },
+            {
+              "@type": "Question",
+              "name": "Czy mile firmowe można przenieść na prywatne konto?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Miles & More umożliwia transfer mil z Company Account do Employee Accounts (czasem z opłatą 0.01-0.02 EUR per mile). Mile zebrane na lotach służbowych należą do firmy. Best practice: jasna Travel Policy określająca właściciela mil."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Jakie podatki/składki od mil zebranych na lotach służbowych?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "W Polsce: grey area. Teoretycznie mile zebrane na lotach służbowych = benefit pracowniczy mogą podlegać opodatkowaniu. W praktyce większość nie rozlicza. Safe approach: firma zbiera mile centralnie (Company Account) – wtedy zero podatków dla pracownika. Jeśli chcesz być 100% compliant, skonsultuj z księgowością/prawnikiem podatkowym."
+              }
+            }
+          ]
+        })}
+      </script>
+
+      <script type="application/ld+json">
+        {JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://bizneslot.info"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Artykuły",
+              "item": "https://bizneslot.info/artykuly"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Programy lojalnościowe dla firm",
+              "item": "https://bizneslot.info/artykuly/programy-lojalnosciowe-dla-firm"
             }
           ]
         })}

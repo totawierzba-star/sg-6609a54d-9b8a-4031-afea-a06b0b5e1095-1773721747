@@ -1,6 +1,7 @@
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
-import { Briefcase, ArrowLeft, Linkedin, Globe, Calendar, Clock } from "lucide-react";
+import { MobileNav } from "@/components/MobileNav";
+import { Briefcase, Heart, Users, TrendingUp, Calendar, Clock, ArrowRight, CheckCircle2, ArrowLeft, Globe, Linkedin } from "lucide-react";
 
 export default function DlaczegoStworzylemClaimWinger() {
   const structuredData = {
@@ -93,6 +94,7 @@ export default function DlaczegoStworzylemClaimWinger() {
                   O autorze
                 </Link>
               </nav>
+              <MobileNav currentPath="/artykuly/dlaczego-stworzylem-claimwinger" />
             </div>
           </div>
         </header>

@@ -1,6 +1,7 @@
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
-import { Briefcase, Clock, ArrowRight, CheckCircle2, AlertCircle, FileText, Phone } from "lucide-react";
+import { MobileNav } from "@/components/MobileNav";
+import { Briefcase, Clock, ArrowRight, CheckCircle2, AlertCircle, FileText, Scale, Calendar } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
@@ -131,6 +132,7 @@ export default function OpoznionyLotDelegacja() {
                   O autorze
                 </Link>
               </nav>
+              <MobileNav currentPath="/opozniony-lot-delegacja" />
             </div>
           </div>
         </header>

@@ -1,6 +1,7 @@
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
-import { Briefcase, ArrowLeft, Plane, Clock, DollarSign, Users, MapPin, CheckCircle2, XCircle, Calculator, TrendingUp, AlertCircle, Calendar } from "lucide-react";
+import { MobileNav } from "@/components/MobileNav";
+import { Briefcase, Plane, DollarSign, Clock, Users, Calendar, ArrowRight, CheckCircle2, TrendingUp, ArrowLeft, Calculator, MapPin, XCircle } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
@@ -128,6 +129,7 @@ export default function PrivateJetVsBusinessClass() {
                   O autorze
                 </Link>
               </nav>
+              <MobileNav currentPath="/artykuly/private-jet-vs-business-class" />
             </div>
           </div>
         </header>

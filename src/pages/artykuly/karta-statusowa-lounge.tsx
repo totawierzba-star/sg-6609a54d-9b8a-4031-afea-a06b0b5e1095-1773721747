@@ -1,6 +1,7 @@
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
-import { Briefcase, Plane, Award, Star, Coffee, Wifi, CheckCircle2, AlertCircle, TrendingUp, Clock, Shield, Users } from "lucide-react";
+import { MobileNav } from "@/components/MobileNav";
+import { Briefcase, Star, Award, Crown, Coffee, Luggage, Calendar, ArrowRight, CheckCircle2, TrendingUp, Clock, Shield, Users, AlertCircle, Plane } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function KartaStatusowaLounge() {
@@ -22,19 +23,20 @@ export default function KartaStatusowaLounge() {
                 BizneLot.info
               </Link>
               <nav className="hidden md:flex gap-6">
-                <Link href="/odszkodowanie-lot-sluzbowy" className="hover:text-slate-300 transition-colors">
+                <Link href="/odszkodowanie-lot-sluzbowy" className="text-slate-700 hover:text-slate-900 transition-colors">
                   Odszkodowania
                 </Link>
-                <Link href="/bilet-firmowy-prawa" className="hover:text-slate-300 transition-colors">
-                  Bilety firmowe
+                <Link href="/pracodawca-a-odszkodowanie" className="text-slate-700 hover:text-slate-900 transition-colors">
+                  Pracodawca
                 </Link>
-                <Link href="/artykuly" className="hover:text-slate-300 transition-colors font-semibold">
+                <Link href="/artykuly" className="text-slate-900 font-semibold">
                   Artykuły
                 </Link>
-                <Link href="/o-autorze" className="hover:text-slate-300 transition-colors">
+                <Link href="/o-autorze" className="text-slate-700 hover:text-slate-900 transition-colors">
                   O autorze
                 </Link>
               </nav>
+              <MobileNav currentPath="/artykuly/karta-statusowa-lounge" />
             </div>
           </div>
         </header>
@@ -252,7 +254,7 @@ export default function KartaStatusowaLounge() {
                       <li>• Guest access (10 wizyt): <strong>3200 PLN</strong></li>
                       <li>• Bagaż dodatkowy (30 lotów × 150 PLN): <strong>4500 PLN</strong></li>
                       <li>• Priority rebooking (2 kryzysy/rok): <strong>6000 PLN</strong> (zaoszczędzony czas)</li>
-                      <li>• <strong>Total:</strong> ~30 000 PLN wartości rocznie</li>
+                      <li>• <strong>Total:</strong> ~30 000 PLN wartości rocznie przy 30 wizytach</li>
                     </ul>
                   </div>
                 </CardContent>

@@ -1,44 +1,81 @@
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
-import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, FileText, Users, BarChart3, Plane } from "lucide-react";
+import { MobileNav } from "@/components/MobileNav";
+import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, FileText, Users, BarChart3, Plane, Award, Star } from "lucide-react";
 
 export default function Artykuly() {
   const articles = [
     {
-      slug: "business-class-vs-premium-economy",
-      title: "Business Class vs Premium Economy – Gdzie kończy się luksus, a zaczyna efektywność?",
-      excerpt: "Kompleksowe porównanie dla Travel Managerów: analiza kosztów, komfortu i ROI. Kiedy dopłata do Business Class ma sens biznesowy?",
+      slug: "ranking-linii-lotniczych-business-class",
+      title: "Ranking linii lotniczych Business Class 2026: TOP 10",
+      excerpt: "Kompleksowy ranking najlepszych linii lotniczych w klasie biznes. Porównanie produktów, lie-flat seats, catering i obsługi. Które linie warto wybrać dla podróży służbowych?",
       date: "2026-01-29",
       category: "Travel Management",
-      icon: BarChart3,
+      icon: Award,
       readTime: "12 min"
     },
     {
-      slug: "dlaczego-stworzylem-claimwinger",
-      title: "Dlaczego stworzyłem ClaimWinger? – kilka słów od założyciela",
-      excerpt: "Historia powstania ClaimWinger i misja ułatwienia pasażerom dochodzenia ich praw w podróżach lotniczych.",
+      slug: "programy-lojalnosciowe-dla-firm",
+      title: "TOP 5 programów lojalnościowych dla firm [2026]",
+      excerpt: "Porównanie Miles & More, Flying Blue, Executive Club, Miles+Bonus i Aegean Miles+Bonus. Który program wybrać dla Twojej firmy? Analiza ROI i corporate deals.",
       date: "2026-01-29",
-      category: "O nas",
-      icon: Users,
-      readTime: "5 min"
+      category: "Travel Management",
+      icon: Award,
+      readTime: "14 min"
+    },
+    {
+      slug: "karta-statusowa-lounge",
+      title: "Karta statusowa a wstęp do lounge: Przewodnik po benefitach",
+      excerpt: "Wszystko o kartach statusowych Silver, Gold, Platinum. Dostęp do lounge, bagaż, priority boarding. Ile warte? Jak zdobyć? ROI dla firm.",
+      date: "2026-01-29",
+      category: "Travel Benefits",
+      icon: Star,
+      readTime: "11 min"
+    },
+    {
+      slug: "miles-and-more-dla-firm",
+      title: "Miles & More dla firm: Kompletny przewodnik [2026]",
+      excerpt: "Wszystko o Miles & More dla podróży służbowych: zbieranie mil, statusy Senator i HON Circle, corporate deals z Lufthansa Group. Przewodnik dla Travel Managerów z konkretnymi przykładami.",
+      date: "2026-01-29",
+      category: "Programy Lojalnościowe",
+      icon: Award,
+      readTime: "15 min"
+    },
+    {
+      slug: "business-class-vs-premium-economy",
+      title: "Business Class vs. Premium Economy: Analiza kosztów [2026]",
+      excerpt: "Kompleksowe porównanie dla Travel Managerów: Business Class vs Premium Economy. Twarde dane, tabele ROI, analiza kosztów. Kiedy warto dopłacić?",
+      date: "2026-01-29",
+      category: "Travel Management",
+      icon: BarChart3,
+      readTime: "10 min"
     },
     {
       slug: "bleisure-polityka-podrozy-sluzbowych",
-      title: "Bleisure 2.0: Jak nowoczesne firmy łączą pracę z wypoczynkiem?",
-      excerpt: "Przewodnik dla HR: jak stworzyć Travel Policy uwzględniającą bleisure jako benefit, unikając problemów podatkowych.",
+      title: "Bleisure 2.0: Jak łączyć pracę z wypoczynkiem [2026]",
+      excerpt: "Kompleksowy przewodnik po Bleisure Travel dla HR i Travel Managerów. Travel Policy, aspekty podatkowe, ubezpieczeniowe i Employer Branding.",
       date: "2026-01-29",
-      category: "Travel Management",
-      icon: Briefcase,
+      category: "HR & Employer Branding",
+      icon: Users,
       readTime: "12 min"
     },
     {
       slug: "private-jet-vs-business-class",
-      title: "Private Jet vs. Business Class: Kiedy czarter staje się alternatywą?",
-      excerpt: "Analiza kosztów dla grup managerów. Kiedy prywatny odrzutowiec jest tańszy i bardziej efektywny niż linie rejsowe?",
+      title: "Private Jet vs. Business Class: Kiedy czarter się opłaca?",
+      excerpt: "Analiza kosztów dla Travel Managerów: kiedy wynajem prywatnego odrzutowca jest tańszy niż Business Class? Kalkulacja dla grup 6-10 osób.",
       date: "2026-01-29",
-      category: "Logistyka",
+      category: "Executive Travel",
       icon: Plane,
       readTime: "10 min"
+    },
+    {
+      slug: "dlaczego-stworzylem-claimwinger",
+      title: "Dlaczego stworzyłem ClaimWinger.com?",
+      excerpt: "Historia powstania platformy do odzyskiwania odszkodowań lotniczych. Od frustracji pasażera do rozwiązania problemu tysięcy podróżujących.",
+      date: "2026-01-29",
+      category: "O nas",
+      icon: Users,
+      readTime: "5 min"
     }
   ];
 
@@ -102,6 +139,7 @@ export default function Artykuly() {
                   O autorze
                 </Link>
               </nav>
+              <MobileNav currentPath="/artykuly" />
             </div>
           </div>
         </header>

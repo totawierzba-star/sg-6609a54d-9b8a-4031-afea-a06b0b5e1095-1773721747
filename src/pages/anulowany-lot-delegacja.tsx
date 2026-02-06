@@ -1,6 +1,7 @@
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
-import { Briefcase, AlertCircle, ArrowRight, CheckCircle2, FileText, Clock, Phone } from "lucide-react";
+import { MobileNav } from "@/components/MobileNav";
+import { Briefcase, AlertTriangle, ArrowRight, CheckCircle2, Clock, FileText, Scale, Phone, AlertCircle } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
@@ -130,6 +131,7 @@ export default function AnulowanyLotDelegacja() {
                   O autorze
                 </Link>
               </nav>
+              <MobileNav currentPath="/anulowany-lot-delegacja" />
             </div>
           </div>
         </header>

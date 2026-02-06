@@ -1,6 +1,7 @@
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
-import { Briefcase, Scale, FileText, ArrowLeft, User, Linkedin, Globe } from "lucide-react";
+import { MobileNav } from "@/components/MobileNav";
+import { Briefcase, User, ArrowRight, Linkedin, Github, Mail, MapPin, Building2, Plane, Code, Heart, Globe, Scale, ArrowLeft } from "lucide-react";
 
 export default function OAutorze() {
   const structuredData = {
@@ -88,17 +89,21 @@ export default function OAutorze() {
                 <Briefcase className="h-6 w-6" />
                 <span className="font-semibold text-lg">bizneslot.info</span>
               </Link>
-              <nav className="hidden md:flex items-center gap-6">
-                <Link href="/" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors">
-                  Strona główna
-                </Link>
-                <Link href="/odszkodowanie-lot-sluzbowy" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 transition-colors">
+              <nav className="hidden md:flex gap-6">
+                <Link href="/odszkodowanie-lot-sluzbowy" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
                   Odszkodowania
                 </Link>
-                <Link href="/o-autorze" className="text-slate-900 dark:text-slate-100 font-medium">
+                <Link href="/bilet-firmowy-prawa" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
+                  Bilety firmowe
+                </Link>
+                <Link href="/artykuly" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
+                  Artykuły
+                </Link>
+                <Link href="/o-autorze" className="text-sm text-slate-900 font-medium">
                   O autorze
                 </Link>
               </nav>
+              <MobileNav currentPath="/o-autorze" />
             </div>
           </div>
         </header>

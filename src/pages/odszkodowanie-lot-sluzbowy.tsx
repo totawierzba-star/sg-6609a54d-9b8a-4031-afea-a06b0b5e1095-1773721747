@@ -1,5 +1,6 @@
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
+import { MobileNav } from "@/components/MobileNav";
 import { Briefcase, Shield, ArrowRight, CheckCircle2, AlertCircle, FileText, Scale } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -130,6 +131,7 @@ export default function OdskodowanieLotSluzbowy() {
                   O autorze
                 </Link>
               </nav>
+              <MobileNav currentPath="/odszkodowanie-lot-sluzbowy" />
             </div>
           </div>
         </header>

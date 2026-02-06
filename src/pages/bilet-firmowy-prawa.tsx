@@ -1,6 +1,7 @@
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
-import { Briefcase, Shield, ArrowRight, CheckCircle2, Scale, FileText, AlertCircle } from "lucide-react";
+import { MobileNav } from "@/components/MobileNav";
+import { Briefcase, FileText, ArrowRight, CheckCircle2, AlertCircle, Scale, Users, Building2, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
@@ -131,6 +132,7 @@ export default function BiletFirmowyPrawa() {
                   O autorze
                 </Link>
               </nav>
+              <MobileNav currentPath="/bilet-firmowy-prawa" />
             </div>
           </div>
         </header>
