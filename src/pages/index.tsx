@@ -4,8 +4,20 @@ import { MobileNav } from "@/components/MobileNav";
 import { Briefcase, Scale, FileText, Users, CheckCircle2, ArrowRight, Star, Plane, Award, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { useState, useEffect } from "react";
 
 export default function Home() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
@@ -63,12 +75,32 @@ export default function Home() {
       
       <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
         {/* Header */}
-        <header className="bg-slate-900 text-white py-4 sticky top-0 z-50 shadow-lg">
+        <header 
+          className={`
+            fixed top-0 left-0 right-0 z-50 text-white transition-all duration-300
+            ${scrolled 
+              ? 'bg-slate-900/95 backdrop-blur-md shadow-xl py-3' 
+              : 'bg-slate-900 py-4'
+            }
+          `}
+        >
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between">
-              <Link href="/" className="text-2xl font-bold flex items-center gap-2">
-                <img src="/bizneslotlogotyp.png" alt="BiznesLot.info" className="h-10 w-auto" />
-                BiznesLot.info
+              <Link href="/" className={`
+                text-2xl font-bold flex items-center gap-2 transition-all duration-300
+                ${scrolled ? 'scale-95' : 'scale-100'}
+              `}>
+                <img 
+                  src="/bizneslotlogotyp.png" 
+                  alt="BiznesLot.info" 
+                  className={`
+                    w-auto transition-all duration-300
+                    ${scrolled ? 'h-7' : 'h-8'}
+                  `}
+                />
+                <span className={`transition-all duration-300 ${scrolled ? 'text-xl' : 'text-2xl'}`}>
+                  BiznesLot.info
+                </span>
               </Link>
               <nav className="hidden md:flex gap-6">
                 <Link href="/odszkodowanie-lot-sluzbowy" className="hover:text-slate-300 transition-colors">
@@ -89,22 +121,25 @@ export default function Home() {
           </div>
         </header>
 
+        {/* Spacer to prevent content from hiding under fixed header */}
+        <div className="h-16"></div>
+
         {/* Hero Section */}
         <section className="py-20 px-4">
           <div className="container mx-auto max-w-6xl">
             <div className="text-center max-w-3xl mx-auto">
-              <div className="inline-flex items-center gap-2 bg-slate-100 px-4 py-2 rounded-full text-sm text-slate-700 mb-6">
+              <div className="inline-flex items-center gap-2 bg-slate-100 px-4 py-2 rounded-full text-sm text-slate-700 mb-6 animate-fade-in">
                 <Shield className="h-4 w-4" />
                 Portal ekspercki dla podróżujących służbowo
               </div>
-              <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+              <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight animate-fade-in-up">
                 Twoje prawa w podróżach służbowych
               </h1>
-              <p className="text-xl text-slate-600 mb-8 leading-relaxed">
+              <p className="text-xl text-slate-600 mb-8 leading-relaxed animate-fade-in-up animation-delay-200">
                 Kompleksowy przewodnik po prawach pasażera w delegacjach. Dowiedz się, co Ci przysługuje, 
                 gdy lot służbowy zostanie opóźniony lub anulowany – i kto ma prawo do odszkodowania.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in-up animation-delay-400">
                 <Button asChild size="lg" className="text-lg">
                   <Link href="/odszkodowanie-lot-sluzbowy">
                     Poznaj swoje prawa
@@ -125,7 +160,7 @@ export default function Home() {
         <section className="py-16 px-4 bg-slate-50">
           <div className="container mx-auto max-w-6xl">
             <div className="grid md:grid-cols-3 gap-8">
-              <Card className="border-slate-200">
+              <Card className="border-slate-200 hover:scale-105 transition-transform duration-300">
                 <CardHeader>
                   <CheckCircle2 className="h-10 w-10 text-slate-700 mb-4" />
                   <CardTitle className="text-xl">Odszkodowanie należy do Ciebie</CardTitle>
@@ -138,7 +173,7 @@ export default function Home() {
                 </CardContent>
               </Card>
 
-              <Card className="border-slate-200">
+              <Card className="border-slate-200 hover:scale-105 transition-transform duration-300">
                 <CardHeader>
                   <Scale className="h-10 w-10 text-slate-700 mb-4" />
                   <CardTitle className="text-xl">Jasne zasady prawne</CardTitle>
@@ -151,7 +186,7 @@ export default function Home() {
                 </CardContent>
               </Card>
 
-              <Card className="border-slate-200">
+              <Card className="border-slate-200 hover:scale-105 transition-transform duration-300">
                 <CardHeader>
                   <FileText className="h-10 w-10 text-slate-700 mb-4" />
                   <CardTitle className="text-xl">Praktyczne porady</CardTitle>
@@ -287,7 +322,7 @@ export default function Home() {
             
             <div className="grid md:grid-cols-3 gap-8">
               <Link href="/artykuly/ranking-linii-lotniczych-business-class" className="group">
-                <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow h-full">
+                <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 h-full">
                   <div className="p-6">
                     <div className="flex items-center gap-2 text-sm text-slate-600 mb-3">
                       <Award className="h-4 w-4" />
@@ -305,7 +340,7 @@ export default function Home() {
               </Link>
 
               <Link href="/artykuly/programy-lojalnosciowe-dla-firm" className="group">
-                <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow h-full">
+                <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 h-full">
                   <div className="p-6">
                     <div className="flex items-center gap-2 text-sm text-slate-600 mb-3">
                       <Award className="h-4 w-4" />
@@ -323,7 +358,7 @@ export default function Home() {
               </Link>
 
               <Link href="/artykuly/karta-statusowa-lounge" className="group">
-                <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl transition-shadow h-full">
+                <div className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 h-full">
                   <div className="p-6">
                     <div className="flex items-center gap-2 text-sm text-slate-600 mb-3">
                       <Star className="h-4 w-4" />
@@ -355,20 +390,20 @@ export default function Home() {
               </div>
               
               <div>
-                <h3 className="font-semibold text-slate-900 mb-4">Tematy</h3>
+                <h3 className="font-semibold text-slate-300 mb-4">Tematy</h3>
                 <ul className="space-y-2">
                   <li>
-                    <Link href="/odszkodowanie-lot-sluzbowy" className="text-sm text-slate-600 hover:text-slate-900">
+                    <Link href="/odszkodowanie-lot-sluzbowy" className="text-sm text-slate-400 hover:text-white transition-colors">
                       Odszkodowanie za lot służbowy
                     </Link>
                   </li>
                   <li>
-                    <Link href="/anulowany-lot-delegacja" className="text-sm text-slate-600 hover:text-slate-900">
+                    <Link href="/anulowany-lot-delegacja" className="text-sm text-slate-400 hover:text-white transition-colors">
                       Anulowany lot
                     </Link>
                   </li>
                   <li>
-                    <Link href="/opozniony-lot-delegacja" className="text-sm text-slate-600 hover:text-slate-900">
+                    <Link href="/opozniony-lot-delegacja" className="text-sm text-slate-400 hover:text-white transition-colors">
                       Opóźniony lot
                     </Link>
                   </li>
@@ -376,20 +411,20 @@ export default function Home() {
               </div>
               
               <div>
-                <h3 className="font-semibold text-slate-900 mb-4">Więcej</h3>
+                <h3 className="font-semibold text-slate-300 mb-4">Więcej</h3>
                 <ul className="space-y-2">
                   <li>
-                    <Link href="/bilet-firmowy-prawa" className="text-sm text-slate-600 hover:text-slate-900">
+                    <Link href="/bilet-firmowy-prawa" className="text-sm text-slate-400 hover:text-white transition-colors">
                       Bilet firmowy
                     </Link>
                   </li>
                   <li>
-                    <Link href="/pracodawca-a-odszkodowanie" className="text-sm text-slate-600 hover:text-slate-900">
+                    <Link href="/pracodawca-a-odszkodowanie" className="text-sm text-slate-400 hover:text-white transition-colors">
                       Pracodawca a odszkodowanie
                     </Link>
                   </li>
                   <li>
-                    <Link href="/o-autorze" className="text-sm text-slate-600 hover:text-slate-900">
+                    <Link href="/o-autorze" className="text-sm text-slate-400 hover:text-white transition-colors">
                       O autorze
                     </Link>
                   </li>
@@ -397,8 +432,8 @@ export default function Home() {
               </div>
               
               <div>
-                <h3 className="font-semibold text-slate-900 mb-4">Sprawdź odszkodowanie</h3>
-                <p className="text-sm text-slate-600 mb-3">
+                <h3 className="font-semibold text-slate-300 mb-4">Sprawdź odszkodowanie</h3>
+                <p className="text-sm text-slate-400 mb-3">
                   Korzystamy z usług ClaimWinger do weryfikacji uprawnień.
                 </p>
                 <Button asChild variant="outline" size="sm">
@@ -409,7 +444,7 @@ export default function Home() {
               </div>
             </div>
             
-            <div className="border-t mt-8 pt-8 text-center text-sm text-slate-600">
+            <div className="border-t border-slate-800 mt-8 pt-8 text-center text-sm text-slate-400">
               <p>© 2026 bizneslot.info. Portal edukacyjny o prawach pasażerów w podróżach służbowych.</p>
             </div>
           </div>
