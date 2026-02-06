@@ -118,6 +118,7 @@ export default function Home() {
                 <Link href="/o-autorze" className="hover:text-slate-300 transition-colors">
                   O autorze
                 </Link>
+                <LanguageSwitcher />
               </nav>
               {/* Mobile Menu Button */}
               <div className="flex md:hidden items-center gap-2">

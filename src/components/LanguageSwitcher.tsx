@@ -7,7 +7,14 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { locales, localeNames, type Locale } from "@/lib/i18n";
+
+const locales = ["pl", "en"] as const;
+export type Locale = typeof locales[number];
+
+const localeNames: Record<Locale, string> = {
+  pl: "Polski",
+  en: "English",
+};
 
 export function LanguageSwitcher() {
   const router = useRouter();
@@ -21,17 +28,17 @@ export function LanguageSwitcher() {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="ghost" size="sm" className="gap-2">
+        <Button variant="ghost" size="sm" className="gap-2 text-white hover:bg-slate-800">
           <Globe className="h-4 w-4" />
           <span className="hidden sm:inline">{localeNames[currentLocale]}</span>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent align="end">
+      <DropdownMenuContent align="end" className="bg-white">
         {locales.map((locale) => (
           <DropdownMenuItem
             key={locale}
             onClick={() => switchLanguage(locale)}
-            className={currentLocale === locale ? "bg-slate-100" : ""}
+            className={currentLocale === locale ? "bg-slate-100 font-semibold" : ""}
           >
             {localeNames[locale]}
           </DropdownMenuItem>
