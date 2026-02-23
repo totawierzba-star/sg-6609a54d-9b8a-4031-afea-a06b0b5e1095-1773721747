@@ -21,6 +21,9 @@ export interface Translations {
     about: string;
     articles: string;
   };
+  cta: {
+    checkCompensation: string;
+  };
   home: {
     hero: {
       title: string;
@@ -82,6 +85,9 @@ export const translations: Record<Locale, Translations> = {
       about: "O autorze",
       articles: "Artykuły",
     },
+    cta: {
+      checkCompensation: "Sprawdź odszkodowanie",
+    },
     home: {
       hero: {
         title: "Poznaj swoje prawa podczas podróży służbowych",
@@ -140,6 +146,9 @@ export const translations: Record<Locale, Translations> = {
       compensation: "Compensation",
       about: "About",
       articles: "Articles",
+    },
+    cta: {
+      checkCompensation: "Check compensation",
     },
     home: {
       hero: {

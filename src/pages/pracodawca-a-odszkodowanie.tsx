@@ -121,22 +121,25 @@ export default function PracodawcaAOdszkodowanie() {
                 BizneLot.info
               </Link>
               <nav className="hidden md:flex gap-6">
-                <Link href="/odszkodowanie-lot-sluzbowy" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
+                <Link href="/odszkodowanie-lot-sluzbowy" className="text-sm text-slate-300 hover:text-white transition-colors">
                   Odszkodowanie
                 </Link>
-                <Link href="/anulowany-lot-delegacja" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
+                <Link href="/anulowany-lot-delegacja" className="text-sm text-slate-300 hover:text-white transition-colors">
                   Anulowany lot
                 </Link>
-                <Link href="/opozniony-lot-delegacja" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
+                <Link href="/opozniony-lot-delegacja" className="text-sm text-slate-300 hover:text-white transition-colors">
                   Opóźniony lot
                 </Link>
-                <Link href="/bilet-firmowy-prawa" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
+                <Link href="/bilet-firmowy-prawa" className="text-sm text-slate-300 hover:text-white transition-colors">
                   Bilet firmowy
                 </Link>
-                <Link href="/artykuly" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
+                <Link href="/pracodawca-a-odszkodowanie" className="text-sm text-white font-medium">
+                  Pracodawca
+                </Link>
+                <Link href="/artykuly" className="text-sm text-slate-300 hover:text-white transition-colors">
                   Artykuły
                 </Link>
-                <Link href="/o-autorze" className="text-sm text-slate-600 hover:text-slate-900 transition-colors">
+                <Link href="/o-autorze" className="text-sm text-slate-300 hover:text-white transition-colors">
                   O autorze
                 </Link>
               </nav>
@@ -158,7 +161,7 @@ export default function PracodawcaAOdszkodowanie() {
             </h1>
             <p className="text-xl text-slate-300 leading-relaxed">
               Czy musisz oddać firmie pieniądze za odszkodowanie od linii lotniczej? Co mówi prawo pracy 
-              i europejskie? Szczegółowa analiza prawna dla pracowników podróżujących służbowo.
+              i europejskie? Szczegółowa analiza prawna dla pracowników podręcznych służbowo.
             </p>
           </div>
         </section>
