@@ -111,10 +111,10 @@ export default function PracodawcaAOdszkodowanie() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       
-      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20 overflow-hidden">
+      <div className="min-h-screen bg-white py-20 overflow-hidden">
         {/* Hero Section */}
-        <section className="py-16 px-4 bg-slate-900 text-white">
-          <div className="container mx-auto max-w-4xl">
+        <section className="py-16 px-4 bg-slate-900 text-white -mt-20">
+          <div className="container mx-auto max-w-4xl pt-20">
             <div className="flex items-center gap-2 text-slate-300 text-sm mb-4">
               <Link href="/" className="hover:text-white transition-colors">bizneslot.info</Link>
               <span>/</span>
@@ -131,7 +131,7 @@ export default function PracodawcaAOdszkodowanie() {
         </section>
 
         {/* Main Content */}
-        <article className="py-16 px-4">
+        <article className="py-16 px-4 bg-white">
           <div className="container mx-auto max-w-4xl">
             
             {/* Key Takeaway */}
@@ -528,7 +528,7 @@ export default function PracodawcaAOdszkodowanie() {
             {/* Section 6 */}
             <section className="mb-12">
               <h2 className="text-3xl font-bold text-slate-900 mb-6">
-                Orzecznictwo i interpretacje prawne
+                Orzecznictvo i interpretacje prawne
               </h2>
               
               <Card className="border-slate-200 mb-6">
@@ -738,7 +738,7 @@ export default function PracodawcaAOdszkodowanie() {
         </article>
 
         {/* Footer */}
-        <footer className="bg-slate-900 text-white py-12 mt-16">
+        <footer className="bg-slate-900 text-white py-12">
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-4 gap-8 mb-8">
               <div>
