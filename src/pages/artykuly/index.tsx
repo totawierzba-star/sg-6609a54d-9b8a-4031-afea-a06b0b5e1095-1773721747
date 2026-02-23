@@ -1,81 +1,99 @@
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
 import { MobileNav } from "@/components/MobileNav";
-import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, FileText, Users, BarChart3, Plane, Award, Star } from "lucide-react";
+import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, FileText, Users, BarChart3, Plane, Award, Star, User, Building2, CreditCard } from "lucide-react";
 
 export default function Artykuly() {
   const articles = [
     {
-      slug: "ranking-linii-lotniczych-business-class",
-      title: "Ranking linii lotniczych Business Class 2026: TOP 10",
-      excerpt: "Kompleksowy ranking najlepszych linii lotniczych w klasie biznes. Porównanie produktów, lie-flat seats, catering i obsługi. Które linie warto wybrać dla podróży służbowych?",
-      date: "2026-01-29",
-      category: "Travel Management",
-      icon: Award,
-      readTime: "12 min"
+      title: "Odszkodowanie za opóźniony lot służbowy — komu przysługuje: pracownik czy pracodawca?",
+      slug: "odszkodowanie-lot-sluzbowy-pracownik-czy-pracodawca",
+      excerpt: "Kompleksowy przewodnik wyjaśniający, kto ma prawo do odszkodowania za opóźniony lot służbowy. Aspekty prawne, podatkowe i praktyczne rozwiązania dla firm i pracowników.",
+      date: "2025-02-23",
+      readTime: "14 min",
+      category: "Prawo i Finanse",
+      icon: Scale
     },
     {
-      slug: "programy-lojalnosciowe-dla-firm",
-      title: "TOP 5 programów lojalnościowych dla firm [2026]",
-      excerpt: "Porównanie Miles & More, Flying Blue, Executive Club, Miles+Bonus i Aegean Miles+Bonus. Który program wybrać dla Twojej firmy? Analiza ROI i corporate deals.",
-      date: "2026-01-29",
-      category: "Travel Management",
-      icon: Award,
-      readTime: "14 min"
+      title: "Prawa pasażera w podróży służbowej przy odwołaniu lub opóźnieniu lotu",
+      slug: "prawa-pasazera-podroz-sluzbowa",
+      excerpt: "Jakie prawa ma pasażer lotu służbowego? Sprawdź, jakie odszkodowania i świadczenia przysługują przy opóźnieniach i odwołaniach lotów biznesowych.",
+      date: "2025-02-23",
+      readTime: "15 min",
+      category: "Prawo i Finanse",
+      icon: Scale
     },
     {
-      slug: "karta-statusowa-lounge",
-      title: "Karta statusowa a wstęp do lounge: Przewodnik po benefitach",
-      excerpt: "Wszystko o kartach statusowych Silver, Gold, Platinum. Dostęp do lounge, bagaż, priority boarding. Ile warte? Jak zdobyć? ROI dla firm.",
-      date: "2026-01-29",
-      category: "Travel Benefits",
-      icon: Star,
-      readTime: "11 min"
-    },
-    {
-      slug: "miles-and-more-dla-firm",
-      title: "Miles & More dla firm: Kompletny przewodnik [2026]",
-      excerpt: "Wszystko o Miles & More dla podróży służbowych: zbieranie mil, statusy Senator i HON Circle, corporate deals z Lufthansa Group. Przewodnik dla Travel Managerów z konkretnymi przykładami.",
-      date: "2026-01-29",
-      category: "Programy Lojalnościowe",
-      icon: Award,
-      readTime: "15 min"
-    },
-    {
-      slug: "business-class-vs-premium-economy",
-      title: "Business Class vs. Premium Economy: Analiza kosztów [2026]",
-      excerpt: "Kompleksowe porównanie dla Travel Managerów: Business Class vs Premium Economy. Twarde dane, tabele ROI, analiza kosztów. Kiedy warto dopłacić?",
-      date: "2026-01-29",
-      category: "Travel Management",
-      icon: BarChart3,
-      readTime: "10 min"
-    },
-    {
-      slug: "bleisure-polityka-podrozy-sluzbowych",
-      title: "Bleisure 2.0: Jak łączyć pracę z wypoczynkiem [2026]",
-      excerpt: "Kompleksowy przewodnik po Bleisure Travel dla HR i Travel Managerów. Travel Policy, aspekty podatkowe, ubezpieczeniowe i Employer Branding.",
-      date: "2026-01-29",
-      category: "HR & Employer Branding",
-      icon: Users,
-      readTime: "12 min"
-    },
-    {
-      slug: "private-jet-vs-business-class",
-      title: "Private Jet vs. Business Class: Kiedy czarter się opłaca?",
-      excerpt: "Analiza kosztów dla Travel Managerów: kiedy wynajem prywatnego odrzutowca jest tańszy niż Business Class? Kalkulacja dla grup 6-10 osób.",
-      date: "2026-01-29",
-      category: "Executive Travel",
-      icon: Plane,
-      readTime: "10 min"
-    },
-    {
+      title: "Dlaczego Stworzyłem ClaimWinger",
       slug: "dlaczego-stworzylem-claimwinger",
-      title: "Dlaczego stworzyłem ClaimWinger.com?",
-      excerpt: "Historia powstania platformy do odzyskiwania odszkodowań lotniczych. Od frustracji pasażera do rozwiązania problemu tysięcy podróżujących.",
-      date: "2026-01-29",
-      category: "O nas",
-      icon: Users,
-      readTime: "5 min"
+      excerpt: "Historia powstania ClaimWinger — platformy, która pomaga tysiącom pasażerów odzyskać odszkodowania za opóźnione i odwołane loty. Poznaj moją osobistą motywację.",
+      date: "2025-01-20",
+      readTime: "8 min",
+      category: "O Mnie",
+      icon: User
+    },
+    {
+      title: "Programy Lojalnościowe dla Firm",
+      slug: "programy-lojalnosciowe-dla-firm",
+      excerpt: "Kompleksowy przewodnik po korporacyjnych programach lojalnościowych linii lotniczych. Dowiedz się, jak maksymalizować korzyści z lotów służbowych.",
+      date: "2025-01-15",
+      readTime: "12 min",
+      category: "Biznes i Finanse",
+      icon: Building2
+    },
+    {
+      title: "Miles & More dla Firm",
+      slug: "miles-and-more-dla-firm",
+      excerpt: "Wszystko o programie Miles & More w kontekście podróży służbowych. Jak zbierać mile, jakie poziomy statusowe, i jak maksymalizować korzyści dla firmy.",
+      date: "2025-01-12",
+      readTime: "14 min",
+      category: "Biznes i Finanse",
+      icon: Building2
+    },
+    {
+      title: "Business Class vs Premium Economy",
+      slug: "business-class-vs-premium-economy",
+      excerpt: "Szczegółowe porównanie klasy biznes i premium economy. Która opcja jest lepsza dla Twojej firmy? Analiza kosztów, komfortu i produktywności.",
+      date: "2025-01-10",
+      readTime: "13 min",
+      category: "Biznes i Finanse",
+      icon: Plane
+    },
+    {
+      title: "Private Jet vs Business Class",
+      slug: "private-jet-vs-business-class",
+      excerpt: "Czy prywatny odrzutowiec to luksus, czy efektywne rozwiązanie biznesowe? Porównanie kosztów, komfortu i praktyczności dla firm i kadry zarządzającej.",
+      date: "2025-01-08",
+      readTime: "10 min",
+      category: "Biznes i Finanse",
+      icon: Plane
+    },
+    {
+      title: "Bleisure — Polityka Podróży Służbowych",
+      slug: "bleisure-polityka-podrozy-sluzbowych",
+      excerpt: "Bleisure to trend łączący podróże służbowe z prywatnymi. Dowiedz się, jak wdrożyć elastyczną politykę travel w firmie i zadowolić pracowników.",
+      date: "2025-01-05",
+      readTime: "12 min",
+      category: "Biznes i Finanse",
+      icon: Briefcase
+    },
+    {
+      title: "Karta Statusowa i Dostęp do Lounge",
+      slug: "karta-statusowa-lounge",
+      excerpt: "Kompleksowy przewodnik po kartach statusowych linii lotniczych i programach dostępu do saloników lotniskowych. Które wybrać dla częstych podróżników biznesowych?",
+      date: "2025-01-03",
+      readTime: "11 min",
+      category: "Biznes i Finanse",
+      icon: CreditCard
+    },
+    {
+      title: "Ranking Linii Lotniczych — Klasa Biznes 2025",
+      slug: "ranking-linii-lotniczych-business-class",
+      excerpt: "Najlepsze linie lotnicze dla podróży służbowych w klasie biznes. Ranking 2025 z uwzględnieniem komfortu, serwisu, punktualności i sieci połączeń.",
+      date: "2025-01-01",
+      readTime: "15 min",
+      category: "Biznes i Finanse",
+      icon: Award
     }
   ];
 
