@@ -1,16 +1,12 @@
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
-import { MobileNav } from "@/components/MobileNav";
 import { Briefcase, Scale, FileText, Users, CheckCircle2, ArrowRight, Star, Plane, Award, Shield, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useState, useEffect } from "react";
-import { Menu, Heart } from "lucide-react";
-import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -77,68 +73,6 @@ export default function Home() {
       />
       
       <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
-        {/* Header */}
-        <header 
-          className={`
-            fixed top-0 left-0 right-0 z-50 text-white transition-all duration-300
-            ${scrolled 
-              ? 'bg-slate-900/95 backdrop-blur-md shadow-xl py-3' 
-              : 'bg-slate-900 py-4'
-            }
-          `}
-        >
-          <div className="container mx-auto px-4">
-            <div className="flex items-center justify-between">
-              <Link href="/" className={`
-                text-2xl font-bold flex items-center gap-2 transition-all duration-300
-                ${scrolled ? 'scale-95' : 'scale-100'}
-              `}>
-                <img 
-                  src="/bizneslotlogotyp.png" 
-                  alt="BiznesLot.info" 
-                  className={`
-                    w-auto transition-all duration-300
-                    ${scrolled ? 'h-7' : 'h-8'}
-                  `}
-                />
-                <span className={`transition-all duration-300 ${scrolled ? 'text-xl' : 'text-2xl'}`}>
-                  BiznesLot.info
-                </span>
-              </Link>
-              <nav className="hidden md:flex gap-6">
-                <Link href="/odszkodowanie-lot-sluzbowy" className="hover:text-slate-300 transition-colors">
-                  Odszkodowania
-                </Link>
-                <Link href="/bilet-firmowy-prawa" className="hover:text-slate-300 transition-colors">
-                  Bilety firmowe
-                </Link>
-                <Link href="/artykuly" className="hover:text-slate-300 transition-colors">
-                  Artykuły
-                </Link>
-                <Link href="/o-autorze" className="hover:text-slate-300 transition-colors">
-                  O autorze
-                </Link>
-                <LanguageSwitcher />
-              </nav>
-              {/* Mobile Menu Button */}
-              <div className="flex md:hidden items-center gap-2">
-                <LanguageSwitcher />
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  onClick={() => setMobileMenuOpen(true)}
-                  className="text-white hover:bg-slate-800"
-                >
-                  <Menu className="h-6 w-6" />
-                </Button>
-              </div>
-            </div>
-          </div>
-        </header>
-
-        {/* Spacer to prevent content from hiding under fixed header */}
-        <div className="h-16"></div>
-
         {/* Hero Section */}
         <section className="py-20 px-4">
           <div className="container mx-auto max-w-6xl">

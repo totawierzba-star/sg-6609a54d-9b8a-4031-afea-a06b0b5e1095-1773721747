@@ -14,10 +14,12 @@ export interface Translations {
     home: string;
     yourRights: string;
     canceledFlight: string;
+    cancelledFlight: string;
     delayedFlight: string;
     employerCompensation: string;
     ticketRights: string;
     compensation: string;
+    businessCompensation: string;
     about: string;
     articles: string;
   };
@@ -78,10 +80,12 @@ export const translations: Record<Locale, Translations> = {
       home: "Start",
       yourRights: "Twoje prawa",
       canceledFlight: "Anulowany lot",
+      cancelledFlight: "Anulowany lot",
       delayedFlight: "Opóźniony lot",
       employerCompensation: "Pracodawca a odszkodowanie",
       ticketRights: "Bilet firmowy - prawa",
       compensation: "Odszkodowanie",
+      businessCompensation: "Odszkodowanie lot służbowy",
       about: "O autorze",
       articles: "Artykuły",
     },
@@ -140,10 +144,12 @@ export const translations: Record<Locale, Translations> = {
       home: "Home",
       yourRights: "Your rights",
       canceledFlight: "Canceled flight",
+      cancelledFlight: "Cancelled flight",
       delayedFlight: "Delayed flight",
       employerCompensation: "Employer & compensation",
       ticketRights: "Corporate ticket rights",
       compensation: "Compensation",
+      businessCompensation: "Business flight compensation",
       about: "About",
       articles: "Articles",
     },

@@ -101,7 +101,7 @@ export default function PracodawcaAOdszkodowanie() {
   return (
     <>
       <SEO 
-        title="Pracodawca a odszkodowanie lotnicze – Czy firma może żądać zwrotu?"
+        title="Pracodawca a odszkodowanie lotnicze | BiznesLot"
         description="Czy pracodawca ma prawo żądać zwrotu odszkodowania za lot służbowy? Analiza prawna relacji pracownik-pracodawca w kontekście rozporządzenia UE 261/2004."
         url="https://bizneslot.info/pracodawca-a-odszkodowanie"
       />
@@ -111,43 +111,7 @@ export default function PracodawcaAOdszkodowanie() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       
-      <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
-        {/* Header */}
-        <header className="bg-slate-900 text-white py-4 sticky top-0 z-50 shadow-lg">
-          <div className="container mx-auto px-4">
-            <div className="flex items-center justify-between">
-              <Link href="/" className="text-2xl font-bold flex items-center gap-2">
-                <img src="/bizneslotlogotyp.png" alt="BizneLot.info" className="h-8 w-auto" />
-                BizneLot.info
-              </Link>
-              <nav className="hidden md:flex gap-6">
-                <Link href="/odszkodowanie-lot-sluzbowy" className="text-sm text-slate-300 hover:text-white transition-colors">
-                  Odszkodowanie
-                </Link>
-                <Link href="/anulowany-lot-delegacja" className="text-sm text-slate-300 hover:text-white transition-colors">
-                  Anulowany lot
-                </Link>
-                <Link href="/opozniony-lot-delegacja" className="text-sm text-slate-300 hover:text-white transition-colors">
-                  Opóźniony lot
-                </Link>
-                <Link href="/bilet-firmowy-prawa" className="text-sm text-slate-300 hover:text-white transition-colors">
-                  Bilet firmowy
-                </Link>
-                <Link href="/pracodawca-a-odszkodowanie" className="text-sm text-white font-medium">
-                  Pracodawca
-                </Link>
-                <Link href="/artykuly" className="text-sm text-slate-300 hover:text-white transition-colors">
-                  Artykuły
-                </Link>
-                <Link href="/o-autorze" className="text-sm text-slate-300 hover:text-white transition-colors">
-                  O autorze
-                </Link>
-              </nav>
-              <MobileNav currentPath="/pracodawca-a-odszkodowanie" />
-            </div>
-          </div>
-        </header>
-
+      <div className="min-h-screen bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-20 overflow-hidden">
         {/* Hero Section */}
         <section className="py-16 px-4 bg-slate-900 text-white">
           <div className="container mx-auto max-w-4xl">

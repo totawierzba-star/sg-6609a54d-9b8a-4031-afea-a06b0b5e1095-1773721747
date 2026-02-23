@@ -23,46 +23,60 @@ export function Navigation() {
             <span className="font-bold text-xl">BiznesLot</span>
           </Link>
 
-          <nav className="hidden md:flex items-center gap-6">
+          <nav className="hidden md:flex gap-4">
             <Link
               href="/odszkodowanie-lot-sluzbowy"
-              className={isActive("/odszkodowanie-lot-sluzbowy") ? "text-white font-medium" : "text-slate-300 hover:text-white transition-colors"}
+              className={isActive("/odszkodowanie-lot-sluzbowy") 
+                ? "text-white font-medium text-sm" 
+                : "text-slate-300 hover:text-white transition-colors text-sm"}
             >
-              {t.nav.compensation}
+              {t.nav.businessCompensation}
+            </Link>
+            <Link
+              href="/anulowany-lot-delegacja"
+              className={isActive("/anulowany-lot-delegacja") 
+                ? "text-white font-medium text-sm" 
+                : "text-slate-300 hover:text-white transition-colors text-sm"}
+            >
+              {t.nav.cancelledFlight}
             </Link>
             <Link
               href="/opozniony-lot-delegacja"
-              className={isActive("/opozniony-lot-delegacja") ? "text-white font-medium" : "text-slate-300 hover:text-white transition-colors"}
+              className={isActive("/opozniony-lot-delegacja") 
+                ? "text-white font-medium text-sm" 
+                : "text-slate-300 hover:text-white transition-colors text-sm"}
             >
               {t.nav.delayedFlight}
             </Link>
             <Link
-              href="/anulowany-lot-delegacja"
-              className={isActive("/anulowany-lot-delegacja") ? "text-white font-medium" : "text-slate-300 hover:text-white transition-colors"}
-            >
-              {t.nav.canceledFlight}
-            </Link>
-            <Link
               href="/bilet-firmowy-prawa"
-              className={isActive("/bilet-firmowy-prawa") ? "text-white font-medium" : "text-slate-300 hover:text-white transition-colors"}
+              className={isActive("/bilet-firmowy-prawa") 
+                ? "text-white font-medium text-sm" 
+                : "text-slate-300 hover:text-white transition-colors text-sm"}
             >
               {t.nav.ticketRights}
             </Link>
             <Link
               href="/pracodawca-a-odszkodowanie"
-              className={isActive("/pracodawca-a-odszkodowanie") ? "text-white font-medium" : "text-slate-300 hover:text-white transition-colors"}
+              className={isActive("/pracodawca-a-odszkodowanie") 
+                ? "text-white font-medium text-sm" 
+                : "text-slate-300 hover:text-white transition-colors text-sm"}
             >
               {t.nav.employerCompensation}
             </Link>
             <Link
               href="/artykuly"
-              className={isActive("/artykuly") || router.pathname.startsWith("/artykuly/") ? "text-white font-medium" : "text-slate-300 hover:text-white transition-colors"}
+              className={isActive("/artykuly") 
+                ? "text-white font-medium text-sm" 
+                : "text-slate-300 hover:text-white transition-colors text-sm"}
             >
               {t.nav.articles}
             </Link>
             <Link
               href="/o-autorze"
-              className={isActive("/o-autorze") ? "text-white font-medium" : "text-slate-300 hover:text-white transition-colors"}
+              className={isActive("/o-autorze") 
+                ? "text-white font-medium text-sm" 
+                : "text-slate-300 hover:text-white transition-colors text-sm"}
             >
               {t.nav.about}
             </Link>

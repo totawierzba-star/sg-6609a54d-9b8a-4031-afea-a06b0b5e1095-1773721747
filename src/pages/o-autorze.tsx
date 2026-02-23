@@ -81,39 +81,6 @@ export default function OAutorze() {
       />
 
       <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
-        {/* Header */}
-        <header className="bg-slate-900 text-white py-4 sticky top-0 z-50 shadow-lg">
-          <div className="container mx-auto px-4">
-            <div className="flex items-center justify-between">
-              <Link href="/" className="text-2xl font-bold flex items-center gap-2">
-                <img src="/bizneslotlogotyp.png" alt="BizneLot.info" className="h-8 w-auto" />
-                BizneLot.info
-              </Link>
-              <nav className="hidden md:flex gap-6">
-                <Link href="/odszkodowanie-lot-sluzbowy" className="text-sm text-slate-300 hover:text-white transition-colors">
-                  Odszkodowanie
-                </Link>
-                <Link href="/anulowany-lot-delegacja" className="text-sm text-slate-300 hover:text-white transition-colors">
-                  Anulowany lot
-                </Link>
-                <Link href="/opozniony-lot-delegacja" className="text-sm text-slate-300 hover:text-white transition-colors">
-                  Opóźniony lot
-                </Link>
-                <Link href="/bilet-firmowy-prawa" className="text-sm text-slate-300 hover:text-white transition-colors">
-                  Bilet firmowy
-                </Link>
-                <Link href="/artykuly" className="text-sm text-slate-300 hover:text-white transition-colors">
-                  Artykuły
-                </Link>
-                <Link href="/o-autorze" className="text-sm text-white font-medium">
-                  O autorze
-                </Link>
-              </nav>
-              <MobileNav currentPath="/o-autorze" />
-            </div>
-          </div>
-        </header>
-
         {/* Breadcrumbs */}
         <div className="container mx-auto px-4 py-4">
           <nav className="flex items-center gap-2 text-sm text-slate-600 dark:text-slate-400">
