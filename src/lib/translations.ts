@@ -20,6 +20,7 @@ export interface Translations {
     ticketRights: string;
     compensation: string;
     businessCompensation: string;
+    employer: string;
     about: string;
     articles: string;
   };
@@ -82,10 +83,10 @@ export const translations: Record<Locale, Translations> = {
       canceledFlight: "Anulowany lot",
       cancelledFlight: "Anulowany lot",
       delayedFlight: "Opóźniony lot",
-      employerCompensation: "Pracodawca a odszkodowanie",
-      ticketRights: "Bilet firmowy - prawa",
+      ticketRights: "Prawa pasażera",
+      employer: "Pracodawca",
       compensation: "Odszkodowanie",
-      businessCompensation: "Odszkodowanie lot służbowy",
+      businessCompensation: "Odszkodowanie",
       about: "O autorze",
       articles: "Artykuły",
     },
@@ -143,13 +144,13 @@ export const translations: Record<Locale, Translations> = {
     nav: {
       home: "Home",
       yourRights: "Your rights",
-      canceledFlight: "Canceled flight",
+      canceledFlight: "Cancelled flight",
       cancelledFlight: "Cancelled flight",
       delayedFlight: "Delayed flight",
-      employerCompensation: "Employer & compensation",
-      ticketRights: "Corporate ticket rights",
+      ticketRights: "Passenger rights",
+      employer: "Employer",
       compensation: "Compensation",
-      businessCompensation: "Business flight compensation",
+      businessCompensation: "Compensation",
       about: "About",
       articles: "Articles",
     },
