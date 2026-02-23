@@ -2,30 +2,59 @@ import { useRouter } from "next/router";
 import { useLocale } from "@/contexts/LocaleContext";
 import { Button } from "./ui/button";
 
+// Map Polish paths to English paths and vice versa
+const pathMap: Record<string, string> = {
+  // Polish to English
+  "/": "/en",
+  "/pracodawca-a-odszkodowanie": "/en/employer-compensation",
+  "/anulowany-lot-delegacja": "/en/cancelled-business-trip",
+  "/opozniony-lot-delegacja": "/en/delayed-business-trip",
+  "/bilet-firmowy-prawa": "/en/corporate-ticket-rights",
+  "/odszkodowanie-lot-sluzbowy": "/en/business-flight-compensation",
+  "/o-autorze": "/en/about",
+  "/artykuly": "/en/articles",
+  
+  // English to Polish
+  "/en": "/",
+  "/en/employer-compensation": "/pracodawca-a-odszkodowanie",
+  "/en/cancelled-business-trip": "/anulowany-lot-delegacja",
+  "/en/delayed-business-trip": "/opozniony-lot-delegacja",
+  "/en/corporate-ticket-rights": "/bilet-firmowy-prawa",
+  "/en/business-flight-compensation": "/odszkodowanie-lot-sluzbowy",
+  "/en/about": "/o-autorze",
+  "/en/articles": "/artykuly",
+};
+
 export function LanguageSwitcher() {
   const router = useRouter();
   const { locale } = useLocale();
 
   const toggleLanguage = () => {
-    const newLocale = locale === "pl" ? "en" : "pl";
-
-    // Get current path without locale prefix
-    const currentPath = router.asPath.replace(/^\/en/, "");
+    const currentPath = router.asPath;
     
-    // Build new path with or without /en prefix
-    const newPath = newLocale === "en" 
-      ? `/en${currentPath === "/" ? "" : currentPath}`
-      : currentPath || "/";
-
-    router.push(newPath);
+    // Try to find mapped path
+    const mappedPath = pathMap[currentPath];
+    
+    if (mappedPath) {
+      router.push(mappedPath);
+    } else {
+      // Fallback: toggle /en prefix
+      const newLocale = locale === "pl" ? "en" : "pl";
+      const pathWithoutLocale = currentPath.replace(/^\/en/, "");
+      const newPath = newLocale === "en" 
+        ? `/en${pathWithoutLocale === "/" ? "" : pathWithoutLocale}`
+        : pathWithoutLocale || "/";
+      
+      router.push(newPath);
+    }
   };
 
   return (
     <Button
-      variant="ghost"
+      variant="outline"
       size="sm"
       onClick={toggleLanguage}
-      className="text-sm font-medium hover:text-[#FF6B35] transition-colors"
+      className="border-2 border-slate-700 text-slate-900 dark:text-white dark:border-slate-300 hover:bg-[#FF6B35] hover:text-white hover:border-[#FF6B35] transition-all duration-300 font-semibold"
       aria-label={locale === "pl" ? "Switch to English" : "Przełącz na polski"}
     >
       {locale === "pl" ? "EN" : "PL"}
