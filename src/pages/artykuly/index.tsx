@@ -131,34 +131,6 @@ export default function Artykuly() {
       />
 
       <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-50">
-        {/* Header */}
-        <header className="bg-slate-900 text-white py-4 sticky top-0 z-50 shadow-lg">
-          <div className="container mx-auto px-4">
-            <div className="flex items-center justify-between">
-              <Link href="/" className="text-2xl font-bold flex items-center gap-2">
-                <img src="/bizneslotlogotyp.png" alt="BizneLot.info" className="h-8 w-auto" />
-                BizneLot.info
-              </Link>
-
-              <nav className="hidden md:flex gap-6">
-                <Link href="/odszkodowanie-lot-sluzbowy" className="text-slate-700 hover:text-slate-900 transition-colors">
-                  Odszkodowania
-                </Link>
-                <Link href="/pracodawca-a-odszkodowanie" className="text-slate-700 hover:text-slate-900 transition-colors">
-                  Pracodawca
-                </Link>
-                <Link href="/artykuly" className="text-slate-900 font-semibold border-b-2 border-slate-900">
-                  Artykuły
-                </Link>
-                <Link href="/o-autorze" className="text-slate-700 hover:text-slate-900 transition-colors">
-                  O autorze
-                </Link>
-              </nav>
-              <MobileNav currentPath="/artykuly" />
-            </div>
-          </div>
-        </header>
-
         {/* Hero Section */}
         <section className="bg-gradient-to-r from-slate-800 to-slate-700 text-white py-16">
           <div className="container mx-auto px-4">

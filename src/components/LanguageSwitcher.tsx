@@ -52,9 +52,8 @@ export function LanguageSwitcher() {
   return (
     <Button
       variant="outline"
-      size="sm"
       onClick={toggleLanguage}
-      className="border-2 border-slate-700 text-slate-900 dark:text-white dark:border-slate-300 hover:bg-[#FF6B35] hover:text-white hover:border-[#FF6B35] transition-all duration-300 font-semibold"
+      className="border-2 border-white/70 text-white hover:bg-[#FF6B35] hover:text-white hover:border-[#FF6B35] transition-all duration-300 dark:border-white/50 dark:text-white"
       aria-label={locale === "pl" ? "Switch to English" : "Przełącz na polski"}
     >
       {locale === "pl" ? "EN" : "PL"}
