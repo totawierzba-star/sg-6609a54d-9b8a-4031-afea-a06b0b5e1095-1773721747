@@ -23,60 +23,46 @@ export function Navigation() {
             <span className="font-bold text-xl">BiznesLot</span>
           </Link>
 
-          <nav className="hidden md:flex gap-4">
+          <nav className="hidden md:flex gap-3 lg:gap-4">
             <Link
               href="/odszkodowanie-lot-sluzbowy"
-              className={isActive("/odszkodowanie-lot-sluzbowy") 
-                ? "text-white font-medium text-sm" 
-                : "text-slate-300 hover:text-white transition-colors text-sm"}
+              className={isActive("/odszkodowanie-lot-sluzbowy") ? "text-white font-medium transition-colors text-xs lg:text-sm whitespace-nowrap" : "text-slate-300 hover:text-white transition-colors text-xs lg:text-sm whitespace-nowrap"}
             >
               {t.nav.businessCompensation}
             </Link>
             <Link
               href="/anulowany-lot-delegacja"
-              className={isActive("/anulowany-lot-delegacja") 
-                ? "text-white font-medium text-sm" 
-                : "text-slate-300 hover:text-white transition-colors text-sm"}
+              className={isActive("/anulowany-lot-delegacja") ? "text-white font-medium transition-colors text-xs lg:text-sm whitespace-nowrap" : "text-slate-300 hover:text-white transition-colors text-xs lg:text-sm whitespace-nowrap"}
             >
               {t.nav.cancelledFlight}
             </Link>
             <Link
               href="/opozniony-lot-delegacja"
-              className={isActive("/opozniony-lot-delegacja") 
-                ? "text-white font-medium text-sm" 
-                : "text-slate-300 hover:text-white transition-colors text-sm"}
+              className={isActive("/opozniony-lot-delegacja") ? "text-white font-medium transition-colors text-xs lg:text-sm whitespace-nowrap" : "text-slate-300 hover:text-white transition-colors text-xs lg:text-sm whitespace-nowrap"}
             >
               {t.nav.delayedFlight}
             </Link>
             <Link
               href="/bilet-firmowy-prawa"
-              className={isActive("/bilet-firmowy-prawa") 
-                ? "text-white font-medium text-sm" 
-                : "text-slate-300 hover:text-white transition-colors text-sm"}
+              className={isActive("/bilet-firmowy-prawa") ? "text-white font-medium transition-colors text-xs lg:text-sm whitespace-nowrap" : "text-slate-300 hover:text-white transition-colors text-xs lg:text-sm whitespace-nowrap"}
             >
               {t.nav.ticketRights}
             </Link>
             <Link
               href="/pracodawca-a-odszkodowanie"
-              className={isActive("/pracodawca-a-odszkodowanie") 
-                ? "text-white font-medium text-sm" 
-                : "text-slate-300 hover:text-white transition-colors text-sm"}
+              className={isActive("/pracodawca-a-odszkodowanie") ? "text-white font-medium transition-colors text-xs lg:text-sm whitespace-nowrap" : "text-slate-300 hover:text-white transition-colors text-xs lg:text-sm whitespace-nowrap"}
             >
               {t.nav.employerCompensation}
             </Link>
             <Link
               href="/artykuly"
-              className={isActive("/artykuly") 
-                ? "text-white font-medium text-sm" 
-                : "text-slate-300 hover:text-white transition-colors text-sm"}
+              className={isActive("/artykuly") ? "text-white font-medium transition-colors text-xs lg:text-sm whitespace-nowrap" : "text-slate-300 hover:text-white transition-colors text-xs lg:text-sm whitespace-nowrap"}
             >
               {t.nav.articles}
             </Link>
             <Link
               href="/o-autorze"
-              className={isActive("/o-autorze") 
-                ? "text-white font-medium text-sm" 
-                : "text-slate-300 hover:text-white transition-colors text-sm"}
+              className={isActive("/o-autorze") ? "text-white font-medium transition-colors text-xs lg:text-sm whitespace-nowrap" : "text-slate-300 hover:text-white transition-colors text-xs lg:text-sm whitespace-nowrap"}
             >
               {t.nav.about}
             </Link>
