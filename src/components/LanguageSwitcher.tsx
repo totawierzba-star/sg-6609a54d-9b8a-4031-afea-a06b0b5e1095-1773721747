@@ -4,11 +4,10 @@ import { Button } from "./ui/button";
 
 export function LanguageSwitcher() {
   const router = useRouter();
-  const { locale, setLocale } = useLocale();
+  const { locale } = useLocale();
 
   const toggleLanguage = () => {
     const newLocale = locale === "pl" ? "en" : "pl";
-    setLocale(newLocale);
 
     // Get current path without locale prefix
     const currentPath = router.asPath.replace(/^\/en/, "");
