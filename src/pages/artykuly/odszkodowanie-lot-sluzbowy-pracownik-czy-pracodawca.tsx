@@ -12,11 +12,8 @@ import {
   ArrowRight
 } from "lucide-react";
 import Link from "next/link";
-import { useLocale } from "@/contexts/LocaleContext";
 
 export default function OdszkodowanieSluzbowyPracownikCzyPracodawca() {
-  const { t } = useLocale();
-
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -122,7 +119,7 @@ export default function OdszkodowanieSluzbowyPracownikCzyPracodawca() {
               Odszkodowanie za opóźniony lot służbowy — komu przysługuje: pracownikowi czy pracodawcy?
             </h1>
             <p className="text-xl text-blue-100 leading-relaxed">
-              Kompleksowy przewodnik wyjaśniający, kto ma prawo do odszkodowania za opóźniony lot służbowy, jak rozliczyć roszczenie i uniknąć sporów między pracownikiem a firmą.
+              Kompleksowy przewodnik wyjaśniający, kto ma prawo do odszkodowania za opóźniony lot służbowy. Aspekty prawne, podatkowe i praktyczne rozwiązania dla firm i pracowników.
             </p>
           </div>
         </section>
@@ -339,46 +336,6 @@ export default function OdszkodowanieSluzbowyPracownikCzyPracodawca() {
                     Najczęstsza sytuacja w polskich firmach. Firma nie ma pisemnej polityki dotyczącej odszkodowań lotniczych.
                   </p>
                   <p className="text-gray-700 dark:text-gray-300 mb-3">
-                    <strong>Kto ma prawo do odszkodowania?</strong>
-                  </p>
-                  <ul className="space-y-2 ml-6">
-                    <li className="text-gray-700 dark:text-gray-300">→ Jeśli bilet kupił pracodawca — formalnoprawnie firma ma roszczenie</li>
-                    <li className="text-gray-700 dark:text-gray-300">→ Jeśli bilet kupił pracownik — pracownik ma roszczenie</li>
-                    <li className="text-gray-700 dark:text-gray-300">→ W praktyce — odszkodowanie może otrzymać ten, kto złoży wniosek</li>
-                  </ul>
-                  <p className="text-yellow-700 dark:text-yellow-400 font-medium mt-3">
-                    ⚠️ Zalecenie: Pracownik powinien uzgodnić z pracodawcą, kto składa wniosek i jak rozliczone zostanie odszkodowanie.
-                  </p>
-                </Card>
-
-                <Card className="p-6 border-l-4 border-l-green-600">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-                    Scenariusz 3: Pracownik samodzielnie składa wniosek i zatrzymuje odszkodowanie
-                  </h3>
-                  <p className="text-gray-700 dark:text-gray-300 mb-3">
-                    Niektóre firmy świadomie pozwalają pracownikom zatrzymać odszkodowanie jako formę rekompensaty za niedogodności związane z opóźnionym lotem służbowym.
-                  </p>
-                  <p className="text-gray-700 dark:text-gray-300">
-                    <strong>Zalety dla firmy:</strong>
-                  </p>
-                  <ul className="space-y-2 ml-6 mb-3">
-                    <li className="text-gray-700 dark:text-gray-300">✓ Brak obciążeń administracyjnych</li>
-                    <li className="text-gray-700 dark:text-gray-300">✓ Motywacja dla pracowników często podróżujących</li>
-                    <li className="text-gray-700 dark:text-gray-300">✓ Prosty sposób na częściowe zrekompensowanie stresu</li>
-                  </ul>
-                  <p className="text-green-700 dark:text-green-400 font-medium">
-                    ✓ To rozwiązanie wymaga jednak zapisów w polityce podróży, aby było jasne dla wszystkich stron.
-                  </p>
-                </Card>
-
-                <Card className="p-6 border-l-4 border-l-red-600">
-                  <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-3">
-                    Scenariusz 4: Spór między pracownikiem a pracodawcą
-                  </h3>
-                  <p className="text-gray-700 dark:text-gray-300 mb-3">
-                    Najgorszy wariant. Pracownik otrzymał odszkodowanie i nie przekazał go firmie, która uważa, że ma do niego prawo.
-                  </p>
-                  <p className="text-gray-700 dark:text-gray-300 mb-3">
                     <strong>Co może zrobić pracodawca?</strong>
                   </p>
                   <ul className="space-y-2 ml-6">
@@ -521,7 +478,7 @@ export default function OdszkodowanieSluzbowyPracownikCzyPracodawca() {
                         Poinformuj pracodawcę o złożeniu wniosku
                       </h3>
                       <p className="text-gray-700 dark:text-gray-300">
-                        Zgłoś działowi HR lub bezpośredniemu przełożonemu, że złożyłeś wniosek o odszkodowanie. Przygotuj się na przekazanie środków firmie, jeśli takie są ustalenia.
+                        Zgłoś działowi HR lub bezpośrednim przełożonemu, że złożyłeś wniosek o odszkodowanie. Przygotuj się na przekazanie środków firmie, jeśli takie są ustalenia.
                       </p>
                     </div>
                   </div>
