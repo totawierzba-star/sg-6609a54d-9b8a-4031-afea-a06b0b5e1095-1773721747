@@ -1,7 +1,7 @@
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
 import { MobileNav } from "@/components/MobileNav";
-import { Briefcase, Scale, FileText, Users, CheckCircle2, ArrowRight, Star, Plane, Award, Shield } from "lucide-react";
+import { Briefcase, Scale, FileText, Users, CheckCircle2, ArrowRight, Star, Plane, Award, Shield, ExternalLink } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { useState, useEffect } from "react";
@@ -389,6 +389,70 @@ export default function Home() {
                   </div>
                 </div>
               </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* Recommended Websites Section */}
+        <section className="py-20 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-900 dark:to-slate-800">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                Polecane strony
+              </h2>
+              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+                Warto znać swoje prawa jako pasażer. Sprawdź te strony, aby dowiedzieć się więcej.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              {/* Wise-Flight.info Card */}
+              <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border border-slate-200 dark:border-slate-700">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="p-3 bg-blue-100 dark:bg-blue-900 rounded-lg">
+                    <Scale className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold mb-2">Wise-Flight.info</h3>
+                    <p className="text-muted-foreground mb-4">
+                      Kompleksowy portal o prawach pasażerów lotniczych. Znajdziesz tu szczegółowe informacje o rozporządzeniu UE 261/2004 oraz praktyczne porady.
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="https://wise-flight.info"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:underline font-medium"
+                >
+                  Odwiedź stronę
+                  <ExternalLink className="w-4 h-4" />
+                </a>
+              </div>
+
+              {/* ProblemLot.com Card */}
+              <div className="bg-white dark:bg-slate-800 rounded-xl shadow-lg p-8 hover:shadow-xl transition-shadow border border-slate-200 dark:border-slate-700">
+                <div className="flex items-start gap-4 mb-4">
+                  <div className="p-3 bg-blue-100 dark:bg-blue-900 rounded-lg">
+                    <FileText className="w-6 h-6 text-blue-600 dark:text-blue-400" />
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="text-xl font-bold mb-2">ProblemLot.com</h3>
+                    <p className="text-muted-foreground mb-4">
+                      Baza wiedzy o problemach z lotami i prawach pasażerów. Praktyczne wskazówki, wzory pism i aktualne orzecznictwo.
+                    </p>
+                  </div>
+                </div>
+                <a
+                  href="https://problemlot.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 text-blue-600 dark:text-blue-400 hover:underline font-medium"
+                >
+                  Odwiedź stronę
+                  <ExternalLink className="w-4 h-4" />
+                </a>
+              </div>
             </div>
           </div>
         </section>
