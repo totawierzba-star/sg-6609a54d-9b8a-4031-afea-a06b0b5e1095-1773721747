@@ -21,6 +21,14 @@ export default function EnglishArticlesPage() {
       category: "Core Rights & Ownership",
       readTime: "10 min read",
       date: "2025-02-26"
+    },
+    {
+      title: "Can Your Employer Keep Your Flight Delay Compensation?",
+      slug: "can-employer-keep-flight-compensation",
+      description: "Can your company legally keep your €600 flight compensation? Complete guide to employee rights, employer policies, and legal frameworks across Europe and UK.",
+      category: "Core Rights & Ownership",
+      readTime: "12 min read",
+      date: "2025-02-26"
     }
   ];
 
