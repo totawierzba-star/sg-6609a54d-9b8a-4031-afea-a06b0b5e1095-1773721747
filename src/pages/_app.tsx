@@ -1,24 +1,25 @@
-import { Toaster } from "@/components/ui/toaster";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
+import { ThemeProvider } from "@/contexts/ThemeProvider";
 import { LocaleProvider } from "@/contexts/LocaleContext";
 import { Navigation } from "@/components/Navigation";
+import { Toaster } from "@/components/ui/toaster";
 import { useRouter } from "next/router";
 import { Locale } from "@/lib/i18n";
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
   
-  // Default to 'pl' if locale is undefined, cast to Locale type
-  const currentLocale = (router.locale || 'pl') as Locale;
+  // Determine locale from URL path
+  const locale: Locale = router.pathname.startsWith("/en") ? "en" : "pl";
 
   return (
-    <LocaleProvider locale={currentLocale}>
-      <Navigation />
-      <div className="pt-16">
+    <ThemeProvider>
+      <LocaleProvider locale={locale}>
+        <Navigation />
         <Component {...pageProps} />
-      </div>
-      <Toaster />
-    </LocaleProvider>
+        <Toaster />
+      </LocaleProvider>
+    </ThemeProvider>
   );
 }

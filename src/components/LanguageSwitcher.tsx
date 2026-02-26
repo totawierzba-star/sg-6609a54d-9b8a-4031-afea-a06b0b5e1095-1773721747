@@ -1,6 +1,7 @@
 import { useRouter } from "next/router";
 import { useLocale } from "@/contexts/LocaleContext";
 import { Button } from "./ui/button";
+import { Globe } from "lucide-react";
 
 // Map Polish paths to English paths and vice versa
 const pathMap: Record<string, string> = {
@@ -50,12 +51,14 @@ export function LanguageSwitcher() {
 
   return (
     <Button
-      variant="outline"
+      variant="ghost"
+      size="sm"
       onClick={toggleLanguage}
-      className="border-2 border-white/70 text-white hover:bg-[#FF6B35] hover:text-white hover:border-[#FF6B35] transition-all duration-300 dark:border-white/50 dark:text-white"
+      className="flex items-center gap-2 hover:bg-slate-100 transition-colors"
       aria-label={locale === "pl" ? "Switch to English" : "Przełącz na polski"}
     >
-      {locale === "pl" ? "EN" : "PL"}
+      <Globe className="h-4 w-4" />
+      <span className="font-medium">{locale === "pl" ? "EN" : "PL"}</span>
     </Button>
   );
 }
