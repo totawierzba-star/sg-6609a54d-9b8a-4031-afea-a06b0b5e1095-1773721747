@@ -439,7 +439,7 @@ export default function LufthansaFlightDelayCompensationBusiness() {
                       </li>
                       <li className="flex items-start gap-2">
                         <span className="text-blue-600 dark:text-blue-400 mt-1">3.</span>
-                        <span><strong>Small claims court</strong> (most EU countries allow online filing for <€5,000)</span>
+                        <span><strong>Small claims court</strong> (most EU countries allow online filing for &lt;€5,000)</span>
                       </li>
                     </ul>
                     <p className="text-slate-700 dark:text-slate-300 mt-3">
