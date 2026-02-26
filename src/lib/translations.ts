@@ -12,17 +12,19 @@ export interface Translations {
   };
   nav: {
     home: string;
-    yourRights: string;
-    canceledFlight: string;
-    cancelledFlight: string;
-    delayedFlight: string;
-    employerCompensation: string;
-    ticketRights: string;
     compensation: string;
-    businessCompensation: string;
-    employer: string;
-    about: string;
+    businessCompensation: string; // kept for compatibility
+    yourRights: string; // kept for compatibility
+    cancelledFlight: string;
+    canceledFlight: string; // kept for compatibility
+    delayedFlight: string;
+    businessTicket: string;
+    ticketRights: string; // kept for compatibility
+    employerCompensation: string;
+    employer: string; // kept for compatibility
     articles: string;
+    about: string;
+    checkClaim: string;
   };
   cta: {
     checkCompensation: string;
@@ -78,28 +80,30 @@ export const translations: Record<Locale, Translations> = {
       author: "O autorze",
     },
     nav: {
-      home: "Start",
-      yourRights: "Twoje prawa",
-      canceledFlight: "Anulowany lot",
-      cancelledFlight: "Anulowany lot",
-      delayedFlight: "Opóźniony lot",
-      employerCompensation: "Pracodawca",
-      ticketRights: "Prawa pasażera",
+      home: "Strona główna",
       compensation: "Odszkodowanie",
-      businessCompensation: "Odszkodowanie",
+      businessCompensation: "Odszkodowanie dla firm",
+      yourRights: "Twoje prawa",
+      cancelledFlight: "Anulowany lot",
+      canceledFlight: "Anulowany lot",
+      delayedFlight: "Opóźniony lot",
+      businessTicket: "Bilet firmowy",
+      ticketRights: "Prawa biletowe",
+      employerCompensation: "Pracodawca a odszkodowanie",
       employer: "Pracodawca",
-      about: "O autorze",
       articles: "Artykuły",
+      about: "O autorze",
+      checkClaim: "Sprawdź odszkodowanie"
     },
     cta: {
       checkCompensation: "Sprawdź odszkodowanie",
     },
     home: {
       hero: {
-        title: "Poznaj swoje prawa podczas podróży służbowych",
-        subtitle: "Kompleksowy przewodnik po prawach pasażerów lotniczych w kontekście delegacji i podróży biznesowych.",
-        cta1: "Poznaj swoje prawa",
-        cta2: "Anulowany lot w delegacji",
+        title: "Prawa pasażera w podróżach służbowych",
+        subtitle: "Kompletny przewodnik po odszkodowaniach lotniczych dla pracowników i firm",
+        cta1: "Sprawdź odszkodowanie",
+        cta2: "Dowiedz się więcej"
       },
       intro: {
         title: "Dlaczego warto znać swoje prawa?",
@@ -144,27 +148,29 @@ export const translations: Record<Locale, Translations> = {
     },
     nav: {
       home: "Home",
-      yourRights: "Your rights",
-      canceledFlight: "Cancelled flight",
-      cancelledFlight: "Cancelled flight",
-      delayedFlight: "Delayed flight",
-      employerCompensation: "Employer",
-      ticketRights: "Passenger rights",
       compensation: "Compensation",
-      businessCompensation: "Compensation",
+      businessCompensation: "Business Compensation",
+      yourRights: "Your Rights",
+      cancelledFlight: "Cancelled Flight",
+      canceledFlight: "Canceled Flight",
+      delayedFlight: "Delayed Flight",
+      businessTicket: "Business Ticket",
+      ticketRights: "Ticket Rights",
+      employerCompensation: "Employer & Compensation",
       employer: "Employer",
-      about: "About",
       articles: "Articles",
+      about: "About",
+      checkClaim: "Check Your Claim"
     },
     cta: {
       checkCompensation: "Check compensation",
     },
     home: {
       hero: {
-        title: "Know Your Rights During Business Travel",
-        subtitle: "Comprehensive guide to airline passenger rights in the context of business trips and corporate travel.",
-        cta1: "Know your rights",
-        cta2: "Canceled business flight",
+        title: "Passenger Rights in Business Travel",
+        subtitle: "Complete guide to flight compensation for employees and companies",
+        cta1: "Check Compensation",
+        cta2: "Learn More"
       },
       intro: {
         title: "Why should you know your rights?",

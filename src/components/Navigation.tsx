@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { Plane } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 import { MobileNav } from "@/components/MobileNav";
@@ -8,77 +7,96 @@ import { useLocale } from "@/contexts/LocaleContext";
 import { translations } from "@/lib/translations";
 
 export function Navigation() {
-  const router = useRouter();
   const { locale } = useLocale();
   const t = translations[locale];
 
-  const isActive = (path: string) => router.pathname === path;
+  const getLocalizedPath = (path: string) => {
+    if (locale === "en") {
+      const pathMap: Record<string, string> = {
+        "/odszkodowanie-lot-sluzbowy": "/en/business-flight-compensation",
+        "/anulowany-lot-delegacja": "/en/cancelled-business-trip",
+        "/opozniony-lot-delegacja": "/en/delayed-business-trip",
+        "/bilet-firmowy-prawa": "/en/business-ticket-rights",
+        "/pracodawca-a-odszkodowanie": "/en/employer-compensation",
+        "/artykuly": "/en/articles",
+        "/o-autorze": "/en/about",
+        "/": "/en"
+      };
+      return pathMap[path] || path;
+    }
+    return path;
+  };
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-slate-900/95 backdrop-blur-sm border-b border-slate-800">
+    <nav className="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="flex items-center gap-2 text-white hover:text-blue-400 transition-colors">
-            <Plane className="w-6 h-6" />
-            <span className="font-bold text-xl">BiznesLot</span>
+          <Link href={locale === "en" ? "/en" : "/"} className="flex items-center gap-2 hover:opacity-80 transition-opacity">
+            <img src="/bizneslotlogotyp.png" alt="BiznesLot.info" className="h-8 w-auto" />
           </Link>
 
-          <nav className="hidden md:flex gap-3 lg:gap-4">
+          <div className="hidden lg:flex items-center gap-1">
             <Link
-              href="/odszkodowanie-lot-sluzbowy"
-              className={isActive("/odszkodowanie-lot-sluzbowy") ? "text-white font-medium transition-colors text-xs lg:text-sm whitespace-nowrap" : "text-slate-300 hover:text-white transition-colors text-xs lg:text-sm whitespace-nowrap"}
+              href={getLocalizedPath("/")}
+              className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors"
             >
-              {t.nav.businessCompensation}
+              {t.nav.home}
             </Link>
             <Link
-              href="/anulowany-lot-delegacja"
-              className={isActive("/anulowany-lot-delegacja") ? "text-white font-medium transition-colors text-xs lg:text-sm whitespace-nowrap" : "text-slate-300 hover:text-white transition-colors text-xs lg:text-sm whitespace-nowrap"}
+              href={getLocalizedPath("/odszkodowanie-lot-sluzbowy")}
+              className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors"
+            >
+              {t.nav.compensation}
+            </Link>
+            <Link
+              href={getLocalizedPath("/anulowany-lot-delegacja")}
+              className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors"
             >
               {t.nav.cancelledFlight}
             </Link>
             <Link
-              href="/opozniony-lot-delegacja"
-              className={isActive("/opozniony-lot-delegacja") ? "text-white font-medium transition-colors text-xs lg:text-sm whitespace-nowrap" : "text-slate-300 hover:text-white transition-colors text-xs lg:text-sm whitespace-nowrap"}
+              href={getLocalizedPath("/opozniony-lot-delegacja")}
+              className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors"
             >
               {t.nav.delayedFlight}
             </Link>
             <Link
-              href="/bilet-firmowy-prawa"
-              className={isActive("/bilet-firmowy-prawa") ? "text-white font-medium transition-colors text-xs lg:text-sm whitespace-nowrap" : "text-slate-300 hover:text-white transition-colors text-xs lg:text-sm whitespace-nowrap"}
+              href={getLocalizedPath("/bilet-firmowy-prawa")}
+              className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors"
             >
-              {t.nav.ticketRights}
+              {t.nav.businessTicket}
             </Link>
             <Link
-              href="/pracodawca-a-odszkodowanie"
-              className={isActive("/pracodawca-a-odszkodowanie") ? "text-white font-medium transition-colors text-xs lg:text-sm whitespace-nowrap" : "text-slate-300 hover:text-white transition-colors text-xs lg:text-sm whitespace-nowrap"}
+              href={getLocalizedPath("/pracodawca-a-odszkodowanie")}
+              className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors"
             >
               {t.nav.employerCompensation}
             </Link>
             <Link
-              href="/artykuly"
-              className={isActive("/artykuly") ? "text-white font-medium transition-colors text-xs lg:text-sm whitespace-nowrap" : "text-slate-300 hover:text-white transition-colors text-xs lg:text-sm whitespace-nowrap"}
+              href={getLocalizedPath("/artykuly")}
+              className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors"
             >
               {t.nav.articles}
             </Link>
             <Link
-              href="/o-autorze"
-              className={isActive("/o-autorze") ? "text-white font-medium transition-colors text-xs lg:text-sm whitespace-nowrap" : "text-slate-300 hover:text-white transition-colors text-xs lg:text-sm whitespace-nowrap"}
+              href={getLocalizedPath("/o-autorze")}
+              className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors"
             >
               {t.nav.about}
             </Link>
-          </nav>
+          </div>
 
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-3">
             <LanguageSwitcher />
-            <Link href="https://claimwinger.com" target="_blank" rel="noopener noreferrer">
-              <Button variant="default" size="sm" className="hidden md:inline-flex bg-blue-600 hover:bg-blue-700">
-                {t.cta.checkCompensation}
-              </Button>
-            </Link>
+            <Button asChild size="sm" className="hidden md:flex bg-[#FF6B35] hover:bg-[#FF6B35]/90">
+              <a href="https://claimwinger.com/pl" target="_blank" rel="noopener noreferrer">
+                {t.nav.checkClaim}
+              </a>
+            </Button>
             <MobileNav />
           </div>
         </div>
       </div>
-    </header>
+    </nav>
   );
 }

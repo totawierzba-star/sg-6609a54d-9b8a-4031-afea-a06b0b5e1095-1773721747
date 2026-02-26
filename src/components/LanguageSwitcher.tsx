@@ -4,8 +4,7 @@ import { Button } from "./ui/button";
 
 // Map Polish paths to English paths and vice versa
 const pathMap: Record<string, string> = {
-  // Polish to English
-  "/": "/en",
+  // PL → EN
   "/pracodawca-a-odszkodowanie": "/en/employer-compensation",
   "/anulowany-lot-delegacja": "/en/cancelled-business-trip",
   "/opozniony-lot-delegacja": "/en/delayed-business-trip",
@@ -14,8 +13,7 @@ const pathMap: Record<string, string> = {
   "/o-autorze": "/en/about",
   "/artykuly": "/en/articles",
   
-  // English to Polish
-  "/en": "/",
+  // EN → PL
   "/en/employer-compensation": "/pracodawca-a-odszkodowanie",
   "/en/cancelled-business-trip": "/anulowany-lot-delegacja",
   "/en/delayed-business-trip": "/opozniony-lot-delegacja",
@@ -23,6 +21,7 @@ const pathMap: Record<string, string> = {
   "/en/business-flight-compensation": "/odszkodowanie-lot-sluzbowy",
   "/en/about": "/o-autorze",
   "/en/articles": "/artykuly",
+  "/en": "/"
 };
 
 export function LanguageSwitcher() {
