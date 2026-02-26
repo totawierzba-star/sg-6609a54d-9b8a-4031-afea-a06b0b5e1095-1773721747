@@ -37,6 +37,14 @@ export default function EnglishArticlesPage() {
       category: "Core Rights & Ownership",
       readTime: "15 min read",
       date: "2025-02-26"
+    },
+    {
+      title: "Lufthansa Flight Delay Compensation for Business Travelers",
+      slug: "lufthansa-flight-delay-compensation-business",
+      description: "Complete guide to claiming €250-€600 compensation for Lufthansa delays on business trips. Learn corporate traveler rights, claim processes, and success strategies.",
+      category: "Airline-Specific Claims",
+      readTime: "12 min read",
+      date: "2025-02-26"
     }
   ];
 
