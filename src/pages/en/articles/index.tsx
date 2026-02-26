@@ -29,6 +29,14 @@ export default function EnglishArticlesPage() {
       category: "Core Rights & Ownership",
       readTime: "12 min read",
       date: "2025-02-26"
+    },
+    {
+      title: "How to Claim Flight Compensation When Traveling for Work",
+      slug: "how-to-claim-flight-compensation-business-travel",
+      description: "Step-by-step guide to claiming €250-€600 flight compensation on business trips. Learn the process, required documents, and how to maximize your claim success rate.",
+      category: "Core Rights & Ownership",
+      readTime: "15 min read",
+      date: "2025-02-26"
     }
   ];
 
