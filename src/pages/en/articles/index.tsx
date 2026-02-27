@@ -71,11 +71,11 @@ export default function EnglishArticlesPage() {
       date: "2025-02-27"
     },
     {
-      title: "Can Your Employer Require You to Use a Specific Claim Service?",
+      title: "Can Your Employer Require You to Use a Claim Service? | EU261",
       slug: "can-employer-require-claim-service",
       excerpt: "Legal analysis of employer requirements for flight compensation services. Know your rights under EU261 and employment law.",
-      category: "Corporate Process",
-      readTime: "14 min read",
+      category: "Financial & Tax",
+      readTime: "18 min read",
       date: "2025-02-27"
     }
   ];
