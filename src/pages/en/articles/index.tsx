@@ -7,7 +7,7 @@ import { Badge } from "@/components/ui/badge";
 export default function EnglishArticlesPage() {
   const articles = [
     {
-      title: "Flight Delay Compensation for Business Travel: Who Is Entitled — Employee or Employer?",
+      title: "Flight Delay Compensation for Business Travel: Who Gets the Money?",
       slug: "flight-delay-compensation-business-travel-employee-or-employer",
       description: "The definitive guide to understanding who owns flight compensation on business trips — the traveling employee or the company that paid for the ticket.",
       category: "Core Rights & Ownership",
@@ -44,6 +44,14 @@ export default function EnglishArticlesPage() {
       description: "Complete guide to claiming €250-€600 compensation for Lufthansa delays on business trips. Learn corporate traveler rights, claim processes, and success strategies.",
       category: "Airline-Specific Claims",
       readTime: "12 min read",
+      date: "2025-02-26"
+    },
+    {
+      title: "Ryanair Flight Delay Compensation for Business Travelers | Guide",
+      excerpt: "Traveling for business on Ryanair? Learn how to claim up to €400 for delays. Watch out for the 'voucher trap' and understand your rights.",
+      slug: "ryanair-flight-delay-compensation-business",
+      category: "Airline-Specific Claims",
+      readTime: "10 min read",
       date: "2025-02-26"
     }
   ];
