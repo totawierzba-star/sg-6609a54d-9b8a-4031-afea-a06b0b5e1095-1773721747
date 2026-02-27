@@ -53,6 +53,30 @@ export default function EnglishArticlesPage() {
       category: "Airline-Specific Claims",
       readTime: "10 min read",
       date: "2025-02-26"
+    },
+    {
+      title: "Frankfurt Hub Flight Delays for Business Travelers | FRA Guide",
+      slug: "frankfurt-hub-flight-delays-business",
+      excerpt: "Flying through Frankfurt (FRA)? Learn about EU261 compensation for missed connections, hub delays, and Lufthansa's responsibilities.",
+      category: "Routes & Hubs",
+      readTime: "11 min read",
+      date: "2025-02-27"
+    },
+    {
+      title: "Heathrow Hub Flight Delays & Business Travel Compensation | LHR Guide",
+      slug: "heathrow-hub-flight-delays-business",
+      excerpt: "London Heathrow delays and your EU261/UK261 rights. Terminal 5 issues, missed connections, and post-Brexit compensation explained.",
+      category: "Routes & Hubs",
+      readTime: "10 min read",
+      date: "2025-02-27"
+    },
+    {
+      title: "Can Your Employer Require You to Use a Specific Claim Service?",
+      slug: "can-employer-require-claim-service",
+      excerpt: "Legal analysis of employer requirements for flight compensation services. Know your rights under EU261 and employment law.",
+      category: "Corporate Process",
+      readTime: "14 min read",
+      date: "2025-02-27"
     }
   ];
 
