@@ -89,7 +89,7 @@ export const translations: Record<Locale, Translations> = {
       delayedFlight: "Opóźniony lot",
       businessTicket: "Bilet firmowy",
       ticketRights: "Prawa biletowe",
-      employerCompensation: "Pracodawca a odszkodowanie",
+      employerCompensation: "Pracodawca", // Shortened from "Pracodawca a odszkodowanie" for nav fit
       employer: "Pracodawca",
       articles: "Artykuły",
       about: "O autorze",

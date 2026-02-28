@@ -32,20 +32,39 @@ export function LanguageSwitcher() {
   const toggleLanguage = () => {
     const currentPath = router.asPath;
     
-    // Try to find mapped path
+    // 1. Try to find exact mapped path
     const mappedPath = pathMap[currentPath];
     
     if (mappedPath) {
       router.push(mappedPath);
+      return;
+    }
+
+    // 2. Handle Article Fallbacks (Safe Redirects)
+    // If on an English article without a specific map -> go to Polish articles index
+    if (currentPath.startsWith("/en/articles")) {
+      router.push("/artykuly");
+      return;
+    }
+    
+    // If on a Polish article without a specific map -> go to English articles index
+    if (currentPath.startsWith("/artykuly")) {
+      router.push("/en/articles");
+      return;
+    }
+
+    // 3. Generic Fallback: toggle /en prefix
+    const newLocale = locale === "pl" ? "en" : "pl";
+    const pathWithoutLocale = currentPath.replace(/^\/en/, "");
+    
+    // If switching to EN
+    if (newLocale === "en") {
+        const newPath = `/en${pathWithoutLocale === "/" ? "" : pathWithoutLocale}`;
+        router.push(newPath);
     } else {
-      // Fallback: toggle /en prefix
-      const newLocale = locale === "pl" ? "en" : "pl";
-      const pathWithoutLocale = currentPath.replace(/^\/en/, "");
-      const newPath = newLocale === "en" 
-        ? `/en${pathWithoutLocale === "/" ? "" : pathWithoutLocale}`
-        : pathWithoutLocale || "/";
-      
-      router.push(newPath);
+        // If switching to PL
+        const newPath = pathWithoutLocale || "/";
+        router.push(newPath);
     }
   };
 

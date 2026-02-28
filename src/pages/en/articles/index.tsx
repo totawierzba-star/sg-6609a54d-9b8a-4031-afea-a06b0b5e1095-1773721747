@@ -149,6 +149,49 @@ export default function EnglishArticlesPage() {
                 </Card>
               </Link>
             ))}
+            {
+              [
+                {
+                  title: "Air France Flight Delay Compensation",
+                  excerpt: "Guide to claiming up to €600 for Air France delays. Understanding French strikes and the 5-year time limit for claims.",
+                  date: "2026-02-27",
+                  href: "/en/articles/air-france-flight-delay-compensation-business",
+                  readTime: "5 min read"
+                }
+              ].map((article, index) => (
+                <Link 
+                  key={index} 
+                  href={article.href}
+                  className="group"
+                >
+                  <Card className="h-full hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+                    <CardHeader>
+                      <div className="flex items-center justify-between mb-2">
+                        <Badge variant="secondary" className="text-xs">
+                          Airline-Specific Claims
+                        </Badge>
+                        <div className="flex items-center gap-1 text-slate-500 text-sm">
+                          <Clock className="h-3 w-3" />
+                          <span>{article.readTime}</span>
+                        </div>
+                      </div>
+                      <CardTitle className="text-xl group-hover:text-blue-600 transition-colors">
+                        {article.title}
+                      </CardTitle>
+                      <CardDescription className="text-sm text-slate-600">
+                        {article.excerpt}
+                      </CardDescription>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="flex items-center justify-between">
+                        <span className="text-sm text-slate-500">{article.date}</span>
+                        <ArrowRight className="h-5 w-5 text-blue-600 group-hover:translate-x-1 transition-transform" />
+                      </div>
+                    </CardContent>
+                  </Card>
+                </Link>
+              ))
+            }
           </div>
 
           {/* CTA Section */}

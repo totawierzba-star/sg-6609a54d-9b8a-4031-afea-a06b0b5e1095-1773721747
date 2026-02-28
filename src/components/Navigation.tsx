@@ -35,52 +35,52 @@ export function Navigation() {
             <img src="/bizneslotlogotyp.png" alt="BiznesLot.info" className="h-8 w-auto" />
           </Link>
 
-          <div className="hidden lg:flex items-center gap-1">
+          <div className="hidden lg:flex items-center gap-0.5">
             <Link
               href={getLocalizedPath("/")}
-              className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors"
+              className="px-1.5 py-2 text-xs font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors whitespace-nowrap"
             >
               {t.nav.home}
             </Link>
             <Link
               href={getLocalizedPath("/odszkodowanie-lot-sluzbowy")}
-              className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors"
+              className="px-1.5 py-2 text-xs font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors whitespace-nowrap"
             >
               {t.nav.compensation}
             </Link>
             <Link
               href={getLocalizedPath("/anulowany-lot-delegacja")}
-              className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors"
+              className="px-1.5 py-2 text-xs font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors whitespace-nowrap"
             >
               {t.nav.cancelledFlight}
             </Link>
             <Link
               href={getLocalizedPath("/opozniony-lot-delegacja")}
-              className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors"
+              className="px-1.5 py-2 text-xs font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors whitespace-nowrap"
             >
               {t.nav.delayedFlight}
             </Link>
             <Link
               href={getLocalizedPath("/bilet-firmowy-prawa")}
-              className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors"
+              className="px-1.5 py-2 text-xs font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors whitespace-nowrap"
             >
               {t.nav.businessTicket}
             </Link>
             <Link
               href={getLocalizedPath("/pracodawca-a-odszkodowanie")}
-              className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors"
+              className="px-1.5 py-2 text-xs font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors whitespace-nowrap"
             >
               {t.nav.employerCompensation}
             </Link>
             <Link
               href={getLocalizedPath("/artykuly")}
-              className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors"
+              className="px-1.5 py-2 text-xs font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors whitespace-nowrap"
             >
               {t.nav.articles}
             </Link>
             <Link
               href={getLocalizedPath("/o-autorze")}
-              className="px-3 py-2 text-sm font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors"
+              className="px-1.5 py-2 text-xs font-medium text-slate-700 hover:text-slate-900 hover:bg-slate-50 rounded-md transition-colors whitespace-nowrap"
             >
               {t.nav.about}
             </Link>

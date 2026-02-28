@@ -1,49 +1,32 @@
-# Instrukcja Obsługi Mapy Strony (Sitemap & SEO)
+# Instrukcja Obsługi: Statyczna Mapa Witryny (Sitemap)
 
-## 🔄 Jak to działa?
-W tym projekcie mapa strony (`sitemap.xml`) oraz plik `robots.txt` są generowane **automatycznie** podczas każdego budowania aplikacji (`npm run build`).
+Projekt używa **statycznej mapy witryny** (`public/sitemap.xml`). Oznacza to, że plik ten jest tworzony ręcznie, a nie generowany automatycznie. Daje to 100% pewności, że Google zawsze otrzyma poprawny plik.
 
-Nie musisz już ręcznie edytować plików w folderze `public/`.
+## Jak dodać nowy artykuł/stronę?
 
-## ⚙️ Konfiguracja
+Za każdym razem, gdy dodajesz nową stronę lub artykuł, wykonaj te proste kroki:
 
-Główna konfiguracja znajduje się w pliku: `next-sitemap.config.js` w głównym katalogu projektu.
+1. Otwórz plik `public/sitemap.xml`.
+2. Skopiuj ostatni wpis `<url>...</url>` z odpowiedniej sekcji (np. "English Articles").
+3. Wklej go poniżej i zaktualizuj:
+   - `<loc>`: Wpisz pełny adres URL nowej strony.
+   - `<lastmod>`: Zmień na dzisiejszą datę (format RRRR-MM-DD).
+4. Zapisz plik.
 
-### Zmiana domeny
-Domyślna domena to `https://bizneslot.pl`. Aby ją zmienić:
-1. Otwórz `next-sitemap.config.js`
-2. Zmień wartość `siteUrl` lub ustaw zmienną środowiskową `SITE_URL` w Vercel/env.
+### Przykład wpisu:
 
-```javascript
-module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://twoja-nowa-domena.pl',
-  // ...
-}
+```xml
+<url>
+  <loc>https://bizneslot.info/en/articles/nowy-artykul</loc>
+  <lastmod>2025-02-27</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
 ```
 
-### Wykluczanie stron
-Jeśli chcesz ukryć stronę przed Google (np. stronę z podziękowaniem lub admina), dodaj jej ścieżkę do tablicy `exclude`:
+## Dlaczego tak robimy?
+Statyczna mapa eliminuje błędy "Nie udało się pobrać" w Google Search Console, które mogą występować przy dynamicznym generowaniu podczas procesu budowania (build) na platformach takich jak Vercel.
 
-```javascript
-exclude: ['/404', '/thank-you', '/admin'],
-```
-
-## 🚀 Jak zaktualizować mapę?
-
-### Podczas developmentu (lokalnie):
-Mapa nie generuje się automatycznie w trybie `dev`. Aby ją przetestować, uruchom:
-```bash
-npm run build
-```
-Pliki pojawią się w folderze `public/`.
-
-### Na produkcji (Vercel/Deploy):
-Nie musisz robić nic. Skrypt `postbuild` uruchomi się automatycznie po zakończeniu budowania i zaktualizuje mapę strony o wszystkie nowe artykuły i podstrony, które dodałeś.
-
-## 🔍 Weryfikacja w Google Search Console
-
-Po wdrożeniu zmian na produkcję:
-1. Wejdź do Google Search Console.
-2. W sekcji "Mapy witryn" wpisz `sitemap.xml`.
-3. Kliknij "Prześlij".
-4. Upewnij się, że status to "Sukces", a liczba wykrytych adresów URL odpowiada liczbie podstron w serwisie.
+## Plik robots.txt
+Plik `public/robots.txt` automatycznie wskazuje na tę mapę:
+`Sitemap: https://bizneslot.info/sitemap.xml`
