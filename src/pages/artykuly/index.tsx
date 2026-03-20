@@ -6,6 +6,15 @@ import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, FileText, Users, BarC
 export default function Artykuly() {
   const articles = [
     {
+      title: "Overbooking na locie służbowym — prawa pracownika i pracodawcy",
+      slug: "overbooking-na-locie-sluzbowym-praca-pracodawcy",
+      excerpt: "Kompleksowy poradnik o overbookingu w podróżach służbowych. Kto ma prawo do odszkodowania do 600 EUR, jak krok po kroku odzyskać pieniądze i jakie obowiązki ma pracodawca.",
+      date: "2025-01-15",
+      readTime: "8 min",
+      category: "Prawo i Finanse",
+      icon: Scale
+    },
+    {
       title: "Odszkodowanie za opóźniony lot służbowy — komu przysługuje: pracownik czy pracodawca?",
       slug: "odszkodowanie-lot-sluzbowy-pracownik-czy-pracodawca",
       excerpt: "Kompleksowy przewodnik wyjaśniający, kto ma prawo do odszkodowania za opóźniony lot służbowy. Aspekty prawne, podatkowe i praktyczne rozwiązania dla firm i pracowników.",
