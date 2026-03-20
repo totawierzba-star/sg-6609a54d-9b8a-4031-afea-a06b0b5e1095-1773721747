@@ -6,6 +6,15 @@ import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, FileText, Users, BarC
 export default function Artykuly() {
   const articles = [
     {
+      title: "Lot służbowy odwołany w ostatniej chwili — co zrobić",
+      slug: "lot-sluzbowy-odwolany-ostatniej-chwili-co-zrobic",
+      excerpt: "Kompleksowy plan działania gdy lot służbowy zostaje odwołany. Sprawdź jakie masz prawa, jak odzyskać odszkodowanie do 600 EUR i jak szybko znaleźć alternatywny transport na spotkanie biznesowe.",
+      date: "2025-01-20",
+      readTime: "13 min",
+      category: "Prawo i Finanse",
+      icon: Scale
+    },
+    {
       title: "Opóźnienie lotu a spotkanie biznesowe — koszty konsekwencji",
       slug: "opoznienie-lotu-spotkanie-biznesowe-koszty-konsekwencji",
       excerpt: "Kompleksowa analiza kosztów opóźnienia lotu a spotkanie biznesowe. Sprawdź jak minimalizować straty, jakie są koszty bezpośrednie i pośrednie oraz jak odzyskać odszkodowanie do 600 EUR.",
