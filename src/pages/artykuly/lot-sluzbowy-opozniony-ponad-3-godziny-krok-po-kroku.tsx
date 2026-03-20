@@ -1,5 +1,11 @@
 import { SEO } from "@/components/SEO";
 
+declare global {
+  interface Window {
+    dataLayer: any[];
+  }
+}
+
 export default function DelayedFlightArticle() {
   return (
     <>
