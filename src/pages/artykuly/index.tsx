@@ -6,6 +6,15 @@ import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, FileText, Users, BarC
 export default function Artykuly() {
   const articles = [
     {
+      title: "Bilet służbowy kupiony przez firmę — kto składa reklamację",
+      slug: "bilet-sluzbowy-kupiony-przez-firme-kto-sklada-reklamacje",
+      excerpt: "Kompleksowy wyjaśnienie kto składa reklamację za bilet służbowy kupiony przez firmę. Sprawdź czy pracownik czy pracodawca ma prawo do odszkodowania i jak przebiega procedura roszczeniowa w podróżach biznesowych.",
+      date: "2025-01-21",
+      readTime: "14 min",
+      category: "Prawo i Finanse",
+      icon: Scale
+    },
+    {
       title: "Lot służbowy odwołany w ostatniej chwili — co zrobić",
       slug: "lot-sluzbowy-odwolany-ostatniej-chwili-co-zrobic",
       excerpt: "Kompleksowy plan działania gdy lot służbowy zostaje odwołany. Sprawdź jakie masz prawa, jak odzyskać odszkodowanie do 600 EUR i jak szybko znaleźć alternatywny transport na spotkanie biznesowe.",
