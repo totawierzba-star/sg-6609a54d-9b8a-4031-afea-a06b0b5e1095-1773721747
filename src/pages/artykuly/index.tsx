@@ -6,6 +6,15 @@ import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, FileText, Users, BarC
 export default function Artykuly() {
   const articles = [
     {
+      title: "Opóźnienie lotu a spotkanie biznesowe — koszty konsekwencji",
+      slug: "opoznienie-lotu-spotkanie-biznesowe-koszty-konsekwencji",
+      excerpt: "Kompleksowa analiza kosztów opóźnienia lotu a spotkanie biznesowe. Sprawdź jak minimalizować straty, jakie są koszty bezpośrednie i pośrednie oraz jak odzyskać odszkodowanie do 600 EUR.",
+      date: "2025-01-19",
+      readTime: "12 min",
+      category: "Prawo i Finanse",
+      icon: Scale
+    },
+    {
       title: "Zgubiony bagaż w podróży służbowej — odszkodowanie i procedura",
       slug: "zgubiony-bagaz-podroz-sluzbowa-odszkodowanie-procedura",
       excerpt: "Kompleksowy przewodnik po procedurze odzyskiwania odszkodowania do 1300 EUR za zagubiony bagaż w podróży służbowej. Sprawdź krok po kroku jak zgłosić zaginięcie i jakie dokumenty potrzebujesz.",
