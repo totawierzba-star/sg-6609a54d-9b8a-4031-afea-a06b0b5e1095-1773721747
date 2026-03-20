@@ -6,6 +6,15 @@ import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, FileText, Users, BarC
 export default function Artykuly() {
   const articles = [
     {
+      title: "Zgubiony bagaż w podróży służbowej — odszkodowanie i procedura",
+      slug: "zgubiony-bagaz-podroz-sluzbowa-odszkodowanie-procedura",
+      excerpt: "Kompleksowy przewodnik po procedurze odzyskiwania odszkodowania do 1300 EUR za zagubiony bagaż w podróży służbowej. Sprawdź krok po kroku jak zgłosić zaginięcie i jakie dokumenty potrzebujesz.",
+      date: "2025-01-18",
+      readTime: "11 min",
+      category: "Prawo i Finanse",
+      icon: Scale
+    },
+    {
       title: "Lot służbowy opóźniony o ponad 3 godziny — krok po kroku",
       slug: "lot-sluzbowy-opozniony-ponad-3-godziny-krok-po-kroku",
       excerpt: "Szczegółowy przewodnik krok po kroku jak odzyskać odszkodowanie do 600 EUR za opóźniony lot służbowy. Sprawdź jakie dokumenty potrzebujesz i jak przebiega procedura.",
