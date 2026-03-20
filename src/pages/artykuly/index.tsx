@@ -6,6 +6,15 @@ import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, FileText, Users, BarC
 export default function Artykuly() {
   const articles = [
     {
+      title: "EC 261/2004 a loty służbowe — co obejmuje rozporządzenie",
+      slug: "ec-261-2004-a-loty-sluzbowe-co-obejmuje-rozporzadzenie",
+      excerpt: "Kompleksowy przewodnik po rozporządzeniu WE 261/2004 w kontekście podróży służbowych. Sprawdź, jakie prawa przysługują pracownikom i kiedy należy się odszkodowanie do 600 EUR.",
+      date: "2025-01-16",
+      readTime: "9 min",
+      category: "Prawo i Finanse",
+      icon: Scale
+    },
+    {
       title: "Overbooking na locie służbowym — prawa pracownika i pracodawcy",
       slug: "overbooking-na-locie-sluzbowym-praca-pracodawcy",
       excerpt: "Kompleksowy poradnik o overbookingu w podróżach służbowych. Kto ma prawo do odszkodowania do 600 EUR, jak krok po kroku odzyskać pieniądze i jakie obowiązki ma pracodawca.",
