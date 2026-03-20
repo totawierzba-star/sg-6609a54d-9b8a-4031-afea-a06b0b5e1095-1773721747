@@ -6,6 +6,15 @@ import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, FileText, Users, BarC
 export default function Artykuly() {
   const articles = [
     {
+      title: "Lot służbowy opóźniony o ponad 3 godziny — krok po kroku",
+      slug: "lot-sluzbowy-opozniony-ponad-3-godziny-krok-po-kroku",
+      excerpt: "Szczegółowy przewodnik krok po kroku jak odzyskać odszkodowanie do 600 EUR za opóźniony lot służbowy. Sprawdź jakie dokumenty potrzebujesz i jak przebiega procedura.",
+      date: "2025-01-17",
+      readTime: "10 min",
+      category: "Prawo i Finanse",
+      icon: Scale
+    },
+    {
       title: "EC 261/2004 a loty służbowe — co obejmuje rozporządzenie",
       slug: "ec-261-2004-a-loty-sluzbowe-co-obejmuje-rozporzadzenie",
       excerpt: "Kompleksowy przewodnik po rozporządzeniu WE 261/2004 w kontekście podróży służbowych. Sprawdź, jakie prawa przysługują pracownikom i kiedy należy się odszkodowanie do 600 EUR.",
