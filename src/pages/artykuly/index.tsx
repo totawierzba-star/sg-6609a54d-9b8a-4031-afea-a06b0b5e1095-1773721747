@@ -6,6 +6,15 @@ import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, FileText, Users, BarC
 export default function Artykuly() {
   const articles = [
     {
+      title: "Strajk linii lotniczej — nadzwyczajna okoliczność czy odszkodowanie EC 261?",
+      slug: "strajk-linii-lotniczej-nadzwyczajna-okolicznosc",
+      excerpt: "Strajk własnych pracowników linii (pilotów, stewardów) NIE jest nadzwyczajną okolicznością — należy Ci się odszkodowanie do 600 EUR. Wyrok ETS C-195/17. Strajk ATC może zwolnić linię z wypłaty.",
+      date: "2025-03-21",
+      readTime: "8 min",
+      category: "Prawo i Finanse",
+      icon: Scale
+    },
+    {
       title: "Codeshare a EC 261/2004 — który przewoźnik odpowiada za odszkodowanie?",
       slug: "codeshare-ec261-ktory-przewoznik-odpowiada",
       excerpt: "Przy locie codeshare odszkodowanie EC 261/2004 wypłaca przewoźnik operujący (wykonujący lot), nie marketingowy. Sprawdź jak go zidentyfikować, kiedy EC 261 obowiązuje spoza UE i jak złożyć roszczenie.",
