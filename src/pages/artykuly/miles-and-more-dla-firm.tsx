@@ -941,7 +941,7 @@ export default function MilesAndMoreDlaFirm() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href="https://claimwinger.com/pl/opozniony-lot"
+                  href="https://claimwinger.com/pl/opozniony-lot?utm_source=bizneslot&utm_medium=article&utm_campaign=miles-and-more"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-400 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
@@ -949,7 +949,7 @@ export default function MilesAndMoreDlaFirm() {
                   Sprawdź opóźniony lot
                 </a>
                 <a
-                  href="https://claimwinger.com/pl/odwolany-lot"
+                  href="https://claimwinger.com/pl/odwolany-lot?utm_source=bizneslot&utm_medium=article&utm_campaign=miles-and-more"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-400 text-white font-semibold px-6 py-3 rounded-xl transition-colors"

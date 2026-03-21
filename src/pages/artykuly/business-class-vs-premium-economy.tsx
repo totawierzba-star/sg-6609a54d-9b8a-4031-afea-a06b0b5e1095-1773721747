@@ -866,7 +866,7 @@ export default function BusinessClassVsPremiumEconomy() {
                         podczas czekania (jeśli masz status), lepszy catering compensation. Jeśli Twój lot służbowy został 
                         opóźniony/anulowany, możesz{" "}
                         <a 
-                          href="https://claimwinger.com/pl/opozniony-lot" 
+                          href="https://claimwinger.com/pl/opozniony-lot?utm_source=bizneslot&utm_medium=article&utm_campaign=business-class-vs-premium"
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-blue-600 hover:text-blue-800 underline font-semibold"
@@ -886,7 +886,7 @@ export default function BusinessClassVsPremiumEconomy() {
                   </p>
                   <div className="flex flex-wrap gap-4">
                     <a
-                      href="https://claimwinger.com/pl/odwolany-lot"
+                      href="https://claimwinger.com/pl/odwolany-lot?utm_source=bizneslot&utm_medium=article&utm_campaign=business-class-vs-premium"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="px-6 py-3 bg-white text-slate-900 rounded-lg hover:bg-slate-100 transition-colors font-semibold"
@@ -894,7 +894,7 @@ export default function BusinessClassVsPremiumEconomy() {
                       Sprawdź odwołany lot
                     </a>
                     <a
-                      href="https://claimwinger.com/pl/opozniony-lot"
+                      href="https://claimwinger.com/pl/opozniony-lot?utm_source=bizneslot&utm_medium=article&utm_campaign=business-class-vs-premium"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="px-6 py-3 bg-slate-800 text-white rounded-lg hover:bg-slate-700 transition-colors font-semibold border border-slate-700"
@@ -1013,7 +1013,7 @@ export default function BusinessClassVsPremiumEconomy() {
                 </p>
                 <div className="space-y-2">
                   <a
-                    href="https://claimwinger.com/pl/odwolany-lot"
+                    href="https://claimwinger.com/pl/odwolany-lot?utm_source=bizneslot&utm_medium=article&utm_campaign=business-class-vs-premium"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block text-sm hover:text-white transition-colors"
@@ -1021,7 +1021,7 @@ export default function BusinessClassVsPremiumEconomy() {
                     → Odwołany lot
                   </a>
                   <a
-                    href="https://claimwinger.com/pl/opozniony-lot"
+                    href="https://claimwinger.com/pl/opozniony-lot?utm_source=bizneslot&utm_medium=article&utm_campaign=business-class-vs-premium"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block text-sm hover:text-white transition-colors"

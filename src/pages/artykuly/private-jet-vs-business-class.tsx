@@ -485,7 +485,7 @@ export default function PrivateJetVsBusinessClass() {
                       Dowiedz się więcej
                     </Link>
                     <a
-                      href="https://claimwinger.com/pl/odwolany-lot"
+                      href="https://claimwinger.com/pl/odwolany-lot?utm_source=bizneslot&utm_medium=article&utm_campaign=private-jet"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="px-6 py-3 bg-slate-800 text-white rounded-lg hover:bg-slate-700 transition-colors font-semibold border border-slate-700"
@@ -546,7 +546,7 @@ export default function PrivateJetVsBusinessClass() {
                 </p>
                 <div className="space-y-2">
                   <a
-                    href="https://claimwinger.com/pl/odwolany-lot"
+                    href="https://claimwinger.com/pl/odwolany-lot?utm_source=bizneslot&utm_medium=article&utm_campaign=private-jet"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block text-sm hover:text-white transition-colors"
@@ -554,7 +554,7 @@ export default function PrivateJetVsBusinessClass() {
                     → Odwołany lot
                   </a>
                   <a
-                    href="https://claimwinger.com/pl/opozniony-lot"
+                    href="https://claimwinger.com/pl/opozniony-lot?utm_source=bizneslot&utm_medium=article&utm_campaign=private-jet"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="block text-sm hover:text-white transition-colors"
