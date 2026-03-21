@@ -105,7 +105,7 @@ export default function CanEmployerKeepFlightCompensation() {
                     Don't let uncertainty stop you. File your claim with ClaimWinger and get expert guidance on who legally owns your compensation.
                   </p>
                   <Link
-                    href="https://claimwinger.com/delayed-flight"
+                    href="https://claimwinger.com/delayed-flight?utm_source=bizneslot&utm_medium=article&utm_campaign=can-employer-keep-flight-compensation"
                     className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
                   >
                     Check Your Compensation
@@ -421,14 +421,14 @@ export default function CanEmployerKeepFlightCompensation() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="https://claimwinger.com/delayed-flight"
+                  href="https://claimwinger.com/delayed-flight?utm_source=bizneslot&utm_medium=article&utm_campaign=can-employer-keep-flight-compensation"
                   className="inline-flex items-center justify-center gap-2 bg-white text-blue-600 hover:bg-blue-50 font-semibold px-8 py-4 rounded-lg transition-colors"
                 >
                   Claim Delayed Flight
                   <span className="text-xl">→</span>
                 </Link>
                 <Link
-                  href="https://claimwinger.com/cancelled-flight"
+                  href="https://claimwinger.com/cancelled-flight?utm_source=bizneslot&utm_medium=article&utm_campaign=can-employer-keep-flight-compensation"
                   className="inline-flex items-center justify-center gap-2 bg-blue-700 hover:bg-blue-800 text-white font-semibold px-8 py-4 rounded-lg transition-colors border-2 border-white/20"
                 >
                   Claim Cancelled Flight

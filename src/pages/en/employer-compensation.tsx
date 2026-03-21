@@ -664,7 +664,7 @@ export default function EmployerCompensation() {
                   <CardContent>
                     <p className="text-slate-700">
                       If your business flight was delayed or cancelled, you can 
-                      <a href="https://claimwinger.com/delayed-flight" className="text-slate-900 underline hover:text-slate-700 mx-1" target="_blank" rel="noopener noreferrer">
+                      <a href="https://claimwinger.com/delayed-flight?utm_source=bizneslot&utm_medium=landing&utm_campaign=employer-compensation" className="text-slate-900 underline hover:text-slate-700 mx-1" target="_blank" rel="noopener noreferrer">
                         check your rights online
                       </a>
                       in a few minutes. Regardless of outcome, remember: any compensation 
@@ -689,7 +689,7 @@ export default function EmployerCompensation() {
                 </CardHeader>
                 <CardContent>
                   <Button asChild size="lg" variant="secondary">
-                    <a href="https://claimwinger.com/delayed-flight" target="_blank" rel="noopener noreferrer">
+                    <a href="https://claimwinger.com/delayed-flight?utm_source=bizneslot&utm_medium=landing&utm_campaign=employer-compensation" target="_blank" rel="noopener noreferrer">
                       Check Your Rights
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </a>
@@ -802,7 +802,7 @@ export default function EmployerCompensation() {
                   We use ClaimWinger services to verify entitlements.
                 </p>
                 <Button asChild variant="outline" size="sm">
-                  <a href="https://claimwinger.com" target="_blank" rel="noopener noreferrer">
+                  <a href="https://claimwinger.com?utm_source=bizneslot&utm_medium=landing&utm_campaign=employer-compensation" target="_blank" rel="noopener noreferrer">
                     ClaimWinger.com
                   </a>
                 </Button>

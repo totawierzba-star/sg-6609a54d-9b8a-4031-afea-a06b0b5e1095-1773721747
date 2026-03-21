@@ -177,7 +177,7 @@ export default function FlightDelayCompensationBusinessTravelEN() {
               </CardHeader>
               <CardContent>
                 <Button asChild size="lg" className="bg-[#FF6B35] hover:bg-[#FF6B35]/90">
-                  <a href="https://claimwinger.com/delayed-flight" target="_blank" rel="noopener noreferrer">
+                  <a href="https://claimwinger.com/delayed-flight?utm_source=bizneslot&utm_medium=article&utm_campaign=flight-delay-employee-or-employer" target="_blank" rel="noopener noreferrer">
                     Check Delayed Flight Claim
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </a>
@@ -659,7 +659,7 @@ export default function FlightDelayCompensationBusinessTravelEN() {
                     </p>
                     <ul className="space-y-2 ml-6 text-slate-700">
                       <li>• Provide clear instructions on how to file claims</li>
-                      <li>• Use a centralized service like <a href="https://claimwinger.com" target="_blank" rel="noopener noreferrer" className="text-[#FF6B35] hover:underline">ClaimWinger</a> for corporate claims</li>
+                      <li>• Use a centralized service like <a href="https://claimwinger.com?utm_source=bizneslot&utm_medium=article&utm_campaign=flight-delay-employee-or-employer" target="_blank" rel="noopener noreferrer" className="text-[#FF6B35] hover:underline">ClaimWinger</a> for corporate claims</li>
                       <li>• Don't burden employees with complex paperwork</li>
                       <li>• Set up direct remittance processes (e.g., payroll deduction)</li>
                     </ul>
@@ -727,7 +727,7 @@ export default function FlightDelayCompensationBusinessTravelEN() {
                     <ul className="space-y-2 ml-6 text-slate-700">
                       <li>• Airlines will only accept claims from the passenger, not the company</li>
                       <li>• You'll need your booking reference, flight details, and boarding pass</li>
-                      <li>• Consider using <a href="https://claimwinger.com" target="_blank" rel="noopener noreferrer" className="text-[#FF6B35] hover:underline">ClaimWinger</a> to handle airline resistance and maximize success rate</li>
+                      <li>• Consider using <a href="https://claimwinger.com?utm_source=bizneslot&utm_medium=article&utm_campaign=flight-delay-employee-or-employer" target="_blank" rel="noopener noreferrer" className="text-[#FF6B35] hover:underline">ClaimWinger</a> to handle airline resistance and maximize success rate</li>
                       <li>• Keep all documentation: boarding passes, delay confirmations, communications</li>
                     </ul>
                   </CardContent>
@@ -801,7 +801,7 @@ export default function FlightDelayCompensationBusinessTravelEN() {
                 <CardContent>
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Button asChild size="lg" className="bg-[#FF6B35] hover:bg-[#FF6B35]/90">
-                      <a href="https://claimwinger.com/delayed-flight" target="_blank" rel="noopener noreferrer">
+                      <a href="https://claimwinger.com/delayed-flight?utm_source=bizneslot&utm_medium=article&utm_campaign=flight-delay-employee-or-employer" target="_blank" rel="noopener noreferrer">
                         Start Your Claim Now
                         <ArrowRight className="ml-2 h-5 w-5" />
                       </a>

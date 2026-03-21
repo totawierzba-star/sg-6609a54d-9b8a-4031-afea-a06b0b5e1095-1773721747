@@ -204,14 +204,14 @@ export default function EnglishArticlesPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link
-                href="https://claimwinger.com/delayed-flight"
+                href="https://claimwinger.com/delayed-flight?utm_source=bizneslot&utm_medium=article&utm_campaign=en-articles-index"
                 className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold hover:bg-blue-50 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
               >
                 Check Delayed Flight Claim
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
               <Link
-                href="https://claimwinger.com/cancelled-flight"
+                href="https://claimwinger.com/cancelled-flight?utm_source=bizneslot&utm_medium=article&utm_campaign=en-articles-index"
                 className="inline-flex items-center justify-center px-8 py-4 bg-blue-800 text-white rounded-lg font-semibold hover:bg-blue-900 transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
               >
                 Check Cancelled Flight Claim

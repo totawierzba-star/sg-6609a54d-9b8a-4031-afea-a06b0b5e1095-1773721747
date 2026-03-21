@@ -418,7 +418,7 @@ export default function BiletFirmowyPrawa() {
                         <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
                         <div>
                           <strong>Złożyć reklamację we własnym imieniu:</strong> Nie potrzebujesz zgody 
-                          firmy. Możesz <a href="https://claimwinger.com/pl/odwolany-lot" className="text-slate-900 underline hover:text-slate-700" target="_blank" rel="noopener noreferrer">sprawdzić swoje prawa</a> i rozpocząć proces.
+                          firmy. Możesz <a href="https://claimwinger.com/pl/odwolany-lot?utm_source=bizneslot&utm_medium=landing&utm_campaign=bilet-firmowy-prawa" className="text-slate-900 underline hover:text-slate-700" target="_blank" rel="noopener noreferrer">sprawdzić swoje prawa</a> i rozpocząć proces.
                         </div>
                       </li>
                       <li className="flex items-start gap-2">
@@ -569,7 +569,7 @@ export default function BiletFirmowyPrawa() {
                 </CardHeader>
                 <CardContent>
                   <Button asChild size="lg" variant="secondary">
-                    <a href="https://claimwinger.com/pl/odwolany-lot" target="_blank" rel="noopener noreferrer">
+                    <a href="https://claimwinger.com/pl/odwolany-lot?utm_source=bizneslot&utm_medium=landing&utm_campaign=bilet-firmowy-prawa" target="_blank" rel="noopener noreferrer">
                       Sprawdź swoje prawa
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </a>
@@ -674,7 +674,7 @@ export default function BiletFirmowyPrawa() {
                   Korzystamy z usług ClaimWinger do weryfikacji uprawnień.
                 </p>
                 <Button asChild variant="outline" size="sm">
-                  <a href="https://claimwinger.com/pl" target="_blank" rel="noopener noreferrer">
+                  <a href="https://claimwinger.com/pl?utm_source=bizneslot&utm_medium=landing&utm_campaign=bilet-firmowy-prawa" target="_blank" rel="noopener noreferrer">
                     ClaimWinger.com
                   </a>
                 </Button>

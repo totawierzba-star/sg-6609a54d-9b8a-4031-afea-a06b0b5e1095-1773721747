@@ -647,7 +647,7 @@ export default function DelayedBusinessTripEN() {
                 <CardContent>
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Button asChild size="lg" className="bg-[#FF6B35] hover:bg-[#FF6B35]/90">
-                      <a href="https://claimwinger.com/en" target="_blank" rel="noopener noreferrer">
+                      <a href="https://claimwinger.com/en?utm_source=bizneslot&utm_medium=landing&utm_campaign=delayed-business-trip" target="_blank" rel="noopener noreferrer">
                         Check Your Claim
                         <ArrowRight className="ml-2 h-5 w-5" />
                       </a>

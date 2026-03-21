@@ -254,7 +254,7 @@ export default function Home() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" variant="secondary" className="text-lg">
-                <a href="https://claimwinger.com/pl/odwolany-lot" target="_blank" rel="noopener noreferrer">
+                <a href="https://claimwinger.com/pl/odwolany-lot?utm_source=bizneslot&utm_medium=landing&utm_campaign=index" target="_blank" rel="noopener noreferrer">
                   Sprawdź swoją rekompensatę
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </a>
@@ -450,7 +450,7 @@ export default function Home() {
                   Korzystamy z usług ClaimWinger do weryfikacji uprawnień.
                 </p>
                 <Button asChild variant="outline" size="sm">
-                  <a href="https://claimwinger.com/pl" target="_blank" rel="noopener noreferrer">
+                  <a href="https://claimwinger.com/pl?utm_source=bizneslot&utm_medium=landing&utm_campaign=index" target="_blank" rel="noopener noreferrer">
                     ClaimWinger.com
                   </a>
                 </Button>

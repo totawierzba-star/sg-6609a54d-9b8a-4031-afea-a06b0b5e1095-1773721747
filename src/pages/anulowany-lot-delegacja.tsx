@@ -483,7 +483,7 @@ export default function AnulowanyLotDelegacja() {
               <Alert className="border-slate-700 bg-slate-50">
                 <Phone className="h-5 w-5 text-slate-700" />
                 <AlertDescription className="text-slate-700">
-                  <strong>Praktyczna wskazówka:</strong> Możesz <a href="https://claimwinger.com/pl/odwolany-lot" className="text-slate-900 underline hover:text-slate-700" target="_blank" rel="noopener noreferrer">sprawdzić swoje prawa</a> i złożyć 
+                  <strong>Praktyczna wskazówka:</strong> Możesz <a href="https://claimwinger.com/pl/odwolany-lot?utm_source=bizneslot&utm_medium=landing&utm_campaign=anulowany-lot-delegacja" className="text-slate-900 underline hover:text-slate-700" target="_blank" rel="noopener noreferrer">sprawdzić swoje prawa</a> i złożyć
                   reklamację niezależnie od rozliczeń z pracodawcą. To dwa osobne procesy.
                 </AlertDescription>
               </Alert>
@@ -575,7 +575,7 @@ export default function AnulowanyLotDelegacja() {
                 </CardHeader>
                 <CardContent>
                   <Button asChild size="lg" variant="secondary">
-                    <a href="https://claimwinger.com/pl/odwolany-lot" target="_blank" rel="noopener noreferrer">
+                    <a href="https://claimwinger.com/pl/odwolany-lot?utm_source=bizneslot&utm_medium=landing&utm_campaign=anulowany-lot-delegacja" target="_blank" rel="noopener noreferrer">
                       Sprawdź należną rekompensatę
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </a>
@@ -688,7 +688,7 @@ export default function AnulowanyLotDelegacja() {
                   Korzystamy z usług ClaimWinger do weryfikacji uprawnień.
                 </p>
                 <Button asChild variant="outline" size="sm">
-                  <a href="https://claimwinger.com/pl" target="_blank" rel="noopener noreferrer">
+                  <a href="https://claimwinger.com/pl?utm_source=bizneslot&utm_medium=landing&utm_campaign=anulowany-lot-delegacja" target="_blank" rel="noopener noreferrer">
                     ClaimWinger.com
                   </a>
                 </Button>

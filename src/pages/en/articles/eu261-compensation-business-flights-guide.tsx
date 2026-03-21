@@ -153,8 +153,8 @@ export default function EU261BusinessFlightsGuide() {
                 <br />
                 Check your eligibility and claim up to €600 in compensation in under 3 minutes.
                 <br />
-                <Link 
-                  href="https://claimwinger.com/delayed-flight" 
+                <Link
+                  href="https://claimwinger.com/delayed-flight?utm_source=bizneslot&utm_medium=article&utm_campaign=eu261-compensation-business-flights-guide"
                   className="inline-flex items-center gap-2 mt-3 text-blue-600 hover:text-blue-700 font-semibold"
                 >
                   Start Your Free Claim →
@@ -500,13 +500,13 @@ export default function EU261BusinessFlightsGuide() {
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center items-center pt-4">
                   <Link
-                    href="https://claimwinger.com/delayed-flight"
+                    href="https://claimwinger.com/delayed-flight?utm_source=bizneslot&utm_medium=article&utm_campaign=eu261-compensation-business-flights-guide"
                     className="inline-flex items-center justify-center px-8 py-4 bg-white text-blue-600 rounded-lg font-bold text-lg hover:bg-blue-50 transition-colors shadow-lg"
                   >
                     Check Your Delayed Flight →
                   </Link>
                   <Link
-                    href="https://claimwinger.com/cancelled-flight"
+                    href="https://claimwinger.com/cancelled-flight?utm_source=bizneslot&utm_medium=article&utm_campaign=eu261-compensation-business-flights-guide"
                     className="inline-flex items-center justify-center px-8 py-4 bg-blue-700 text-white rounded-lg font-bold text-lg hover:bg-blue-800 transition-colors border-2 border-white/30"
                   >
                     Check Your Cancelled Flight →

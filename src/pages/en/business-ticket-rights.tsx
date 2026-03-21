@@ -417,7 +417,7 @@ export default function BusinessTicketRights() {
                         <CheckCircle2 className="h-5 w-5 text-green-600 dark:text-green-400 flex-shrink-0 mt-0.5" />
                         <div>
                           <strong>File a claim in your own name:</strong> You don't need company approval. 
-                          You can <a href="https://claimwinger.com/delayed-flight" className="text-slate-900 dark:text-slate-100 underline hover:text-slate-700 dark:hover:text-slate-300" target="_blank" rel="noopener noreferrer">check your rights</a> and start the process.
+                          You can <a href="https://claimwinger.com/delayed-flight?utm_source=bizneslot&utm_medium=landing&utm_campaign=business-ticket-rights" className="text-slate-900 dark:text-slate-100 underline hover:text-slate-700 dark:hover:text-slate-300" target="_blank" rel="noopener noreferrer">check your rights</a> and start the process.
                         </div>
                       </li>
                       <li className="flex items-start gap-2">
@@ -568,7 +568,7 @@ export default function BusinessTicketRights() {
                 </CardHeader>
                 <CardContent>
                   <Button asChild size="lg" variant="secondary">
-                    <a href="https://claimwinger.com/delayed-flight" target="_blank" rel="noopener noreferrer">
+                    <a href="https://claimwinger.com/delayed-flight?utm_source=bizneslot&utm_medium=landing&utm_campaign=business-ticket-rights" target="_blank" rel="noopener noreferrer">
                       Check Your Rights
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </a>

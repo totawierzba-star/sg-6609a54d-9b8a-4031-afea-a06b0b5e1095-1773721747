@@ -431,7 +431,7 @@ export default function OAutorze() {
                     </Link>
                   </li>
                   <li>
-                    <a href="https://claimwinger.com/pl" target="_blank" rel="noopener noreferrer" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 text-sm transition-colors">
+                    <a href="https://claimwinger.com/pl?utm_source=bizneslot&utm_medium=landing&utm_campaign=o-autorze" target="_blank" rel="noopener noreferrer" className="text-slate-600 dark:text-slate-400 hover:text-slate-900 dark:hover:text-slate-100 text-sm transition-colors">
                       ClaimWinger.com
                     </a>
                   </li>

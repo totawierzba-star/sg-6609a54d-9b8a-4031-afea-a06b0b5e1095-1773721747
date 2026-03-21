@@ -348,7 +348,7 @@ export default function OdskodowanieLotSluzbowy() {
                     </p>
                     <p className="text-slate-700">
                       <strong>Twoje prawa:</strong> Opóźnienie powyżej 3 godzin daje prawo do rekompensaty. 
-                      Możesz <a href="https://claimwinger.com/pl/opozniony-lot" className="text-slate-900 underline hover:text-slate-700" target="_blank" rel="noopener noreferrer">sprawdzić należną kwotę</a> w zależności od dystansu lotu.
+                      Możesz <a href="https://claimwinger.com/pl/opozniony-lot?utm_source=bizneslot&utm_medium=landing&utm_campaign=odszkodowanie-lot-sluzbowy" className="text-slate-900 underline hover:text-slate-700" target="_blank" rel="noopener noreferrer">sprawdzić należną kwotę</a> w zależności od dystansu lotu.
                     </p>
                     <p className="text-slate-700">
                       <strong>Rozliczenie z firmą:</strong> Przedłużona delegacja (dodatkowy nocleg, posiłki) 
@@ -424,7 +424,7 @@ export default function OdskodowanieLotSluzbowy() {
                       sytuacje nadzwyczajne (ekstremalna pogoda, strajki kontrolerów, zagrożenia bezpieczeństwa).
                     </p>
                     <p className="text-slate-700">
-                      Możesz <a href="https://claimwinger.com/pl/odwolany-lot" className="text-slate-900 underline hover:text-slate-700" target="_blank" rel="noopener noreferrer">sprawdzić swoje prawa</a> oraz należną kwotę w oparciu o dane konkretnego lotu.
+                      Możesz <a href="https://claimwinger.com/pl/odwolany-lot?utm_source=bizneslot&utm_medium=landing&utm_campaign=odszkodowanie-lot-sluzbowy" className="text-slate-900 underline hover:text-slate-700" target="_blank" rel="noopener noreferrer">sprawdzić swoje prawa</a> oraz należną kwotę w oparciu o dane konkretnego lotu.
                     </p>
                   </CardContent>
                 </Card>
@@ -527,7 +527,7 @@ export default function OdskodowanieLotSluzbowy() {
                 <CardContent>
                   <div className="flex flex-col sm:flex-row gap-4">
                     <Button asChild size="lg" variant="secondary">
-                      <a href="https://claimwinger.com/pl/odwolany-lot" target="_blank" rel="noopener noreferrer">
+                      <a href="https://claimwinger.com/pl/odwolany-lot?utm_source=bizneslot&utm_medium=landing&utm_campaign=odszkodowanie-lot-sluzbowy" target="_blank" rel="noopener noreferrer">
                         Sprawdź swoje prawa
                         <ArrowRight className="ml-2 h-5 w-5" />
                       </a>
@@ -646,7 +646,7 @@ export default function OdskodowanieLotSluzbowy() {
                   Korzystamy z usług ClaimWinger do weryfikacji uprawnień.
                 </p>
                 <Button asChild variant="outline" size="sm">
-                  <a href="https://claimwinger.com/pl" target="_blank" rel="noopener noreferrer">
+                  <a href="https://claimwinger.com/pl?utm_source=bizneslot&utm_medium=landing&utm_campaign=odszkodowanie-lot-sluzbowy" target="_blank" rel="noopener noreferrer">
                     ClaimWinger.com
                   </a>
                 </Button>

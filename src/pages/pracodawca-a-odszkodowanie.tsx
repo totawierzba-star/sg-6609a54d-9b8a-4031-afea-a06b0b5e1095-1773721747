@@ -666,7 +666,7 @@ export default function PracodawcaAOdszkodowanie() {
                   <CardContent>
                     <p className="text-slate-700">
                       Jeśli Twój lot w delegacji był opóźniony lub anulowany, możesz 
-                      <a href="https://claimwinger.com/pl/odwolany-lot" className="text-slate-900 underline hover:text-slate-700 mx-1" target="_blank" rel="noopener noreferrer">
+                      <a href="https://claimwinger.com/pl/odwolany-lot?utm_source=bizneslot&utm_medium=landing&utm_campaign=pracodawca-a-odszkodowanie" className="text-slate-900 underline hover:text-slate-700 mx-1" target="_blank" rel="noopener noreferrer">
                         sprawdzić swoje prawa online
                       </a>
                       w ciągu kilku minut. Niezależnie od wyniku, pamiętaj: ewentualne odszkodowanie 
@@ -691,7 +691,7 @@ export default function PracodawcaAOdszkodowanie() {
                 </CardHeader>
                 <CardContent>
                   <Button asChild size="lg" variant="secondary">
-                    <a href="https://claimwinger.com/pl/odwolany-lot" target="_blank" rel="noopener noreferrer">
+                    <a href="https://claimwinger.com/pl/odwolany-lot?utm_source=bizneslot&utm_medium=landing&utm_campaign=pracodawca-a-odszkodowanie" target="_blank" rel="noopener noreferrer">
                       Sprawdź swoje prawa
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </a>
@@ -804,7 +804,7 @@ export default function PracodawcaAOdszkodowanie() {
                   Korzystamy z usług ClaimWinger do weryfikacji uprawnień.
                 </p>
                 <Button asChild variant="outline" size="sm">
-                  <a href="https://claimwinger.com/pl" target="_blank" rel="noopener noreferrer">
+                  <a href="https://claimwinger.com/pl?utm_source=bizneslot&utm_medium=landing&utm_campaign=pracodawca-a-odszkodowanie" target="_blank" rel="noopener noreferrer">
                     ClaimWinger.com
                   </a>
                 </Button>

@@ -374,7 +374,7 @@ export default function BusinessFlightCompensationEN() {
                   size="lg"
                   className="bg-[#FF6B35] hover:bg-[#FF6B35]/90 text-white text-lg px-8 py-6 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300"
                 >
-                  <a href="https://claimwinger.com/en" target="_blank" rel="noopener noreferrer">
+                  <a href="https://claimwinger.com/en?utm_source=bizneslot&utm_medium=landing&utm_campaign=business-flight-compensation" target="_blank" rel="noopener noreferrer">
                     Check Your Compensation
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </a>

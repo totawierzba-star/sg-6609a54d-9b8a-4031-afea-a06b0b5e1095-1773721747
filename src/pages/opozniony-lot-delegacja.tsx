@@ -362,7 +362,7 @@ export default function OpoznionyLotDelegacja() {
                     <p className="text-slate-700 font-medium">
                       <strong>Wniosek:</strong> Skontaktuj się natychmiast z przełożonym. Jeśli linia 
                       nie pokrywa wszystkich kosztów, dokumentuj i rozliczaj z pracodawcą. 
-                      Możesz <a href="https://claimwinger.com/pl/opozniony-lot" className="text-slate-900 underline hover:text-slate-700" target="_blank" rel="noopener noreferrer">sprawdzić należną rekompensatę</a> po powrocie.
+                      Możesz <a href="https://claimwinger.com/pl/opozniony-lot?utm_source=bizneslot&utm_medium=landing&utm_campaign=opozniony-lot-delegacja" className="text-slate-900 underline hover:text-slate-700" target="_blank" rel="noopener noreferrer">sprawdzić należną rekompensatę</a> po powrocie.
                     </p>
                   </CardContent>
                 </Card>
@@ -567,7 +567,7 @@ export default function OpoznionyLotDelegacja() {
                     <p className="text-slate-700">
                       W Polsce termin przedawnienia wynosi 3 lata od daty lotu. W praktyce im szybciej 
                       złożysz reklamację, tym łatwiej będzie udokumentować okoliczności opóźnienia. 
-                      Możesz <a href="https://claimwinger.com/pl/opozniony-lot" className="text-slate-900 underline hover:text-slate-700" target="_blank" rel="noopener noreferrer">sprawdzić swoje uprawnienia</a> już teraz.
+                      Możesz <a href="https://claimwinger.com/pl/opozniony-lot?utm_source=bizneslot&utm_medium=landing&utm_campaign=opozniony-lot-delegacja" className="text-slate-900 underline hover:text-slate-700" target="_blank" rel="noopener noreferrer">sprawdzić swoje uprawnienia</a> już teraz.
                     </p>
                   </CardContent>
                 </Card>
@@ -619,7 +619,7 @@ export default function OpoznionyLotDelegacja() {
                 </CardHeader>
                 <CardContent>
                   <Button asChild size="lg" variant="secondary">
-                    <a href="https://claimwinger.com/pl/opozniony-lot" target="_blank" rel="noopener noreferrer">
+                    <a href="https://claimwinger.com/pl/opozniony-lot?utm_source=bizneslot&utm_medium=landing&utm_campaign=opozniony-lot-delegacja" target="_blank" rel="noopener noreferrer">
                       Sprawdź należną kwotę
                       <ArrowRight className="ml-2 h-5 w-5" />
                     </a>
@@ -729,7 +729,7 @@ export default function OpoznionyLotDelegacja() {
                   Korzystamy z usług ClaimWinger do weryfikacji uprawnień.
                 </p>
                 <Button asChild variant="outline" size="sm">
-                  <a href="https://claimwinger.com/pl" target="_blank" rel="noopener noreferrer">
+                  <a href="https://claimwinger.com/pl?utm_source=bizneslot&utm_medium=landing&utm_campaign=opozniony-lot-delegacja" target="_blank" rel="noopener noreferrer">
                     ClaimWinger.com
                   </a>
                 </Button>

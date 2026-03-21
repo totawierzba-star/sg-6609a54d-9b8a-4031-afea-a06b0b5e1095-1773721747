@@ -106,7 +106,7 @@ export default function AboutEN() {
                   review to negotiations with airlines and court proceedings if necessary.
                 </p>
                 <Button asChild size="lg" className="bg-[#FF6B35] hover:bg-[#FF6B35]/90">
-                  <a href="https://claimwinger.com/en" target="_blank" rel="noopener noreferrer">
+                  <a href="https://claimwinger.com/en?utm_source=bizneslot&utm_medium=landing&utm_campaign=about" target="_blank" rel="noopener noreferrer">
                     Visit ClaimWinger.com
                     <ArrowRight className="ml-2 w-5 h-5" />
                   </a>
