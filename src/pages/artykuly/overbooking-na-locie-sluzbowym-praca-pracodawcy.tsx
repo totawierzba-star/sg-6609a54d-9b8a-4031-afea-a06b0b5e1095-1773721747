@@ -1,6 +1,6 @@
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
-import { Shield, CheckCircle2, AlertCircle, FileText, Info, Users } from "lucide-react";
+import { Shield, CheckCircle2, AlertCircle, AlertTriangle, Users, ArrowRight } from "lucide-react";
 
 export default function OverbookingArticle() {
   return (
@@ -44,253 +44,217 @@ export default function OverbookingArticle() {
         ]
       })}} />
 
-      <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white dark:from-slate-950 dark:to-slate-900">
-        <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-          
-          {/* Breadcrumbs */}
-          <nav className="mb-8 text-sm">
-            <ol className="flex items-center space-x-2 text-slate-600 dark:text-slate-400">
-              <li><Link href="/" className="hover:text-blue-600 dark:hover:text-blue-400">Strona główna</Link></li>
-              <li>/</li>
-              <li><Link href="/artykuly" className="hover:text-blue-600 dark:hover:text-blue-400">Artykuły</Link></li>
-              <li>/</li>
-              <li className="text-slate-900 dark:text-slate-100">Overbooking lot służbowy</li>
-            </ol>
-          </nav>
+      <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
 
-          <div className="prose prose-slate dark:prose-invert max-w-none">
-            
-            {/* Hero Section */}
-            <div className="mb-12">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-blue-100 dark:bg-blue-900/30 rounded-full mb-6">
-                <Users className="w-8 h-8 text-blue-600 dark:text-blue-400" />
-              </div>
-              <h1 className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-slate-100 mb-6">
-                Overbooking lot służbowy — prawa pracownika i pracodawcy
-              </h1>
-              <p className="text-xl text-slate-600 dark:text-slate-400">
-                Overbooking lotu służbowego to sytuacja, gdy linia lotnicza sprzedaje więcej biletów niż dostępnych miejsc. Pracownik, którego nie przyjęto na pokład, ma prawo do odszkodowania do 600 EUR niezależnie od tego, kto kupił bilet.
-              </p>
-              <div className="flex flex-wrap gap-3 mt-6">
-                <span className="inline-flex items-center gap-2 px-4 py-2 bg-green-50 dark:bg-green-900/20 text-green-700 dark:text-green-300 rounded-full text-sm font-medium">
-                  <CheckCircle2 className="w-4 h-4" />
-                  Do 600 EUR odszkodowania
-                </span>
-                <span className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 dark:bg-blue-900/20 text-blue-700 dark:text-blue-300 rounded-full text-sm font-medium">
-                  <Shield className="w-4 h-4" />
-                  Prawo przysługuje pracownikowi
-                </span>
-              </div>
+        {/* Hero */}
+        <section className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-20 px-4">
+          <div className="max-w-4xl mx-auto">
+            <div className="flex items-center gap-2 mb-4">
+              <Link href="/artykuly" className="text-blue-200 hover:text-white text-sm transition-colors">← Wszystkie artykuły</Link>
             </div>
-
-            {/* Key Takeaway */}
-            <div className="my-8 p-6 bg-blue-50 dark:bg-blue-900/20 border-l-4 border-blue-500 rounded-r-lg">
-              <div className="flex items-start gap-3">
-                <Info className="w-6 h-6 text-blue-600 dark:text-blue-400 flex-shrink-0 mt-1" />
-                <div>
-                  <p className="font-semibold text-blue-900 dark:text-blue-100 mb-2">Najważniejsze informacje:</p>
-                  <ul className="text-slate-700 dark:text-slate-300 space-y-1 list-disc list-inside">
-                    <li>Overbooking lotu służbowego podlega rozporządzeniu WE 261/2004</li>
-                    <li>Odszkodowanie przysługuje pracownikowi, nie firmie</li>
-                    <li>Wysokość odszkodowania zależy od dystansu trasy</li>
-                    <li>Termin składania wniosków: 3 lata w Polsce</li>
-                  </ul>
-                </div>
-              </div>
+            <div className="flex items-center gap-2 mb-4">
+              <Users className="h-6 w-6 text-blue-200" />
+              <span className="text-blue-200 font-medium text-sm">Prawa pasażera w podróży służbowej • 8 min czytania</span>
             </div>
-
-            {/* Main Content */}
-            <h2 className="text-3xl font-bold text-slate-900 dark:text-slate-100 mt-12 mb-6">Podstawa prawna overbookingu w podróży służbowej</h2>
-            
-            <p className="text-lg text-slate-700 dark:text-slate-300 mb-6">
-              Overbooking lotu służbowego jest regulowany przez rozporządzenie Parlamentu Europejskiego i Rady WE 261/2004 z dnia 11 lutego 2004 r. Rozporządzenie stosuje się do wszystkich pasażerów podróżujących lotami z wylotem z lotniska UE, niezależnie od celu podróży.
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+              Overbooking na locie służbowym — prawa pracownika i pracodawcy
+            </h1>
+            <p className="text-xl text-blue-100 leading-relaxed">
+              Overbooking lotu służbowego uprawnia pracownika do odszkodowania do 600 EUR. Prawo przysługuje pasażerowi niezależnie od tego, kto kupił bilet i czy pracodawca wyrazi na to zgodę.
             </p>
+            <div className="mt-8 flex flex-wrap gap-4">
+              {["Do 600 EUR odszkodowania", "Prawo należy do pracownika", "No win, no fee"].map((item) => (
+                <div key={item} className="flex items-center gap-2 bg-white/10 rounded-full px-4 py-2 text-sm">
+                  <CheckCircle2 className="h-4 w-4 text-green-300" />
+                  <span>{item}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
 
-            <div className="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-700 mb-8">
-              <h3 className="text-xl font-semibold text-slate-900 dark:text-slate-100 mb-3">Kluczowe zasady:</h3>
-              <ul className="space-y-2 text-slate-700 dark:text-slate-300">
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span>Rozporządzenie ma pierwszeństwo przed prawem krajowym</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span>Nie rozróżnia podróży prywatnych i służbowych</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
-                  <span>Prawo przysługuje pasażerowi, nie kupującemu bilet</span>
-                </li>
+        <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+
+          <p className="text-lg leading-relaxed text-gray-700 mb-10">
+            Overbooking lotu służbowego to sytuacja, gdy linia lotnicza sprzedaje więcej biletów niż dostępnych miejsc. Pracownik, którego nie przyjęto na pokład, ma prawo do odszkodowania do 600 EUR niezależnie od tego, kto kupił bilet.
+          </p>
+
+          {/* Key Takeaway */}
+          <div className="bg-blue-50 border-l-4 border-blue-500 rounded-r-lg p-6 mb-12 flex gap-4">
+            <AlertCircle className="h-6 w-6 text-blue-600 flex-shrink-0 mt-0.5" />
+            <div>
+              <p className="font-semibold text-blue-900 mb-2">Najważniejsze informacje</p>
+              <ul className="space-y-1">
+                {[
+                  "Overbooking lotu służbowego podlega rozporządzeniu WE 261/2004",
+                  "Odszkodowanie przysługuje pracownikowi, nie firmie",
+                  "Wysokość odszkodowania zależy od dystansu trasy",
+                  "Termin składania wniosków: 3 lata w Polsce",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-2 text-blue-800 text-sm">
+                    <CheckCircle2 className="h-4 w-4 text-blue-600 flex-shrink-0 mt-0.5" />
+                    <span>{item}</span>
+                  </li>
+                ))}
               </ul>
             </div>
+          </div>
 
-            <h2 className="text-3xl font-bold text-slate-900 dark:text-slate-100 mt-12 mb-6">Komu przysługuje odszkodowanie?</h2>
-
-            <p className="text-lg text-slate-700 dark:text-slate-300 mb-6">
-              Odszkodowanie za overbooking lotu służbowego przysługuje pracownikowi - pasażerowi, a nie pracodawcy, który kupił bilet. To fundamentalna zasada wynikająca z rozporządzenia WE 261/2004.
+          {/* Podstawa prawna */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+              <Shield className="h-8 w-8 text-blue-600" />
+              Podstawa prawna overbookingu w podróży służbowej
+            </h2>
+            <p className="text-gray-700 leading-relaxed mb-6">
+              Overbooking lotu służbowego jest regulowany przez rozporządzenie Parlamentu Europejskiego i Rady WE 261/2004. Rozporządzenie stosuje się do wszystkich pasażerów podróżujących lotami z wylotem z lotniska UE, niezależnie od celu podróży.
             </p>
 
-            <div className="my-8 p-6 bg-amber-50 dark:bg-amber-900/20 border-l-4 border-amber-500 rounded-r-lg">
-              <div className="flex items-start gap-3">
-                <AlertCircle className="w-6 h-6 text-amber-600 dark:text-amber-400 flex-shrink-0 mt-1" />
-                <div>
-                  <p className="font-semibold text-amber-900 dark:text-amber-100 mb-2">Uwaga:</p>
-                  <p className="text-slate-700 dark:text-slate-300">
-                    Pracodawca nie może legalnie zabronić pracownikowi dochodzenia roszczeń ani żądać przekazania odszkodowania firmie. Takie postanowienia w umowie o pracę są niezgodne z prawem UE i nieważne.
-                  </p>
-                </div>
+            <div className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm mb-6">
+              <h3 className="font-semibold text-gray-900 mb-4">Kluczowe zasady</h3>
+              <ul className="space-y-3">
+                {[
+                  "Rozporządzenie ma pierwszeństwo przed prawem krajowym",
+                  "Nie rozróżnia podróży prywatnych i służbowych",
+                  "Prawo przysługuje pasażerowi, nie kupującemu bilet",
+                ].map((item) => (
+                  <li key={item} className="flex items-start gap-3">
+                    <CheckCircle2 className="h-5 w-5 text-green-600 flex-shrink-0 mt-0.5" />
+                    <span className="text-gray-700">{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </section>
+
+          {/* Komu przysługuje */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-6 flex items-center gap-3">
+              <Users className="h-8 w-8 text-blue-600" />
+              Komu przysługuje odszkodowanie?
+            </h2>
+            <p className="text-gray-700 leading-relaxed mb-6">
+              Odszkodowanie za overbooking lotu służbowego przysługuje pracownikowi — pasażerowi, a nie pracodawcy, który kupił bilet. To fundamentalna zasada wynikająca z rozporządzenia WE 261/2004.
+            </p>
+
+            <div className="bg-amber-50 border-l-4 border-amber-500 rounded-r-lg p-6 flex gap-4">
+              <AlertTriangle className="h-6 w-6 text-amber-600 flex-shrink-0 mt-0.5" />
+              <div>
+                <p className="font-semibold text-amber-900 mb-1">Uwaga</p>
+                <p className="text-amber-800">Pracodawca nie może legalnie zabronić pracownikowi dochodzenia roszczeń ani żądać przekazania odszkodowania firmie. Takie postanowienia w umowie o pracę są niezgodne z prawem UE i nieważne.</p>
               </div>
             </div>
+          </section>
 
-            <h2 className="text-3xl font-bold text-slate-900 dark:text-slate-100 mt-12 mb-6">Wysokość odszkodowania za overbooking</h2>
+          {/* Wysokość odszkodowania */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+              <Shield className="h-8 w-8 text-blue-600" />
+              Wysokość odszkodowania za overbooking
+            </h2>
 
-            <div className="grid md:grid-cols-3 gap-6 my-8">
-              <div className="text-center p-6 bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-lg border border-blue-200 dark:border-blue-800">
-                <p className="text-sm font-medium text-blue-900 dark:text-blue-100 mb-2">Do 1500 km</p>
-                <p className="text-4xl font-bold text-blue-600 dark:text-blue-400 mb-2">250 EUR</p>
-                <p className="text-xs text-blue-700 dark:text-blue-300">Warszawa-Berlin, Kraków-Paryż</p>
-              </div>
-
-              <div className="text-center p-6 bg-gradient-to-br from-purple-50 to-purple-100 dark:from-purple-900/20 dark:to-purple-800/20 rounded-lg border border-purple-200 dark:border-purple-800">
-                <p className="text-sm font-medium text-purple-900 dark:text-purple-100 mb-2">1500-3500 km</p>
-                <p className="text-4xl font-bold text-purple-600 dark:text-purple-400 mb-2">400 EUR</p>
-                <p className="text-xs text-purple-700 dark:text-purple-300">Warszawa-Madryt, Wrocław-Rzym</p>
-              </div>
-
-              <div className="text-center p-6 bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/20 dark:to-green-800/20 rounded-lg border border-green-200 dark:border-green-800">
-                <p className="text-sm font-medium text-green-900 dark:text-green-100 mb-2">Powyżej 3500 km</p>
-                <p className="text-4xl font-bold text-green-600 dark:text-green-400 mb-2">600 EUR</p>
-                <p className="text-xs text-green-700 dark:text-green-300">Warszawa-Nowy Jork, Kraków-Dubaj</p>
-              </div>
+            <div className="grid md:grid-cols-3 gap-6">
+              {[
+                { dist: "Do 1500 km", amount: "250 EUR", example: "Warszawa–Berlin, Kraków–Paryż", color: "blue" },
+                { dist: "1500–3500 km", amount: "400 EUR", example: "Warszawa–Madryt, Wrocław–Rzym", color: "purple" },
+                { dist: "Powyżej 3500 km", amount: "600 EUR", example: "Warszawa–Nowy Jork, Kraków–Dubaj", color: "green" },
+              ].map(({ dist, amount, example, color }) => (
+                <div key={dist} className={`text-center p-6 bg-gradient-to-br from-${color}-50 to-${color}-100 border border-${color}-200 rounded-xl`}>
+                  <p className={`text-sm font-medium text-${color}-900 mb-2`}>{dist}</p>
+                  <p className={`text-4xl font-bold text-${color}-600 mb-2`}>{amount}</p>
+                  <p className={`text-xs text-${color}-700`}>{example}</p>
+                </div>
+              ))}
             </div>
+          </section>
 
-            <h2 className="text-3xl font-bold text-slate-900 dark:text-slate-100 mt-12 mb-6">Procedura odzyskiwania odszkodowania</h2>
+          {/* Procedura */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8 flex items-center gap-3">
+              <Shield className="h-8 w-8 text-blue-600" />
+              Procedura odzyskiwania odszkodowania
+            </h2>
 
-            <div className="space-y-6 my-8">
-              <div className="flex gap-4">
-                <div className="flex-shrink-0 w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center font-bold text-blue-600 dark:text-blue-400">
-                  1
+            <div className="space-y-4">
+              {[
+                { num: 1, title: "Zdobądź dokumentację na lotnisku", desc: "Poproś o oficjalny dokument potwierdzający odmowę przyjęcia na pokład, kartę pokładową z adnotacją \"denied boarding\" oraz informację o przyczynie." },
+                { num: 2, title: "Zachowaj wszystkie dowody podróży", desc: "Zbierz kopię biletu służbowego, karty pokładowej, dokumentu odmowy oraz rachunków za wydatki poniesione w wyniku opóźnienia." },
+                { num: 3, title: "Złóż reklamację do linii lotniczej", desc: "W ciągu 14 dni złóż oficjalną reklamację z kopią dokumentacji, numerem rezerwacji i danymi lotu." },
+                { num: 4, title: "Skorzystaj z pomocy prawnej", desc: "Jeśli linia odmawia wypłaty, możesz skorzystać z usług firm działających na zasadzie no win, no fee." },
+              ].map(({ num, title, desc }) => (
+                <div key={num} className="flex gap-4 bg-white border border-gray-200 rounded-xl p-5 shadow-sm">
+                  <div className="flex-shrink-0 w-9 h-9 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold text-sm">{num}</div>
+                  <div>
+                    <p className="font-semibold text-gray-900 mb-1">{title}</p>
+                    <p className="text-gray-600 text-sm leading-relaxed">{desc}</p>
+                  </div>
                 </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-2">Zdobądź dokumentację na lotnisku</h3>
-                  <p className="text-slate-700 dark:text-slate-300">
-                    Poproś o oficjalny dokument potwierdzający odmowę przyjęcia na pokład, kartę pokładową z adnotacją "denied boarding" oraz informację o przyczynie.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-4">
-                <div className="flex-shrink-0 w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center font-bold text-blue-600 dark:text-blue-400">
-                  2
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-2">Zachowaj wszystkie dowody podróży</h3>
-                  <p className="text-slate-700 dark:text-slate-300">
-                    Zbierz kopię biletu służbowego, karty pokładowej, dokumentu odmowy oraz rachunków za wydatki poniesione w wyniku opóźnienia.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-4">
-                <div className="flex-shrink-0 w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center font-bold text-blue-600 dark:text-blue-400">
-                  3
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-2">Złóż reklamację do linii lotniczej</h3>
-                  <p className="text-slate-700 dark:text-slate-300">
-                    W ciągu 14 dni złóż oficjalną reklamację z kopią dokumentacji, numerem rezerwacji i danymi lotu.
-                  </p>
-                </div>
-              </div>
-
-              <div className="flex gap-4">
-                <div className="flex-shrink-0 w-10 h-10 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center font-bold text-blue-600 dark:text-blue-400">
-                  4
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100 mb-2">Skorzystaj z pomocy prawnej</h3>
-                  <p className="text-slate-700 dark:text-slate-300">
-                    Jeśli linia odmawia wypłaty, możesz skorzystać z usług firm działających na zasadzie no win, no fee.
-                  </p>
-                </div>
-              </div>
+              ))}
             </div>
+          </section>
 
-            {/* CTA */}
-            <div className="my-12 p-8 bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20 rounded-lg border border-blue-200 dark:border-blue-800">
-              <h3 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-4">Twój lot służbowy był opóźniony lub odwołany?</h3>
-              <p className="text-lg text-slate-700 dark:text-slate-300 mb-6">
-                Sprawdź bezpłatnie, czy należy Ci się odszkodowanie do 600 EUR. ClaimWinger działa na zasadzie no win, no fee.
-              </p>
-              <Link 
+          {/* CTA */}
+          <div className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white rounded-2xl p-8 mb-12">
+            <div className="flex flex-col md:flex-row items-center justify-between gap-6">
+              <div>
+                <h3 className="text-2xl font-bold mb-2">Twój lot służbowy był opóźniony lub odwołany?</h3>
+                <p className="text-blue-100">Sprawdź bezpłatnie, czy należy Ci się odszkodowanie do 600 EUR. ClaimWinger działa na zasadzie no win, no fee.</p>
+              </div>
+              <Link
                 href="https://claimwinger.com/pl/opozniony-lot?utm_source=bizneslot&utm_medium=article&utm_campaign=overbooking"
-                className="inline-block bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-lg transition-colors"
+                className="inline-flex items-center gap-2 bg-white text-blue-700 font-semibold px-6 py-3 rounded-lg hover:bg-blue-50 transition-colors whitespace-nowrap flex-shrink-0"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Sprawdź odszkodowanie →
+                Sprawdź odszkodowanie <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
-
-            {/* FAQ */}
-            <section className="my-16">
-              <h2 className="text-3xl font-bold text-slate-900 dark:text-slate-100 mb-8">Najczęstsze pytania</h2>
-              
-              <div className="space-y-6">
-                <details className="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-700">
-                  <summary className="font-semibold text-lg text-slate-900 dark:text-slate-100 cursor-pointer">
-                    Czy pracodawca może odmówić wypłaty odszkodowania za overbooking?
-                  </summary>
-                  <p className="mt-4 text-slate-700 dark:text-slate-300">
-                    Nie, pracodawca nie może odmówić wypłaty odszkodowania. Prawo do odszkodowania z tytułu overbookingu przysługuje pracownikowi niezależnie od tego, kto kupił bilet.
-                  </p>
-                </details>
-
-                <details className="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-700">
-                  <summary className="font-semibold text-lg text-slate-900 dark:text-slate-100 cursor-pointer">
-                    Ile wynosi odszkodowanie za overbooking lotu służbowego?
-                  </summary>
-                  <p className="mt-4 text-slate-700 dark:text-slate-300">
-                    Odszkodowanie wynosi do 600 EUR w zależności od dystansu: 250 EUR (do 1500 km), 400 EUR (1500-3500 km), 600 EUR (powyżej 3500 km).
-                  </p>
-                </details>
-
-                <details className="bg-slate-50 dark:bg-slate-800/50 p-6 rounded-lg border border-slate-200 dark:border-slate-700">
-                  <summary className="font-semibold text-lg text-slate-900 dark:text-slate-100 cursor-pointer">
-                    Kto składa wniosek o odszkodowanie za overbooking?
-                  </summary>
-                  <p className="mt-4 text-slate-700 dark:text-slate-300">
-                    Wniosek składa pracownik na swoje dane. Odszkodowanie przysługuje pasażerowi, niezależnie od tego, kto finansował bilet.
-                  </p>
-                </details>
-              </div>
-            </section>
-
-            {/* Related Articles */}
-            <section className="my-16">
-              <h2 className="text-2xl font-bold text-slate-900 dark:text-slate-100 mb-6">Powiązane artykuły</h2>
-              <div className="grid md:grid-cols-2 gap-6">
-                <Link href="/artykuly/ec-261-2004-a-loty-sluzbowe-co-obejmuje-rozporzadzenie" className="group block p-6 bg-slate-50 dark:bg-slate-800/50 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
-                  <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 mb-2">
-                    EC 261/2004 a loty służbowe
-                  </h3>
-                  <p className="text-slate-600 dark:text-slate-400 text-sm">
-                    Co obejmuje rozporządzenie i jakie prawa przysługują pracownikom
-                  </p>
-                </Link>
-
-                <Link href="/artykuly/lot-sluzbowy-opozniony-ponad-3-godziny-krok-po-kroku" className="group block p-6 bg-slate-50 dark:bg-slate-800/50 rounded-lg border border-slate-200 dark:border-slate-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors">
-                  <h3 className="text-lg font-semibold text-slate-900 dark:text-slate-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 mb-2">
-                    Lot służbowy opóźniony o ponad 3 godziny
-                  </h3>
-                  <p className="text-slate-600 dark:text-slate-400 text-sm">
-                    Krok po kroku: jak odzyskać odszkodowanie za opóźniony lot
-                  </p>
-                </Link>
-              </div>
-            </section>
-
           </div>
+
+          {/* FAQ */}
+          <section className="mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-8">Najczęstsze pytania</h2>
+            <div className="space-y-4">
+              {[
+                {
+                  q: "Czy pracodawca może odmówić wypłaty odszkodowania za overbooking?",
+                  a: "Nie, pracodawca nie może odmówić wypłaty odszkodowania. Prawo do odszkodowania z tytułu overbookingu przysługuje pracownikowi niezależnie od tego, kto kupił bilet.",
+                },
+                {
+                  q: "Ile wynosi odszkodowanie za overbooking lotu służbowego?",
+                  a: "Odszkodowanie wynosi do 600 EUR w zależności od dystansu: 250 EUR (do 1500 km), 400 EUR (1500–3500 km), 600 EUR (powyżej 3500 km).",
+                },
+                {
+                  q: "Kto składa wniosek o odszkodowanie za overbooking?",
+                  a: "Wniosek składa pracownik na swoje dane. Odszkodowanie przysługuje pasażerowi, niezależnie od tego, kto finansował bilet.",
+                },
+              ].map(({ q, a }, i) => (
+                <div key={i} className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm" itemScope itemType="https://schema.org/Question">
+                  <h3 className="font-semibold text-gray-900 mb-3" itemProp="name">{q}</h3>
+                  <div itemScope itemType="https://schema.org/Answer">
+                    <p className="text-gray-600 leading-relaxed" itemProp="text">{a}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* Powiązane artykuły */}
+          <div className="border-t border-gray-200 pt-8">
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">Powiązane artykuły</h3>
+            <div className="grid md:grid-cols-2 gap-4">
+              {[
+                { href: "/artykuly/ec-261-2004-a-loty-sluzbowe-co-obejmuje-rozporzadzenie", title: "EC 261/2004 a loty służbowe — co obejmuje rozporządzenie" },
+                { href: "/artykuly/lot-sluzbowy-opozniony-ponad-3-godziny-krok-po-kroku", title: "Lot opóźniony o ponad 3 godziny — krok po kroku" },
+              ].map(({ href, title }) => (
+                <Link key={href} href={href} className="flex items-center gap-3 p-4 bg-slate-50 hover:bg-slate-100 rounded-lg transition-colors group">
+                  <ArrowRight className="h-5 w-5 text-blue-600 group-hover:translate-x-1 transition-transform" />
+                  <span className="text-gray-800 font-medium text-sm">{title}</span>
+                </Link>
+              ))}
+            </div>
+          </div>
+
         </article>
       </div>
     </>
