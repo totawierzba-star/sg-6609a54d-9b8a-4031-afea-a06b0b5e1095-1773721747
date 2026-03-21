@@ -6,6 +6,15 @@ import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, FileText, Users, BarC
 export default function Artykuly() {
   const articles = [
     {
+      title: "Lot połączony opóźniony — odszkodowanie za każdy odcinek?",
+      slug: "lot-polaczony-opozniony-odszkodowanie-za-kazdy-odcinek",
+      excerpt: "Przy locie połączonym liczy się opóźnienie w końcowym celu podróży — jedno odszkodowanie do 600 EUR, nie za każdy odcinek. Sprawdź wyrok ETS C-11/11 i jak udokumentować roszczenie.",
+      date: "2025-03-21",
+      readTime: "9 min",
+      category: "Prawo i Finanse",
+      icon: Scale
+    },
+    {
       title: "Jak długo linia lotnicza ma na odpowiedź na reklamację?",
       slug: "jak-dlugo-linia-lotnicza-ma-na-odpowiedz-na-reklamacje",
       excerpt: "Linia lotnicza powinna odpowiedzieć na reklamację w ciągu 30 dni — choć EC 261/2004 nie narzuca ustawowego terminu. Sprawdź jak eskalować milczenie przewoźnika i kiedy grozi przedawnienie roszczenia.",
