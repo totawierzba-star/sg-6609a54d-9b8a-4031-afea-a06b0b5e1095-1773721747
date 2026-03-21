@@ -281,17 +281,17 @@ export default function StrajkLiniiLotniczej() {
           <div className="space-y-4">
             {[
               {
-                tactic: "„Strajk to nadzwyczajna okoliczność"",
+                tactic: "„Strajk to nadzwyczajna okoliczność”",
                 response: "Zapytaj pisemnie o rodzaj strajku. Jeśli to strajk własnych pracowników — powołaj się na wyrok ETS C-195/17. Linia musi udowodnić, że to strajk zewnętrzny.",
                 icon: <XCircle className="w-5 h-5 text-red-500 flex-shrink-0" />,
               },
               {
-                tactic: "„To był spontaniczny sick-out, nie formalny strajk"",
+                tactic: "„To był spontaniczny sick-out, nie formalny strajk”",
                 response: "Wyrok C-195/17 dotyczy właśnie spontanicznych zwolnień chorobowych. Trybunał celowo nie rozróżnia formy — liczy się że to pracownicy linii, nie zewnętrzne zdarzenie.",
                 icon: <XCircle className="w-5 h-5 text-red-500 flex-shrink-0" />,
               },
               {
-                tactic: "„Podjęliśmy wszelkie rozsądne środki"",
+                tactic: "„Podjęliśmy wszelkie rozsądne środki”",
                 response: "Zażądaj wyjaśnienia jakie konkretnie środki zostały podjęte. Samo twierdzenie bez dowodów jest niewystarczające — ciężar dowodu spoczywa na linii.",
                 icon: <XCircle className="w-5 h-5 text-red-500 flex-shrink-0" />,
               },

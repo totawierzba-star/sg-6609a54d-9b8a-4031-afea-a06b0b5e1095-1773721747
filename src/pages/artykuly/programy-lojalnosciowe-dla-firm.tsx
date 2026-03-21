@@ -1,6 +1,7 @@
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
 import { Briefcase, Award, TrendingUp, Users, DollarSign, Calendar, ArrowRight, CheckCircle2, BarChart3, Star, Calculator, Shield, Plane } from "lucide-react";
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 
 export default function ProgramyLojalnoscioweDlaFirm() {
   return (

@@ -1,6 +1,7 @@
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
 import { Briefcase, Plane, Star, Award, TrendingUp, CheckCircle2, AlertCircle, Users, DollarSign, Clock, Wifi, Coffee, BookOpen } from "lucide-react";
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 
 export default function RankingLiniiLotniczychBusinessClass() {
   return (

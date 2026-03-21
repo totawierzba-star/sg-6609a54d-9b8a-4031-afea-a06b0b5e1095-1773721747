@@ -2,6 +2,7 @@ import { SEO } from "@/components/SEO";
 import Link from "next/link";
 import { Briefcase, ArrowLeft, Calendar, Clock, Users, Plane, Heart, Shield, TrendingUp, FileText, AlertCircle, CheckCircle2, XCircle, DollarSign, Building2, Globe, Scale } from "lucide-react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 
 export default function BleisurePolitykaPodrozySluzbowych() {
   const structuredData = {

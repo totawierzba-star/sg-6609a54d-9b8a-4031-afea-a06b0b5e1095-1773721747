@@ -31,7 +31,7 @@ export default function JakDlugoLiniaLotniczaMaNaOdpowiedzNaReklamacje() {
           {
             "@type": "Question",
             "name": "Jak długo linia lotnicza ma na odpowiedź na reklamację?",
-            "acceptedAnswer": { "@type": "Answer", "text": "Rozporządzenie EC 261/2004 nie określa ustawowego terminu odpowiedzi na reklamację. W praktyce przyjętym standardem branżowym jest 30 dni. Urząd Lotnictwa Cywilnego (ULC) w Polsce oczekuje odpowiedzi w „rozsądnym terminie", interpretowanym jako maksymalnie 30 dni roboczych. Jeśli linia nie odpowie w tym czasie, pasażer ma prawo eskalować sprawę do ULC lub sądu." }
+            "acceptedAnswer": { "@type": "Answer", "text": "Rozporządzenie EC 261/2004 nie określa ustawowego terminu odpowiedzi na reklamację. W praktyce przyjętym standardem branżowym jest 30 dni. Urząd Lotnictwa Cywilnego (ULC) w Polsce oczekuje odpowiedzi w „rozsądnym terminie”, interpretowanym jako maksymalnie 30 dni roboczych. Jeśli linia nie odpowie w tym czasie, pasażer ma prawo eskalować sprawę do ULC lub sądu." }
           },
           {
             "@type": "Question",

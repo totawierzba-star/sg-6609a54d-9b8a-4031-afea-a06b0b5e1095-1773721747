@@ -337,7 +337,7 @@ export default function SilaWyzszaLot() {
               {
                 step: "1",
                 title: "Zażądaj pisemnego uzasadnienia",
-                desc: "Poproś linię o wskazanie dokładnej przyczyny opóźnienia/odwołania, rodzaju nadzwyczajnej okoliczności i dowodów (METAR, NOTAM, komunikat służb ATC, raport serwisowy). Samo słowo „nadzwyczajne okoliczności" to nie dowód.",
+                desc: "Poproś linię o wskazanie dokładnej przyczyny opóźnienia/odwołania, rodzaju nadzwyczajnej okoliczności i dowodów (METAR, NOTAM, komunikat służb ATC, raport serwisowy). Samo słowo „nadzwyczajne okoliczności” to nie dowód.",
                 color: "bg-blue-100 text-blue-700",
               },
               {
