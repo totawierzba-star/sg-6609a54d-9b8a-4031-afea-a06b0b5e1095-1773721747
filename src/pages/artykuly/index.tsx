@@ -6,6 +6,15 @@ import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, FileText, Users, BarC
 export default function Artykuly() {
   const articles = [
     {
+      title: "Missed connection — spóźniona przesiadka. Kto odpowiada?",
+      slug: "missed-connection-lot-przesiadka-kto-odpowiada",
+      excerpt: "Przy jednej rezerwacji linia odpowiada za missed connection i musi zapewnić lot zastępczy. Jeśli dotarłeś do celu 3h+ później — przysługuje odszkodowanie do 600 EUR. Osobne bilety — ryzyko po Twojej stronie.",
+      date: "2025-03-22",
+      readTime: "9 min",
+      category: "Prawo i Finanse",
+      icon: Scale
+    },
+    {
       title: "Downgrade klasy lotu — z biznes do economy. Jakie odszkodowanie?",
       slug: "downgrade-klasy-biznes-do-economy-odszkodowanie",
       excerpt: "EC 261/2004 art. 10 gwarantuje zwrot 30–75% ceny biletu przy przymusowym przesadzeniu z biznes do economy — niezależnie od przyczyny. Zwrot musi nastąpić w ciągu 7 dni, nie voucher.",
