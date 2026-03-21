@@ -6,6 +6,15 @@ import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, FileText, Users, BarC
 export default function Artykuly() {
   const articles = [
     {
+      title: "Zmiana rozkładu lotu 14 dni przed wylotem — czy to odwołanie?",
+      slug: "zmiana-rozkladu-lotu-14-dni-odwolanie",
+      excerpt: "Zmiana z ponad 14-dniowym wyprzedzeniem zwalnia linię z odszkodowania, ale daje prawo do zwrotu biletu. Zmiana w ciągu 14 dni bez właściwej alternatywy — odszkodowanie do 600 EUR może przysługiwać.",
+      date: "2025-03-21",
+      readTime: "8 min",
+      category: "Prawo i Finanse",
+      icon: Scale
+    },
+    {
       title: "Siła wyższa a lot — co naprawdę zwalnia linię z odszkodowania?",
       slug: "sila-wyzsza-lot-kiedy-linia-nie-placi-odszkodowania",
       excerpt: "Usterka techniczna, strajk własnych pracowników i opóźnienie rotacji to NIE siła wyższa. Sprawdź pełną tabelę nadzwyczajnych okoliczności, wyroki ETS i jak zakwestionować odmowę linii.",
