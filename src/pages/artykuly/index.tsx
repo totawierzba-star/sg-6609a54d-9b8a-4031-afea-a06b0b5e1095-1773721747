@@ -6,6 +6,15 @@ import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, FileText, Users, BarC
 export default function Artykuly() {
   const articles = [
     {
+      title: "Kiedy lot jest uznawany za odwołany według prawa UE?",
+      slug: "kiedy-lot-jest-uznawany-za-odwolany-prawo-ue",
+      excerpt: "Lot jest odwołany gdy nie zostaje wykonany zgodnie z planem. Sprawdź definicję EC 261/2004, różnicę między odwołaniem a opóźnieniem, zasady powiadomienia i kiedy należy się odszkodowanie do 600 EUR.",
+      date: "2025-03-21",
+      readTime: "8 min",
+      category: "Prawo i Finanse",
+      icon: Scale
+    },
+    {
       title: "Czy pracodawca może zatrzymać odszkodowanie za lot pracownika?",
       slug: "czy-pracodawca-moze-zatrzymac-odszkodowanie-za-lot",
       excerpt: "Nie — pracodawca nie może zatrzymać ani żądać zwrotu odszkodowania EC 261/2004. Odszkodowanie należy do pracownika jako pasażera. Klauzula w umowie o pracę nakazująca zwrot jest nieważna z mocy prawa UE.",
