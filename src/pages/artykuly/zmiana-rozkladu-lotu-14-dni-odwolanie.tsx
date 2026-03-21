@@ -8,7 +8,7 @@ export default function ZmianaRozkladuLotu() {
       <SEO
         title="Zmiana rozkładu lotu 14 dni przed wylotem — czy to odwołanie? EC 261/2004"
         description="Zmiana godziny o ponad 2h lub trasy lotu na 14 dni przed wylotem może być traktowana jako odwołanie — i dawać prawo do odszkodowania do 600 EUR. Sprawdź progi i jak postąpić."
-        canonical="https://bizneslot.info/artykuly/zmiana-rozkladu-lotu-14-dni-odwolanie"
+        canonicalUrl="https://bizneslot.info/artykuly/zmiana-rozkladu-lotu-14-dni-odwolanie"
       />
 
       <script

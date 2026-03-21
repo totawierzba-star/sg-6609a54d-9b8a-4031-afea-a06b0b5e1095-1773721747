@@ -8,7 +8,7 @@ export default function CodeshareEc261() {
       <SEO
         title="Codeshare a EC 261/2004 — który przewoźnik odpowiada za odszkodowanie?"
         description="Przy locie codeshare odszkodowanie EC 261/2004 wypłaca przewoźnik operujący (wykonujący) lot — nie marketingowy. Sprawdź jak to ustalić i do kogo kierować roszczenie."
-        canonical="https://bizneslot.info/artykuly/codeshare-ec261-ktory-przewoznik-odpowiada"
+        canonicalUrl="https://bizneslot.info/artykuly/codeshare-ec261-ktory-przewoznik-odpowiada"
       />
 
       <script

@@ -8,7 +8,7 @@ export default function StrajkLiniiLotniczej() {
       <SEO
         title="Strajk linii lotniczej — nadzwyczajna okoliczność czy prawo do odszkodowania EC 261?"
         description="Strajk własnych pracowników linii lotniczej NIE jest nadzwyczajną okolicznością — należy Ci się odszkodowanie do 600 EUR. Strajk zewnętrzny (ATC, obsługa naziemna) może zwolnić linię z obowiązku zapłaty."
-        canonical="https://bizneslot.info/artykuly/strajk-linii-lotniczej-nadzwyczajna-okolicznosc"
+        canonicalUrl="https://bizneslot.info/artykuly/strajk-linii-lotniczej-nadzwyczajna-okolicznosc"
       />
 
       <script

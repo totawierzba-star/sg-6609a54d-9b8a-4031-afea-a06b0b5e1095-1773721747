@@ -8,7 +8,7 @@ export default function LotPolaczonyOpozniony() {
       <SEO
         title="Lot połączony opóźniony — odszkodowanie za każdy odcinek? EC 261/2004"
         description="Przy locie połączonym liczy się opóźnienie w końcowym celu podróży, nie na przesiadce. Sprawdź kiedy należy się odszkodowanie do 600 EUR i jak udokumentować roszczenie."
-        canonical="https://bizneslot.info/artykuly/lot-polaczony-opozniony-odszkodowanie-za-kazdy-odcinek"
+        canonicalUrl="https://bizneslot.info/artykuly/lot-polaczony-opozniony-odszkodowanie-za-kazdy-odcinek"
       />
 
       <script

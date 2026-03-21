@@ -8,7 +8,7 @@ export default function SilaWyzszaLot() {
       <SEO
         title="Siła wyższa a lot — co naprawdę zwalnia linię lotniczą z odszkodowania EC 261?"
         description="Nie każde opóźnienie to nadzwyczajna okoliczność. Sprawdź dokładnie co EC 261/2004 i wyroki ETS uznają za siłę wyższą — i kiedy linia niesłusznie się na nią powołuje."
-        canonical="https://bizneslot.info/artykuly/sila-wyzsza-lot-kiedy-linia-nie-placi-odszkodowania"
+        canonicalUrl="https://bizneslot.info/artykuly/sila-wyzsza-lot-kiedy-linia-nie-placi-odszkodowania"
       />
 
       <script
