@@ -7,7 +7,10 @@ export default function Document() {
     <Html lang="pl">
       <Head>
         <SEOElements />
-        
+
+        {/* Google Search Console verification */}
+        <meta name="google-site-verification" content="wx8X7GoE_-45GL6zJ5Igy1GErCRoAT8TFCNgqJ3wD2U" />
+
         {/* Google Tag Manager */}
         <script dangerouslySetInnerHTML={{
           __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
