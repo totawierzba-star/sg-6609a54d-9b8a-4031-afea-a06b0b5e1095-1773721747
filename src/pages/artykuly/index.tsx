@@ -6,6 +6,15 @@ import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, FileText, Users, BarC
 export default function Artykuly() {
   const articles = [
     {
+      title: "Jak długo linia lotnicza ma na odpowiedź na reklamację?",
+      slug: "jak-dlugo-linia-lotnicza-ma-na-odpowiedz-na-reklamacje",
+      excerpt: "Linia lotnicza powinna odpowiedzieć na reklamację w ciągu 30 dni — choć EC 261/2004 nie narzuca ustawowego terminu. Sprawdź jak eskalować milczenie przewoźnika i kiedy grozi przedawnienie roszczenia.",
+      date: "2025-03-21",
+      readTime: "8 min",
+      category: "Prawo i Finanse",
+      icon: Scale
+    },
+    {
       title: "Co to jest EC 261/2004? Rozporządzenie UE o prawach pasażerów",
       slug: "co-to-jest-ec-261-2004-rozporzadzenie-ue",
       excerpt: "EC 261/2004 to rozporządzenie UE gwarantujące odszkodowanie do 600 EUR za opóźnienie, odwołanie lub overbooking. Kogo obejmuje, jakie prawa daje i jak z nich skorzystać w praktyce.",
