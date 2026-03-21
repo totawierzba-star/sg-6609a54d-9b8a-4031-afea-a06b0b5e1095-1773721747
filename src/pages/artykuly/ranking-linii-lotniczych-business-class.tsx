@@ -1,8 +1,6 @@
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
-import { MobileNav } from "@/components/MobileNav";
 import { Briefcase, Plane, Star, Award, TrendingUp, CheckCircle2, AlertCircle, Users, DollarSign, Clock, Wifi, Coffee, BookOpen } from "lucide-react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
 export default function RankingLiniiLotniczychBusinessClass() {
   return (
@@ -13,70 +11,30 @@ export default function RankingLiniiLotniczychBusinessClass() {
         url="https://bizneslot.info/artykuly/ranking-linii-lotniczych-business-class"
         image="https://bizneslot.info/og-image.png"
       />
-      <div className="min-h-screen bg-white">
-        {/* Header */}
-        <header className="bg-slate-900 text-white py-4 sticky top-0 z-50 shadow-lg">
-          <div className="container mx-auto px-4">
-            <div className="flex items-center justify-between">
-              <Link href="/" className="text-2xl font-bold flex items-center gap-2">
-                <img src="/bizneslotlogotyp.png" alt="BizneLot.info" className="h-8 w-auto" />
-                BizneLot.info
-              </Link>
-              <nav className="hidden md:flex gap-6">
-                <Link href="/odszkodowanie-lot-sluzbowy" className="text-slate-700 hover:text-slate-900 transition-colors">
-                  Odszkodowania
-                </Link>
-                <Link href="/pracodawca-a-odszkodowanie" className="text-slate-700 hover:text-slate-900 transition-colors">
-                  Pracodawca
-                </Link>
-                <Link href="/artykuly" className="text-slate-900 font-semibold">
-                  Artykuły
-                </Link>
-                <Link href="/o-autorze" className="text-slate-700 hover:text-slate-900 transition-colors">
-                  O autorze
-                </Link>
-              </nav>
-              <MobileNav currentPath="/artykuly/ranking-linii-lotniczych-business-class" />
+      <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+        {/* Gradient Hero */}
+        <section className="bg-gradient-to-r from-slate-800 to-blue-900 text-white py-20 px-4">
+          <div className="max-w-4xl mx-auto">
+            <Link href="/artykuly" className="text-slate-300 hover:text-white text-sm mb-6 inline-block">
+              ← Wszystkie artykuły
+            </Link>
+            <div className="inline-flex items-center gap-2 bg-white/20 rounded-full px-4 py-2 text-sm font-medium mb-6">
+              <Star className="w-4 h-4" />
+              Business Class
             </div>
-          </div>
-        </header>
-
-        {/* Breadcrumbs */}
-        <div className="bg-slate-50 py-3 border-b">
-          <div className="container mx-auto px-4">
-            <div className="flex items-center gap-2 text-sm text-slate-600">
-              <Link href="/" className="hover:text-slate-900">Home</Link>
-              <span>/</span>
-              <Link href="/artykuly" className="hover:text-slate-900">Artykuły</Link>
-              <span>/</span>
-              <span className="text-slate-900">Ranking linii lotniczych Business Class</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Article Header */}
-        <article className="container mx-auto px-4 py-12 max-w-4xl">
-          <div className="mb-8">
-            <div className="flex items-center gap-4 text-sm text-slate-600 mb-4">
-              <span className="flex items-center gap-1 bg-blue-100 text-blue-800 px-3 py-1 rounded-full">
-                <Star className="h-4 w-4" />
-                Travel Management
-              </span>
-              <time dateTime="2026-01-29">29 stycznia 2026</time>
-              <span className="flex items-center gap-1">
-                <Clock className="h-4 w-4" />
-                15 min czytania
-              </span>
-            </div>
-            <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
               Ranking linii lotniczych – Business Class 2026: Porównanie standardów dla firm
             </h1>
-            <p className="text-xl text-slate-600 leading-relaxed">
-              Kompleksowy przewodnik dla Travel Managerów: ranking najlepszych linii lotniczych w klasie biznes. 
-              Porównanie foteli lie-flat, cateringu, lounge'y, Wi-Fi i programów lojalnościowych. Twarde dane, 
+            <p className="text-xl text-slate-300 mb-8 max-w-3xl">
+              Kompleksowy przewodnik dla Travel Managerów: ranking najlepszych linii lotniczych w klasie biznes.
+              Porównanie foteli lie-flat, cateringu, lounge'y, Wi-Fi i programów lojalnościowych. Twarde dane,
               certyfikaty Skytrax i realne doświadczenia biznesowe.
             </p>
           </div>
+        </section>
+
+        {/* Article Header */}
+        <article className="container mx-auto px-4 py-12 max-w-4xl">
 
           {/* TL;DR */}
           <div className="bg-blue-50 border-l-4 border-blue-500 p-6 mb-8 rounded-r-lg">
@@ -926,102 +884,35 @@ export default function RankingLiniiLotniczychBusinessClass() {
           </section>
 
           {/* CTA */}
-          <div className="bg-blue-600 text-white p-8 rounded-lg text-center">
-            <h3 className="text-2xl font-bold mb-4">Twój lot Business Class został opóźniony lub odwołany?</h3>
-            <p className="text-lg mb-6 text-blue-100">
-              Nawet podróżując w klasie biznes, masz prawo do odszkodowania za opóźniony lub anulowany lot. 
-              Sprawdź swoją rekompensatę w 2 minuty.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a 
-                href="https://claimwinger.com/pl/opozniony-lot" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors inline-block"
-              >
-                Sprawdź opóźniony lot
-              </a>
-              <a 
-                href="https://claimwinger.com/pl/odwolany-lot" 
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-colors inline-block border-2 border-white"
-              >
-                Sprawdź anulowany lot
-              </a>
+          <div className="my-12 p-8 bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl text-white">
+            <div className="max-w-2xl">
+              <h3 className="text-2xl font-bold mb-3">Twój lot Business Class został opóźniony lub odwołany?</h3>
+              <p className="text-slate-300 mb-6">
+                Nawet podróżując w klasie biznes, masz prawo do odszkodowania za opóźniony lub anulowany lot.
+                Sprawdź swoją rekompensatę w 2 minuty.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <a
+                  href="https://claimwinger.com/pl/opozniony-lot"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-400 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
+                >
+                  Sprawdź opóźniony lot
+                </a>
+                <a
+                  href="https://claimwinger.com/pl/odwolany-lot"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-400 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
+                >
+                  Sprawdź anulowany lot
+                </a>
+              </div>
             </div>
           </div>
         </article>
 
-        {/* Footer */}
-        <footer className="bg-slate-900 text-white py-12 mt-16">
-          <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-4 gap-8 mb-8">
-              <div>
-                <h3 className="font-bold text-lg mb-4 flex items-center gap-2">
-                  <img src="/bizneslotlogotyp.png" alt="BizneLot.info" className="h-6 w-auto" />
-                  BizneLot.info
-                </h3>
-                <p className="text-slate-400 text-sm">
-                  Prawa pasażerów w podróżach służbowych
-                </p>
-              </div>
-              <div>
-                <h4 className="font-semibold mb-4">Odszkodowania</h4>
-                <ul className="space-y-2 text-sm text-slate-400">
-                  <li>
-                    <Link href="/odszkodowanie-lot-sluzbowy" className="hover:text-white transition-colors">
-                      Lot służbowy
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/anulowany-lot-delegacja" className="hover:text-white transition-colors">
-                      Anulowany lot
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/opozniony-lot-delegacja" className="hover:text-white transition-colors">
-                      Opóźniony lot
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-semibold mb-4">Dla firm</h4>
-                <ul className="space-y-2 text-sm text-slate-400">
-                  <li>
-                    <Link href="/bilet-firmowy-prawa" className="hover:text-white transition-colors">
-                      Bilet firmowy
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/pracodawca-a-odszkodowanie" className="hover:text-white transition-colors">
-                      Pracodawca a odszkodowanie
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/artykuly" className="hover:text-white transition-colors">
-                      Artykuły
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h4 className="font-semibold mb-4">O nas</h4>
-                <ul className="space-y-2 text-sm text-slate-400">
-                  <li>
-                    <Link href="/o-autorze" className="hover:text-white transition-colors">
-                      O autorze
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <div className="border-t border-slate-800 pt-8 text-center text-sm text-slate-400">
-              <p>&copy; 2026 BizneLot.info. Portal edukacyjny o prawach pasażerów w podróżach służbowych</p>
-            </div>
-          </div>
-        </footer>
       </div>
 
       <script type="application/ld+json">

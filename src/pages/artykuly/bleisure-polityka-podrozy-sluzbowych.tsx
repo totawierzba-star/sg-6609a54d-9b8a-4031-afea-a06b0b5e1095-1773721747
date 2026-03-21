@@ -1,8 +1,6 @@
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
-import { MobileNav } from "@/components/MobileNav";
 import { Briefcase, ArrowLeft, Calendar, Clock, Users, Plane, Heart, Shield, TrendingUp, FileText, AlertCircle, CheckCircle2, XCircle, DollarSign, Building2, Globe, Scale } from "lucide-react";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 
 export default function BleisurePolitykaPodrozySluzbowych() {
@@ -157,89 +155,30 @@ export default function BleisurePolitykaPodrozySluzbowych() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
-      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-white to-slate-50">
-        {/* Header */}
-        <header className="bg-slate-900 text-white py-4 sticky top-0 z-50 shadow-lg">
-          <div className="container mx-auto px-4">
-            <div className="flex items-center justify-between">
-              <Link href="/" className="text-2xl font-bold flex items-center gap-2">
-                <img src="/bizneslotlogotyp.png" alt="BizneLot.info" className="h-8 w-auto" />
-                BizneLot.info
-              </Link>
-
-              <nav className="hidden md:flex gap-6">
-                <Link href="/odszkodowanie-lot-sluzbowy" className="text-slate-700 hover:text-slate-900 transition-colors">
-                  Odszkodowania
-                </Link>
-                <Link href="/pracodawca-a-odszkodowanie" className="text-slate-700 hover:text-slate-900 transition-colors">
-                  Pracodawca
-                </Link>
-                <Link href="/artykuly" className="text-slate-900 font-semibold">
-                  Artykuły
-                </Link>
-                <Link href="/o-autorze" className="text-slate-700 hover:text-slate-900 transition-colors">
-                  O autorze
-                </Link>
-              </nav>
-              <MobileNav currentPath="/artykuly/bleisure-polityka-podrozy-sluzbowych" />
+      <div className="min-h-screen bg-gradient-to-b from-slate-50 to-white">
+        {/* Gradient Hero */}
+        <section className="bg-gradient-to-r from-teal-600 to-blue-700 text-white py-20 px-4">
+          <div className="max-w-4xl mx-auto">
+            <Link href="/artykuly" className="text-teal-100 hover:text-white text-sm mb-6 inline-block">
+              ← Wszystkie artykuły
+            </Link>
+            <div className="inline-flex items-center gap-2 bg-white/20 rounded-full px-4 py-2 text-sm font-medium mb-6">
+              <Briefcase className="w-4 h-4" />
+              Polityka Podróży
             </div>
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+              Bleisure 2.0: Jak nowoczesne firmy łączą pracę z wypoczynkiem?
+            </h1>
+            <p className="text-xl text-teal-100 mb-8 max-w-3xl">
+              Kompleksowy przewodnik po Bleisure Travel dla HR i Travel Managerów: jak stworzyć Travel Policy, uniknąć problemów podatkowych i wykorzystać bleisure jako narzędzie Employer Branding.
+            </p>
           </div>
-        </header>
-
-        {/* Breadcrumbs */}
-        <div className="bg-slate-50 border-b border-slate-200">
-          <div className="container mx-auto px-4 py-3">
-            <nav className="flex items-center gap-2 text-sm">
-              <Link href="/" className="text-slate-600 hover:text-slate-900">
-                Strona główna
-              </Link>
-              <span className="text-slate-400">/</span>
-              <Link href="/artykuly" className="text-slate-600 hover:text-slate-900">
-                Artykuły
-              </Link>
-              <span className="text-slate-400">/</span>
-              <span className="text-slate-900 font-medium">Bleisure 2.0: Travel Policy</span>
-            </nav>
-          </div>
-        </div>
+        </section>
 
         {/* Article */}
         <article className="py-16">
           <div className="container mx-auto px-4">
             <div className="max-w-4xl mx-auto">
-              {/* Back Link */}
-              <Link
-                href="/artykuly"
-                className="inline-flex items-center gap-2 text-slate-600 hover:text-slate-900 transition-colors group"
-              >
-                <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1 transition-transform" />
-                Powrót do artykułów
-              </Link>
-
-              {/* Article Header */}
-              <header className="mb-12">
-                <div className="flex items-center gap-3 mb-4 text-sm text-slate-600">
-                  <span className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-medium">
-                    Travel Management
-                  </span>
-                  <div className="flex items-center gap-1">
-                    <Calendar className="w-4 h-4" />
-                    <time dateTime="2026-01-29">29 stycznia 2026</time>
-                  </div>
-                  <div className="flex items-center gap-1">
-                    <Clock className="w-4 h-4" />
-                    <span>12 min czytania</span>
-                  </div>
-                </div>
-
-                <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6 leading-tight">
-                  Bleisure 2.0: Jak nowoczesne firmy łączą pracę z wypoczynkiem?
-                </h1>
-
-                <p className="text-xl text-slate-600 leading-relaxed">
-                  Kompleksowy przewodnik po Bleisure Travel dla HR i Travel Managerów: jak stworzyć Travel Policy, uniknąć problemów podatkowych i wykorzystać bleisure jako narzędzie Employer Branding.
-                </p>
-              </header>
 
               {/* TL;DR Box */}
               <Alert className="mb-12 border-purple-200 bg-purple-50">
@@ -959,28 +898,30 @@ export default function BleisurePolitykaPodrozySluzbowych() {
                 </div>
 
                 {/* CTA Box */}
-                <div className="bg-slate-900 text-white rounded-xl p-8 mt-12">
-                  <h3 className="text-2xl font-bold mb-4">Czy Twój lot służbowy był opóźniony lub anulowany?</h3>
-                  <p className="text-slate-200 mb-6">
-                    Nawet jeśli podróżujesz w ramach bleisure, <Link href="/odszkodowanie-lot-sluzbowy" className="underline hover:text-white">przysługuje Ci odszkodowanie</Link> za odwołane lub opóźnione loty. Sprawdź swoje prawa w ClaimWinger – to zajmie tylko 2 minuty.
-                  </p>
-                  <div className="flex flex-wrap gap-4">
-                    <a
-                      href="https://claimwinger.com/pl/odwolany-lot"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-6 py-3 bg-white text-slate-900 rounded-lg hover:bg-slate-100 transition-colors font-semibold"
-                    >
-                      Sprawdź odwołany lot
-                    </a>
-                    <a
-                      href="https://claimwinger.com/pl/opozniony-lot"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="px-6 py-3 bg-slate-800 text-white rounded-lg hover:bg-slate-700 transition-colors font-semibold border border-slate-700"
-                    >
-                      Sprawdź opóźniony lot
-                    </a>
+                <div className="my-12 p-8 bg-gradient-to-r from-slate-800 to-slate-900 rounded-2xl text-white">
+                  <div className="max-w-2xl">
+                    <h3 className="text-2xl font-bold mb-3">Czy Twój lot służbowy był opóźniony lub anulowany?</h3>
+                    <p className="text-slate-300 mb-6">
+                      Nawet jeśli podróżujesz w ramach bleisure, <Link href="/odszkodowanie-lot-sluzbowy" className="underline hover:text-white">przysługuje Ci odszkodowanie</Link> za odwołane lub opóźnione loty. Sprawdź swoje prawa w ClaimWinger – to zajmie tylko 2 minuty.
+                    </p>
+                    <div className="flex flex-wrap gap-4">
+                      <a
+                        href="https://claimwinger.com/pl/odwolany-lot"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-400 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
+                      >
+                        Sprawdź odwołany lot
+                      </a>
+                      <a
+                        href="https://claimwinger.com/pl/opozniony-lot"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 bg-blue-500 hover:bg-blue-400 text-white font-semibold px-6 py-3 rounded-xl transition-colors"
+                      >
+                        Sprawdź opóźniony lot
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1022,77 +963,6 @@ export default function BleisurePolitykaPodrozySluzbowych() {
           </div>
         </section>
 
-        {/* Footer */}
-        <footer className="bg-slate-900 text-white py-12 mt-16">
-          <div className="container mx-auto px-4">
-            <div className="grid md:grid-cols-4 gap-8 mb-8">
-              <div>
-                <h3 className="font-bold text-lg mb-4 flex items-center gap-2">
-                  <img src="/bizneslotlogotyp.png" alt="BizneLot.info" className="h-6 w-auto" />
-                  BizneLot.info
-                </h3>
-                <p className="text-sm">
-                  Portal ekspercki o prawach pasażerów w podróżach służbowych i delegacjach.
-                </p>
-              </div>
-
-              <div>
-                <h4 className="text-white font-semibold mb-4">Główne tematy</h4>
-                <ul className="space-y-2 text-sm">
-                  <li>
-                    <Link href="/odszkodowanie-lot-sluzbowy" className="hover:text-white transition-colors">
-                      Odszkodowanie za lot służbowy
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/anulowany-lot-delegacja" className="hover:text-white transition-colors">
-                      Anulowany lot w delegacji
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/pracodawca-a-odszkodowanie" className="hover:text-white transition-colors">
-                      Pracodawca a odszkodowanie
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="/artykuly" className="hover:text-white transition-colors">
-                      Artykuły
-                    </Link>
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <h4 className="text-white font-semibold mb-4">Sprawdź odszkodowanie</h4>
-                <p className="text-sm mb-4">
-                  Skorzystaj z usług ClaimWinger, aby łatwo i szybko odzyskać należne odszkodowanie:
-                </p>
-                <div className="space-y-2">
-                  <a
-                    href="https://claimwinger.com/pl/odwolany-lot"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block text-sm hover:text-white transition-colors"
-                  >
-                    → Odwołany lot
-                  </a>
-                  <a
-                    href="https://claimwinger.com/pl/opozniony-lot"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="block text-sm hover:text-white transition-colors"
-                  >
-                    → Opóźniony lot
-                  </a>
-                </div>
-              </div>
-            </div>
-
-            <div className="border-t border-slate-800 pt-8 text-sm text-center">
-              <p>© 2026 BizneLot.info – Portal edukacyjny o prawach pasażerów w podróżach służbowych</p>
-            </div>
-          </div>
-        </footer>
       </div>
     </>
   );
