@@ -6,6 +6,15 @@ import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, FileText, Users, BarC
 export default function Artykuly() {
   const articles = [
     {
+      title: "Ile wynosi odszkodowanie za opóźniony lot służbowy?",
+      slug: "ile-wynosi-odszkodowanie-opozniony-lot-sluzbowy",
+      excerpt: "250, 400 lub 600 EUR — w zależności od dystansu trasy. Sprawdź dokładną tabelę odszkodowań EC 261/2004, warunki przyznania i jak złożyć skuteczny wniosek.",
+      date: "2025-03-21",
+      readTime: "8 min",
+      category: "Prawo i Finanse",
+      icon: Scale
+    },
+    {
       title: "Bilet służbowy kupiony przez firmę — kto składa reklamację",
       slug: "bilet-sluzbowy-kupiony-przez-firme-kto-sklada-reklamacje",
       excerpt: "Kompleksowy wyjaśnienie kto składa reklamację za bilet służbowy kupiony przez firmę. Sprawdź czy pracownik czy pracodawca ma prawo do odszkodowania i jak przebiega procedura roszczeniowa w podróżach biznesowych.",
