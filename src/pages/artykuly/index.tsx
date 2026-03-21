@@ -6,6 +6,15 @@ import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, FileText, Users, BarC
 export default function Artykuly() {
   const articles = [
     {
+      title: "Downgrade klasy lotu — z biznes do economy. Jakie odszkodowanie?",
+      slug: "downgrade-klasy-biznes-do-economy-odszkodowanie",
+      excerpt: "EC 261/2004 art. 10 gwarantuje zwrot 30–75% ceny biletu przy przymusowym przesadzeniu z biznes do economy — niezależnie od przyczyny. Zwrot musi nastąpić w ciągu 7 dni, nie voucher.",
+      date: "2025-03-22",
+      readTime: "8 min",
+      category: "Prawo i Finanse",
+      icon: Scale
+    },
+    {
       title: "Zmiana rozkładu lotu 14 dni przed wylotem — czy to odwołanie?",
       slug: "zmiana-rozkladu-lotu-14-dni-odwolanie",
       excerpt: "Zmiana z ponad 14-dniowym wyprzedzeniem zwalnia linię z odszkodowania, ale daje prawo do zwrotu biletu. Zmiana w ciągu 14 dni bez właściwej alternatywy — odszkodowanie do 600 EUR może przysługiwać.",
