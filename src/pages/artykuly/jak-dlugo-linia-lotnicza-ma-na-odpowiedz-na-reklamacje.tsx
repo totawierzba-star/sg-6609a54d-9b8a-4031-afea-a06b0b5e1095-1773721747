@@ -328,7 +328,7 @@ export default function JakDlugoLiniaLotniczaMaNaOdpowiedzNaReklamacje() {
           </p>
 
           <div className="my-6 bg-slate-800 text-slate-100 rounded-xl p-6 font-mono text-sm leading-relaxed">
-            <p className="text-slate-400 text-xs mb-4">// Szablon reklamacji EC 261/2004 (e-mail lub formularz linii)</p>
+            <p className="text-slate-400 text-xs mb-4">{"// Szablon reklamacji EC 261/2004 (e-mail lub formularz linii)"}</p>
             <p><span className="text-teal-300">Temat:</span> Wniosek o odszkodowanie EC 261/2004 — lot [NUMER LOTU], [DATA]</p>
             <br />
             <p>Szanowni Państwo,</p>
