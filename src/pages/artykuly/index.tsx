@@ -6,6 +6,15 @@ import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, FileText, Users, BarC
 export default function Artykuly() {
   const articles = [
     {
+      title: "Siła wyższa a lot — co naprawdę zwalnia linię z odszkodowania?",
+      slug: "sila-wyzsza-lot-kiedy-linia-nie-placi-odszkodowania",
+      excerpt: "Usterka techniczna, strajk własnych pracowników i opóźnienie rotacji to NIE siła wyższa. Sprawdź pełną tabelę nadzwyczajnych okoliczności, wyroki ETS i jak zakwestionować odmowę linii.",
+      date: "2025-03-21",
+      readTime: "9 min",
+      category: "Prawo i Finanse",
+      icon: Scale
+    },
+    {
       title: "Strajk linii lotniczej — nadzwyczajna okoliczność czy odszkodowanie EC 261?",
       slug: "strajk-linii-lotniczej-nadzwyczajna-okolicznosc",
       excerpt: "Strajk własnych pracowników linii (pilotów, stewardów) NIE jest nadzwyczajną okolicznością — należy Ci się odszkodowanie do 600 EUR. Wyrok ETS C-195/17. Strajk ATC może zwolnić linię z wypłaty.",
