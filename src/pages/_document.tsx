@@ -8,6 +8,10 @@ export default function Document() {
       <Head>
         <SEOElements />
 
+        {/* Favicon */}
+        <link rel="icon" type="image/png" href="/bizneslotlogotyp.png" />
+        <link rel="apple-touch-icon" href="/bizneslotlogotyp.png" />
+
         {/* Google Search Console verification */}
         <meta name="google-site-verification" content="wx8X7GoE_-45GL6zJ5Igy1GErCRoAT8TFCNgqJ3wD2U" />
 

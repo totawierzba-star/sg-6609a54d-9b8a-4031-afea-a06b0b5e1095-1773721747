@@ -1,10 +1,126 @@
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
-import { MobileNav } from "@/components/MobileNav";
-import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, FileText, Users, BarChart3, Plane, Award, Star, User, Building2, CreditCard } from "lucide-react";
+import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, Plane, Award, Building2, CreditCard } from "lucide-react";
 
 export default function Artykuly() {
   const articles = [
+    {
+      title: "Fast track na lotnisku — jak zaoszczędzić czas na odprawie?",
+      slug: "fast-track-lotnisko-odprawa",
+      excerpt: "Kto ma prawo do fast track, ile czasu oszczędza w szczycie i jak kupić dostęp bez klasy biznes i statusu FFP. Tabela lotnisk i praktyczne wskazówki dla podróżnika służbowego.",
+      date: "2026-03-22",
+      readTime: "7 min",
+      category: "Lotniska",
+      icon: Plane
+    },
+    {
+      title: "Priority Pass vs karty kredytowe z dostępem do lounge — porównanie 2025",
+      slug: "priority-pass-vs-karty-kredytowe-lounge",
+      excerpt: "Priority Pass direct czy karta kredytowa premium? Porównanie planów, kosztów przy 5 i 20 wejściach rocznie, dostępnych kart w Polsce i alternatyw: Dragonpass, LoungeKey.",
+      date: "2026-03-22",
+      readTime: "7 min",
+      category: "Lotniska",
+      icon: Plane
+    },
+    {
+      title: "Lounge biznesowy na Okęciu (WAW) — co oferuje i jak wejść?",
+      slug: "lounge-biznesowy-okecie-jak-wejsc",
+      excerpt: "Polonez Lounge LOT, Priority Pass, Star Alliance Gold — 5 sposobów wejścia do saloniku na Lotnisku Chopina. Co oferuje lounge i kiedy nawet najlepszy salonik nie pomaga.",
+      date: "2026-03-22",
+      readTime: "7 min",
+      category: "Lotniska",
+      icon: Plane
+    },
+    {
+      title: "Budżetowanie lotów służbowych na rok — metody i szablony",
+      slug: "budzetowanie-lotow-sluzbowych",
+      excerpt: "Bottom-up, top-down i zero-based budgeting dla travel managera. Szablon podziału budżetu na departamenty, pełna lista pozycji i trzy progi monitorowania realizacji w ciągu roku.",
+      date: "2026-03-22",
+      readTime: "8 min",
+      category: "Zarządzanie podróżami",
+      icon: Briefcase
+    },
+    {
+      title: "Zatwierdzanie podróży służbowych — systemy approval i przepływy pracy",
+      slug: "zatwierdzanie-podrozy-sluzbowych-approval",
+      excerpt: "Wolny approval to ukryta przyczyna drogich biletów. Sprawdź modele procesu, progi kwotowe, krok po kroku przepływ pracy i 4 błędy, które podnoszą koszty delegacji.",
+      date: "2026-03-22",
+      readTime: "8 min",
+      category: "Zarządzanie podróżami",
+      icon: Briefcase
+    },
+    {
+      title: "Podróże służbowe a ESG — jak liczyć ślad węglowy lotów firmowych?",
+      slug: "podroze-sluzbowe-esg-slad-weglowy-lotow",
+      excerpt: "Loty służbowe to scope 3 emisji GHG. Sprawdź metodę DEFRA i ICAO do kalkulacji CO₂, co wymaga CSRD/ESRS E1 i jak redukować emisje bez blokowania delegacji.",
+      date: "2026-03-22",
+      readTime: "9 min",
+      category: "Zarządzanie podróżami",
+      icon: Briefcase
+    },
+    {
+      title: "Raportowanie podróży służbowych — jakie dane mierzyć i jak?",
+      slug: "raportowanie-podrozy-sluzbowych",
+      excerpt: "6 KPI, które każdy travel manager powinien śledzić: koszt na podróż, compliance rate, advance booking, zakłócenia, emisja CO₂ i odzysk odszkodowań EC 261. Jak zbierać dane bez TMC.",
+      date: "2026-03-22",
+      readTime: "8 min",
+      category: "Zarządzanie podróżami",
+      icon: Briefcase
+    },
+    {
+      title: "Jak obniżyć koszty podróży służbowych o 30%? Praktyczny przewodnik",
+      slug: "jak-obnizyc-koszty-podrozy-sluzbowych",
+      excerpt: "7 sprawdzonych metod redukcji wydatków na loty: rezerwacje z wyprzedzeniem, polityka klas, corporate fares, TMC i odzyskiwanie odszkodowań EC 261. Plan wdrożenia na 90 dni.",
+      date: "2026-03-22",
+      readTime: "9 min",
+      category: "Zarządzanie podróżami",
+      icon: Briefcase
+    },
+    {
+      title: "SAP Concur vs TravelPerk vs GetAbroad — porównanie narzędzi TMC 2025",
+      slug: "narzedzia-zarzadzania-podrozami-concur-travelperk",
+      excerpt: "Które narzędzie TMC wybrać dla polskiej firmy? SAP Concur, TravelPerk i GetAbroad — porównanie funkcji, cen i dopasowania. Plus: czego żadne TMC nie zrobi przy opóźnionym locie.",
+      date: "2026-03-22",
+      readTime: "8 min",
+      category: "Zarządzanie podróżami",
+      icon: Briefcase
+    },
+    {
+      title: "Travel manager w firmie — zakres obowiązków i narzędzia 2025",
+      slug: "travel-manager-obowiazki-narzedzia",
+      excerpt: "Travel manager zarządza budżetem lotów, negocjuje z liniami i pilnuje compliance. Pełny zakres obowiązków, tabela narzędzi TMC i jak rola wygląda w małej vs dużej firmie.",
+      date: "2026-03-22",
+      readTime: "8 min",
+      category: "Zarządzanie podróżami",
+      icon: Briefcase
+    },
+    {
+      title: "Polityka podróży służbowych (Travel Policy) — jak napisać od zera?",
+      slug: "polityka-podrozy-sluzbowych-jak-napisac",
+      excerpt: "6 elementów, które musi zawierać skuteczna travel policy: klasy lotu, limity, procedura przy zakłóceniach i zapis o EC 261. Najczęstsze błędy i gotowy fragment dokumentu.",
+      date: "2026-03-22",
+      readTime: "9 min",
+      category: "Zarządzanie podróżami",
+      icon: Briefcase
+    },
+    {
+      title: "Przedawnienie roszczenia EC 261 — ile czasu ma pracownik?",
+      slug: "przedawnienie-roszczenia-ec261-pracownik",
+      excerpt: "Roszczenie EC 261/2004 przedawnia się w Polsce po 3 latach od daty lotu. Sprawdź od kiedy biegnie termin, jak złożona reklamacja go przerywa i czy delegacja zmienia zasady.",
+      date: "2026-03-22",
+      readTime: "7 min",
+      category: "Prawo i Finanse",
+      icon: Scale
+    },
+    {
+      title: "EC 261 a loty spoza UE — kiedy rozporządzenie obowiązuje linie non-EU?",
+      slug: "ec261-loty-spoza-ue-kiedy-obowiazuje",
+      excerpt: "Czy Emirates, Turkish, United muszą zapłacić odszkodowanie EC 261? Tak — jeśli lot wylatywał z lotniska UE. Przy lotach do UE z krajów trzecich liczy się siedziba linii. Sprawdź tabelę i scenariusze.",
+      date: "2026-03-22",
+      readTime: "8 min",
+      category: "Prawo i Finanse",
+      icon: Scale
+    },
     {
       title: "Missed connection — spóźniona przesiadka. Kto odpowiada?",
       slug: "missed-connection-lot-przesiadka-kto-odpowiada",
@@ -65,33 +181,6 @@ export default function Artykuly() {
       excerpt: "Przy locie połączonym liczy się opóźnienie w końcowym celu podróży — jedno odszkodowanie do 600 EUR, nie za każdy odcinek. Sprawdź wyrok ETS C-11/11 i jak udokumentować roszczenie.",
       date: "2025-03-21",
       readTime: "9 min",
-      category: "Prawo i Finanse",
-      icon: Scale
-    },
-    {
-      title: "Jak długo linia lotnicza ma na odpowiedź na reklamację?",
-      slug: "jak-dlugo-linia-lotnicza-ma-na-odpowiedz-na-reklamacje",
-      excerpt: "Linia lotnicza powinna odpowiedzieć na reklamację w ciągu 30 dni — choć EC 261/2004 nie narzuca ustawowego terminu. Sprawdź jak eskalować milczenie przewoźnika i kiedy grozi przedawnienie roszczenia.",
-      date: "2025-03-21",
-      readTime: "8 min",
-      category: "Prawo i Finanse",
-      icon: Scale
-    },
-    {
-      title: "Co to jest EC 261/2004? Rozporządzenie UE o prawach pasażerów",
-      slug: "co-to-jest-ec-261-2004-rozporzadzenie-ue",
-      excerpt: "EC 261/2004 to rozporządzenie UE gwarantujące odszkodowanie do 600 EUR za opóźnienie, odwołanie lub overbooking. Kogo obejmuje, jakie prawa daje i jak z nich skorzystać w praktyce.",
-      date: "2025-03-21",
-      readTime: "9 min",
-      category: "Prawo i Finanse",
-      icon: Scale
-    },
-    {
-      title: "Kiedy lot jest uznawany za odwołany według prawa UE?",
-      slug: "kiedy-lot-jest-uznawany-za-odwolany-prawo-ue",
-      excerpt: "Lot jest odwołany gdy nie zostaje wykonany zgodnie z planem. Sprawdź definicję EC 261/2004, różnicę między odwołaniem a opóźnieniem, zasady powiadomienia i kiedy należy się odszkodowanie do 600 EUR.",
-      date: "2025-03-21",
-      readTime: "8 min",
       category: "Prawo i Finanse",
       icon: Scale
     },
@@ -193,15 +282,6 @@ export default function Artykuly() {
       readTime: "15 min",
       category: "Prawo i Finanse",
       icon: Scale
-    },
-    {
-      title: "Dlaczego Stworzyłem ClaimWinger",
-      slug: "dlaczego-stworzylem-claimwinger",
-      excerpt: "Historia powstania ClaimWinger — platformy, która pomaga tysiącom pasażerów odzyskać odszkodowania za opóźnione i odwołane loty. Poznaj moją osobistą motywację.",
-      date: "2025-01-20",
-      readTime: "8 min",
-      category: "O Mnie",
-      icon: User
     },
     {
       title: "Programy Lojalnościowe dla Firm",
