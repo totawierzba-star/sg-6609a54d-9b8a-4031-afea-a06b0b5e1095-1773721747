@@ -423,7 +423,7 @@ export default function JetLagPodrozeSluzbowe() {
           <h2 className="text-2xl font-bold text-slate-900 mb-6">Najczęstsze pytania</h2>
 
           <div className="space-y-5">
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Czy melatonina jest dozwolona w Polsce bez recepty?
               </h3>
@@ -438,7 +438,7 @@ export default function JetLagPodrozeSluzbowe() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Czy klasa biznes naprawdę pomaga z jet lagiem?
               </h3>
@@ -454,7 +454,7 @@ export default function JetLagPodrozeSluzbowe() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Czy można wpisać koszty melatoniny i suplementów do rozliczenia delegacji?
               </h3>

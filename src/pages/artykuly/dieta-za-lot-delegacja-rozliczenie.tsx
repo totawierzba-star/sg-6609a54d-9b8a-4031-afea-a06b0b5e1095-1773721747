@@ -428,7 +428,7 @@ export default function DietaZaLotDelegacjaRozliczenie() {
           <h2 className="text-2xl font-bold text-slate-900 mb-6">Najczęstsze pytania</h2>
 
           <div className="space-y-5">
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Czy dieta przysługuje przy locie trwającym mniej niż 8 godzin?
               </h3>
@@ -443,7 +443,7 @@ export default function DietaZaLotDelegacjaRozliczenie() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 W jakiej walucie wypłaca się dietę zagraniczną?
               </h3>
@@ -458,7 +458,7 @@ export default function DietaZaLotDelegacjaRozliczenie() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Czy delegacja w jednym dniu (tam i z powrotem) daje prawo do diety?
               </h3>
@@ -472,7 +472,7 @@ export default function DietaZaLotDelegacjaRozliczenie() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Co jeśli pracodawca nie chce wypłacić diety?
               </h3>

@@ -497,7 +497,7 @@ export default function AplikacjeLotniskowePodrozeSluzbowe() {
           <h2 className="text-2xl font-bold text-slate-900 mb-6">Najczęstsze pytania</h2>
 
           <div className="space-y-5">
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Czy TripIt automatycznie pobiera moje rezerwacje?
               </h3>
@@ -511,7 +511,7 @@ export default function AplikacjeLotniskowePodrozeSluzbowe() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Czy aplikacja FlightAware działa w Polsce i Europie?
               </h3>
@@ -525,7 +525,7 @@ export default function AplikacjeLotniskowePodrozeSluzbowe() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Czy mogę wziąć dostęp do lounge przez aplikację, bez fizycznej karty?
               </h3>
@@ -540,7 +540,7 @@ export default function AplikacjeLotniskowePodrozeSluzbowe() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Jaki VPN wybrać, gdy firma nie dostarcza swojego?
               </h3>

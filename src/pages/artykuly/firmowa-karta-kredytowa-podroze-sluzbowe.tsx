@@ -409,7 +409,7 @@ export default function FirmowaKartaKredytowaPodrozeSluzbowe() {
           <h2 className="text-2xl font-bold text-slate-900 mb-6">Najczęstsze pytania</h2>
 
           <div className="space-y-5">
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Czy paragon z karty firmowej wystarczy do rozliczenia?
               </h3>
@@ -424,7 +424,7 @@ export default function FirmowaKartaKredytowaPodrozeSluzbowe() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Czy odszkodowanie EC 261 wypłacone na kartę firmową należy do pracownika czy firmy?
               </h3>
@@ -440,7 +440,7 @@ export default function FirmowaKartaKredytowaPodrozeSluzbowe() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Czy można mieć dwie karty firmowe — jedną do biletów, drugą do wydatków bieżących?
               </h3>
@@ -456,7 +456,7 @@ export default function FirmowaKartaKredytowaPodrozeSluzbowe() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Co zrobić gdy karta firmowa zostanie zgubiona lub skradziona za granicą?
               </h3>

@@ -382,7 +382,7 @@ export default function UbezpieczeniePodrozneKosztyOdliczenia() {
           <h2 className="text-2xl font-bold text-slate-900 mb-6">Najczęstsze pytania</h2>
 
           <div className="space-y-5">
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Czy ubezpieczenie zdrowotne pracownika zakupione przez firmę jest KUP?
               </h3>
@@ -398,7 +398,7 @@ export default function UbezpieczeniePodrozneKosztyOdliczenia() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Czy pracownik może sam kupić polisę i otrzymać zwrot od firmy?
               </h3>
@@ -413,7 +413,7 @@ export default function UbezpieczeniePodrozneKosztyOdliczenia() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Co z ubezpieczeniem dla zleceniobiorcy lub B2B na delegacji?
               </h3>

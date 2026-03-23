@@ -422,7 +422,7 @@ export default function PracaWSamolocieProduktywosc() {
           <h2 className="text-2xl font-bold text-slate-900 mb-6">Najczęstsze pytania</h2>
 
           <div className="space-y-5">
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Czy koszt WiFi pokładowego można wliczyć w koszty delegacji?
               </h3>
@@ -437,7 +437,7 @@ export default function PracaWSamolocieProduktywosc() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Czy można prowadzić wideokonferencję podczas lotu?
               </h3>
@@ -452,7 +452,7 @@ export default function PracaWSamolocieProduktywosc() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Jakie pliki powinienem pobrać offline przed lotem?
               </h3>

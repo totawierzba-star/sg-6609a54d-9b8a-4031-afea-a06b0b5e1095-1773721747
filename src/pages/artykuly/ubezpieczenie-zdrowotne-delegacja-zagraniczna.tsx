@@ -415,7 +415,7 @@ export default function UbezpieczenieZdrowotneDelegacjaZagraniczna() {
           <h2 className="text-2xl font-bold text-slate-900 mb-6">Najczęstsze pytania</h2>
 
           <div className="space-y-5">
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Czy pracodawca musi zapewnić ubezpieczenie zdrowotne na delegację?
               </h3>
@@ -431,7 +431,7 @@ export default function UbezpieczenieZdrowotneDelegacjaZagraniczna() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Co to jest EKUZ i jak go wyrobić?
               </h3>
@@ -448,7 +448,7 @@ export default function UbezpieczenieZdrowotneDelegacjaZagraniczna() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Co zrobić, gdy zachoruję za granicą podczas delegacji?
               </h3>
@@ -465,7 +465,7 @@ export default function UbezpieczenieZdrowotneDelegacjaZagraniczna() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Czy koszty leczenia za granicą można wliczyć w koszty delegacji?
               </h3>

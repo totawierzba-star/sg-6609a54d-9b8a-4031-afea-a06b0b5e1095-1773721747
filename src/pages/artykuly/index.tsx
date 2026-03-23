@@ -5,6 +5,15 @@ import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, Plane, Award, Buildin
 export default function Artykuly() {
   const articles = [
     {
+      title: "Firmowa karta kredytowa w podróżach służbowych — limity, rozliczenie i podatki",
+      slug: "firmowa-karta-kredytowa-podroze-sluzbowe",
+      excerpt: "Typy kart firmowych (charge, credit, prepaid, lodge), limity per kategoria, blokady MCC, rozliczenie po delegacji krok po kroku, systemy expense management i skutki podatkowe prywatnego użycia karty.",
+      date: "2026-03-23",
+      readTime: "8 min",
+      category: "Finanse delegacji",
+      icon: CreditCard
+    },
+    {
       title: "Ubezpieczenie podróżne w delegacji — koszty podatkowe i odliczenia",
       slug: "ubezpieczenie-podrozne-koszty-odliczenia",
       excerpt: "Polisa grupowa vs indywidualna, zwolnienie z PIT dla pracownika (art. 21 ust. 1 pkt 11b), KUP firmy, VAT od składek ubezpieczeniowych i jak strukturyzować ubezpieczenie żeby było korzystne podatkowo.",

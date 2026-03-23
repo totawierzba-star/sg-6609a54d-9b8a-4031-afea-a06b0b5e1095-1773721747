@@ -350,7 +350,7 @@ export default function SenPodrozeSluzbowe() {
           <h2 className="text-2xl font-bold text-slate-900 mb-6">Najczęstsze pytania</h2>
 
           <div className="space-y-5">
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Ile snu naprawdę potrzebuję przed ważnym spotkaniem?
               </h3>
@@ -367,7 +367,7 @@ export default function SenPodrozeSluzbowe() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Czy tabletki nasenne są bezpieczne w podróży służbowej?
               </h3>
@@ -383,7 +383,7 @@ export default function SenPodrozeSluzbowe() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Czy pracodawca powinien zapewniać odpowiednie warunki noclegu?
               </h3>

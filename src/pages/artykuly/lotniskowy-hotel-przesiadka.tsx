@@ -421,7 +421,7 @@ export default function LotniskowyHotelPrzesiadka() {
           <h2 className="text-2xl font-bold text-slate-900 mb-6">Najczęstsze pytania</h2>
 
           <div className="space-y-5">
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Czy hotel przesiadkowy jest kosztem uzyskania przychodu?
               </h3>
@@ -435,7 +435,7 @@ export default function LotniskowyHotelPrzesiadka() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Co to jest day-use hotel i czy mogę go rozliczyć?
               </h3>
@@ -449,7 +449,7 @@ export default function LotniskowyHotelPrzesiadka() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Jak długa musi być przesiadka, żeby uzasadniać hotel?
               </h3>
@@ -464,7 +464,7 @@ export default function LotniskowyHotelPrzesiadka() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Czy mogę żądać zwrotu kosztów hotelu od linii lotniczej?
               </h3>

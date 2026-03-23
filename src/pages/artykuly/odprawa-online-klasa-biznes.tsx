@@ -346,7 +346,7 @@ export default function OdprawaOnlineKlasaBiznes() {
           <h2 className="text-2xl font-bold text-slate-900 mb-6">Najczęstsze pytania</h2>
 
           <div className="space-y-5">
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Czy w klasie biznes muszę robić odprawę online?
               </h3>
@@ -360,7 +360,7 @@ export default function OdprawaOnlineKlasaBiznes() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Co się dzieje z moim miejscem, jeśli nie zrobię odprawy online?
               </h3>
@@ -376,7 +376,7 @@ export default function OdprawaOnlineKlasaBiznes() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Czy mogę odprawić się online bez bagażu rejestrowanego?
               </h3>
@@ -390,7 +390,7 @@ export default function OdprawaOnlineKlasaBiznes() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Czy przy locie służbowym kupionym przez TMC mogę odprawić się online?
               </h3>

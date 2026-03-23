@@ -364,7 +364,7 @@ export default function BiletLotniczyKosztUzyskaniaPrzychodu() {
           <h2 className="text-2xl font-bold text-slate-900 mb-6">Najczęstsze pytania</h2>
 
           <div className="space-y-5">
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Czy bilet lotniczy można wliczyć w koszty przy jednoosobowej działalności?
               </h3>
@@ -379,7 +379,7 @@ export default function BiletLotniczyKosztUzyskaniaPrzychodu() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Czy bilet anulowany (nieodbyty lot) jest kosztem podatkowym?
               </h3>
@@ -396,7 +396,7 @@ export default function BiletLotniczyKosztUzyskaniaPrzychodu() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Jak długo przechowywać dokumentację biletów lotniczych?
               </h3>
@@ -411,7 +411,7 @@ export default function BiletLotniczyKosztUzyskaniaPrzychodu() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Czy bilet dla klienta (gdy firma zaprasza kontrahenta) jest kosztem?
               </h3>

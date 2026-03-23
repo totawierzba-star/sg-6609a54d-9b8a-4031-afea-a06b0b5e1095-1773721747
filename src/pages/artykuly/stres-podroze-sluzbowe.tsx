@@ -372,7 +372,7 @@ export default function StresPodrozeSluzbowe() {
           <h2 className="text-2xl font-bold text-slate-900 mb-6">Najczęstsze pytania</h2>
 
           <div className="space-y-5">
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Czy mogę odmówić delegacji ze względu na nadmierny stres?
               </h3>
@@ -389,7 +389,7 @@ export default function StresPodrozeSluzbowe() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Jak rozmawiać z przełożonym o zbyt intensywnym kalendarzu delegacji?
               </h3>
@@ -406,7 +406,7 @@ export default function StresPodrozeSluzbowe() {
               </div>
             </div>
 
-            <div itemScope itemProp="mainEntity" itemProp="mainEntity" itemType="https://schema.org/Question">
+            <div itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
               <h3 className="font-bold text-slate-900 mb-2" itemProp="name">
                 Czy stres z podróży służbowej może być wypadkiem przy pracy?
               </h3>
