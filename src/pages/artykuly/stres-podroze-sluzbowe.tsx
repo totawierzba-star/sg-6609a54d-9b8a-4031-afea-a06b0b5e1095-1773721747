@@ -9,16 +9,6 @@ export default function StresPodrozeSluzbowe() {
         title="Stres w podróży służbowej — jak go ograniczać i nie wypalić się na delegacjach? | bizneslot.info"
         description="Jak radzić sobie ze stresem podczas częstych podróży służbowych? Źródła stresu podróżniczego, techniki redukcji napięcia przed spotkaniami i obowiązki pracodawcy wobec pracownika podróżującego."
         canonicalUrl="https://bizneslot.info/artykuly/stres-podroze-sluzbowe"
-        ogType="article"
-        structuredData={{
-          "@context": "https://schema.org",
-          "@type": "Article",
-          headline: "Stres w podróży służbowej — jak go ograniczać i nie wypalić się na delegacjach?",
-          description: "Źródła stresu podróżniczego, techniki redukcji napięcia przed spotkaniami i sygnały ostrzegawcze wypalenia zawodowego przy intensywnym kalendarzu delegacji.",
-          datePublished: "2026-03-22",
-          author: { "@type": "Organization", name: "bizneslot.info" },
-          publisher: { "@type": "Organization", name: "bizneslot.info" }
-        }}
       />
 
       {/* Hero */}

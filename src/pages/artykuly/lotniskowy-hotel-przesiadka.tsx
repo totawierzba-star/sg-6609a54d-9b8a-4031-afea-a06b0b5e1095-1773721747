@@ -9,16 +9,6 @@ export default function LotniskowyHotelPrzesiadka() {
         title="Lotniskowy hotel na przesiadkę — kiedy warto rezerwować? | bizneslot.info"
         description="Kiedy przesiadka wymaga noclegu w hotelu lotniskowym? Kalkulacja progu opłacalności, porównanie opcji — hotel airside vs landside, capsule hotel — i jak rozliczyć koszt w delegacji."
         canonicalUrl="https://bizneslot.info/artykuly/lotniskowy-hotel-przesiadka"
-        ogType="article"
-        structuredData={{
-          "@context": "https://schema.org",
-          "@type": "Article",
-          headline: "Lotniskowy hotel na przesiadkę — kiedy warto rezerwować?",
-          description: "Kiedy przesiadka wymaga noclegu w hotelu lotniskowym? Kalkulacja progu opłacalności, porównanie opcji i rozliczenie w delegacji.",
-          datePublished: "2026-03-22",
-          author: { "@type": "Organization", name: "bizneslot.info" },
-          publisher: { "@type": "Organization", name: "bizneslot.info" }
-        }}
       />
 
       {/* Hero */}

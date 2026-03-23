@@ -9,16 +9,6 @@ export default function OdprawaOnlineKlasaBiznes() {
         title="Odprawa online dla klas biznesowych — wszystko co musisz wiedzieć | bizneslot.info"
         description="Kiedy i jak zrobić odprawę online w klasie biznes? Okno check-in, wybór miejsca, boarding pass w telefonie, priorytety dla różnych linii lotniczych i co zrobić gdy system nie działa."
         canonicalUrl="https://bizneslot.info/artykuly/odprawa-online-klasa-biznes"
-        ogType="article"
-        structuredData={{
-          "@context": "https://schema.org",
-          "@type": "Article",
-          headline: "Odprawa online dla klas biznesowych — wszystko co musisz wiedzieć",
-          description: "Przewodnik po odprawie online w klasie biznes: okna check-in, wybór miejsc, boarding pass i wyjątki dla poszczególnych linii lotniczych.",
-          datePublished: "2026-03-22",
-          author: { "@type": "Organization", name: "bizneslot.info" },
-          publisher: { "@type": "Organization", name: "bizneslot.info" }
-        }}
       />
 
       {/* Hero */}

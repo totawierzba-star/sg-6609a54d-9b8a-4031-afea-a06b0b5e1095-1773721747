@@ -9,16 +9,6 @@ export default function SenPodrozeSluzbowe() {
         title="Sen w podróży służbowej — jak regenerować się między delegacjami? | bizneslot.info"
         description="Jak zadbać o jakość snu podczas delegacji? Sypialnia hotelowa, protokół zasypiania w nowej strefie czasowej, kiedy drzemka pomaga a kiedy szkodzi i ile snu naprawdę potrzeba przed ważnym spotkaniem."
         canonicalUrl="https://bizneslot.info/artykuly/sen-podroze-sluzbowe"
-        ogType="article"
-        structuredData={{
-          "@context": "https://schema.org",
-          "@type": "Article",
-          headline: "Sen w podróży służbowej — jak regenerować się między delegacjami?",
-          description: "Praktyczny przewodnik po śnie w podróży służbowej: hotele, jet lag, drzemki strategiczne i jak zaplanować regenerację przy intensywnym kalendarzu delegacji.",
-          datePublished: "2026-03-22",
-          author: { "@type": "Organization", name: "bizneslot.info" },
-          publisher: { "@type": "Organization", name: "bizneslot.info" }
-        }}
       />
 
       {/* Hero */}

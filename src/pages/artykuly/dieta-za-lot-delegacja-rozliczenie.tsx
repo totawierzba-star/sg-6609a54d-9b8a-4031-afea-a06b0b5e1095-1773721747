@@ -9,16 +9,6 @@ export default function DietaZaLotDelegacjaRozliczenie() {
         title="Dieta za lot służbowy — ile wynosi i jak rozliczyć? Krajowa i zagraniczna | bizneslot.info"
         description="Ile wynosi dieta za podróż służbową samolotem? Stawki diet krajowych i zagranicznych 2024/2025, zasady obliczania czasu delegacji, odliczenia za posiłki i jak poprawnie rozliczyć dietę."
         canonicalUrl="https://bizneslot.info/artykuly/dieta-za-lot-delegacja-rozliczenie"
-        ogType="article"
-        structuredData={{
-          "@context": "https://schema.org",
-          "@type": "Article",
-          headline: "Dieta za lot służbowy — ile wynosi i jak rozliczyć?",
-          description: "Stawki diet krajowych i zagranicznych, zasady obliczania czasu delegacji lotniczej, odliczenia za posiłki w samolocie i wzór rozliczenia delegacji.",
-          datePublished: "2026-03-22",
-          author: { "@type": "Organization", name: "bizneslot.info" },
-          publisher: { "@type": "Organization", name: "bizneslot.info" }
-        }}
       />
 
       {/* Hero */}

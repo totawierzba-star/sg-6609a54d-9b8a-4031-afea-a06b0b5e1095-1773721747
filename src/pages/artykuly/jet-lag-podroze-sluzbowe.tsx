@@ -9,16 +9,6 @@ export default function JetLagPodrozeSluzbowe() {
         title="Jet lag w podróży służbowej — jak minimalizować skutki i być gotowym na spotkanie? | bizneslot.info"
         description="Praktyczny przewodnik po jet lagu dla podróżnika służbowego: protokół przed lotem, strategie w samolocie, regeneracja w hotelu i kiedy warto przylecieć dzień wcześniej."
         canonicalUrl="https://bizneslot.info/artykuly/jet-lag-podroze-sluzbowe"
-        ogType="article"
-        structuredData={{
-          "@context": "https://schema.org",
-          "@type": "Article",
-          headline: "Jet lag w podróży służbowej — jak minimalizować skutki i być gotowym na spotkanie?",
-          description: "Jak radzić sobie z jet lagiem w podróżach służbowych? Protokół przed lotem, strategie w samolocie i regeneracja przy piętnastu godzinach różnicy czasu.",
-          datePublished: "2026-03-22",
-          author: { "@type": "Organization", name: "bizneslot.info" },
-          publisher: { "@type": "Organization", name: "bizneslot.info" }
-        }}
       />
 
       {/* Hero */}

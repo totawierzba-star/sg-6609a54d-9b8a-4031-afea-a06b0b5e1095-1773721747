@@ -9,16 +9,6 @@ export default function AplikacjeLotniskowePodrozeSluzbowe() {
         title="Aplikacje lotniskowe — które naprawdę pomagają w podróży biznesowej? | bizneslot.info"
         description="Przegląd aplikacji lotniskowych przydatnych w podróży służbowej: FlightAware, LoungeBuddy, TripIt, airline apps i inne. Które zainstalować przed pierwszym lotem?"
         canonicalUrl="https://bizneslot.info/artykuly/aplikacje-lotniskowe-podroze-sluzbowe"
-        ogType="article"
-        structuredData={{
-          "@context": "https://schema.org",
-          "@type": "Article",
-          headline: "Aplikacje lotniskowe — które naprawdę pomagają w podróży biznesowej?",
-          description: "Przegląd aplikacji lotniskowych przydatnych w podróży służbowej: śledzenie lotów, dostęp do lounge, zarządzanie itinerarium i bezpieczne WiFi.",
-          datePublished: "2026-03-22",
-          author: { "@type": "Organization", name: "bizneslot.info" },
-          publisher: { "@type": "Organization", name: "bizneslot.info" }
-        }}
       />
 
       {/* Hero */}

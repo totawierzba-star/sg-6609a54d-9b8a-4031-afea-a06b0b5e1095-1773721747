@@ -9,16 +9,6 @@ export default function UbezpieczenieZdrowotneDelegacjaZagraniczna() {
         title="Ubezpieczenie zdrowotne w delegacji zagranicznej — co musi zapewnić pracodawca? | bizneslot.info"
         description="EKUZ, ubezpieczenie firmowe, karta kredytowa z ubezpieczeniem — co faktycznie pokrywa leczenie za granicą podczas podróży służbowej? Obowiązki pracodawcy i luki w ochronie, które trzeba znać."
         canonicalUrl="https://bizneslot.info/artykuly/ubezpieczenie-zdrowotne-delegacja-zagraniczna"
-        ogType="article"
-        structuredData={{
-          "@context": "https://schema.org",
-          "@type": "Article",
-          headline: "Ubezpieczenie zdrowotne w delegacji zagranicznej — co musi zapewnić pracodawca?",
-          description: "Przewodnik po ubezpieczeniu zdrowotnym w delegacji: EKUZ, polisa firmowa, ubezpieczenie na karcie kredytowej — zakresy, luki i obowiązki pracodawcy.",
-          datePublished: "2026-03-22",
-          author: { "@type": "Organization", name: "bizneslot.info" },
-          publisher: { "@type": "Organization", name: "bizneslot.info" }
-        }}
       />
 
       {/* Hero */}

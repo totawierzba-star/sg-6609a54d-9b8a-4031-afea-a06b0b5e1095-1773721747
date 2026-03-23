@@ -9,16 +9,6 @@ export default function FirmowaKartaKredytowaPodrozeSluzbowe() {
         title="Firmowa karta kredytowa w podróży służbowej — jak działa i jak kontrolować wydatki? | bizneslot.info"
         description="Karta firmowa w delegacji: rodzaje kart (charge, credit, prepaid), limity, kontrola wydatków, rozliczenie z działem finansowym, VAT i konsekwencje użycia prywatnego przez pracownika."
         canonicalUrl="https://bizneslot.info/artykuly/firmowa-karta-kredytowa-podroze-sluzbowe"
-        ogType="article"
-        structuredData={{
-          "@context": "https://schema.org",
-          "@type": "Article",
-          headline: "Firmowa karta kredytowa w podróży służbowej — jak działa i jak kontrolować wydatki?",
-          description: "Przewodnik po kartach firmowych w delegacjach: typy kart, limity, kontrola wydatków, rozliczenie i konsekwencje nadużyć.",
-          datePublished: "2026-03-22",
-          author: { "@type": "Organization", name: "bizneslot.info" },
-          publisher: { "@type": "Organization", name: "bizneslot.info" }
-        }}
       />
 
       {/* Hero */}

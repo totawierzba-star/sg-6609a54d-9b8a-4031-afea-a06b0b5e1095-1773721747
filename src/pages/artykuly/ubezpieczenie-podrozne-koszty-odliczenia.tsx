@@ -9,16 +9,6 @@ export default function UbezpieczeniePodrozneKosztyOdliczenia() {
         title="Ubezpieczenie podróżne w delegacji — koszty podatkowe i odliczenia | bizneslot.info"
         description="Czy ubezpieczenie podróżne pracownika jest kosztem firmy? Polisa grupowa vs indywidualna, PIT pracownika od ubezpieczenia opłaconego przez pracodawcę, KUP i VAT od polis podróżnych."
         canonicalUrl="https://bizneslot.info/artykuly/ubezpieczenie-podrozne-koszty-odliczenia"
-        ogType="article"
-        structuredData={{
-          "@context": "https://schema.org",
-          "@type": "Article",
-          headline: "Ubezpieczenie podróżne w delegacji — koszty podatkowe i odliczenia",
-          description: "Podatkowe aspekty ubezpieczenia podróżnego przy delegacjach: KUP, PIT pracownika, polisa grupowa vs indywidualna i co z VAT od składek ubezpieczeniowych.",
-          datePublished: "2026-03-22",
-          author: { "@type": "Organization", name: "bizneslot.info" },
-          publisher: { "@type": "Organization", name: "bizneslot.info" }
-        }}
       />
 
       {/* Hero */}

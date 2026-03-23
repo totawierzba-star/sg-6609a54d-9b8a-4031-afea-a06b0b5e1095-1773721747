@@ -9,16 +9,6 @@ export default function BiletLotniczyKosztUzyskaniaPrzychodu() {
         title="Bilet lotniczy jako koszt uzyskania przychodu — kiedy można odliczyć? | bizneslot.info"
         description="Czy bilet lotniczy to koszt podatkowy firmy? Warunki zaliczenia biletu do KUP, faktura na firmę, klasa biznes a fiskus, VAT od biletów lotniczych i co z biletem kupionym przez pracownika."
         canonicalUrl="https://bizneslot.info/artykuly/bilet-lotniczy-koszt-uzyskania-przychodu"
-        ogType="article"
-        structuredData={{
-          "@context": "https://schema.org",
-          "@type": "Article",
-          headline: "Bilet lotniczy jako koszt uzyskania przychodu — kiedy można odliczyć?",
-          description: "Warunki zaliczenia biletu lotniczego do kosztów podatkowych firmy: faktura na firmę, związek z przychodem, klasa biznes, VAT i zwrot pracownikowi.",
-          datePublished: "2026-03-22",
-          author: { "@type": "Organization", name: "bizneslot.info" },
-          publisher: { "@type": "Organization", name: "bizneslot.info" }
-        }}
       />
 
       {/* Hero */}

@@ -9,16 +9,6 @@ export default function DietaPodrozeSluzbowe() {
         title="Dieta w podróży służbowej — jak jeść zdrowo w trasie i nie stracić energii? | bizneslot.info"
         description="Jak utrzymać zdrową dietę podczas delegacji? Jedzenie w samolocie, na lotniskach i w hotelach, nawodnienie, unikanie energy crashu przed spotkaniami i specjalne posiłki w klasie biznes."
         canonicalUrl="https://bizneslot.info/artykuly/dieta-podroze-sluzbowe"
-        ogType="article"
-        structuredData={{
-          "@context": "https://schema.org",
-          "@type": "Article",
-          headline: "Dieta w podróży służbowej — jak jeść zdrowo w trasie i nie stracić energii?",
-          description: "Praktyczny przewodnik po diecie podczas delegacji: co jeść w samolocie, jak unikać energy crashu przed spotkaniami i jak zamawiać specjalne posiłki w klasie biznes.",
-          datePublished: "2026-03-22",
-          author: { "@type": "Organization", name: "bizneslot.info" },
-          publisher: { "@type": "Organization", name: "bizneslot.info" }
-        }}
       />
 
       {/* Hero */}

@@ -9,16 +9,6 @@ export default function ZakrzepicaDvtPodrozeSluzbowe() {
         title="Zakrzepica (DVT) w podróży służbowej — profilaktyka i obowiązki pracodawcy | bizneslot.info"
         description="Jak zapobiegać zakrzepicy żył głębokich (DVT) podczas długich lotów służbowych? Czynniki ryzyka, profilaktyka w samolocie, pończochy uciskowe i obowiązki pracodawcy wobec pracownika."
         canonicalUrl="https://bizneslot.info/artykuly/zakrzepica-dvt-podroze-sluzbowe"
-        ogType="article"
-        structuredData={{
-          "@context": "https://schema.org",
-          "@type": "Article",
-          headline: "Zakrzepica (DVT) w podróży służbowej — profilaktyka i obowiązki pracodawcy",
-          description: "Profilaktyka DVT podczas długich lotów służbowych: czynniki ryzyka, ćwiczenia w kabinie, pończochy uciskowe i kiedy skonsultować się z lekarzem przed lotem.",
-          datePublished: "2026-03-22",
-          author: { "@type": "Organization", name: "bizneslot.info" },
-          publisher: { "@type": "Organization", name: "bizneslot.info" }
-        }}
       />
 
       {/* Hero */}

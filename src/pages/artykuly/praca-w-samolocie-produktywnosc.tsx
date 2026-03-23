@@ -9,16 +9,6 @@ export default function PracaWSamolocieProduktywosc() {
         title="Praca w samolocie — jak być produktywnym i chronić dane firmowe? | bizneslot.info"
         description="Jak efektywnie pracować podczas lotu służbowego? WiFi w samolocie, ochrona danych, które zadania robić offline, ergonomia w klasie biznes i ekonomicznej oraz planowanie okien pracy."
         canonicalUrl="https://bizneslot.info/artykuly/praca-w-samolocie-produktywnosc"
-        ogType="article"
-        structuredData={{
-          "@context": "https://schema.org",
-          "@type": "Article",
-          headline: "Praca w samolocie — jak być produktywnym i chronić dane firmowe?",
-          description: "Praktyczny przewodnik po pracy w samolocie: WiFi, bezpieczeństwo danych, zadania offline i ergonomia w klasie biznes oraz ekonomicznej.",
-          datePublished: "2026-03-22",
-          author: { "@type": "Organization", name: "bizneslot.info" },
-          publisher: { "@type": "Organization", name: "bizneslot.info" }
-        }}
       />
 
       {/* Hero */}
