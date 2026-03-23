@@ -5,6 +5,33 @@ import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, Plane, Award, Buildin
 export default function Artykuly() {
   const articles = [
     {
+      title: "Jak długo linia lotnicza ma na odpowiedź na reklamację?",
+      slug: "jak-dlugo-linia-lotnicza-ma-na-odpowiedz-na-reklamacje",
+      excerpt: "Linia ma 30 dni na odpowiedź (polskie Prawo lotnicze). Co zrobić gdy termin mija — skarga do ULC, ADR i sąd krok po kroku. Terminy przedawnienia roszczeń EC 261 w Polsce i UE.",
+      date: "2026-03-23",
+      readTime: "4 min",
+      category: "Prawa pasażera",
+      icon: Scale
+    },
+    {
+      title: "Co to jest EC 261/2004? Rozporządzenie o prawach pasażera — wyjaśnienie",
+      slug: "co-to-jest-ec261-2004-rozporzadzenie",
+      excerpt: "EC 261/2004 w 5 zdaniach: kto jest chroniony, kiedy obowiązuje (loty z UE i przewoźnicy UE), kwoty 250/400/600 EUR i pełny zakres — opóźnienie, odwołanie, overbooking, downgrade.",
+      date: "2026-03-23",
+      readTime: "4 min",
+      category: "Prawa pasażera",
+      icon: Scale
+    },
+    {
+      title: "Kiedy lot jest uznawany za odwołany według prawa UE?",
+      slug: "kiedy-lot-jest-uznawany-za-odwolany",
+      excerpt: "Definicja prawna odwołania lotu w EC 261/2004, różnica między odwołaniem a opóźnieniem, reguła 14/7 dni i kiedy linia unika odszkodowania. Wyrok TSUE Sturgeon — opóźnienie jako odwołanie.",
+      date: "2026-03-23",
+      readTime: "4 min",
+      category: "Prawa pasażera",
+      icon: Scale
+    },
+    {
       title: "Londyn na delegację — jak dolecieć z Polski? Lotniska i przewoźnicy",
       slug: "londyn-na-delegacje-jak-doleciec-z-polski",
       excerpt: "LHR, LCY, LGW, STN czy LTN? Które lotnisko londyńskie wybrać zależnie od dzielnicy spotkania. Loty z Warszawy, Krakowa, Wrocławia i Gdańska, Brexit a dokumenty i EC 261 po wyjściu UK z UE.",
@@ -62,6 +89,15 @@ export default function Artykuly() {
       title: "Podatek od świadczeń podróżnych — diety, noclegi, ryczałty a PIT",
       slug: "podatek-swiadczenia-podrozne",
       excerpt: "Które świadczenia podróżne są wolne od PIT? Limity zwolnienia dla diet krajowych i zagranicznych, ryczałt noclegowy, bilet i hotel opłacony przez pracodawcę — kiedy powstaje przychód pracownika.",
+      date: "2026-03-23",
+      readTime: "8 min",
+      category: "Finanse delegacji",
+      icon: DollarSign
+    },
+    {
+      title: "Zwrot kosztów podróży służbowej pracownikowi — procedura i limity",
+      slug: "zwrot-kosztow-delegacji",
+      excerpt: "6-krokowa procedura rozliczenia delegacji, wymagane dokumenty, stawki diet 2025/2026, nadpłata i niedopłata zaliczki — kompletny przewodnik dla pracowników i działów HR.",
       date: "2026-03-23",
       readTime: "8 min",
       category: "Finanse delegacji",
