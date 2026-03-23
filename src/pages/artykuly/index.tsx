@@ -5,6 +5,15 @@ import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, Plane, Award, Buildin
 export default function Artykuly() {
   const articles = [
     {
+      title: "Lufthansa vs LOT — którą linię wybrać na delegację służbową?",
+      slug: "lufthansa-vs-lot-delegacja",
+      excerpt: "Szczegółowe porównanie: klasa biznes, lounge, punktualność, ceny biletów, trasy z Polski i programy korporacyjne. Matryca decyzyjna — kto wygrywa w jakim scenariuszu delegacji.",
+      date: "2026-03-23",
+      readTime: "8 min",
+      category: "Recenzje linii lotniczych",
+      icon: Plane
+    },
+    {
       title: "LOT Polish Airlines klasa biznes — recenzja dla podróżujących służbowo",
       slug: "lot-polish-airlines-recenzja-klasa-biznes",
       excerpt: "B787 Dreamliner fully flat vs europejski Embraer — co faktycznie dostaniesz w klasie biznes LOT. Lounge na Chopinie, Miles & More, LOT for Business i kiedy LOT wygrywa z Lufthansą.",
