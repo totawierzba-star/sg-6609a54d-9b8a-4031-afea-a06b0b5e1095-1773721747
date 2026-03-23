@@ -236,7 +236,7 @@ export default function LoungeBiznesowyOkecie() {
                 <CheckCircle2 className="w-4 h-4 text-blue-600 mt-0.5 shrink-0" />
                 <div>
                   <p className="font-semibold text-gray-900 text-sm">{item.karta}</p>
-                  <p className="text-gray-500 text-xs">{item.uwagi}</p>
+                  <p className="text-gray-500 text-xs">{item.uwaga}</p>
                 </div>
               </div>
             ))}
