@@ -5,6 +5,15 @@ import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, Plane, Award, Buildin
 export default function Artykuly() {
   const articles = [
     {
+      title: "Emirates vs Lufthansa — klasa biznes na długich trasach służbowych",
+      slug: "emirates-vs-lufthansa-klasa-biznes",
+      excerpt: "Zamknięte drzwiczki Emirates A380 i mini-bar kontra Lufthansa Allegris na A350 — co wybrać na trasie z Polski do Azji, Bliskiego Wschodu lub USA? Porównanie EC 261, programów lojalnościowych i polityki corporate.",
+      date: "2026-03-23",
+      readTime: "8 min",
+      category: "Recenzje linii lotniczych",
+      icon: Plane
+    },
+    {
       title: "Lufthansa vs LOT — którą linię wybrać na delegację służbową?",
       slug: "lufthansa-vs-lot-delegacja",
       excerpt: "Szczegółowe porównanie: klasa biznes, lounge, punktualność, ceny biletów, trasy z Polski i programy korporacyjne. Matryca decyzyjna — kto wygrywa w jakim scenariuszu delegacji.",
