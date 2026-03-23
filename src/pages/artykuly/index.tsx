@@ -5,6 +5,15 @@ import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, Plane, Award, Buildin
 export default function Artykuly() {
   const articles = [
     {
+      title: "Trasy z Warszawy (WAW) — najważniejsze połączenia służbowe",
+      slug: "trasy-z-warszawy-waw-polaczenia-sluzbowe",
+      excerpt: "Bezpośrednie loty z Warszawy Chopina do Londynu, Frankfurtu, Nowego Jorku, Dubaju i Azji — czasy podróży, przewoźnicy i rekomendacje dla pracowników latających służbowo.",
+      date: "2026-03-23",
+      readTime: "7 min",
+      category: "Recenzje linii lotniczych",
+      icon: Plane
+    },
+    {
       title: "Tanie linie lotnicze na delegację — Ryanair i Wizz Air w podróży służbowej",
       slug: "tanie-linie-delegacja-ryanair-wizzair",
       excerpt: "Kiedy Ryanair lub Wizz Air opłacają się na delegację? Kalkulacja prawdziwego kosztu, punktualność LCC, EC 261 dla tanich linii, faktura VAT i co sprawdzić w firmowej travel policy.",
