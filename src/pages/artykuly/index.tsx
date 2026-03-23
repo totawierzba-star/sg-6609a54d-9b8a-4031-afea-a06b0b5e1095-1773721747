@@ -5,6 +5,15 @@ import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, Plane, Award, Buildin
 export default function Artykuly() {
   const articles = [
     {
+      title: "LOT Polish Airlines klasa biznes — recenzja dla podróżujących służbowo",
+      slug: "lot-polish-airlines-recenzja-klasa-biznes",
+      excerpt: "B787 Dreamliner fully flat vs europejski Embraer — co faktycznie dostaniesz w klasie biznes LOT. Lounge na Chopinie, Miles & More, LOT for Business i kiedy LOT wygrywa z Lufthansą.",
+      date: "2026-03-23",
+      readTime: "9 min",
+      category: "Recenzje linii lotniczych",
+      icon: Plane
+    },
+    {
       title: "Podatek od świadczeń podróżnych — diety, noclegi, ryczałty a PIT",
       slug: "podatek-swiadczenia-podrozne",
       excerpt: "Które świadczenia podróżne są wolne od PIT? Limity zwolnienia dla diet krajowych i zagranicznych, ryczałt noclegowy, bilet i hotel opłacony przez pracodawcę — kiedy powstaje przychód pracownika.",
