@@ -361,7 +361,7 @@ export default function JakObnizycKosztPodrozySluzbowych() {
             <div
               itemScope
               itemProp="mainEntity"
-              itemProp="mainEntity" itemType="https://schema.org/Question"
+              itemType="https://schema.org/Question"
               className="border border-gray-200 rounded-xl p-5"
             >
               <h3 itemProp="name" className="font-semibold text-gray-900 mb-2">
@@ -380,7 +380,7 @@ export default function JakObnizycKosztPodrozySluzbowych() {
             <div
               itemScope
               itemProp="mainEntity"
-              itemProp="mainEntity" itemType="https://schema.org/Question"
+              itemType="https://schema.org/Question"
               className="border border-gray-200 rounded-xl p-5"
             >
               <h3 itemProp="name" className="font-semibold text-gray-900 mb-2">
