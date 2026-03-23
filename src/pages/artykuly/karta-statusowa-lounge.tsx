@@ -470,7 +470,7 @@ export default function KartaStatusowaLounge() {
             <h2 className="text-3xl font-bold text-slate-900 mb-8">FAQ – Najczęściej zadawane pytania</h2>
 
             <div className="space-y-4">
-              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemType="https://schema.org/Question" itemProp="mainEntity">
+              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question" itemProp="mainEntity">
                 <h3 className="font-semibold text-lg text-slate-900 mb-3" itemProp="name">
                   Ile trzeba latać, żeby dostać kartę Gold (Senator)?
                 </h3>
@@ -482,7 +482,7 @@ export default function KartaStatusowaLounge() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemType="https://schema.org/Question" itemProp="mainEntity">
+              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question" itemProp="mainEntity">
                 <h3 className="font-semibold text-lg text-slate-900 mb-3" itemProp="name">
                   Czy wstęp do lounge jest naprawdę wart swojej wartości?
                 </h3>
@@ -495,7 +495,7 @@ export default function KartaStatusowaLounge() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemType="https://schema.org/Question" itemProp="mainEntity">
+              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question" itemProp="mainEntity">
                 <h3 className="font-semibold text-lg text-slate-900 mb-3" itemProp="name">
                   Co to jest "status match" i jak to działa?
                 </h3>
@@ -508,7 +508,7 @@ export default function KartaStatusowaLounge() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemType="https://schema.org/Question" itemProp="mainEntity">
+              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question" itemProp="mainEntity">
                 <h3 className="font-semibold text-lg text-slate-900 mb-3" itemProp="name">
                   Czy mogę używać karty statusowej na lotach innych linii?
                 </h3>
@@ -520,7 +520,7 @@ export default function KartaStatusowaLounge() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemType="https://schema.org/Question" itemProp="mainEntity">
+              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question" itemProp="mainEntity">
                 <h3 className="font-semibold text-lg text-slate-900 mb-3" itemProp="name">
                   Co się dzieje ze statusem, jeśli zmienię pracę?
                 </h3>
@@ -532,7 +532,7 @@ export default function KartaStatusowaLounge() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemType="https://schema.org/Question" itemProp="mainEntity">
+              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question" itemProp="mainEntity">
                 <h3 className="font-semibold text-lg text-slate-900 mb-3" itemProp="name">
                   Czy firma może kupić mi kartę statusową?
                 </h3>
@@ -545,7 +545,7 @@ export default function KartaStatusowaLounge() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemType="https://schema.org/Question" itemProp="mainEntity">
+              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question" itemProp="mainEntity">
                 <h3 className="font-semibold text-lg text-slate-900 mb-3" itemProp="name">
                   Jakie są najlepsze lounge na świecie warte wizyty?
                 </h3>

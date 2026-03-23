@@ -229,7 +229,7 @@ export default function OverbookingArticle() {
                   a: "Wniosek składa pracownik na swoje dane. Odszkodowanie przysługuje pasażerowi, niezależnie od tego, kto finansował bilet.",
                 },
               ].map(({ q, a }, i) => (
-                <div key={i} className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm" itemScope itemType="https://schema.org/Question">
+                <div key={i} className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                   <h3 className="font-semibold text-gray-900 mb-3" itemProp="name">{q}</h3>
                   <div itemScope itemType="https://schema.org/Answer">
                     <p className="text-gray-600 leading-relaxed" itemProp="text">{a}</p>

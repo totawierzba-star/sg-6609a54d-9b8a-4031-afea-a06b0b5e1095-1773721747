@@ -346,7 +346,7 @@ export default function DelayedFlightArticle() {
                 { q: "Czy pracodawca może odmówić mi prawa do odszkodowania za opóźniony lot służbowy?", a: "Nie, pracodawca nie może odmówić prawa do odszkodowania za opóźniony lot służbowy. Prawo do odszkodowania przysługuje pracownikowi-pasażerowi, a nie firmie, i jest chronione przez prawo UE." },
                 { q: "Jak długo mogę składać wniosek o odszkodowanie za opóźniony lot służbowy?", a: "Wniosek o odszkodowanie za opóźniony lot służbowy możesz składać przez 3 lata od daty lotu. W Polsce termin przedawnienia roszczeń wynosi 3 lata od dnia, w którym roszczenie stało się wymagalne." },
               ].map(({ q, a }, i) => (
-                <div key={i} className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm" itemScope itemType="https://schema.org/Question">
+                <div key={i} className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                   <h3 className="font-semibold text-gray-900 mb-3" itemProp="name">{q}</h3>
                   <div itemScope itemType="https://schema.org/Answer">
                     <p className="text-gray-600 leading-relaxed" itemProp="text">{a}</p>

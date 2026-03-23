@@ -368,7 +368,7 @@ export default function LostBaggageArticle() {
                   a: "Zagubiony bagaż należy zgłosić niezwłocznie po przylocie, ale nie później niż 7 dni od daty lotu. Reklamację odszkodowania można złożyć w ciągu 21 dni od daty otrzymania bagażu lub ostatecznego potwierdzenia zaginięcia.",
                 },
               ].map(({ q, a }, i) => (
-                <div key={i} className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm" itemScope itemType="https://schema.org/Question">
+                <div key={i} className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                   <h3 className="font-semibold text-gray-900 mb-3" itemProp="name">{q}</h3>
                   <div itemScope itemType="https://schema.org/Answer">
                     <p className="text-gray-600 leading-relaxed" itemProp="text">{a}</p>

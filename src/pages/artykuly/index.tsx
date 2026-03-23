@@ -1,9 +1,144 @@
 import { SEO } from "@/components/SEO";
 import Link from "next/link";
-import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, Plane, Award, Building2, CreditCard } from "lucide-react";
+import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, Plane, Award, Building2, CreditCard, DollarSign } from "lucide-react";
 
 export default function Artykuly() {
   const articles = [
+    {
+      title: "Ubezpieczenie podróżne w delegacji — koszty podatkowe i odliczenia",
+      slug: "ubezpieczenie-podrozne-koszty-odliczenia",
+      excerpt: "Polisa grupowa vs indywidualna, zwolnienie z PIT dla pracownika (art. 21 ust. 1 pkt 11b), KUP firmy, VAT od składek ubezpieczeniowych i jak strukturyzować ubezpieczenie żeby było korzystne podatkowo.",
+      date: "2026-03-22",
+      readTime: "7 min",
+      category: "Finanse delegacji",
+      icon: DollarSign
+    },
+    {
+      title: "Bilet lotniczy jako koszt uzyskania przychodu — kiedy można odliczyć?",
+      slug: "bilet-lotniczy-koszt-uzyskania-przychodu",
+      excerpt: "Trzy warunki KUP dla biletu lotniczego, klasa biznes a fiskus (interpretacje DKIS), VAT od biletów, bleisure a rozliczenie podatkowe i jak udokumentować bilet kupiony przez pracownika.",
+      date: "2026-03-22",
+      readTime: "7 min",
+      category: "Finanse delegacji",
+      icon: DollarSign
+    },
+    {
+      title: "Dieta za lot służbowy — ile wynosi i jak rozliczyć?",
+      slug: "dieta-za-lot-delegacja-rozliczenie",
+      excerpt: "Stawki diet krajowych (45 zł) i zagranicznych 2025, zasady obliczania czasu delegacji lotniczej, kiedy posiłek w samolocie obniża dietę i krok po kroku jak wypełnić rozliczenie kosztów podróży.",
+      date: "2026-03-22",
+      readTime: "8 min",
+      category: "Finanse delegacji",
+      icon: DollarSign
+    },
+    {
+      title: "Ubezpieczenie zdrowotne w delegacji zagranicznej — co musi zapewnić pracodawca?",
+      slug: "ubezpieczenie-zdrowotne-delegacja-zagraniczna",
+      excerpt: "EKUZ, polisa firmowa, ubezpieczenie na karcie kredytowej — co faktycznie pokrywa leczenie za granicą? Sumy minimalne, luki w ochronie, obowiązki pracodawcy i checklist przed każdą delegacją.",
+      date: "2026-03-22",
+      readTime: "8 min",
+      category: "Zdrowie w podróży",
+      icon: Plane
+    },
+    {
+      title: "Stres w podróży służbowej — jak go ograniczać i nie wypalić się na delegacjach?",
+      slug: "stres-podroze-sluzbowe",
+      excerpt: "Źródła stresu logistycznego i osobistego w delegacji, techniki redukcji napięcia (oddech 4-7-8, zimna woda, lista kontroli), wypalenie podróżnicze — sygnały i jak rozmawiać z pracodawcą.",
+      date: "2026-03-22",
+      readTime: "7 min",
+      category: "Zdrowie w podróży",
+      icon: Plane
+    },
+    {
+      title: "Sen w podróży służbowej — jak regenerować się między delegacjami?",
+      slug: "sen-podroze-sluzbowe",
+      excerpt: "Protokół snu w pokoju hotelowym, drzemki strategiczne (nap energetyczny, coffee nap, pełny cykl 90 min) i jak wybrać pokój hotelowy z myślą o śnie. Dług senny po intensywnym cyklu delegacji.",
+      date: "2026-03-22",
+      readTime: "7 min",
+      category: "Zdrowie w podróży",
+      icon: Plane
+    },
+    {
+      title: "Dieta w podróży służbowej — jak jeść zdrowo w trasie i nie stracić energii?",
+      slug: "dieta-podroze-sluzbowe",
+      excerpt: "Co jeść przed negocjacjami, żeby uniknąć energy crashu. Specjalne posiłki w samolocie (kody SPML, VGML), nawodnienie w kabinie, kolacja z klientem bez rujnowania następnego dnia.",
+      date: "2026-03-22",
+      readTime: "7 min",
+      category: "Zdrowie w podróży",
+      icon: Plane
+    },
+    {
+      title: "Zakrzepica (DVT) w podróży służbowej — profilaktyka i obowiązki pracodawcy",
+      slug: "zakrzepica-dvt-podroze-sluzbowe",
+      excerpt: "Jak zapobiegać DVT przy długich lotach? Czynniki ryzyka, ćwiczenia w fotelu, pończochy uciskowe i co travel policy powinna mówić o BHP pracownika delegowanego. Objawy wymagające natychmiastowej pomocy.",
+      date: "2026-03-22",
+      readTime: "7 min",
+      category: "Zdrowie w podróży",
+      icon: Plane
+    },
+    {
+      title: "Praca w samolocie — jak być produktywnym i chronić dane firmowe?",
+      slug: "praca-w-samolocie-produktywnosc",
+      excerpt: "WiFi pokładowe — co działa, co nie. Bezpieczeństwo danych w kabinie: filtr prywatności, VPN, szyfrowanie dysku. Jak zaplanować 10h lotu, żeby być gotowym na spotkanie po wylądowaniu.",
+      date: "2026-03-22",
+      readTime: "8 min",
+      category: "Zdrowie w podróży",
+      icon: Plane
+    },
+    {
+      title: "Jet lag w podróży służbowej — jak minimalizować skutki i być gotowym na spotkanie?",
+      slug: "jet-lag-podroze-sluzbowe",
+      excerpt: "Protokół 3-dniowy przed lotem do Azji, strategie w samolocie i reset zegara po przylocie. Kiedy melatonina pomaga, czego unikać i co travel policy powinna mówić o buforze przed pierwszym spotkaniem.",
+      date: "2026-03-22",
+      readTime: "8 min",
+      category: "Zdrowie w podróży",
+      icon: Plane
+    },
+    {
+      title: "Odprawa online dla klas biznesowych — wszystko co musisz wiedzieć",
+      slug: "odprawa-online-klasa-biznes",
+      excerpt: "Kiedy i jak zrobić odprawę online w klasie biznes? Okna check-in dla LOT, Lufthansa, Emirates, wybór miejsca, boarding pass w Wallet i 5 powodów, dla których system może odmówić.",
+      date: "2026-03-22",
+      readTime: "7 min",
+      category: "Lotniska",
+      icon: Plane
+    },
+    {
+      title: "Aplikacje lotniskowe — które naprawdę pomagają w podróży biznesowej?",
+      slug: "aplikacje-lotniskowe-podroze-sluzbowe",
+      excerpt: "FlightAware, TripIt, LoungeBuddy, VPN — 5 aplikacji obowiązkowych dla podróżnika służbowego. Jak używać FlightAware do dokumentacji EC 261 i dlaczego VPN na lotnisku to nie opcja.",
+      date: "2026-03-22",
+      readTime: "8 min",
+      category: "Lotniska",
+      icon: Plane
+    },
+    {
+      title: "Lotniskowy hotel na przesiadkę — kiedy warto rezerwować?",
+      slug: "lotniskowy-hotel-przesiadka",
+      excerpt: "Kiedy przesiadka wymaga noclegu w hotelu lotniskowym? Matryca decyzyjna, porównanie opcji airside vs landside vs capsule hotel, kalkulacja progu opłacalności i rozliczenie w delegacji.",
+      date: "2026-03-22",
+      readTime: "7 min",
+      category: "Lotniska",
+      icon: Plane
+    },
+    {
+      title: "Opóźnienie lotu na lotnisku — jak pracować i złożyć roszczenie EC 261?",
+      slug: "opoznienie-na-lotnisku-jak-pracowac",
+      excerpt: "Protokół działania w pierwszych 15 minutach opóźnienia: dokumentacja, voucher, gdzie pracować, jak zabezpieczyć WiFi i jak złożyć roszczenie EC 261 jeszcze przed wejściem na pokład.",
+      date: "2026-03-22",
+      readTime: "7 min",
+      category: "Lotniska",
+      icon: Plane
+    },
+    {
+      title: "Czy warto przylecieć dzień wcześniej przed ważnym spotkaniem?",
+      slug: "przylot-dzien-wczesniej-przed-lotem-sluzbowym",
+      excerpt: "Matryca decyzyjna: kiedy nocleg dzień wcześniej chroni delegację, a kiedy to zbędny koszt. Kalkulacja ryzyka, jet lag przy trasach intercontinentalnych i zapis w travel policy.",
+      date: "2026-03-22",
+      readTime: "7 min",
+      category: "Lotniska",
+      icon: Plane
+    },
     {
       title: "Fast track na lotnisku — jak zaoszczędzić czas na odprawie?",
       slug: "fast-track-lotnisko-odprawa",

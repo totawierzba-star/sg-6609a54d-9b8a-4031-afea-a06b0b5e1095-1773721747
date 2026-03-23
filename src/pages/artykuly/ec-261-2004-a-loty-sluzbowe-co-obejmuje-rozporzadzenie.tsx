@@ -259,7 +259,7 @@ export default function EC2612004Article() {
             <h2 className="text-3xl font-bold text-slate-900 mb-8">Najczęstsze pytania</h2>
 
             <div className="space-y-4">
-              <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden" itemScope itemType="https://schema.org/Question" itemProp="mainEntity">
+              <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden" itemScope itemProp="mainEntity" itemType="https://schema.org/Question" itemProp="mainEntity">
                 <div className="p-6">
                   <h3 className="font-semibold text-lg text-slate-900 mb-3" itemProp="name">
                     Czy EC 261/2004 dotyczy lotów służbowych?
@@ -272,7 +272,7 @@ export default function EC2612004Article() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden" itemScope itemType="https://schema.org/Question" itemProp="mainEntity">
+              <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden" itemScope itemProp="mainEntity" itemType="https://schema.org/Question" itemProp="mainEntity">
                 <div className="p-6">
                   <h3 className="font-semibold text-lg text-slate-900 mb-3" itemProp="name">
                     Jakie loty służbowe obejmuje rozporządzenie 261/2004?
@@ -285,7 +285,7 @@ export default function EC2612004Article() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden" itemScope itemType="https://schema.org/Question" itemProp="mainEntity">
+              <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden" itemScope itemProp="mainEntity" itemType="https://schema.org/Question" itemProp="mainEntity">
                 <div className="p-6">
                   <h3 className="font-semibold text-lg text-slate-900 mb-3" itemProp="name">
                     Czy firma może odmówić wypłaty odszkodowania z EC 261/2004?
@@ -298,7 +298,7 @@ export default function EC2612004Article() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden" itemScope itemType="https://schema.org/Question" itemProp="mainEntity">
+              <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden" itemScope itemProp="mainEntity" itemType="https://schema.org/Question" itemProp="mainEntity">
                 <div className="p-6">
                   <h3 className="font-semibold text-lg text-slate-900 mb-3" itemProp="name">
                     Ile wynosi odszkodowanie z EC 261/2004 dla lotów służbowych?

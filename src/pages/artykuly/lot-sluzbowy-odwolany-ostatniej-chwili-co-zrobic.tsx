@@ -409,7 +409,7 @@ export default function CancelledFlightEmergencyArticle() {
                 { q: "Czy pracodawca musi pokryć koszty alternatywnego transportu?", a: "Tak, pracodawca musi pokryć koszty alternatywnego transportu, jeśli lot służbowy został odwołany. Koszty te mogą być częściowo odzyskane od linii lotniczej jako niezbędne wydatki." },
                 { q: "Jak poinformować klientów o odwołaniu lotu służbowego?", a: "Poinformuj klientów o odwołaniu lotu służbowego natychmiast przez email lub telefon. Prześlij aktualny plan dotarcia na miejsce spotkania i proponowane alternatywy (spotkanie online, przełożenie terminu)." },
               ].map(({ q, a }, i) => (
-                <div key={i} className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm" itemScope itemType="https://schema.org/Question">
+                <div key={i} className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                   <h3 className="font-semibold text-gray-900 mb-3" itemProp="name">{q}</h3>
                   <div itemScope itemType="https://schema.org/Answer">
                     <p className="text-gray-600 leading-relaxed" itemProp="text">{a}</p>

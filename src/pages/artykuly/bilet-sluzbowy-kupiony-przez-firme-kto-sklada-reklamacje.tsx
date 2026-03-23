@@ -442,7 +442,7 @@ export default function CorporateTicketComplaintArticle() {
                 { q: "Czy odszkodowanie za bilet służbowy jest opodatkowane?", a: "Odszkodowanie za bilet służbowy do 600 EUR jest zwolnione z podatku PIT, jeśli pochodzi z roszczeń pasażera. Jeśli jest traktowane jako zwrot kosztów firmowych, podlega innym zasadom podatkowym." },
                 { q: "Jak przebiega procedura reklamacyjna dla biletów służbowych?", a: "Procedura reklamacyjna dla biletów służbowych obejmuje złożenie wniosku do linii lotniczej przez pracownika, dołączenie dokumentacji, oczekiwanie na decyzję, a następnie rozliczenie odszkodowania między pracownikiem a pracodawcą." },
               ].map(({ q, a }, i) => (
-                <div key={i} className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm" itemScope itemType="https://schema.org/Question">
+                <div key={i} className="bg-white border border-gray-200 rounded-xl p-6 shadow-sm" itemScope itemProp="mainEntity" itemType="https://schema.org/Question">
                   <h3 className="font-semibold text-gray-900 mb-3" itemProp="name">{q}</h3>
                   <div itemScope itemType="https://schema.org/Answer">
                     <p className="text-gray-600 leading-relaxed" itemProp="text">{a}</p>

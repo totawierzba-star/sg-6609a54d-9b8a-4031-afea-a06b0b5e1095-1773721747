@@ -475,7 +475,7 @@ export default function IleWynosiOdszkodowanieOpoznionyLot() {
             <h2 className="text-3xl font-bold text-slate-900 mb-8">Najczęstsze pytania</h2>
 
             <div className="space-y-4">
-              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemType="https://schema.org/Question" itemProp="mainEntity">
+              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question" itemProp="mainEntity">
                 <h3 className="font-semibold text-lg text-slate-900 mb-3" itemProp="name">
                   Ile wynosi odszkodowanie za opóźniony lot?
                 </h3>
@@ -488,7 +488,7 @@ export default function IleWynosiOdszkodowanieOpoznionyLot() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemType="https://schema.org/Question" itemProp="mainEntity">
+              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question" itemProp="mainEntity">
                 <h3 className="font-semibold text-lg text-slate-900 mb-3" itemProp="name">
                   Od kiedy przysługuje odszkodowanie za opóźnienie lotu?
                 </h3>
@@ -500,7 +500,7 @@ export default function IleWynosiOdszkodowanieOpoznionyLot() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemType="https://schema.org/Question" itemProp="mainEntity">
+              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question" itemProp="mainEntity">
                 <h3 className="font-semibold text-lg text-slate-900 mb-3" itemProp="name">
                   Czy odszkodowanie za opóźniony lot dotyczy lotów służbowych?
                 </h3>
@@ -513,7 +513,7 @@ export default function IleWynosiOdszkodowanieOpoznionyLot() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemType="https://schema.org/Question" itemProp="mainEntity">
+              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question" itemProp="mainEntity">
                 <h3 className="font-semibold text-lg text-slate-900 mb-3" itemProp="name">
                   Kiedy linia lotnicza może odmówić wypłaty odszkodowania?
                 </h3>
@@ -527,7 +527,7 @@ export default function IleWynosiOdszkodowanieOpoznionyLot() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemType="https://schema.org/Question" itemProp="mainEntity">
+              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question" itemProp="mainEntity">
                 <h3 className="font-semibold text-lg text-slate-900 mb-3" itemProp="name">
                   Jak obliczyć dystans lotu do ustalenia odszkodowania?
                 </h3>
@@ -540,7 +540,7 @@ export default function IleWynosiOdszkodowanieOpoznionyLot() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemType="https://schema.org/Question" itemProp="mainEntity">
+              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question" itemProp="mainEntity">
                 <h3 className="font-semibold text-lg text-slate-900 mb-3" itemProp="name">
                   Ile czasu ma pasażer na złożenie wniosku o odszkodowanie?
                 </h3>

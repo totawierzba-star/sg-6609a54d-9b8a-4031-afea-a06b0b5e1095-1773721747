@@ -464,7 +464,7 @@ export default function StrajkLiniiLotniczej() {
                 key={idx}
                 className="bg-white border border-slate-200 rounded-xl p-5 shadow-sm"
                 itemScope
-                itemType="https://schema.org/Question"
+                itemProp="mainEntity" itemType="https://schema.org/Question"
               >
                 <p className="font-semibold text-slate-900 mb-2" itemProp="name">
                   {item.q}

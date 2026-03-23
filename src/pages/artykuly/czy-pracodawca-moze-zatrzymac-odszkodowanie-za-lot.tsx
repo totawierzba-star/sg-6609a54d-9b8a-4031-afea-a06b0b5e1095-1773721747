@@ -427,7 +427,7 @@ export default function CzyPracodawcaMozeZatrzymacOdszkodowanie() {
             <h2 className="text-3xl font-bold text-slate-900 mb-8">Najczęstsze pytania</h2>
 
             <div className="space-y-4">
-              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemType="https://schema.org/Question" itemProp="mainEntity">
+              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question" itemProp="mainEntity">
                 <h3 className="font-semibold text-lg text-slate-900 mb-3" itemProp="name">
                   Czy pracodawca może zatrzymać odszkodowanie za opóźniony lot służbowy?
                 </h3>
@@ -440,7 +440,7 @@ export default function CzyPracodawcaMozeZatrzymacOdszkodowanie() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemType="https://schema.org/Question" itemProp="mainEntity">
+              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question" itemProp="mainEntity">
                 <h3 className="font-semibold text-lg text-slate-900 mb-3" itemProp="name">
                   Kto ma prawo do odszkodowania za lot służbowy — pracownik czy pracodawca?
                 </h3>
@@ -452,7 +452,7 @@ export default function CzyPracodawcaMozeZatrzymacOdszkodowanie() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemType="https://schema.org/Question" itemProp="mainEntity">
+              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question" itemProp="mainEntity">
                 <h3 className="font-semibold text-lg text-slate-900 mb-3" itemProp="name">
                   Czy pracodawca może wymagać od pracownika zwrotu odszkodowania za lot?
                 </h3>
@@ -464,7 +464,7 @@ export default function CzyPracodawcaMozeZatrzymacOdszkodowanie() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemType="https://schema.org/Question" itemProp="mainEntity">
+              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question" itemProp="mainEntity">
                 <h3 className="font-semibold text-lg text-slate-900 mb-3" itemProp="name">
                   Co pracodawca może odzyskać po odwołanym locie służbowym?
                 </h3>
@@ -477,7 +477,7 @@ export default function CzyPracodawcaMozeZatrzymacOdszkodowanie() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemType="https://schema.org/Question" itemProp="mainEntity">
+              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question" itemProp="mainEntity">
                 <h3 className="font-semibold text-lg text-slate-900 mb-3" itemProp="name">
                   Czy podróż służbowa zmienia prawa pasażera do odszkodowania?
                 </h3>
@@ -489,7 +489,7 @@ export default function CzyPracodawcaMozeZatrzymacOdszkodowanie() {
                 </div>
               </div>
 
-              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemType="https://schema.org/Question" itemProp="mainEntity">
+              <div className="bg-white rounded-xl border border-slate-200 shadow-sm p-6" itemScope itemProp="mainEntity" itemType="https://schema.org/Question" itemProp="mainEntity">
                 <h3 className="font-semibold text-lg text-slate-900 mb-3" itemProp="name">
                   Co zrobić, jeśli pracodawca żąda oddania odszkodowania za lot służbowy?
                 </h3>
