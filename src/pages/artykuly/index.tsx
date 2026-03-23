@@ -5,6 +5,15 @@ import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, Plane, Award, Buildin
 export default function Artykuly() {
   const articles = [
     {
+      title: "Londyn na delegację — jak dolecieć z Polski? Lotniska i przewoźnicy",
+      slug: "londyn-na-delegacje-jak-doleciec-z-polski",
+      excerpt: "LHR, LCY, LGW, STN czy LTN? Które lotnisko londyńskie wybrać zależnie od dzielnicy spotkania. Loty z Warszawy, Krakowa, Wrocławia i Gdańska, Brexit a dokumenty i EC 261 po wyjściu UK z UE.",
+      date: "2026-03-23",
+      readTime: "8 min",
+      category: "Recenzje linii lotniczych",
+      icon: Plane
+    },
+    {
       title: "Trasy z Warszawy (WAW) — najważniejsze połączenia służbowe",
       slug: "trasy-z-warszawy-waw-polaczenia-sluzbowe",
       excerpt: "Bezpośrednie loty z Warszawy Chopina do Londynu, Frankfurtu, Nowego Jorku, Dubaju i Azji — czasy podróży, przewoźnicy i rekomendacje dla pracowników latających służbowo.",
