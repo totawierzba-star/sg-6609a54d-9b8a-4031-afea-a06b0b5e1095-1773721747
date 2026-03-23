@@ -5,6 +5,15 @@ import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, Plane, Award, Buildin
 export default function Artykuly() {
   const articles = [
     {
+      title: "Podatek od świadczeń podróżnych — diety, noclegi, ryczałty a PIT",
+      slug: "podatek-swiadczenia-podrozne",
+      excerpt: "Które świadczenia podróżne są wolne od PIT? Limity zwolnienia dla diet krajowych i zagranicznych, ryczałt noclegowy, bilet i hotel opłacony przez pracodawcę — kiedy powstaje przychód pracownika.",
+      date: "2026-03-23",
+      readTime: "8 min",
+      category: "Finanse delegacji",
+      icon: DollarSign
+    },
+    {
       title: "Firmowa karta kredytowa w podróżach służbowych — limity, rozliczenie i podatki",
       slug: "firmowa-karta-kredytowa-podroze-sluzbowe",
       excerpt: "Typy kart firmowych (charge, credit, prepaid, lodge), limity per kategoria, blokady MCC, rozliczenie po delegacji krok po kroku, systemy expense management i skutki podatkowe prywatnego użycia karty.",
