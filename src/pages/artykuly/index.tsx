@@ -5,6 +5,15 @@ import { BookOpen, Calendar, ArrowRight, Briefcase, Scale, Plane, Award, Buildin
 export default function Artykuly() {
   const articles = [
     {
+      title: "Tanie linie lotnicze na delegację — Ryanair i Wizz Air w podróży służbowej",
+      slug: "tanie-linie-delegacja-ryanair-wizzair",
+      excerpt: "Kiedy Ryanair lub Wizz Air opłacają się na delegację? Kalkulacja prawdziwego kosztu, punktualność LCC, EC 261 dla tanich linii, faktura VAT i co sprawdzić w firmowej travel policy.",
+      date: "2026-03-23",
+      readTime: "8 min",
+      category: "Recenzje linii lotniczych",
+      icon: Plane
+    },
+    {
       title: "Emirates vs Lufthansa — klasa biznes na długich trasach służbowych",
       slug: "emirates-vs-lufthansa-klasa-biznes",
       excerpt: "Zamknięte drzwiczki Emirates A380 i mini-bar kontra Lufthansa Allegris na A350 — co wybrać na trasie z Polski do Azji, Bliskiego Wschodu lub USA? Porównanie EC 261, programów lojalnościowych i polityki corporate.",
